@@ -16,440 +16,246 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfEtYshAAAAAMF9zt0FC4G81pQZuSWg_ytTf0kC"></script>
 <script>
-    grecaptcha.enterprise.ready(function () {
-        grecaptcha.enterprise.execute('6LfEtYshAAAAAMF9zt0FC4G81pQZuSWg_ytTf0kC', { action: 'login' }).then(function (token) {
-        });
-    });
+  grecaptcha.enterprise.ready(function () {
+    grecaptcha.enterprise
+      .execute('6LfEtYshAAAAAMF9zt0FC4G81pQZuSWg_ytTf0kC', { action: 'login' })
+      .then(function (token) {});
+  });
 </script>
-<div class="wrapper">
-    <div class="container-fluid">
+{{ 'footer_new.css' | asset_url | stylesheet_tag }}
+<footer>
+  <div class="container-fluid">
+    <div class="wrapper">
+      <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 pe-lg-5">
-                <div class="content">
-                    <p>We respond in 24 hours.</p>
-                    <p>For Product Price Inquiries, Service Requests, or Warranty
-                        Concerns you may reach us through our Express Hatid hotline
-                        for immediate assistance.</p>
-                    <div class="location">
-                        <ul>
-                            <li><strong>NCR:</strong> <a href="tel:+(02) 8370-6686">(02) 8370-6686</a></li>
-                            <li><strong>Smart:</strong> <a href="tel:+0918-843-6686">0918-843-6686</a></li>
-                            <li><strong>Globe:</strong> <a href="tel:+0917-891-6686">0917-891-6686</a></li>
-                            <li><strong>Provincial Toll Free:</strong> <a
-                                    href="tel:+1-800-10-370-6686">1-800-10-370-6686</a></li>
-                        </ul>
-                    </div>
-                    <p>Motolite is the one to call for battery purchase and
-                        replacements. We are able to reach you anywhere in the
-                        country, day or night. Whether your battery needs a jump or
-                        you need a replacement car battery delivered, call us for the
-                        most reliable service.</p>
-                    <h5>About Us</h5>
-                    <p>Motolite Batteries are proudly manufactured by Philippine
-                        Batteries Inc., one of the largest manufacturers, exporters and
-                        distributors of automotive, motorcycle, and industrial battery
-                        products and solutions in the Asia-Pacific Region.</p>
-                </div>
+          <div class="col-lg-6 pe-lg-5">
+            <div class="content">
+              <p>We respond in 24 hours.</p>
+              <p>
+                For Product Price Inquiries, Service Requests, or Warranty Concerns you may reach us through our Express
+                Hatid hotline for immediate assistance.
+              </p>
+              <div class="location">
+                <ul>
+                  <li><strong>NCR:</strong> <a href="tel:+(02) 8370-6686">(02) 8370-6686</a></li>
+                  <li><strong>Smart:</strong> <a href="tel:+0918-843-6686">0918-843-6686</a></li>
+                  <li><strong>Globe:</strong> <a href="tel:+0917-891-6686">0917-891-6686</a></li>
+                  <li>
+                    <strong>Provincial Toll Free:</strong>
+                    <a
+                      href="tel:+1-800-10-370-6686"
+                      >1-800-10-370-6686</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Motolite is the one to call for battery purchase and replacements. We are able to reach you anywhere in
+                the country, day or night. Whether your battery needs a jump or you need a replacement car battery
+                delivered, call us for the most reliable service.
+              </p>
+              <h5>About Us</h5>
+              <p>
+                Motolite Batteries are proudly manufactured by Philippine Batteries Inc., one of the largest
+                manufacturers, exporters and distributors of automotive, motorcycle, and industrial battery products and
+                solutions in the Asia-Pacific Region.
+              </p>
             </div>
-            <div class="col-lg-6">
-                <div class="margin-top-30 padding-40-20-20 custom-card bg-white">
-                    {% form 'contact' %}
-                    <div class="text-semibold-25 lh-25">Contact Us</div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form">
+              {% form 'contact' %}
+                <div class="text-semibold-25 lh-25">Contact Us</div>
 
-                    <div class="margin-top-20">
-                        <input type="text" name="contact[email]" id="email" placeholder="Email" class="custom-input"
-                            style="width: 100%;" />
-                        <div class="margin-top-5 text-regular-13 lh-1 text-color-D22429 input-error-message"></div>
-                    </div>
+                <div class="margin-top-20">
+                  <input
+                    type="text"
+                    name="contact[email]"
+                    id="email"
+                    placeholder="Email"
+                    class="custom-input"
+                    style="width: 100%;"
+                  >
+                  <div class="margin-top-5 text-regular-13 lh-1 text-color-D22429 input-error-message"></div>
+                </div>
 
-                    <input type="text" name="contact[name]" placeholder="Name"
-                        class="margin-top-20 margin-bottom-5 custom-input" style="width: 100%;" />
+                <input
+                  type="text"
+                  name="contact[name]"
+                  placeholder="Name"
+                  class="margin-top-20 margin-bottom-5 custom-input"
+                  style="width: 100%;"
+                >
 
-                    <div class="margin-top-20">
-                        <input type="text" name="contact[contact_number]" id="contact_number"
-                            placeholder="Contact Number" class="custom-input" style="width: 100%;" />
-                        <div class="margin-top-5 text-regular-13 lh-1 text-color-D22429 input-error-message"></div>
-                    </div>
+                <div class="margin-top-20">
+                  <input
+                    type="text"
+                    name="contact[contact_number]"
+                    id="contact_number"
+                    placeholder="Contact Number"
+                    class="custom-input"
+                    style="width: 100%;"
+                  >
+                  <div class="margin-top-5 text-regular-13 lh-1 text-color-D22429 input-error-message"></div>
+                </div>
 
-                    <script
-                        src="https://www.google.com/recaptcha/enterprise.js?render=6LfEtYshAAAAAMF9zt0FC4G81pQZuSWg_ytTf0kC"></script>
-                    <script>
-                        grecaptcha.enterprise.ready(function () {
-                            grecaptcha.enterprise.execute('6LfEtYshAAAAAMF9zt0FC4G81pQZuSWg_ytTf0kC', { action: 'login' }).then(function (token) {
-                            });
-                        });
-                    </script>
+                <script
+                  src="https://www.google.com/recaptcha/enterprise.js?render=6LfEtYshAAAAAMF9zt0FC4G81pQZuSWg_ytTf0kC"
+                ></script>
+                <script>
+                  grecaptcha.enterprise.ready(function () {
+                    grecaptcha.enterprise
+                      .execute('6LfEtYshAAAAAMF9zt0FC4G81pQZuSWg_ytTf0kC', { action: 'login' })
+                      .then(function (token) {});
+                  });
+                </script>
 
-                    <div id="re-captcha"></div>
-                    <textarea name="contact[message]" placeholder="Message" class="margin-top-20 custom-input"
-                        style="width: 100%; height: 125px;"></textarea>
-                    {% if form.posted_successfully? %}
-                    <div class="padding-5-10 margin-top-20 text-center bg-color-99ffbb">
-                        <a href="https://motolitestore.myshopify.com/pages/thank-you"></a>
-                        <!--
-          <span class="material-icons align-middle">task_alt</span>
-          <span class="margin-left-5 text-regular-14 align-middle">Sent Successfully</span>
-        </div>-->
-                    </div>
-                    {% else %}
-                    {% if form.error.size > 0 %}
+                <div id="re-captcha"></div>
+                <textarea
+                  name="contact[message]"
+                  placeholder="Message"
+                  class="margin-top-20 custom-input"
+                  style="width: 100%; height: 125px;"
+                ></textarea>
+                {% if form.posted_successfully? %}
+                  <div class="padding-5-10 margin-top-20 text-center bg-color-99ffbb">
+                    <a href="https://motolitestore.myshopify.com/pages/thank-you"></a>
+                    <!--
+                      <span class="material-icons align-middle">task_alt</span>
+                      <span class="margin-left-5 text-regular-14 align-middle">Sent Successfully</span>
+                      </div>
+                    -->
+                  </div>
+                {% else %}
+                  {% if form.error.size > 0 %}
                     <div class="padding-5-10 margin-top-20 text-center bg-color-ff9999">
-                        <span class="material-icons align-middle text-color-424242">error_outline</span>
-                        <span class="margin-left-5 text-regular-14 align-middle">An Unknown Error Occured</span>
+                      <span class="material-icons align-middle text-color-424242">error_outline</span>
+                      <span class="margin-left-5 text-regular-14 align-middle">An Unknown Error Occured</span>
                     </div>
-                    {% endif %}
-                    {% endif %}
-                    <button type="button" id="contact_form_submit" class="margin-top-20 custom-button">SEND</button>
-                    {% endform %}
-                </div>
+                  {% endif %}
+                {% endif %}
+                <button type="button" id="contact_form_submit" class="red_btn">SEND</button>
+              {% endform %}
             </div>
+          </div>
         </div>
         <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="footer_content">
-                    <span class="headers">Oriental and Motolite Marketing Corporation</span>
-                    <p>Ramcar Center 80-82 Roces Ave.Diliman, Q.C. Philippines</p>
-                </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="footer_content">
+              <span class="headers">Oriental and Motolite Marketing Corporation</span>
+              <p>Ramcar Center 80-82 Roces Ave.Diliman, Q.C. Philippines</p>
             </div>
-            <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6">
-                <div class="footer_content">
-                    <span class="headers">LINKS</span>
-                    <a href="https://www.motolite.com/pages/faq" target="_blank" rel="noopener noreferrer">FAQs</a>
-                    <a href="https://www.motolite.com/pages/Privacy" target="_blank"
-                        rel="noopener noreferrer">PRIVACY</a>
-                </div>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6">
+            <div class="footer_content">
+              <span class="headers">LINKS</span>
+              <a href="https://www.motolite.com/pages/faq" target="_blank" rel="noopener noreferrer">FAQs</a>
+              <a
+                href="https://www.motolite.com/pages/Privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >PRIVACY</a
+              >
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-4 col-sm-4">
-                <div class="footer_content">
-                    <span class="headers">Contact Us On</span>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/motoliteexpresshatid/" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M25 0.5C26.625 0.5 28 1.875 28 3.5V25.5C28 27.1875 26.625 28.5 25 28.5H16.375V19H20L20.6875 14.5H16.375V11.625C16.375 10.375 17 9.1875 18.9375 9.1875H20.875V5.375C20.875 5.375 19.125 5.0625 17.375 5.0625C13.875 5.0625 11.5625 7.25 11.5625 11.125V14.5H7.625V19H11.5625V28.5H3C1.3125 28.5 0 27.1875 0 25.5V3.5C0 1.875 1.3125 0.5 3 0.5H25Z"
-                                        fill="black" />
-                                </svg>
-                                Facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/Motolite_Ph" target="_blank" rel="noopener noreferrer">
-                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
-                                    xmlns="http://www.</svg>w3.org/2000/svg">
-                                    <path
-                                        d="M25 0.870117C26.625 0.870117 28 2.24512 28 3.87012V25.8701C28 27.5576 26.625 28.8701 25 28.8701H3C1.3125 28.8701 0 27.5576 0 25.8701V3.87012C0 2.24512 1.3125 0.870117 3 0.870117H25ZM21.9375 10.8076C22.6875 10.2451 23.4375 9.49512 24 8.68262C23.25 8.99512 22.4375 9.24512 21.625 9.30762C22.4375 8.80762 23.125 8.05762 23.4375 7.05762C22.625 7.55762 21.75 7.87012 20.8125 8.05762C20.0625 7.24512 19 6.74512 17.8125 6.74512C15.3125 6.74512 13.25 9.05762 13.8125 11.8076C10.4375 11.6201 7.375 9.99512 5.375 7.49512C5 8.12012 4.8125 8.80762 4.8125 9.62012C4.8125 10.9951 5.5 12.2451 6.625 12.9951C5.9375 12.9951 5.3125 12.8076 4.8125 12.4951V12.5576C4.8125 14.5576 6.1875 16.1826 8.0625 16.5576C7.4375 16.7451 6.875 16.7451 6.1875 16.6201C6.75 18.2451 8.25 19.4326 10.0625 19.4951C8.625 20.5576 6.875 21.2451 4.9375 21.2451C4.625 21.2451 4.3125 21.2451 4 21.1826C5.8125 22.3701 7.9375 22.9951 10.25 22.9951C17.8125 22.9951 21.9375 16.7451 21.9375 11.3701C21.9375 11.1826 21.9375 10.9951 21.9375 10.8076Z"
-                                        fill="black" />
-                                </svg>
-                                Twitter
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/motoliteph/" target="_blank" rel="noopener noreferrer">
-                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14 10.9375C15.8125 10.9375 17.3125 12.4375 17.3125 14.25C17.3125 16.125 15.8125 17.625 14 17.625C12.125 17.625 10.625 16.125 10.625 14.25C10.625 12.4375 12.125 10.9375 14 10.9375ZM21.75 8.375C22.3125 9.6875 22.1875 12.8125 22.1875 14.25C22.1875 15.75 22.3125 18.875 21.75 20.1875C21.4375 21.0625 20.75 21.75 19.875 22.0625C18.5625 22.625 15.4375 22.5 14 22.5C12.5 22.5 9.375 22.625 8.0625 22.0625C7.1875 21.75 6.5 21.0625 6.1875 20.1875C5.6875 18.875 5.75 15.75 5.75 14.25C5.75 12.8125 5.6875 9.6875 6.1875 8.375C6.5 7.5 7.1875 6.8125 8.0625 6.5C9.375 5.9375 12.5 6.0625 14 6.0625C15.4375 6.0625 18.5625 5.9375 19.875 6.5C20.75 6.8125 21.4375 7.5 21.75 8.375ZM14 19.375V19.4375C16.8125 19.4375 19.125 17.125 19.125 14.3125V14.25C19.125 11.4375 16.8125 9.125 14 9.125C11.125 9.125 8.875 11.4375 8.875 14.25C8.875 17.125 11.125 19.375 14 19.375ZM19.3125 10.125C19.9375 10.125 20.5 9.625 20.5 8.9375C20.5 8.25 19.9375 7.75 19.3125 7.75C18.625 7.75 18.125 8.25 18.125 8.9375C18.125 9.625 18.625 10.125 19.3125 10.125ZM25 0.25C26.625 0.25 28 1.625 28 3.25V25.25C28 26.9375 26.625 28.25 25 28.25H3C1.3125 28.25 0 26.9375 0 25.25V3.25C0 1.625 1.3125 0.25 3 0.25H25ZM23.875 18.375C24 16.75 24 11.8125 23.875 10.1875C23.8125 8.5625 23.4375 7.125 22.3125 6C21.125 4.8125 19.6875 4.4375 18.125 4.375C16.4375 4.25 11.5 4.25 9.875 4.375C8.25 4.4375 6.8125 4.8125 5.6875 5.9375C4.5 7.125 4.125 8.5625 4.0625 10.125C3.9375 11.8125 3.9375 16.75 4.0625 18.375C4.125 20 4.5 21.4375 5.6875 22.5625C6.8125 23.75 8.25 24.125 9.875 24.1875C11.5 24.3125 16.4375 24.3125 18.125 24.1875C19.6875 24.125 21.125 23.75 22.3125 22.5625C23.4375 21.4375 23.8125 20 23.875 18.375Z"
-                                        fill="black" />
-                                </svg>
-                                Instagram
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-4 col-sm-4">
+            <div class="footer_content">
+              <span class="headers">Contact Us On</span>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/motoliteexpresshatid/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      width="28"
+                      height="29"
+                      viewBox="0 0 28 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                          d="M25 0.5C26.625 0.5 28 1.875 28 3.5V25.5C28 27.1875 26.625 28.5 25 28.5H16.375V19H20L20.6875 14.5H16.375V11.625C16.375 10.375 17 9.1875 18.9375 9.1875H20.875V5.375C20.875 5.375 19.125 5.0625 17.375 5.0625C13.875 5.0625 11.5625 7.25 11.5625 11.125V14.5H7.625V19H11.5625V28.5H3C1.3125 28.5 0 27.1875 0 25.5V3.5C0 1.875 1.3125 0.5 3 0.5H25Z"
+                          fill="black" />
+                    </svg>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Motolite_Ph" target="_blank" rel="noopener noreferrer">
+                    <svg
+                      width="28"
+                      height="29"
+                      viewBox="0 0 28 29"
+                      fill="none"
+                      xmlns="http://www.</svg>w3.org/2000/svg"
+                    >
+                      <path
+                          d="M25 0.870117C26.625 0.870117 28 2.24512 28 3.87012V25.8701C28 27.5576 26.625 28.8701 25 28.8701H3C1.3125 28.8701 0 27.5576 0 25.8701V3.87012C0 2.24512 1.3125 0.870117 3 0.870117H25ZM21.9375 10.8076C22.6875 10.2451 23.4375 9.49512 24 8.68262C23.25 8.99512 22.4375 9.24512 21.625 9.30762C22.4375 8.80762 23.125 8.05762 23.4375 7.05762C22.625 7.55762 21.75 7.87012 20.8125 8.05762C20.0625 7.24512 19 6.74512 17.8125 6.74512C15.3125 6.74512 13.25 9.05762 13.8125 11.8076C10.4375 11.6201 7.375 9.99512 5.375 7.49512C5 8.12012 4.8125 8.80762 4.8125 9.62012C4.8125 10.9951 5.5 12.2451 6.625 12.9951C5.9375 12.9951 5.3125 12.8076 4.8125 12.4951V12.5576C4.8125 14.5576 6.1875 16.1826 8.0625 16.5576C7.4375 16.7451 6.875 16.7451 6.1875 16.6201C6.75 18.2451 8.25 19.4326 10.0625 19.4951C8.625 20.5576 6.875 21.2451 4.9375 21.2451C4.625 21.2451 4.3125 21.2451 4 21.1826C5.8125 22.3701 7.9375 22.9951 10.25 22.9951C17.8125 22.9951 21.9375 16.7451 21.9375 11.3701C21.9375 11.1826 21.9375 10.9951 21.9375 10.8076Z"
+                          fill="black" />
+                    </svg>
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/motoliteph/" target="_blank" rel="noopener noreferrer">
+                    <svg
+                      width="28"
+                      height="29"
+                      viewBox="0 0 28 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                          d="M14 10.9375C15.8125 10.9375 17.3125 12.4375 17.3125 14.25C17.3125 16.125 15.8125 17.625 14 17.625C12.125 17.625 10.625 16.125 10.625 14.25C10.625 12.4375 12.125 10.9375 14 10.9375ZM21.75 8.375C22.3125 9.6875 22.1875 12.8125 22.1875 14.25C22.1875 15.75 22.3125 18.875 21.75 20.1875C21.4375 21.0625 20.75 21.75 19.875 22.0625C18.5625 22.625 15.4375 22.5 14 22.5C12.5 22.5 9.375 22.625 8.0625 22.0625C7.1875 21.75 6.5 21.0625 6.1875 20.1875C5.6875 18.875 5.75 15.75 5.75 14.25C5.75 12.8125 5.6875 9.6875 6.1875 8.375C6.5 7.5 7.1875 6.8125 8.0625 6.5C9.375 5.9375 12.5 6.0625 14 6.0625C15.4375 6.0625 18.5625 5.9375 19.875 6.5C20.75 6.8125 21.4375 7.5 21.75 8.375ZM14 19.375V19.4375C16.8125 19.4375 19.125 17.125 19.125 14.3125V14.25C19.125 11.4375 16.8125 9.125 14 9.125C11.125 9.125 8.875 11.4375 8.875 14.25C8.875 17.125 11.125 19.375 14 19.375ZM19.3125 10.125C19.9375 10.125 20.5 9.625 20.5 8.9375C20.5 8.25 19.9375 7.75 19.3125 7.75C18.625 7.75 18.125 8.25 18.125 8.9375C18.125 9.625 18.625 10.125 19.3125 10.125ZM25 0.25C26.625 0.25 28 1.625 28 3.25V25.25C28 26.9375 26.625 28.25 25 28.25H3C1.3125 28.25 0 26.9375 0 25.25V3.25C0 1.625 1.3125 0.25 3 0.25H25ZM23.875 18.375C24 16.75 24 11.8125 23.875 10.1875C23.8125 8.5625 23.4375 7.125 22.3125 6C21.125 4.8125 19.6875 4.4375 18.125 4.375C16.4375 4.25 11.5 4.25 9.875 4.375C8.25 4.4375 6.8125 4.8125 5.6875 5.9375C4.5 7.125 4.125 8.5625 4.0625 10.125C3.9375 11.8125 3.9375 16.75 4.0625 18.375C4.125 20 4.5 21.4375 5.6875 22.5625C6.8125 23.75 8.25 24.125 9.875 24.1875C11.5 24.3125 16.4375 24.3125 18.125 24.1875C19.6875 24.125 21.125 23.75 22.3125 22.5625C23.4375 21.4375 23.8125 20 23.875 18.375Z"
+                          fill="black" />
+                    </svg>
+                    Instagram
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-4">
-                <div class="footer_content">
-                    <span class="headers">Buy Also On</span>
-                    <a href="https://www.lazada.com.ph/shop/motolite/?spm=a2o4l.10450891.search.1.42423d88B0V5iU&_keyori=ss&from=suggest_sis&sis_suggestion_click=Motolite%20Flagship%20Store%2Cmotolite&sugg=motolite_0_1"
-                        target="_blank" rel="noopener noreferrer">
-                        <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/lazada_logo_png_90f95bfb-44d3-4d4a-adfd-62562ef4a6c6.png?v=1747976725"
-                            alt="">
-                        Lazada
-                    </a>
-                </div>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-4">
+            <div class="footer_content">
+              <span class="headers">Buy Also On</span>
+              <a
+                href="https://www.lazada.com.ph/shop/motolite/?spm=a2o4l.10450891.search.1.42423d88B0V5iU&_keyori=ss&from=suggest_sis&sis_suggestion_click=Motolite%20Flagship%20Store%2Cmotolite&sugg=motolite_0_1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/lazada_logo_png_90f95bfb-44d3-4d4a-adfd-62562ef4a6c6.png?v=1747976725"
+                  alt=""
+                >
+                Lazada
+              </a>
             </div>
-            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-4">
-                <div class="image">
-                    <button type="button" popovertarget="dpo_dps">
-                        <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/image_1.png?v=1737604749"
-                            alt="" style="width: 100%; max-width: 100px">
-                    </button>
-                </div>
-                <div id="dpo_dps" popover>
-                    <div class="image_content">
-                        <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/image_1.png?v=1737604749"
-                            alt="" height="800" width="auto">
-                    </div>
-                </div>
+          </div>
+          <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-4">
+            <div class="image">
+              <button type="button" popovertarget="dpo_dps">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/image_1.png?v=1737604749"
+                  alt=""
+                  style="width: 100%; max-width: 100px"
+                >
+              </button>
             </div>
+            <div id="dpo_dps" popover>
+              <div class="image_content">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/image_1.png?v=1737604749"
+                  alt=""
+                  height="800"
+                  width="auto"
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<style>
-    footer {
-        background: #F8F6F6;
-    }
-
-    footer .wrapper {
-        max-width: calc(1200px + 30px);
-        margin: 0 auto;
-    }
-
-    footer a {
-        text-decoration: none;
-        color: #424242;
-        font-family: 'Raleway', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 27.636px;
-        letter-spacing: 0.66px;
-    }
-
-    footer {
-        padding: 30px;
-    }
-
-    footer .content {
-        max-width: 550px;
-    }
-
-    footer .content p:first-of-type {
-        color: #424242;
-        font-family: 'Raleway', sans-serif;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 25px;
-        letter-spacing: 0.66px;
-        margin-bottom: 19px;
-    }
-
-    footer .content .location {
-        margin: 30px 0;
-    }
-
-    footer .content li {
-        display: flex;
-        justify-content: space-between;
-        padding: 4.5px 5.5px;
-    }
-
-    footer .content li strong {
-        color: #212529;
-        font-family: "Segoe UI", sans-serif;
-        font-size: 17.6px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30.4px;
-        letter-spacing: 0.66px;
-    }
-
-    footer .content li a {
-        color: #424242;
-        font-family: 'Raleway', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 28px;
-        letter-spacing: 0.66px;
-    }
-
-    footer .content .location ul {
-        padding: 0;
-    }
-
-    footer p {
-        color: #807F7F;
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0.66px;
-    }
-
-    footer h5 {
-        color: #424242;
-        font-family: 'Raleway', sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 25px;
-        letter-spacing: 0.66px;
-        margin-bottom: 8px;
-    }
-
-    footer li {
-        list-style: none;
-    }
-
-    footer .row:last-child span.headers:first-of-type {
-        color: #000;
-        font-family: "Segoe UI", sans-serif;
-        font-size: 15.5px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 28.5px;
-        letter-spacing: 0.66px;
-        margin-bottom: 14.5px;
-    }
-
-    footer .row:last-child span.headers {
-        color: #000;
-        font-family: "Segoe UI", sans-serif;
-        font-size: 15.5px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 28.5px;
-        letter-spacing: 0.66px;
-        margin-bottom: 22.5px;
-    }
-
-    footer .row:last-child ul {
-        display: flex;
-        flex-direction: column;
-        gap: 11.7px;
-    }
-
-    footer .row:last-child li a,
-    footer .row:last-child a {
-        display: flex;
-        align-items: center;
-        gap: 0 10px;
-    }
-
-    footer .row:last-child .footer_content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .row:last-child ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    footer .row:last-child {
-        margin-top: 44px;
-    }
-
-    footer .form {
-        padding: 40px 21px;
-        border-radius: 1px;
-        background: #FFF;
-    }
-
-    footer .form h5 {
-        color: #424242;
-        font-family: 'Raleway';
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 25px;
-        letter-spacing: 0.66px;
-        margin-bottom: 18px;
-    }
-
-    footer .form textarea,
-    footer .form input:not([type="submit"]) {
-        padding: 12px 21px;
-        border: 1px solid #807F7F;
-        background: #FFF;
-        color: #757575;
-        font-family: 'Raleway', sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        margin-bottom: 25px;
-    }
-
-    footer .form textarea::placeholder,
-    footer .form input:not([type="submit"])::placeholder {
-        color: #BDBDBD;
-        font-family: 'Raleway', sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-    }
-
-    footer .form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .form input[type="submit"] {
-        color: #FFF;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 31.091px;
-        border: none;
-        padding: 6px 24px;
-        border-radius: 1px;
-        background: rgba(210, 36, 41, 0.90);
-        width: 100%;
-    }
-
-    footer .row {
-        gap: 24px 0;
-    }
-
-    [popover]:-internal-popover-in-top-layer::-webkit-backdrop {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    [popover]:-internal-popover-in-top-layer::backdrop {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    [popover]:popover-open:not(dialog) {
-        border: none;
-        width: 100%;
-        height: 100vh;
-        background-color: transparent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    [popover]:popover-open:not(dialog) .content {
-        background-color: white;
-    }
-
-    footer button {
-        border: none;
-        padding: 0;
-        margin: 0;
-        background-color: transparent;
-        width: 100%;
-    }
-
-    @media (max-width: 1200px) {
-        footer {
-            padding: 70px 30px;
-        }
-    }
-
-    @media (max-width: 767px) {
-        footer {
-            padding: 50px 20px;
-        }
-
-        footer button {
-            width: fit-content;
-        }
-    }
-
-    @media (max-width: 575px) {
-        footer .content li {
-            flex-direction: column;
-        }
-    }
-</style>
+  </div>
+</footer>

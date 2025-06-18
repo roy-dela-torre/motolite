@@ -13,18 +13,6 @@
       "type": "motolite-main",
       "settings": {}
     },
-    "footer": {
-      "type": "footer",
-      "settings": {
-        "color_scheme": "background-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": false,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true
-      }
-    },
     "166364850540eaf81a": {
       "type": "featured-collection",
       "disabled": true,
@@ -45,7 +33,6 @@
   },
   "order": [
     "motolite_main",
-    "footer",
     "166364850540eaf81a"
   ]
 }

@@ -1,0 +1,57 @@
+<header>
+  <div class="top_bar">
+    
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ routes.root_url }}">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          {% for link in linklists['main-menu'].links %}
+            {% if link.links.size > 0 %}
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="{{ link.url }}"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {{ link.title }}
+                </a>
+                <ul class="dropdown-menu">
+                  {% for sublink in link.links %}
+                    <li>
+                      <a class="dropdown-item" href="{{ sublink.url }}">{{ sublink.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a
+                  class="nav-link{% if link.active %} active{% endif %}"
+                  aria-current="{% if link.active %}page{% endif %}"
+                  href="{{ link.url }}"
+                >
+                  {{- link.title -}}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

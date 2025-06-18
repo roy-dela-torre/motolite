@@ -1,1032 +1,284 @@
-<script>
-  let url = new URL(location.href);
-  let contactPostedParam = url.searchParams.get("contact_posted");
-
-  if (contactPostedParam !== null && contactPostedParam === "true") {
-    location.assign("/pages/contact-us-thank-you");
-  }
-</script>
-
-
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<style>
-  .carousel-indicators {
-    z-index: 1;
-}
-.table-borderless>:not(caption)>*>* {
-    border-bottom-width: 0;
-    font-size: large;
-}
-.margin-top-20 {
-    margin-bottom: 20px;
-}
-  .width-35 {
-    width: 35px;
-  }
-  
-  .height {
-    height: 35px;
-  }
-  
-  .battery-categories {
-    width: 100%;
-  }
-  
-  .advantages {
-    width: 100%;
-  }
-  
-  .custom-footer {
-    width: 100%;
-  }
-  
-  .custom-footer-text1 {
-    padding-right: 35px;
-  }
-  h3 {
-  color: white;
-  }
-  .snip1527 {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  color: white;
-  float: left;
-  font-family: 'Lato', Arial, sans-serif;
-  font-size: 16px;
-  margin: 10px 1%;
-  min-width: 250px;
-  overflow: hidden;
-  position: relative;
-  text-align: left;
-  width: 100%;
-  cursor: pointer;
-}
-
-.snip1527 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-.snip1527 img {
-  max-width: 100%;
-  vertical-align: top;
-  position: relative;
-}
-
-.snip1527 figcaption {
-  padding: 10px 15px 10px;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-}
-
-.snip1527 figcaption:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #700877;
-  content: '';
-  background: -moz-linear-gradient(270deg, #f7c306 0%, #d91f2b 100%, #ff2759 100%);
-  background: -webkit-linear-gradient(270deg, #f7c306 0%, #d91f2b 100%, #ff2759 100%);
-  background: linear-gradient(270deg, #f7c306 0%, #d91f2b 50%, #ff2759 100%);
-  opacity: 0.8;
-  z-index: -1;
-  width: 635px;
-  clip-path: polygon(0 0, 100% 0%, calc(100% - 22px) 100%, 0% 100%);
-
-}
-
-.snip1527 .date {
-  background-color: #fff;
-  border-radius: 50%;
-  color: #700877;
-  font-size: 18px;
-  font-weight: 700;
-  min-height: 48px;
-  min-width: 48px;
-  padding: 10px 0;
-  position: absolute;
-  right: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  top: -25px;
-}
-
-.snip1527 .date span {
-  display: block;
-  line-height: 14px;
-}
-
-.snip1527 .date .month {
-  font-size: 11px;
-}
-
-.snip1527 h3,
-.snip1527 p {
-  margin: 0;
-  padding: 0;
-}
-.animated.fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    -moz-animation-name: fadeInDown;
-    -o-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-}
-/* show objects being animated */
-
-.animated {
-    visibility: visible;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    -ms-animation-duration: 3s;
-    -o-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-play-state: running;
-    -moz-animation-play-state: running;
-    -ms-animation-play-state: running;
-    -o-animation-play-state: running;
-    animation-play-state: running;
-}
-@-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
-
-@-moz-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -moz-transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        -moz-transform: translateY(0);
-    }
-}
-
-@-o-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -o-transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        -o-transform: translateY(0);
-    }
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 915px) {
-.snip1527 h3 {
-  display: inline-block;
-  font-weight: 700;
-  letter-spacing: -0.4px;
-  margin-bottom: 5px;
-  font-size:20px;
-}
-}
-.snip1527 p {
-  font-size: 0.8em;
-  line-height: 1.6em;
-  margin-bottom: 0px;
-}
-
-.snip1527 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 1;
-}
-
-.snip1527:hover img,
-.snip1527.hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-  .bg-gray {
-    background-color: #e9ecef;
-  }
-  .services-title {
-  line-height: 20px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-}
-  a {
-    text-decoration: none; 
-  
-  }
-  
-  .services-description {
-    overflow: hidden;
-    line-height: 20px;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    
-}
-  .h-80 {
-    height: 80px;
-  }
-
-  @media only screen and (max-width: 575px) {
-    .battery-categories {
-      max-width: 450px;
-    }
-    
-    .services {
-      max-width: 450px;
-    }
-    
-    .custom-footer {
-      max-width: 450px;
-    }
-    
-    .custom-footer-text1 {
-      padding-right: 0;
-    }
-  }
-  
-  @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .battery-categories {
-      max-width: 561px;
-    }
-    
-    .battery-category {
-      max-width: 243px;
-    }
-    
-    .services {
-      max-width: 546px;
-    }
-    
-    .service {
-      max-width: 506px;
-    }
-    
-   
-    
-    .advantage {
-      max-width: 243px;
-    }
-    
-    .custom-footer {
-      max-width: 546px;
-    }
-    
-    .custom-footer-text1 {
-      padding-right: 0;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .battery-categories {
-      max-width: 738px;
-    }
-    
-    .battery-category {
-      max-width: 219px;
-    }
-    
-    .services {
-      max-width: 738px;
-    }
-    
-    .service {
-      max-width: 339px;
-    }
-    @media only screen and (min-width: 992px) {
-.custom-carousel-previous-button {
-display: none!important;
-}
-
-.custom-carousel-next-button {
-display: none!important;
-}
-}
-    .advantages {
-      max-width: 738px;
-    }
-    
-    .advantage {
-      max-width: 219px;
-    }
-    
-    .custom-footer {
-      max-width: 738px;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .battery-categories {
-      /*max-width: 962px;*/
-    }
-    
-    .battery-category {
-      max-width: 215.5px;
-    }
-    
-    .services {
-      /*max-width: 962px;*/
-    }
-    
-    .service {
-      max-width: 500px;
-      display: grid;
-    }
-    
-    .advantages {
-      max-width: 962px;
-    }
-    
-    .advantage {
-      max-width: 215.5px;
-    }
-    
-    .custom-footer {
-      max-width: 1200px;
-    }  
-  
-  h4 {
-    color: #212529;
-    font-weight: 700;
-    font-size: 1.50rem;
-}
-  .logo {
-    float: right;
-    margin: 5px 5px;
-  
-  }
-  .icon {
-  font-size: -10px;
-  width: -10px;
-  text-align: center;
- 
-  }
-    @media only screen and (min-width: 992px) {
-.arrow-icon-previous {
-display: none!important;
-}
-
-.arrow-icon-next {
-display: none!important;
-}
-  .carousel__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%    
-  }
-      
-    }
-    
-</style>
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-</head>
-<body>
-
-<script type="text/javascript">
-
-      window.ymConfig = {"bot":"x1722944534597","host":"https://r3.cloud.yellow.ai"};
-
-    (function() {
-
-        var w = window,
-
-            ic = w.YellowMessenger;
-
-        if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
-
-        else {
-
-            var d = document,
-
-                i = function() {
-
-                    i.c(arguments)
-
-                };
-
-            function l() {
-
-                var e = d.createElement("script");
-
-                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
-
-                var t = d.getElementsByTagName("script")[0];
-
-                t.parentNode.insertBefore(e, t)
-
-            }
-
-            i.q = [], i.c = function(e) {
-
-                i.q.push(e)
-
-            }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
-
-    })();
-
-    </script>
-
-
-<!-- Carousel -->
-<style>
-@font-face {
-            font-family: 'Aganè';
-            src: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Agane_C_75_Extra_Bold.ttf?v=1686194319');
-        }
-        #demo .carousel-inner .carousel-caption {
-            position: absolute;
-            top: 0;
-            right: 15%;
-            bottom: 1.25rem;
-            left: 15%;
-            padding-top: 1.25rem;
-            padding-bottom: 1.25rem;
-            text-align: center;
-            height: 100%;
-            justify-content: end;
-            align-items: center;
-            display: flex !important;
-            width: 100%;
-            max-width: 75%;
-        }
-        #demo .carousel-inner .carousel-caption h2,h1{
-            text-align: left;
-            font-size: 3.5vw;
-            text-shadow: 6px 5px 20px black;
-            font-family: 'Aganè';
-            font-style: normal;
-            font-weight: 800;
-            line-height: 3.5vw;
-            text-transform: uppercase;
-            color: #fff;
-        }
-
-
-    .snip1527 figcaption a {
-        position: unset !important;
-          color: #212529;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16.25px;
-    text-decoration: none;
-    padding: 12px 16px;
-    background: #F8C606;
-    display: none;
-    }
-
-      .snip1527 figcaption a:hover {
-    background: #212529;
-    color: #FFF;
-}
-  
-  .snip1527 figcaption {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  
-    </style>
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_33-min.jpg?v=1686192073" alt="Kaagapay mo sa pagsisikap. Pangmatagalan." class="d-block" style="width:100%">
-            <div class="carousel-caption d-none d-md-block">
-                <h2 class="text-uppercase">Kaagapay mo <br>sa pagsisikap. <br>Pangmatagalan.</h2>
+<section class="banner">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 p-0">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_33-min.jpg?v=1686192073"
+                alt="Kaagapay mo sa pagsisikap. Pangmatagalan."
+                class="d-block"
+                style="width:100%"
+              >
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-uppercase">
+                  Kaagapay mo <br>
+                  sa pagsisikap. <br>
+                  Pangmatagalan.
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_37-min.jpg?v=1686192073"
+                alt="Motolite, your trusted ally to power long haul use."
+                class="d-block"
+                style="width:100%"
+              >
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-uppercase">
+                  Your trusted <br>
+                  ally to power <br>
+                  long haul use.
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_38-min.jpg?v=1686192073"
+                alt="Motolite, the Philippines’ authority in all battery-related requirements."
+                class="d-block"
+                style="width:100%"
+              >
+              <div class="carousel-caption d-none d-md-block">
+                <h1>
+                  the Philippines’ <br>
+                  authority in <br>
+                  all battery-<br>
+                  related <br>
+                  requirements.
+                </h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_35-min.jpg?v=1686192073"
+                alt="Providing you options for all your battery needs."
+                class="d-block"
+                style="width:100%"
+              >
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-uppercase">
+                  Providing you <br>
+                  options for all <br>
+                  your battery <br>
+                  needs.
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_34-min.jpg?v=1686192073"
+                alt="Motolite’s batteries are built for the country’s terrain and road conditions."
+                class="d-block"
+                style="width:100%"
+              >
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-uppercase">
+                  built for the <br>
+                  country’s <br>
+                  terrain and <br>
+                  road conditions.
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_36-min.jpg?v=1686192073"
+                alt="Oriental and Motolite Marketing Corporation."
+                class="d-block"
+                style="width:100%"
+              >
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-uppercase">
+                  your reliable <br>
+                  source for all <br>
+                  your marine <br>
+                  needs.
+                </h2>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_37-min.jpg?v=1686192073" alt="Motolite, your trusted ally to power long haul use." class="d-block" style="width:100%">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="text-uppercase">Your trusted <br>ally to power <br>long haul use.</h2>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_38-min.jpg?v=1686192073" alt="Motolite, the Philippines’ authority in all battery-related requirements." class="d-block" style="width:100%">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>the Philippines’ <br>authority in <br>all battery-<br>related <br>requirements.</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_35-min.jpg?v=1686192073" alt="Providing you options for all your battery needs." class="d-block" style="width:100%">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="text-uppercase">Providing you <br>options for all <br>your battery <br>needs.</h2>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_34-min.jpg?v=1686192073" alt="Motolite’s batteries are built for the country’s terrain and road conditions." class="d-block" style="width:100%">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="text-uppercase">built for the <br>country’s <br>terrain and <br>road conditions.</h2>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Rectangle_36-min.jpg?v=1686192073" alt="Oriental and Motolite Marketing Corporation." class="d-block" style="width:100%">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="text-uppercase">your reliable <br>source for all <br>your marine <br>needs.</h2>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  
-<div class="padding-30-15-20 d-flex flex-column align-items-center">
-  <div class="battery-categories">
-    <div class="d-flex align-items-end">
-      <h2 class="text-black-40 lh-25" style="line-height: 35px;">Motolite Batteries</h2>
-    </div>
-    
-    <div class="margin-20-10-50 position-relative d-flex justify-content-center" id="batteryCategoryCarousel">
-         <div class="d-flex position-absolute top-0 bottom-0 left--10 z-index-1 align-items-center custom-carousel-previous-button">
-        <span class="material-icons bg-gray align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px; cursor: pointer;">
-          navigate_before
-        </span>
-        </div>
-        
-      
-      <div class="d-flex">
-          <figure class="snip1527 custom-carousel-item" onclick="window.location.href='https://www.motolite.com/collections/automotive';">
-            <div class="image"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/battery_category_AUTO_2_14901bb9-773f-4df2-93cc-2351ae7841f8.png?v=1652199525" alt="pr-sample23" /></div>
-            
-              <figcaption>
-                <!--<div class="date"><span class="day">28</span><span class="month">Oct</span></div>-->
-                <h3 class="automotive" style="font-weight: bolder;">Automotive</h3>
-                 <a href="https://www.motolite.com/collections/automotive" target="_blank">View More</a>
-              </figcaption>
-            
-          </figure>
-          <!--<div class="custom-card bg-white margin-left-10 margin-right-10 d-none battery-category custom-carousel-item w-100">
-            <img src="{{ collection.image | image_url: width: 750 }}" class="img-fluid">
-            <div class="padding-15">
-              <div class="text-medium-16 lh-25">{{ collection.title }}</div>
-              <div class="margin-top-10 text-regular-13 text-color-807F7F lh-16 height-105">{{ collection.description }}</div>
-            </div>
-          </div>-->
-        </div>
-      
-      <div class="d-flex ">
-          <figure class="snip1527 custom-carousel-item" onclick="window.location.href='https://www.motolite.com/collections/motorcycle';">
-            <div class="image"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/battery_category_MOTORCYCLE4_5aefb565-90e6-4903-b9bd-7ead5b76e7dd.png?v=1652199524" alt="pr-sample23" /></div>
-            
-              <figcaption>
-                <!--<div class="date"><span class="day">28</span><span class="month">Oct</span></div>-->
-                <h3 class="motorcyle" style="font-weight: bolder;">Motorcycle</h3>
-                 <a href="https://www.motolite.com/collections/motorcycle" target="_blank">View More</a>
-              </figcaption>
-            
-          </figure>
-          <!--<div class="custom-card bg-white margin-left-10 margin-right-10 d-none battery-category custom-carousel-item w-100">
-            <img src="{{ collection.image | image_url: width: 750 }}" class="img-fluid">
-            <div class="padding-15">
-              <div class="text-medium-16 lh-25">{{ collection.title }}</div>
-              <div class="margin-top-10 text-regular-13 text-color-807F7F lh-16 height-105">{{ collection.description }}</div>
-            </div>
-          </div>-->
-        </div>
-      
-      <div class="d-flex ">
-          <figure class="snip1527 custom-carousel-item" onclick="window.location.href='https://www.motolite.com/collections/heavy-commercial';">
-            <div class="image"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/battery_category_HEAVY_COMMERCIAL2_764c2e90-9efc-4f23-9229-9f0b41aaf2a5.png?v=1652199525" alt="pr-sample23" /></div>
-           
-              <figcaption>
-                <!--<div class="date"><span class="day">28</span><span class="month">Oct</span></div>-->
-                <h3 class="heavy-commercial" style="font-weight: bolder;">Heavy Commercial</h3>
-                 <a href="https://www.motolite.com/collections/heavy-commercial" target="_blank">View More</a>
-              </figcaption>
-            
-          </figure>
-          <!--<div class="custom-card bg-white margin-left-10 margin-right-10 d-none battery-category custom-carousel-item w-100">
-            <img src="{{ collection.image | image_url: width: 750 }}" class="img-fluid">
-            <div class="padding-15">
-              <div class="text-medium-16 lh-25">{{ collection.title }}</div>
-              <div class="margin-top-10 text-regular-13 text-color-807F7F lh-16 height-105">{{ collection.description }}</div>
-            </div>
-          </div>-->
-        </div>
-      
-       <div class="d-flex">
-          <figure class="snip1527 custom-carousel-item" onclick="window.location.href='https://www.motolite.com/collections/marine-leisure';">
-            <div class="image"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/battery_category_MARINE-LEISURE_e2ae3260-39d6-47ee-b554-4f725a3c7596.png?v=1652199525" alt="pr-sample23" /></div>
-           
-              <figcaption>
-                <!--<div class="date"><span class="day">28</span><span class="month">Oct</span></div>-->
-                <h3 class="marine-leisure" style="font-weight: bolder;">Marine & Leisure</h3>
-                 <a href="https://www.motolite.com/collections/marine-leisure" target="_blank">View More</a>
-              </figcaption>
-            
-          </figure>
-          <!--<div class="custom-card bg-white margin-left-10 margin-right-10 d-none battery-category custom-carousel-item w-100">
-            <img src="{{ collection.image | image_url: width: 750 }}" class="img-fluid">
-            <div class="padding-15">
-              <div class="text-medium-16 lh-25">{{ collection.title }}</div>
-              <div class="margin-top-10 text-regular-13 text-color-807F7F lh-16 height-105">{{ collection.description }}</div>
-            </div>
-          </div>-->
-        </div>
-      
-      <div class="d-flex ">
-          <figure class="snip1527 custom-carousel-item" onclick="window.location.href='https://www.motolite.com/collections/industrial';">
-            <div class="image"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/battery_category_INDUSTRIAL_741351f0-152f-443c-9e30-65c27f531b03.png?v=1652199525" alt="pr-sample23" /></div>
-            
-              <figcaption>
-                <!--<div class="date"><span class="day">28</span><span class="month">Oct</span></div>-->
-                <h3 class="automotive" style="font-weight: bolder;">Industrial</h3>
-                 <a href="https://www.motolite.com/collections/industrial" target="_blank">View More</a>
-              </figcaption>
-            
-          </figure>
-          <!--<div class="custom-card bg-white margin-left-10 margin-right-10 d-none battery-category custom-carousel-item w-100">
-            <img src="{{ collection.image | image_url: width: 750 }}" class="img-fluid">
-            <div class="padding-15">
-              <div class="text-medium-16 lh-25">{{ collection.title }}</div>
-              <div class="margin-top-10 text-regular-13 text-color-807F7F lh-16 height-105">{{ collection.description }}</div>
-            </div>
-          </div>-->
-        </div>
-        
-     
-          
-          
-          
-        <div class="d-flex position-absolute top-0 bottom-0 right--10 z-index-1 align-items-center custom-carousel-next-button">
-          <span class="material-icons bg-gray align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px; cursor: pointer;">
-            navigate_next
-          </span>
-        </div>
-      </div>
-  </div>
-  
-  <div class="margin-top-30 services">
-    <h2 class="text-black-40 lh-25" style="line-height: 35px;">Motolite Services</h2>
-    <div class="margin-top-20 position-relative" style="margin-left: 10px; margin-right: 10px; custom-carousel-item" id="servicesCarousel">
-      <div class="d-flex position-absolute top-0 bottom-0 left--10 z-index-1 align-items-center custom-carousel-previous-button">
-        <span class="material-icons bg-gray align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px; cursor: pointer;">
-          navigate_before
-        </span>
-      </div>
-      <div class="d-flex">
-       <div class="custom-card margin-left-10 margin-right-10 w-100 d-none custom-carousel-item service">
-          <a href="https://motolitestore.myshopify.com/pages/res-q">
-          <div class="image"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/SERVICE_SECTION_CARD_resQ_copy_4d94a0e1-9f6b-4d46-a90e-f852a5f5dd1a.png?v=1662648509" alt="Motolite’s RES-Q mobile app, for all your roadside emergencies and services." class="img-fluid">
-          <div class="bg-white padding-15-20-20">
-            <a href="https://motolitestore.myshopify.com/pages/res-q"><h3 class="text-medium-25 lh-20 services-title">RES-Q</h3></a>
-            <div class="margin-top-10 text-regular-18 lh-22 text-color-807F7F services-description" style="margin-top: 10px;padding:0 3px;" >
-              On-demand roadside assistance service in key cities throughout the Philippines via our mobile app.
-            </div>
-            <a href="https://motolitestore.myshopify.com/pages/res-q" class="margin-top-20 margin-bottom-20 text-semibold-10 lh-22 text-color-D22429">LEARN MORE</a>
-          </div>
-        </div>
-         </a>
-        </div>
-     
-       
-        
-        <div class="custom-card margin-left-10 margin-right-10 w-100 d-none custom-carousel-item service">
-          <a href="https://motolitestore.myshopify.com/pages/express-hatid">
-          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/SERVICE_SECTION_CARD_MEHcopy_461498f2-006a-44b7-b20d-c9a95f087613.png?v=1662648498" alt="Motolite’s Express Hatid services, the best for battery delivery and emergency battery replacement." class="img-fluid">
-          <div class="bg-white padding-15-20-20">
-            <a href="https://motolitestore.myshopify.com/pages/express-hatid"><h3 class="text-medium-25 lh-20 services-title">Express Hatid</h3></a>
-            <div class="margin-top-10 text-regular-18 lh-22 text-color-807F7F services-description">
-              Free battery delivery and installation. Available 24/7 in some parts of Metro Manila and Metro Cebu.
-            </div>
-            <a href="https://motolitestore.myshopify.com/pages/express-hatid" class="margin-top-10 text-semibold-10 lh-22 text-color-D22429">LEARN MORE</a>
-          </div>
-          </a>
-        </div>
-        
-        <div class="custom-card margin-left-10 margin-right-10 w-100 d-none custom-carousel-item service">
-          <a href="https://motolitestore.myshopify.com/pages/e-warranty">
-          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/SERVICE_SECTION_CARD_warrantycopy_fd13d8ad-40a7-4b6c-b570-65c1aa60dcff.png?v=1662648523" alt="Motolite’s E-Warranty." class="img-fluid">
-          <div class="bg-white padding-15-20-20">
-            <a href="https://motolitestore.myshopify.com/pages/e-warranty"><h3 class="text-medium-25 lh-20 services-title">E-Warranty</h3></a>
-            <div class="margin-top-10 text-regular-18 lh-22 text-color-807F7F services-description ">
-              Keeps your Motolite warranty in reach, through RES-Q and our nationwide warranty system.
-            </div>
-            <a href="https://motolitestore.myshopify.com/pages/e-warranty" class="margin-top-10 text-semibold-10 lh-22 text-color-D22429">LEARN MORE</a>
-          </div>
-          </a>
-        </div>
-      </div>
-      
-      <div class="d-flex position-absolute top-0 bottom-0 right--10 z-index-1 align-items-center custom-carousel-next-button">
-        <span class="material-icons bg-gray align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px; cursor: pointer;">
-          navigate_next
-        </span>
       </div>
     </div>
   </div>
-  
-  <div class="margin-top-30 advantages">
-    <h2 class="text-black-40 lh-25 align-items-center motolite-advantage" style="line-height: 35px;">The Motolite Advantage</h2>
-    <div class="margin-top-20 position-relative" id="advantagesCarousel">
-      <div class="d-flex position-absolute top-0 bottom-0 left--10 z-index-1 align-items-center custom-carousel-previous-button arrow-icon-previous">
-        <span class="material-icons bg-gray align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px; cursor: pointer;">
-          navigate_before
-        </span>
-      </div>
-      
-      <div class="d-flex animation parent">
-        <div class="custom-card bg-white margin-left-10 margin-right-10 w-100 d-none custom-carousel-item advantage height-350 padding-30-20-20">
-          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
-          <h3 class="text-medium-25 lh-20 margin-top-10 fadeInDown animated">Nationwide Coverage</h3>
-          <div class="text-regular-18 lh-22 text-color-807F7F margin-top-10 fadeInDown animated">
-            No matter where you are in the Philippines, your Motolite warranty goes with you.
-          </div>
-        </div>
-        
-        <div class="custom-card bg-white margin-left-10 margin-right-10 w-100 d-none custom-carousel-item advantage height-350 padding-30-20-20">
-          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
-          <h3 class="text-medium-25 lh-20 margin-top-10 fadeInDown animated">Online Warranty</h3>
-          <div class="text-regular-18 lh-22 text-color-807F7F margin-top-10 fadeInDown animated">
-            Register your warranty online thru the Motolite RES-Q app to know your battery warranty status.
-          </div>
-        </div>
-        
-        <div class="custom-card bg-white margin-left-10 margin-right-10 w-100 d-none custom-carousel-item advantage height-350 padding-30-20-20">
-          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
-          <h3 class="text-medium-25 lh-20 margin-top-10 fadeInDown animated">Trade-in Discount</h3>
-          <div class="text-regular-18 lh-22 text-color-807F7F margin-top-10 fadeInDown animated">
-            Trade-in your used battery for discounts and help recycle for our environment.
-          </div>
-        </div>
-        
-        <!--<div class="custom-card bg-white margin-left-10 margin-right-10 w-100 d-none custom-carousel-item advantage height-350 padding-30-20-20">
-          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
-          <div class="text-medium-25 lh-20 margin-top-10 fadeInDown animated">Integrated Battery Manufacturing Facilities</div>
-        </div>-->
-      </div>
-      
-      <div class="d-flex position-absolute top-0 bottom-0 right--10 z-index-1 align-items-center custom-carousel-next-button arrow-icon-next">
-        <span class="material-icons bg-gray align-middle " style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px; cursor: pointer;">
-          navigate_next
-        </span>
-      </div>
-    </div>
-  </div>
-
-
-  
-  
-  
-</div>
-
-
+</section>
 
 <script>
   $(document).ready(function () {
-    (function() {
+    (function () {
       initializeCarousels();
       initializeContactForm();
     })();
-    
+
     function initializeCarousels() {
-      let extraSmallScreenMediaQuery = window.matchMedia("(max-width: 575px)");
-      let smallScreenMediaQuery = window.matchMedia("(min-width: 576px) and (max-width: 767px)");
-      let mediumScreenMediaQuery = window.matchMedia("(min-width: 768px) and (max-width: 991px)");
-      let largeScreenMediaQuery = window.matchMedia("(min-width: 992px)");
-    
+      let extraSmallScreenMediaQuery = window.matchMedia('(max-width: 575px)');
+      let smallScreenMediaQuery = window.matchMedia('(min-width: 576px) and (max-width: 767px)');
+      let mediumScreenMediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 991px)');
+      let largeScreenMediaQuery = window.matchMedia('(min-width: 992px)');
+
       (function () {
         extraSmallScreenMediaMatched(extraSmallScreenMediaQuery);
         extraSmallScreenMediaQuery.addListener(extraSmallScreenMediaMatched);
-      
+
         smallScreenMediaMatched(smallScreenMediaQuery);
         smallScreenMediaQuery.addListener(smallScreenMediaMatched);
-      
+
         mediumScreenMediaMatched(mediumScreenMediaQuery);
         mediumScreenMediaQuery.addListener(mediumScreenMediaMatched);
-      
+
         largeScreenMediaMatched(largeScreenMediaQuery);
         largeScreenMediaQuery.addListener(largeScreenMediaMatched);
       })();
-    
+
       function carousel(elementId, numberOfItemsToDisplay) {
         let element = $(`#${elementId}`);
-        let previousButton = element.find(".custom-carousel-previous-button");
-        let nextButton = element.find(".custom-carousel-next-button");
-        let items = element.find(".custom-carousel-item");
+        let previousButton = element.find('.custom-carousel-previous-button');
+        let nextButton = element.find('.custom-carousel-next-button');
+        let items = element.find('.custom-carousel-item');
         let previousItemIndex = -1;
         let nextItemIndex = numberOfItemsToDisplay;
-      
+
         for (let i = 0; i < items.length; i++) {
           if (i < numberOfItemsToDisplay) {
-            $(items[i]).removeClass("d-none");
-          }
-          else {
-            $(items[i]).addClass("d-none");
+            $(items[i]).removeClass('d-none');
+          } else {
+            $(items[i]).addClass('d-none');
           }
         }
-      
+
         previousButton.off();
-        previousButton.click(function() {
+        previousButton.click(function () {
           if (previousItemIndex >= 0) {
-            $(items[--nextItemIndex]).addClass("d-none");
-            $(items[previousItemIndex]).removeClass("d-none");
-        
+            $(items[--nextItemIndex]).addClass('d-none');
+            $(items[previousItemIndex]).removeClass('d-none');
+
             previousItemIndex--;
           }
         });
-    
+
         nextButton.off();
-        nextButton.click(function() {
+        nextButton.click(function () {
           if (nextItemIndex < items.length) {
-            $(items[++previousItemIndex]).addClass("d-none");
-            $(items[nextItemIndex]).removeClass("d-none");
-      
+            $(items[++previousItemIndex]).addClass('d-none');
+            $(items[nextItemIndex]).removeClass('d-none');
+
             nextItemIndex++;
           }
         });
       }
-    
+
       function extraSmallScreenMediaMatched(mediaQueryList) {
         if (mediaQueryList.matches) {
-          carousel("batteryCategoryCarousel", 1);
-          carousel("servicesCarousel", 1);
-          carousel("advantagesCarousel", 1);
+          carousel('batteryCategoryCarousel', 1);
+          carousel('servicesCarousel', 1);
+          carousel('advantagesCarousel', 1);
         }
       }
-    
+
       function smallScreenMediaMatched(mediaQueryList) {
         if (mediaQueryList.matches) {
-          carousel("batteryCategoryCarousel", 1);
-          carousel("servicesCarousel", 1);
-          carousel("advantagesCarousel", 2);
+          carousel('batteryCategoryCarousel', 1);
+          carousel('servicesCarousel', 1);
+          carousel('advantagesCarousel', 2);
         }
       }
-    
+
       function mediumScreenMediaMatched(mediaQueryList) {
         if (mediaQueryList.matches) {
-          carousel("batteryCategoryCarousel", 2);
-          carousel("servicesCarousel", 2);
-          carousel("advantagesCarousel", 3);
+          carousel('batteryCategoryCarousel', 2);
+          carousel('servicesCarousel', 2);
+          carousel('advantagesCarousel', 3);
         }
       }
-    
+
       function largeScreenMediaMatched(mediaQueryList) {
         if (mediaQueryList.matches) {
-          carousel("batteryCategoryCarousel", 3);
-          carousel("servicesCarousel", 3);
-          carousel("advantagesCarousel", 4);
+          carousel('batteryCategoryCarousel', 3);
+          carousel('servicesCarousel', 3);
+          carousel('advantagesCarousel', 4);
         }
       }
     }
-    
+
     function initializeContactForm() {
       const emptyOrWhitespacesStringPattern = /^\s*$/;
-      
-      let contactUsForm = $("#contact_form");
-      let emailAddressInput = contactUsForm.find("#email");
-      let emailAddressInputErrorMessage = emailAddressInput.siblings(".input-error-message");
-      let contactNumberInput = contactUsForm.find("#contact_number");
-      let contactNumberInputErrorMessage = contactNumberInput.siblings(".input-error-message");
-      
-      (function() {
-        contactUsForm.find("#contact_form_submit").click(function() {
-          emailAddressInputErrorMessage.text("");
-          contactNumberInputErrorMessage.text("");
-          
+
+      let contactUsForm = $('#contact_form');
+      let emailAddressInput = contactUsForm.find('#email');
+      let emailAddressInputErrorMessage = emailAddressInput.siblings('.input-error-message');
+      let contactNumberInput = contactUsForm.find('#contact_number');
+      let contactNumberInputErrorMessage = contactNumberInput.siblings('.input-error-message');
+
+      (function () {
+        contactUsForm.find('#contact_form_submit').click(function () {
+          emailAddressInputErrorMessage.text('');
+          contactNumberInputErrorMessage.text('');
+
           let emailAddressValidationResult = validateEmailAddress(emailAddressInput.val());
-          
+
           if (!emailAddressValidationResult.isValid) {
             emailAddressInputErrorMessage.text(emailAddressValidationResult.errorMessage);
           }
-          
+
           let contactNumberValidationResult = validateContactNumber(contactNumberInput.val());
-          
+
           if (!contactNumberValidationResult.isValid) {
             contactNumberInputErrorMessage.text(contactNumberValidationResult.errorMessage);
           }
-          
+
           if (emailAddressValidationResult.isValid && contactNumberValidationResult.isValid) {
             contactUsForm.submit();
           }
         });
       })();
-      
+
       function validateEmailAddress(emailAddress) {
         if (emptyOrWhitespacesStringPattern.test(emailAddress)) {
-          return { isValid: false, errorMessage: "Email Address is required." };
+          return { isValid: false, errorMessage: 'Email Address is required.' };
         }
-        
+
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+/.test(emailAddress)) {
-          return { isValid: false, errorMessage: "Invalid email address." };
+          return { isValid: false, errorMessage: 'Invalid email address.' };
         }
-        
+
         return { isValid: true };
       }
-      
+
       function validateContactNumber(contactNumber) {
         if (emptyOrWhitespacesStringPattern.test(contactNumber)) {
-          return { isValid: false, errorMessage: "Contact Number is required." };
+          return { isValid: false, errorMessage: 'Contact Number is required.' };
         }
-        
+
         if (!/^[0-9]*$/.test(contactNumber)) {
-          return { isValid: false, errorMessage: "Invalid Contact Number." };
+          return { isValid: false, errorMessage: 'Invalid Contact Number.' };
         }
-        
+
         return { isValid: true };
       }
     }
