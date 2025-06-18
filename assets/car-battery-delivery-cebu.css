@@ -1,0 +1,449 @@
+@font-face {
+    font-family: 'poppins'; /* Name of the font */
+    src: url('{{ 'Poppins-Thin.ttf' | asset_url }}') format('ttf')
+    font-weight: normal;
+    font-style: normal;
+}
+
+section.contact-details-for-cebu .contact-details p:nth-of-type(1) {
+  width: 100%;
+  max-width: 330px;
+  color: #121212;
+  font-family: Raleway, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: .69px;
+}
+
+
+.contact-details-for-cebu {
+  background: url("https://cdn.shopify.com/s/files/1/0615/7982/1304/files/cebu-banner-bg.jpg?v=1729661386") top/cover no-repeat;
+      height: 100%;
+    max-height: 1000px;
+
+}
+.contact-details-for-cebu .image img {
+  width: 100%;
+  max-width: 411px;
+  height: 100%;
+  max-height: 413px;
+}
+
+.contact-details-for-cebu .image {
+  width: unset;
+}
+
+.contact-details-for-cebu .logo-contact-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 955px;
+  margin-bottom: 73px;
+  margin-left: 70px;
+}
+
+.contact-details-for-cebu .logo-contact-con a {
+  text-decoration: none;
+  color: #d5232b;
+  text-align: center;
+   font-family: 'Raleway',sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 42px; /* 120% */
+  letter-spacing: 0.66px;
+}
+
+.contact-details-for-cebu .contact-details {
+  text-align: center;
+}
+
+.contact-details-for-cebu .contact-details p {
+  color: #121212;
+  font-family: "Raleway", sans-serif;
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.24px; /* 128.727% */
+  letter-spacing: 0.66px;
+}
+
+.contact-details-for-cebu .advantage p.sub-title {
+  background: #d5232b;
+  width: 100%;
+  max-width: 485px;
+  padding: 12px 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 28.31px; /* 128.682% */
+  letter-spacing: 0.69px;
+  color: #fff;
+  box-shadow: 7px 8px 0px #ff0;
+}
+
+.contact-details-for-cebu .advantage p:not(.sub-title) {
+  font-weight: 700;
+  color: #d5232b;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-details-for-cebu .advantage {
+  width: 100%;
+  max-width: 965px;
+}
+
+.contact-details-for-cebu .advantage ul {
+  padding: 0px;
+  margin-left: 370px;
+  margin-bottom: 0px;
+}
+
+.contact-details-for-cebu .advantage ul li {
+  list-style: none;
+  font-weight: 700;
+  color: #000;
+  font-size: 16.5px;
+  font-family: "Raleway", sans-serif;
+}
+
+
+section.banner{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/banner_17cf517a-7f02-4103-bc08-6420702ab17d.jpg?v=1728529292')no-repeat center center/cover;
+}
+
+
+section.motolite_expree_hatid img{
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+section.car_batteries_available .content{
+    height: 100%;
+}
+
+section.car_batteries_available .content .image {
+  margin-bottom: 34px;
+}
+
+section.car_batteries_available .row{
+    margin-bottom: 70px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+
+section.car_batteries_available .row:last-child{
+    gap: 40px 8px;
+}
+
+section.why_should_you_book_motolite .content{
+    background-color: rgba(146, 2, 0, 1);
+    padding: 35px 46px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    gap: 20px 0;
+}
+
+section.why_should_you_book_motolite .row{
+    gap: 46px 0;
+}
+
+section.why_should_you_book_motolite .red_box{
+    width: calc(50% - 11.25px);
+}
+
+section.book_with_motolite{
+    background: url('/assets/img/car_battery/book\ with\ motolite.jpg')no-repeat center center/cover;
+}
+
+section.book_with_motolite .contact_item{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+section.book_with_motolite .contact_item a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Segoe UI",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.5px; /* 191.667% */
+    letter-spacing: 0.66px;
+}
+
+section.book_with_motolite .contact{
+    display: flex;
+    flex-direction: column;
+    gap:  13px 0;
+    margin-bottom: 20px;
+}
+
+section.book_with_motolite .row{
+    gap: 30px 0;
+}
+
+section.motolite_expree_hatid .d-flex {
+    gap: 70px;
+}
+
+section.motolite_expree_hatid .content p:nth-child(2){
+  margin-bottom: 30px;
+}
+
+
+.battery_delivery .content,
+section.motolite_expree_hatid .content {
+    width: 100%;
+}
+
+.battery_delivery .content h2 {
+    width: 100%;
+    max-width: 500px;
+}
+
+.battery_delivery .content p {
+  margin-bottom: 40px;
+}
+
+.battery_delivery .content p:last-child{
+  margin-bottom: 0px;
+}
+
+
+.battery_delivery .image img,
+section.motolite_expree_hatid .image img {
+    min-width: 694px;
+}
+
+.car_batteries_available {
+    background: #F8F6F6;
+}
+
+.car_batteries_available .header {
+       width: 100%;
+    display: flex;
+    max-width: 918px;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.battery_delivery .d-flex{
+    gap: 70px;
+}
+
+
+.battery_delivery .header {
+    width: 100%;
+    max-width: 1148px;
+    margin: 0 auto;
+}
+
+section.book-with-motolite {
+    display: flex;
+    height: 100%;
+    max-height: 630px;
+}
+
+section.book-with-motolite  .book-now {
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/booknow-bg.jpg?v=1728530028') center/cover no-repeat ;
+    place-content: end;
+}
+
+section.book-with-motolite .reach-us {
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/reach-us-bg.jpg?v=1728530028') center/cover no-repeat ;
+
+}
+
+section.book-with-motolite  .book-now,
+section.book-with-motolite .reach-us {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    place-items: center;
+}
+
+section.book-with-motolite .reach-us .content {
+    width: 100%;
+    max-width: 580px;
+    margin-right: 10px;
+    margin-left: 72px;
+}
+
+section.book-with-motolite .book-now .content {
+    width: 100%;
+    max-width: 545px;
+    margin-left: 10px;
+    margin-right: 89px;
+}
+
+section.book-with-motolite .reach-us h2 {
+    margin-bottom: 20px;
+}
+
+section.book-with-motolite .reach-us  .contact {
+    margin-bottom: 20px;
+}
+
+section.book-with-motolite .reach-us  .contact .contact_item {
+    margin-bottom: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+section.book-with-motolite .reach-us  .contact .contact_item:last-child{
+    margin-bottom: 0px;
+}
+
+section.book-with-motolite .reach-us  .contact .contact_item a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.why_should_you_book_motolite .header {
+     width: 100%;
+    display: flex;
+    max-width: 1148px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.why_should_you_book_motolite .header h2 {
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+    .battery_delivery .image img,
+    section.motolite_expree_hatid .image img{
+        min-width: unset;
+    }
+
+
+    section.why_should_you_book_motolite .red_box{
+        width: 100%;
+    }
+
+
+    section.motolite_expree_hatid .d-flex {
+        flex-direction: column-reverse;
+    }
+
+    .battery_delivery .d-flex{
+        flex-direction: column;
+    }
+
+    section.book-with-motolite {
+        flex-direction: column;
+    }
+
+    section.book-with-motolite .reach-us .content,
+    section.book-with-motolite .book-now .content{
+        max-width: unset;
+        margin: 0px;
+    }
+
+  section.book-with-motolite {
+    height: unset;
+    max-height: unset;
+  }
+
+}
+
+.card-container .car_cards .text-content h3 {
+margin-bottom: 14px;
+}
+
+.card-container .car_cards .text-content p {
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 1200px) {
+
+  .contact-details-for-cebu .logo-contact-con{
+    width: unset;
+    max-width: unset;
+    margin-left: 0px;
+  }
+
+  section.contact-details-for-cebu.global-padding {
+    padding: 70px 0px;
+  }
+
+    .contact-details-for-cebu .logo-contact-con{
+    margin-bottom: 50px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-details-for-cebu {
+    height: unset;
+    max-height: unset;
+  }
+  
+}
+
+@media (max-width: 1190px) {
+      .card-container .car_cards .text-content h3{
+    height: 100%;
+    min-height: 70px;
+  }
+}
+
+@media (max-width: 1095px) {
+    .card-container { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+      .card-container .car_cards .text-content p{
+            height: 100%;
+    min-height: 70px;
+      }
+
+  
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    section.contact-details-for-cebu.global-padding {
+    padding: 50px 0px;
+  }
+
+  .card-container .car_cards .text-content h3,
+    .card-container .car_cards .text-content p{
+    min-height: unset;
+  }
+  
+    .card-container { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+  .contact-details-for-cebu .advantage p:not(.sub-title){
+    margin-left: 50px;
+  }
+
+  .contact-details-for-cebu .advantage ul{
+    margin-left: 100px;
+  }
+  
+}

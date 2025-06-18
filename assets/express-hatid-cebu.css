@@ -1,0 +1,307 @@
+
+*section .row>*{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+section  .row{
+    --bs-gutter-x: 0 !important;
+}
+section.banner{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Banner-cebu2_new.jpg?v=1712108882')no-repeat center center/cover;
+    padding-top: 40px;
+}
+section h2{
+  margin-bottom: 14px;
+}
+section.banner p{
+    color: #121212;
+    font-size: 16.5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.235px;
+}
+section.banner p a{
+     font-size: 35px;
+    color: #d5232b;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+section.banner .top-content{
+    display: flex;
+    margin-bottom: 552px;
+    text-align: center;
+    height: 199px;
+}
+
+section.banner .top-content-right {
+    max-width: 360px;
+    margin-top: 40px;
+  left: -146px;
+}
+
+section.banner .top-content-left img{
+    max-width: 375px;
+}
+
+section.banner .top-content-left {
+    margin-left: 60px;
+    margin-right: 293px;
+}
+
+section.banner .top-content p{
+    text-align: center;
+    margin-left: 38px;
+}
+@media (min-width: 1900px) {
+
+section.banner .top-content-right {
+left:28px;
+}
+  
+}
+@media all and (max-width:1500px) {
+  section.banner .top-content-left{
+    display: none;
+  }
+  section.banner .top-content {
+    display: block;
+  }
+  section.banner .top-content-right {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+ 
+  section.banner .top-content-right .text-cebu{
+    width: auto
+  }
+  section.banner .top-content-right {
+    max-width: 371px;
+  }
+  section.banner .top-content p{
+    margin-left: 0;
+}
+
+}
+
+.text-cebu {
+  font-size: 46px!important;
+  line-height:1!important;
+  width:112%;
+  margin-top: -18px;
+  font-weight:700;
+}
+section.banner p:not(:first-child) a{
+    margin-top: 17px;
+}
+section.banner .content{
+    width: 50%;
+}
+section.banner .content p{
+    color: #000;
+    font-size: 16.5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.5px;
+}
+
+section.banner .banner-logo{
+    display: none;
+    margin-bottom: 30px;
+}
+
+.content_container {
+  padding: 56px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #920200;
+  color:#fff;
+}
+.fast-reliable {
+  color:#fff;
+  font-weight:700;
+}
+.content p{
+    color: #fff;
+    font-size: 16.5px;
+}
+.content li{
+    list-style: disc;
+    color: #fff;
+    font-size: 16.5px;
+  text-align:left;
+}
+
+section.reliable-and-quick{
+    padding: 100px 0;
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/MEH_tools.jpg?v=1706481594')no-repeat center center/cover;
+}
+section.reliable-and-quick h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 70px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+section.reliable-and-quick p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+section.reliable-and-quick .content-container{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+.hide-to-small{
+  display: block;
+}
+.show-to-small {
+  display:none;
+}
+@media (min-width:1501px) {
+  section.banner .top-content-right {
+   position: relative;
+    right: 71px;
+  }
+}
+@media (max-width:1200px) {
+    section.reliable-and-quick{
+        padding: 70px 30px;
+    }
+    section .wrapper{
+        padding: 0;
+    }
+  section.banner .left-content{   
+    bottom: 0;
+    }
+  section.banner .top-content p{
+    margin-left: 0;
+}
+  .top-content {
+    margin-bottom: 64px!important;
+  }
+  .left-content {
+    bottom: 28px;
+  }
+  section.banner .top-content {
+    top: 60px;
+}
+}
+@media (max-width:1500px) {
+    section.banner .banner-logo{
+        display: block;
+        max-width: 300px;
+        top: 31px;
+    }
+  
+    section.banner .banner-logo img{
+        width: 100%;
+        max-width: 300px;
+    }
+    section.banner .row{
+        flex-direction: column;
+        align-items: center;
+      
+    }
+   section.banner .top-content-right {
+       right: auto;
+  }
+  .text-cebu {
+   margin-top: -52px;
+  }
+  .left-content {
+    bottom: 346px;
+}
+@media (max-width:767px) {
+  section.banner .banner-logo img {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+
+  }
+  .hide-to-small{
+  display:none;
+}
+.show-to-small {
+  display:block;
+}
+  section.reliable-and-quick h1{
+  font-size:40px;
+  }
+  .fast-reliable {
+    font-size:28px;
+    margin-bottom: 15px;
+  }
+  section.banner .top-content{
+      top: 10px;
+        right: 9px;
+}
+   section.banner .banner-logo{
+    margin-top: 10px;
+     margin-bottom:10px;
+     
+   }
+    section.reliable-and-quick{
+        padding: 50px 20px;
+    }
+  .text-cebu {
+       font-size: 22px!important;
+    text-wrap: nowrap;
+    text-align: center!important;
+    margin-left: -15px;
+    margin-top: 15px;
+  }
+  section.banner p a {
+    font-size: 26px;
+    
+  }
+  section.banner p a {
+    margin-left: 32px;
+  }
+  .left-content {
+    bottom: 80px;
+}
+  section.banner {
+      padding-top: 24px;
+
+}
+  section.banner .content {
+    width: 80%;
+}
+.top-content{
+    margin-bottom: 120px!important;
+}
+  section.banner .top-content p{
+    margin-left: -12px;
+}
+  section.banner .left-content {
+    top: -27px;
+  }
+.top-content p{
+    text-align: center;
+      color: #121212;
+    font-size: 16.5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.235px;
+}
+.hotline {
+     font-size: 35px;
+    color: #d5232b;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+ li {
+   color:#fff;
+ }
+   

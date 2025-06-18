@@ -1,0 +1,159 @@
+<link rel="stylesheet" href="{{ 'motolite-express-hatid-default.css' | asset_url }}">
+
+<section class="contact-details-for-default global-padding"
+    style="background: url('{{ section.settings.background_image | image_url }}') no-repeat center center/cover;"
+    id="now_covering_default">
+
+    <div class="content">
+        <div class="logo-contact-con">
+            <div class="image">
+                {% if section.settings.banner_logo %}
+                <img src="{{ section.settings.banner_logo | image_url }}" alt="{{ section.settings.logo_alt }}">
+                {% endif %}
+            </div>
+            <div class="contact-details">
+                {% if section.settings.headline %}
+                <p>{{ section.settings.headline }}</p>
+                {% endif %}
+
+                {% if section.settings.smart_number %}
+                <a href="tel:{{ section.settings.smart_number | remove: ' ' }}">{{ section.settings.smart_number }}</a>
+                <p>Smart</p>
+                {% endif %}
+
+                {% if section.settings.globe_number %}
+                <a href="tel:{{ section.settings.globe_number | remove: ' ' }}">{{ section.settings.globe_number }}</a>
+                <p>Globe</p>
+                {% endif %}
+
+                {% if section.settings.tollfree_number %}
+                <a href="tel:{{ section.settings.tollfree_number | remove: ' ' }}">{{ section.settings.tollfree_number }}</a>
+                <p>Provincial Toll-Free</p>
+                {% endif %}
+            </div>
+        </div>
+
+      <div class="advantage">
+        {% if section.settings.promo_text %}
+          <p class="sub-title">{{ section.settings.promo_text }}</p>
+        {% endif %}
+      
+        {% for block in section.blocks %}
+          {% if block.type == 'location' %}
+            <div class="d-flex logo-tex">
+              {% if block.settings.icon %}
+                <img src="{{ block.settings.icon | image_url }}" alt="">
+              {% endif %}
+              <p>{{ block.settings.city_name }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Now Covering Default",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_logo",
+      "label": "Banner Logo"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt",
+      "label": "Logo Alt Text",
+      "default": "default"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline Text",
+      "default": "default"
+    },
+    {
+      "type": "text",
+      "id": "smart_number",
+      "label": "Smart Number",
+      "default": "default"
+    },
+    {
+      "type": "text",
+      "id": "globe_number",
+      "label": "Globe Number",
+      "default": "default"
+    },
+    {
+      "type": "text",
+      "id": "tollfree_number",
+      "label": "Provincial Toll-Free Number",
+      "default": "default"
+    },
+    {
+      "type": "text",
+      "id": "promo_text",
+      "label": "Promo Text",
+      "default": "FREE Battery Delivery & Installation"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "Service Area",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Location Icon"
+        },
+        {
+          "type": "text",
+          "id": "city_name",
+          "label": "City Name",
+          "default": "default"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dynamic Advantage",
+      "blocks": [
+        {
+          "type": "location",
+          "settings": {
+            "city_name": "Default City"
+          }
+        },
+        {
+          "type": "location",
+          "settings": {
+            "city_name": "Default City"
+          }
+        },
+        {
+          "type": "location",
+          "settings": {
+            "city_name": "Default City"
+          }
+        },
+        {
+          "type": "location",
+          "settings": {
+            "city_name": "Default City"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+

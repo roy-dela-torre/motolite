@@ -1,0 +1,352 @@
+.mt-40 {
+  margin-top: 40px;
+}
+.width-35 {
+    width: 35px;
+  }
+  
+  .height {
+    height: 35px;
+  }
+  
+  .battery-categories {
+    width: 100%;
+  }
+  
+  .advantages {
+    width: 100%;
+  }
+  
+  .custom-footer {
+    width: 100%;
+    text-align:left;
+  }
+  
+  .custom-footer-text1 {
+    padding-right: 35px;
+  }
+  h3 {
+  color: white;
+  }
+  .snip1527 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: white;
+  float: left;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px 1%;
+  <!--max-width: 310px;-->
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+.custom-card.bg-white.margin-left-10.margin-right-10.w-100.custom-carousel-item.advantage.height-350.padding-30-20-20{
+  max-width: 100%;
+}
+div#advantagesCarousel{
+  max-width: 100%;
+  margin: 40px auto ;
+}
+.padding-30-15-20.d-flex.flex-column.align-items-center h2.text-black-40.lh-25{
+  margin: 0 auto 30px auto !important;
+  text-align: center
+}
+.padding-30-15-20.d-flex.flex-column.align-items-center h3.text-medium-25.lh-20.margin-top-10.fadeInDown.animated{
+  line-height: 110%;
+  margin-bottom: 15px;
+}
+.padding-30-15-20.d-flex.flex-column.align-items-center .custom-card.bg-white.margin-left-10.margin-right-10.w-100.custom-carousel-item.advantage.height-350.padding-30-20-20 img.d-block.mx-auto{
+  margin: 0 auto 10px auto !important;
+}
+.snip1527 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1527 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+.snip1527 figcaption {
+  padding: 10px 15px 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.snip1527 figcaption:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #700877;
+  content: '';
+  background: -moz-linear-gradient(270deg, #f7c306 0%, #d91f2b 100%, #ff2759 100%);
+  background: -webkit-linear-gradient(270deg, #f7c306 0%, #d91f2b 100%, #ff2759 100%);
+  background: linear-gradient(270deg, #f7c306 0%, #d91f2b 50%, #ff2759 100%);
+  opacity: 0.8;
+  z-index: -1;
+  width: 635px;
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 22px) 100%, 0% 100%);
+
+}
+
+.snip1527 .date {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #700877;
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 10px 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: -25px;
+}
+
+.snip1527 .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.snip1527 .date .month {
+  font-size: 11px;
+}
+
+.snip1527 h3,
+.snip1527 p {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 600px) and (max-width: 915px) {
+.snip1527 h3 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 5px;
+  font-size:20px;
+}
+}
+.snip1527 p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 0px;
+}
+
+.snip1527 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.snip1527:hover img,
+.snip1527.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+  .bg-gray {
+    background-color: #e9ecef;
+  }
+  .services-title {
+  line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+  a {
+    text-decoration: none; 
+  
+  }
+  
+  .services-description {
+    overflow: hidden;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+}
+  .h-80 {
+    height: 80px;
+  }
+.motolite-logo {
+  max-width: 200px!important;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+.mr-2 {
+  margin-right: 20px;
+}
+  @media only screen and (max-width: 575px) {
+    .battery-categories {
+      max-width: 450px;
+    }
+    
+    .services {
+      max-width: 450px;
+    }
+    
+    .advantages {
+      max-width: 450px;
+    }
+    
+    .custom-footer {
+      max-width: 450px;
+    }
+    
+    .custom-footer-text1 {
+      padding-right: 0;
+    }
+    
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .battery-categories {
+      max-width: 561px;
+    }
+    
+    .battery-category {
+      max-width: 243px;
+    }
+    
+    .services {
+      max-width: 546px;
+    }
+    
+    .service {
+      max-width: 506px;
+    }
+    
+    .advantages {
+      max-width: 546px;
+    }
+    
+    .advantage {
+      max-width: 243px;
+    }
+    
+    .custom-footer {
+      max-width: 546px;
+    }
+    
+    .custom-footer-text1 {
+      padding-right: 0;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .hide-on-small {
+      display: none;
+    }
+    .show-on-small {
+      display: block;
+    }
+  }
+	
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .battery-categories {
+      max-width: 738px;
+    }
+    
+    .battery-category {
+      max-width: 219px;
+    }
+    
+    .services {
+      max-width: 738px;
+    }
+    
+    .service {
+      max-width: 339px;
+    }
+    
+    .advantages {
+      max-width: 738px;
+    }
+    
+    .advantage {
+      max-width: 219px;
+    }
+    
+    .custom-footer {
+      max-width: 738px;
+    }
+    .show-on-small {
+      display: none;
+      
+    }
+    .hide-on-small {
+      display: block;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .battery-categories {
+      /*max-width: 962px;*/
+    }
+    
+    .battery-category {
+      max-width: 215.5px;
+    }
+    
+    .services {
+      /*max-width: 962px;*/
+    }
+    
+    .service {
+      max-width: 500px;
+    }
+    
+    .advantages {
+      max-width: 962px;
+    }
+    
+    .advantage {
+      max-width: 215.5px;
+    }
+    
+    .custom-footer {
+      max-width: 1200px;
+    } 
+    .show-on-small {
+      display: none;
+    }
+    .hide-on-small {
+      display: block;
+    }
+  
+  h4 {
+    color: #212529;
+    font-weight: 700;
+    font-size: 1.50rem;
+}
+  .logo {
+    float: right;
+    margin: 5px 5px;
+  
+  }
+  .icon {
+  font-size: -10px;
+  width: -10px;
+  text-align: center;
+ 
+  }
+  }
+    

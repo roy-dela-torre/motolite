@@ -1,0 +1,2406 @@
+<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- if settings.predictive_search_enabled -%}
+  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
+
+<noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+      header-drawer {
+        justify-self: start;
+        margin-left: -1.2rem;
+      }
+
+      img.header__heading-link.link.link--text.focus-inset.motolite-logo {
+          margin: 10px 0px !important;
+          padding: 0px !important;
+      }
+
+        /* new navbar styling */
+      .find-batter-order-now-con {
+        background: #d91f2b;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 24px;
+        width: 100%;
+
+      }
+
+      .find-batter-order-now-con .btn-btn {
+        width: 100%;
+        max-width: 201px;
+        height: 100%;
+        min-height: 46px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .find-batter-order-now-con .btn-btn a {
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16.25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        font-style: italic;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(1) {
+        background: #fff;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(1) a {
+        color: #212529;
+        border: 2px solid transparent;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(2) {
+        border: 2px solid #fff;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(1):hover {
+        background: #212529;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(1):hover a {
+        color: #f8c606 !important;
+            background: #212529 !important;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(1):hover a svg path {
+        fill: #f8c606;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(2):hover {
+        border: 2px solid #212529;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(2):hover a {
+        color: #212529 !important;
+      }
+
+      .find-batter-order-now-con .btn-btn:nth-of-type(2):hover a svg path {
+        fill: #212529;
+      }
+
+      .header__inline-menu > ul > li > a {
+        font-size: 22px !important;
+      }
+
+      .new-yellow-line a:hover {
+    background: unset !important;
+    color: #212529 !important;
+}
+
+      .header__icons {
+        width: 100%;
+      }
+      
+
+      @media(max-width: 1440px){
+        ul.list-menu.list-menu--inline button{
+          font-size: 18px !important;
+        }
+        ul.list-menu.list-menu--inline li a {
+    font-size: 18px !important;
+}
+      }
+
+      @media (max-width: 1365px) {
+          /* .find-batter-order-now-con {
+            display: none;
+          } */
+  
+          .show-on-small-only {
+            display: none;
+            top: 75px !important;
+            padding: 0px 30px;
+          }
+
+
+        button.btn.btn-secondary.dropdown-toggle {
+          padding: 0px;
+          margin: 0px;
+        }
+
+        .list-menu--inline {
+          gap: 10px;
+        }
+
+        .header__inline-menu > ul > li > a {
+          padding: 0px;
+          margin: 0px;
+        }
+        
+      }
+
+        @media (max-width: 1467px) {
+      
+          .header:not(.header--top-center) * > .header__search{
+            display: none;
+          }
+                
+      }
+
+      @media (max-width: 1250px) {
+          .find-batter-order-now-con .btn-btn{
+                  max-width: unset;
+          }
+      }
+
+      @media (max-width: 1199px) {
+          .find-batter-order-now-con .btn-btn a{
+            font-size: 14px;
+          }
+
+        .header__icons,
+        .header__inline-menu {
+          display: none;
+        }
+
+        header-drawer {
+          display: block !important;
+        }
+
+
+        .header{
+            display: flex !important;
+            flex-direction: row-reverse !important;
+            justify-content: space-between !important;
+        }
+
+        div#menu-drawer {
+            height: 100% !important;
+            min-height: 500px;
+        }
+
+        .menu-drawer__inner-container{
+          height: unset;
+          position: unset;
+        }
+
+        .header-wrapper a span:hover, .header-wrapper a span:active, .header-wrapper a:active{
+          text-decoration: underline;
+          background: #fff;
+        }
+
+        a.menu-drawer__menu-item.list-menu__item.link.link--text.focus-inset:hover {
+            color: #fff !important;
+            background: #ffff;
+        }
+
+        .show-on-small-only.header-icons-container.find-batter-order-now-con.order-find-battery-inside-nav {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: none !important;
+            padding: 0px;
+            gap: 15px;
+        }
+
+        .menu-drawer__utility-links{
+          background: none;
+        }
+
+        .find-batter-order-now-con .btn-btn:nth-of-type(1) {
+            background: #F8C606;
+        }
+
+         .find-batter-order-now-con .btn-btn:nth-of-type(1) p {
+           color: #212529;
+         }
+
+        .header-icons-container {
+            box-shadow: none;
+        }
+        
+      }
+
+
+      details-modal.header__search{
+        display: none !important;
+      }
+      
+
+       @media (max-width: 989px) {
+           .header{
+              display: flex !important;
+              flex-direction: row-reverse !important;
+              justify-content: space-between !important;
+           }
+
+         .header > .header__search{
+           display: none !important;
+         }
+         
+       }
+      
+      
+      @media screen and (min-width: 990px) {
+        header-drawer {
+          display: none;
+        }
+      }
+
+      .menu-drawer-container {
+        display: flex;
+      }
+
+      .list-menu {
+        list-style: none;
+        padding: 0 10px;
+        margin: 0;
+      }
+
+      .list-menu--inline {
+        display: inline-flex;
+      }
+
+      summary.list-menu__item {
+        padding-right: 2.7rem;
+      }
+
+      .list-menu__item {
+        display: flex;
+        align-items: center;
+        line-height: calc(1 + 0.3 / var(--font-body-scale));
+      }
+
+      .list-menu__item--link {
+        text-decoration: none;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        line-height: calc(1 + 0.8 / var(--font-body-scale));
+      }
+
+      .btn-search-battery:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      @media screen and (min-width: 750px) {
+        .list-menu__item--link {
+          padding-bottom: 0.5rem;
+          padding-top: 0.5rem;
+        }
+        .list-social__link {
+          align-items: center;
+          display: flex;
+          padding: 1.3rem;
+          color: white;
+        }
+      }
+      @media all and (min-width: 990px) and (max-width: 1365px) {
+        .header__inline-menu > ul > li > a {
+          color: #ffffff;
+          font-size: 21px;
+          font-family: Raleway !important;
+          font-weight: 600 !important;
+        }
+        .sticky-top {
+          position: sticky;
+          top: 119px;
+          z-index: 2;
+        }
+      }
+
+      @media all and (max-width: 989px) {
+        .header__icons {
+          display: none;
+        }
+        /* .header > .header__search {
+          display: flex !important;
+          grid-area: icons !important;
+          justify-self: end !important;
+        } */
+        .sticky-top {
+          position: sticky;
+          top: 97px;
+          z-index: 2;
+        }
+      }
+
+      @media all and (max-width: 1365px) {
+        /*.show-on-small-only {
+          display: block!important;
+        }*/
+
+        #shopify-section-announcement-bar {
+          display: none;
+        }
+
+        .menu-drawer .list-social__link svg {
+          height: 100%;
+          width: 100%;
+          max-width: 30px;
+        }
+
+        .menu-drawer__utility-links ul {
+          display: flex;
+          align-items: center;
+        }
+
+        .show-on-large-only {
+          display: none !important;
+        }
+        .header-wrapper {
+          background-color: #d91f2b !important;
+        }
+        .header__heading-link .logo-transparent-img {
+          display: none !important;
+        }
+        .motolite-logo {
+          max-width: 200px !important;
+          display: flex;
+          margin-right: auto;
+          margin-left: auto;
+          align-items: center;
+        }
+        .cart-notification {
+          display: block !important;
+        }
+        .header__heading-link .logo-red-img {
+          display: block !important;
+        }
+        .customer button {
+          margin: 4rem 0 1.5rem;
+          color: #fff;
+        }
+
+        .menu-drawer__navigation {
+          padding: 0rem 0;
+        }
+        .header__active-menu-item {
+          color: #ffffff !important;
+        }
+        .field__input,
+        .customer .field input {
+          flex-grow: 1;
+          text-align: left;
+          padding: 1.5rem;
+          background-color: #fff;
+        }
+        .button,
+        .button-label,
+        .shopify-challenge__button,
+        .customer button {
+          font-size: 1.5rem;
+          letter-spacing: 0.1rem;
+          line-height: calc(1 + 0.2 / var(--font-body-scale));
+          color: #fff;
+        }
+        .cart-count-bubble {
+          color: white;
+          background: black;
+        }
+
+        .find-battery-btn {
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #212529;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          background-color: transparent;
+          border-radius: 0.25rem;
+          transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+          height: 70px;
+          transform: skew(-21deg);
+          border: 1px solid transparent;
+        }
+        .find-battery-btn:hover,
+        .find-battery-btn.show {
+          background-color: #ffffff !important;
+          /*box-shadow: 0 3px 20px 0 rgb(0 0 0 / 16%);*/
+          outline: none;
+          color: #d91f2b !important;
+        }
+        .find-battery-btn:hover > .fa-car-battery,
+        .find-battery-btn.show > .fa-car-battery {
+          color: #d91f2b !important;
+        }
+        .fa-car-battery {
+          transform: skew(21deg) !important;
+        }
+        .header-option-font {
+          font-family: "Raleway";
+          font-weight: 800;
+          font-size: 10px;
+          transform: skew(21deg);
+        }
+        .my-account-btn {
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #212529;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          background-color: transparent;
+          border: 1px solid transparent;
+          padding: 0.375rem 0.75rem;
+          border-radius: 0.25rem;
+          transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+          height: 70px;
+          transform: skew(-21deg);
+        }
+        .my-account-btn:hover,
+        .my-account-btn.show {
+          background-color: #ffffff !important;
+          /*box-shadow: 0 3px 20px 0 rgb(0 0 0 / 16%);*/
+          outline: none;
+          color: #d91f2b !important;
+        }
+        .my-account-btn:hover > .fa-chalkboard-user,
+        .my-account-btn.show > .fa-chalkboard-user {
+          color: #d91f2b !important;
+        }
+        .fa-chalkboard-user {
+          transform: skew(21deg) !important;
+        }
+        .call-us-btn {
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #212529;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          background-color: transparent;
+          border: 1px solid transparent;
+          padding: 0.375rem 0.75rem;
+          border-radius: 0.25rem;
+          transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+          height: 70px;
+          transform: skew(-21deg);
+        }
+        .call-us-btn:hover,
+        .call-us-btn.show {
+          background-color: #ffffff !important;
+          /*box-shadow: 0 3px 20px 0 rgb(0 0 0 / 16%);*/
+          outline: none;
+          color: #d91f2b !important;
+        }
+        .call-us-btn:hover > .fa-mobile-screen-button,
+        .call-us-btn.show > .fa-mobile-screen-button {
+          color: #d91f2b !important;
+        }
+        .fa-mobile-screen-button {
+          transform: skew(21deg) !important;
+        }
+        .dropdown {
+          position: static !important;
+        }
+        .dropdown .dropdown-menu {
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+          border: transparent;
+        }
+        .dropdown-item {
+          font-family: "Raleway";
+          font-weight: 400;
+          font-size: 14px;
+        }
+        .dropdown-item {
+          padding: 0rem 1rem !important;
+        }
+        .dropdown-item:active {
+          color: red;
+        }
+        .dropdown-item:hover {
+          color: red;
+          background-color: #ffffff !important;
+        }
+        .dropdown-menu {
+          width: 100% !important;
+          /*transform: translate3d(0px, 70px, 0px)!important;*/
+        }
+        .dropdown-menu .hr {
+          height: 0;
+          border-bottom: solid 1px #eaeaea;
+          margin: 0 10px !important;
+          opacity: 100;
+        }
+        select {
+          height: 30px;
+          border: solid 1px #424242 !important;
+          padding: 5px;
+          background-color: transparent !important;
+          font-size: 14px !important;
+          color: #424242;
+          font-family: "Raleway";
+          font-weight: 800;
+          border-radius: 10px !important;
+          width: 100%;
+          text-align: start;
+          cursor: pointer;
+        }
+        .btn-search-battery {
+          height: 30px;
+          border: solid 1px #d22429 !important;
+          background-color: #d22429 !important;
+          font-size: 20px !important;
+          color: #ffffff;
+          font-family: "Raleway";
+          font-weight: 800;
+          border-radius: 10px !important;
+          width: 100%;
+          cursor: pointer;
+          text-align: center;
+        }
+
+        .skew-container {
+          margin-right: 20px !important;
+          margin-left: 20px !important;
+        }
+        .skew-container:before {
+          content: " ";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background: linear-gradient(0deg, #f8e500 0, #f7c306 99.89%);
+        }
+      }
+
+      .menu-drawer__menu-item {
+        color: white;
+        margin-top: 1.1rem;
+      }
+
+      @media all and (min-width: 1365px) {
+        .show-on-small-only {
+          display: none;
+        }
+        .show-on-large-only {
+          display: block !important;
+        }
+        .header__heading-link .logo-transparent-img {
+          display: block !important;
+        }
+
+        .header__heading-link .logo-red-img {
+          display: none !important;
+        }
+        .cart-notification {
+          display: none;
+        }
+        .header__inline-menu > ul > li > a {
+          color: #ffffff;
+          font-size: 22px;
+          font-family: Raleway !important;
+          font-weight: 600;
+        }
+        .fa-3x {
+          font-size: 2em !important;
+        }
+        .fa {
+          margin-top: 10px !important;
+        }
+        .header-wrapper {
+          background-color: #d91f2b !important;
+        }
+        .header__icon .icon {
+          color: #ffffff !important;
+        }
+        .cart-count-bubble {
+          color: white;
+        }
+        .dropdown .dropdown-menu {
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+          border: transparent;
+        }
+        .dropdown-item {
+          font-family: "Raleway";
+          font-weight: 400;
+          font-size: 14px;
+        }
+        .dropdown-item {
+          padding: 0rem 1rem !important;
+        }
+        .dropdown-item:active {
+          color: red;
+        }
+        .dropdown-item:hover {
+          color: red;
+          background-color: #ffffff !important;
+        }
+        .dropdown-menu .hr {
+          height: 0;
+          border-bottom: solid 1px #eaeaea;
+          margin: 0 10px !important;
+          opacity: 100;
+        }
+        .btn-search-battery {
+          border: solid 1px #d22429 !important;
+          background-color: #d22429 !important;
+          font-size: 20px !important;
+          color: #ffffff;
+          font-family: "Raleway";
+          font-weight: 800;
+          border-radius: 10px !important;
+          width: 180px;
+          cursor: pointer;
+          text-align: center;
+        }
+        .find-battery-btn {
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.25;
+          color: #212529;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          background-color: transparent;
+          border: 1px solid transparent;
+          padding: 0.375rem 0.75rem;
+          border-radius: 0.25rem;
+          height: 75px;
+          width: 100px;
+          transform: skew(-21deg);
+        }
+        .find-battery-btn:hover,
+        .find-battery-btn.show {
+          background-color: #ffffff !important;
+          /*box-shadow: 0 3px 20px 0 rgb(0 0 0 / 16%);*/
+          outline: none;
+          color: #d91f2b !important;
+        }
+        .find-battery-btn:hover > .fa-car-battery,
+        .find-battery-btn.show > .fa-car-battery {
+          color: #d91f2b !important;
+        }
+        .header-option-font {
+          font-family: "Raleway";
+          font-weight: 800;
+          font-size: 13px;
+          margin-left: 0;
+          transform: skew(21deg);
+          text-align: center;
+        }
+        .fa-car-battery {
+          transform: skew(21deg) !important;
+          color: 424242 !important;
+        }
+        .activate button[name="decline"],
+        .addresses li > button,
+        .addresses form button[type] {
+          color: rgb(var(--color-link));
+        }
+        select {
+          height: 30px;
+          border: solid 1px #424242 !important;
+          padding: 5px;
+          background-color: transparent !important;
+          font-size: 14px !important;
+          color: #424242;
+          font-family: "Raleway";
+          font-weight: 800;
+          border-radius: 10px !important;
+          width: 180px;
+          text-align: start;
+          cursor: pointer;
+        }
+        .my-account-btn {
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.25;
+          color: #212529;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          background-color: transparent;
+          border: 1px solid transparent;
+          padding: 0.375rem 0.75rem;
+          border-radius: 0.25rem;
+          height: 75px;
+          width: 100px;
+          transform: skew(-21deg);
+        }
+        .my-account-btn:hover,
+        .my-account-btn.show {
+          background-color: #ffffff !important;
+          /*box-shadow: 0 3px 20px 0 rgb(0 0 0 / 16%);*/
+          outline: none;
+          color: #d91f2b !important;
+        }
+        .my-account-btn:hover > .fa-chalkboard-user,
+        .my-account-btn.show > .fa-chalkboard-user {
+          color: #d91f2b !important;
+        }
+        .fa-chalkboard-user {
+          transform: skew(21deg) !important;
+        }
+        .call-us-btn {
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.25;
+          color: #212529;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          background-color: transparent;
+          border: 1px solid transparent;
+          padding: 0.375rem 0.75rem;
+          border-radius: 0.25rem;
+          height: 75px;
+          width: 100px;
+          transform: skew(-21deg);
+        }
+        .call-us-btn:hover,
+        .call-us-btn.show {
+          background-color: #ffffff !important;
+          /*box-shadow: 0 3px 20px 0 rgb(0 0 0 / 16%);*/
+          outline: none;
+          color: #d91f2b !important;
+        }
+        .call-us-btn:hover > .fa-mobile-screen-button,
+        ..call-us-btn.show > .fa-mobile-screen-button {
+          color: #d91f2b !important;
+        }
+        .fa-mobile-screen-button {
+          transform: skew(21deg) !important;
+        }
+
+        .header__active-menu-item {
+          color: #ffffff !important;
+        }
+        .header-wrapper a span:hover {
+          color: #ffffff !important;
+        }
+
+        #find-battery-icon-solid {
+          display: none;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        .header__icons {
+          position: relative;
+          display: block;
+          z-index: 2;
+        }
+        /* .header__icons:before {
+          content: " ";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background: linear-gradient(0deg,#f8e500 0,#f7c306 99.89%);
+           -moz-transform: 	scaleX(1) scaleY(1) scaleZ(1) skewX(-20deg);
+        -webkit-transform: 	scaleX(1) scaleY(1) scaleZ(1) skewX(-20deg);
+        transform: 		scaleX(1) scaleY(1) scaleZ(1) skewX(-20deg);
+        } */
+        #batteryServicesNav {
+          max-width: 165rem;
+          margin: 0 auto;
+          padding-left: calc(213px + 1rem);
+          white-space: nowrap;
+          overflow-x: auto;
+        }
+
+        /* #batterySearch {
+        width: 600px;
+        display: none;
+        justify-content: center;
+        position: absolute;
+        top: 82px;
+        right: 13px;
+        z-index: 4;
+      }
+       */
+      }
+
+      @media all and (max-width: 515px) {
+      }
+
+      h4.bold {
+        font-weight: bold;
+      }
+      .mr-11 {
+        margin-right: 11px;
+      }
+      .mt-10 {
+        margin-top: 10px;
+      }
+      .mt-16 {
+        margin-top: 16px;
+      }
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+      .ml-12 {
+        margin-left: 12px;
+      }
+      .pt-10 {
+        padding-top: 10px !important;
+      }
+      .pt-12 {
+        padding-top: 12px !important;
+      }
+      .white-text {
+        color: #ffffff;
+      }
+      .yellow-text {
+        color: #f8ef23 !important;
+      }
+      .gray-text {
+        color: 585858 !important;
+      }
+      .width-60 {
+        width: 60px;
+      }
+
+      .form-inline {
+        display: flex !important;
+      }
+      .header {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+      .call-us-contact-font {
+        font-family: "Raleway";
+        font-weight: 800;
+        font-size: 11px;
+      }
+      .header-icons-container {
+        background-color: #d22429;
+        height: 70px;
+        box-shadow: 0 3px 20px 0 rgb(0 0 0 / 16%);
+      }
+
+      .btn.selected {
+        color: #56ccf2 !important;
+      }
+
+      .btn.active {
+        color: #56ccf2 !important;
+      }
+      .list-social__item .icon {
+        height: 0;
+        width: 0;
+      }
+
+      @media screen and (min-width: 750px) {
+        .page-width {
+          padding: 0 1.5rem;
+        }
+      }
+
+      .button,
+      .button-label,
+      .shopify-challenge__button,
+      .customer button {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        line-height: calc(1 + 0.2 / var(--font-body-scale));
+        color: #fff !important;
+      }
+      .search__input.field__input {
+        padding-right: 5rem;
+        background-color: #fff;
+      }
+
+      @media screen and (min-width: 990px) {
+
+        .header__heading,
+        .header__heading-link {
+          justify-self: start;
+          margin: 0 -10px;
+        }
+      }
+
+      @media all and (min-width: 1366px) {
+        .header__inline-menu > ul > li > a {
+          color: #ffffff;
+
+          font-family: Raleway !important;
+          font-weight: 600 !important;
+        }
+        .header-option-font {
+          font-family: "Raleway";
+          font-weight: 800;
+          font-size: 13px;
+          margin-left: 20px;
+          transform: skew(15deg);
+          text-align: center;
+        }
+        .fa-3x {
+          font-size: 2em !important;
+        }
+        select {
+          height: 40px;
+          border: solid 1px #424242 !important;
+          padding: 5px;
+          background-color: transparent !important;
+          font-size: 20px !important;
+          color: #424242;
+          font-family: "Raleway";
+          font-weight: 800;
+          border-radius: 10px !important;
+          text-align: start;
+          cursor: pointer;
+        }
+        .text-battery {
+          color: #212529;
+          font-weight: 700;
+          font-size: 1.8rem;
+        }
+        .dropdown-item {
+          font-family: "Raleway";
+          font-weight: 400;
+          font-size: 20px;
+        }
+        .call-us-contact-font {
+          font-family: "Raleway";
+          font-weight: 800;
+          font-size: 0.9em;
+        }
+        .cart-count-bubble {
+          color: white;
+        }
+        .header__active-menu-item {
+          color: #ffffff !important;
+        }
+        .cart-notification {
+          display: none !important;
+        }
+      }
+    </style>
+
+
+
+
+
+<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+
+
+
+
+<!--<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+  </symbol>
+</svg>-->
+<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+         <style>
+        .new-yellow-line {
+          display: flex;
+          justify-content: space-between;
+          background: #f8c606;
+          padding: 0px 30px;
+          height: 100%;
+          min-height: 45px;
+          
+        }
+
+        .new-contact-details {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .new-contact {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          flex-wrap: wrap;
+        }
+
+        .official-hotlines-con {
+          display: flex;
+          align-items: center;
+          gap: 35px;
+          position: relative;
+        }
+
+        .messenger-account-cart-con {
+          display: flex;
+          gap: 16px;
+        }
+
+        .official-hotlines.new-contact-details::after {
+            content: '';
+            display: block;
+            background: #fff;
+            height: 100%;
+            width: 100%;
+            max-width: 250px;
+            position: absolute;
+            left: -45px;
+            clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+        }
+
+        .official-hotlines.new-contact-details svg,
+        .official-hotlines.new-contact-details p {
+          z-index: 1;
+          font-family: Raleway;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 18px;
+          color: #212529;
+          margin-bottom: 0px;
+        }
+
+        .new-contact a {
+          text-decoration: none;
+          color: #212529;
+          font-family: Raleway;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 33px;
+        }
+
+        .new-contact-details a {
+          text-decoration: none;
+          color: #212529;
+          text-align: center;
+          font-family: Raleway;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 16.25px;
+          text-transform: capitalize;
+        }
+
+           .new-contact p {
+              margin: 0px;
+              color: #212529;
+              text-align: center;
+              font-family: Raleway;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 33px;
+            }
+
+           .dropdown-hotlines {
+            display: none;
+            }
+
+           .dropdown-hotlines.show {
+             display:block;
+           }
+
+           .view-more-hotlines {
+              display: none;
+          }
+
+           .official-hotlines-mobile {
+              display: none;
+          }
+           
+           @media(max-width: 1440px){
+                .view-more-hotlines {
+                   display: block;
+                    position: relative;
+                }
+
+                 .dropdown-hotlines.show {
+                  display: block;
+                  position: absolute;
+                  background: #fff;
+                  z-index: 2;
+                  width: 100%;
+                  min-width: 270px;
+                  padding: 10px;
+                  top: 31px;
+              }
+
+             .new-contact-details.contact-numbers {
+                  display: none;
+              }
+                .view-more-hotlines p {
+                    margin: 0px;
+                    color: #212529;
+                    text-align: center;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 16.25px;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+              }
+             
+           }
+
+            @media(max-width: 865px){
+
+                .official-hotlines-mobile {
+                  display: block;
+                  }
+              
+                .official-hotlines-con,
+                .messenger-account-cart-con {
+                    display: none;
+                }
+
+                .official-hotlines-mobile .new-contact-details.contact-numbers {
+                  display:none;
+                }
+
+               .official-hotlines-mobile .new-contact-details.contact-numbers.show {
+                  display: block;
+                  margin-top: 12px;
+               }
+
+              .official-hotlines-mobile .new-contact-details.contact-numbers {
+                  background: #212529;
+                  padding: 16px 12px;
+              }
+
+              .official-hotlines-mobile .messenger-link a,
+              .official-hotlines-mobile .new-contact a,
+              .official-hotlines-mobile .new-contact p {
+                  color: #fff;
+              }
+
+              .official-hotlines-mobile {
+                  width: 100%;
+              }
+
+              .new-yellow-line {
+                  padding: 12px 30px;
+              }
+
+              .official-hotlines-mobile p.dropdown-mobile-for-hotlines {
+                    padding: 12px 7px;
+                    border: 1px solid #000;
+                }
+              
+              .dropdown-mobile-for-hotlines {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 12px;
+                    border: 1px solid #000;
+                }
+
+              .dropdown-mobile-for-hotlines p {
+                    margin: 0px;
+                    color: #212529;
+                    text-align: center;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 16.25px; 
+                }
+            }
+           
+           
+      </style>
+
+    <div class="new-yellow-line">
+
+      <div class="official-hotlines-mobile ">
+
+              <div class="dropdown-mobile-for-hotlines">
+                 <p>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                      <path d="M19.3593 8.7276C19.3901 9.46575 19.127 10.186 18.6275 10.7304C18.128 11.2747 17.433 11.5987 16.6949 11.6313C16.6518 11.6333 16.6087 11.6343 16.5657 11.6343C16.3696 11.6342 16.174 11.613 15.9825 11.571C15.4141 12.4486 14.6687 13.198 13.7941 13.771C12.9196 14.3441 11.935 14.7284 10.9034 14.8992C10.7814 15.2576 10.538 15.5622 10.2153 15.7602C9.89252 15.9582 9.51074 16.0372 9.13591 15.9836C8.76108 15.93 8.41676 15.7471 8.16247 15.4666C7.90819 15.186 7.75991 14.8254 7.74328 14.4471C7.72665 14.0689 7.84271 13.6967 8.0714 13.3949C8.30009 13.0931 8.62703 12.8807 8.99571 12.7944C9.36439 12.7081 9.75163 12.7533 10.0905 12.9222C10.4294 13.0912 10.6986 13.3732 10.8516 13.7195C12.3039 13.4509 13.6159 12.6812 14.5589 11.5446C15.502 10.4079 16.0163 8.97635 16.0121 7.49942C16.0121 4.01017 13.1735 1.17148 9.6842 1.17148C6.19495 1.17148 3.35626 4.01017 3.35626 7.49942C3.35607 8.57835 3.63181 9.63941 4.15728 10.5817C4.17509 10.6128 4.18845 10.6463 4.19699 10.6811C4.24775 10.8222 4.24232 10.9773 4.18184 11.1145C4.12135 11.2517 4.01044 11.3604 3.87206 11.4181C3.53321 11.5607 3.16928 11.6341 2.80164 11.634C2.75837 11.634 2.71502 11.633 2.67157 11.631C1.9338 11.5981 1.23922 11.2739 0.740128 10.7295C0.241034 10.1852 -0.0218399 9.46518 0.00914658 8.72733C0.0216033 8.43309 0.0146525 8.17056 0.00785795 7.9167C0.00153197 7.67768 -0.00506735 7.4305 0.00578836 7.17258C0.0381866 6.45214 0.348092 5.77218 0.870596 5.27512C1.3931 4.77805 2.08767 4.50245 2.80883 4.50602C3.96687 1.85644 6.61258 0 9.6842 0C12.7558 0 15.4016 1.85644 16.5596 4.50606C17.2808 4.50195 17.9756 4.77731 18.4982 5.27439C19.0208 5.77146 19.3306 6.45162 19.3626 7.17215C19.3735 7.43046 19.3669 7.6776 19.3605 7.91662C19.3538 8.17052 19.3468 8.43317 19.3593 8.7276ZM14.5968 7.49942C14.5965 8.25204 14.4234 8.99453 14.0907 9.66965C13.7581 10.3448 13.2748 10.9345 12.6783 11.3933C12.0817 11.8521 11.3877 12.1677 10.6498 12.3159C9.91188 12.4641 9.14982 12.4408 8.42236 12.2478L6.43393 13.3961C6.3336 13.4541 6.21834 13.481 6.10273 13.4734C5.98712 13.4658 5.87635 13.4241 5.78444 13.3536C5.69252 13.2831 5.62358 13.1869 5.58634 13.0772C5.54911 12.9675 5.54524 12.8492 5.57524 12.7373L6.08342 10.8415C5.24184 9.93184 4.77357 8.73867 4.7718 7.49942C4.7718 4.78987 6.97539 2.58569 9.6842 2.58569C12.393 2.58569 14.5968 4.78987 14.5968 7.49942ZM8.31845 7.49942C8.31845 7.34407 8.25674 7.19509 8.14689 7.08524C8.03704 6.97539 7.88806 6.91368 7.73271 6.91368H7.73173C7.61593 6.9139 7.50279 6.94843 7.40661 7.01293C7.31043 7.07742 7.23553 7.16897 7.19136 7.27602C7.1472 7.38307 7.13575 7.50081 7.15848 7.61436C7.1812 7.72791 7.23707 7.83218 7.31903 7.91399C7.40099 7.99579 7.50536 8.05147 7.61896 8.07398C7.73255 8.0965 7.85027 8.08483 7.95723 8.04047C8.0642 7.9961 8.15561 7.92103 8.21993 7.82473C8.28424 7.72843 8.31857 7.61522 8.31857 7.49942H8.31845ZM10.2701 7.49942C10.27 7.48025 10.269 7.46109 10.2669 7.44202C10.2651 7.42288 10.2622 7.40385 10.2584 7.38501C10.2549 7.36624 10.2502 7.34772 10.2443 7.32956C10.2389 7.3112 10.2322 7.29324 10.2252 7.27528C10.2182 7.25731 10.2096 7.24052 10.2006 7.22373C10.1917 7.20685 10.1819 7.19042 10.1713 7.17453C10.1606 7.15847 10.1491 7.14296 10.1369 7.12806C10.1249 7.11313 10.112 7.09892 10.0983 7.0855C10.085 7.07183 10.0706 7.05894 10.0557 7.04645C10.0408 7.03473 10.0252 7.02302 10.0092 7.01248C9.99333 7.00189 9.97692 6.99211 9.96004 6.98319C9.94321 6.97421 9.92568 6.96601 9.90807 6.95859C9.89049 6.95122 9.87251 6.94484 9.85422 6.93945C9.8177 6.92772 9.77998 6.92013 9.74176 6.9168C9.68439 6.91128 9.62652 6.91404 9.56994 6.925C9.5511 6.92885 9.53248 6.93367 9.51414 6.93945C9.49584 6.94482 9.47785 6.95121 9.46025 6.95859C9.44268 6.96601 9.42511 6.97421 9.40832 6.98319C9.39153 6.99217 9.37512 7.00193 9.35908 7.01248C9.34303 7.02302 9.32745 7.03473 9.31304 7.04645C9.29781 7.05894 9.28375 7.07183 9.27008 7.0855C9.25638 7.09893 9.24346 7.11314 9.23139 7.12806C9.21929 7.14297 9.20797 7.15847 9.19745 7.17453C9.18672 7.19041 9.17681 7.20683 9.16777 7.22373C9.15876 7.24046 9.15067 7.25767 9.14352 7.27528C9.13611 7.29303 9.12959 7.31115 9.124 7.32956C9.11857 7.34752 9.11388 7.36626 9.10998 7.38501C9.10612 7.40385 9.10324 7.42288 9.10135 7.44202C9.09944 7.46115 9.09862 7.48029 9.09862 7.49942C9.09862 7.51855 9.09944 7.53808 9.10135 7.55721C9.10327 7.57622 9.10615 7.59512 9.10998 7.61383C9.11388 7.63258 9.11857 7.65132 9.124 7.66968C9.12959 7.68796 9.13611 7.70594 9.14352 7.72356C9.15067 7.7413 9.15876 7.75864 9.16777 7.7755C9.17672 7.79229 9.18691 7.80869 9.19745 7.8247C9.20797 7.84063 9.2193 7.85601 9.23139 7.87078C9.24355 7.88574 9.25647 7.90008 9.27008 7.91373C9.28375 7.92701 9.29781 7.94029 9.31304 7.95239C9.32772 7.96459 9.34309 7.97593 9.35908 7.98637C9.37512 7.99691 9.39149 8.00706 9.40832 8.01604C9.44223 8.03372 9.47764 8.04836 9.51414 8.05978C9.53246 8.06524 9.5512 8.06993 9.56994 8.07384C9.60759 8.08154 9.64593 8.08533 9.68436 8.08516C9.83952 8.08475 9.98826 8.02315 10.0983 7.91373C10.1253 7.88633 10.1497 7.85653 10.1713 7.8247C10.1818 7.80869 10.1916 7.79229 10.2006 7.7755C10.2096 7.75871 10.2178 7.74114 10.2252 7.72356C10.2326 7.70599 10.2389 7.68764 10.2443 7.66968C10.2501 7.65137 10.2548 7.63272 10.2584 7.61383C10.2622 7.59512 10.2651 7.57622 10.2669 7.55721C10.2689 7.53799 10.2699 7.51867 10.2699 7.49934L10.2701 7.49942ZM12.2225 7.49942C12.2225 7.34407 12.1608 7.19509 12.051 7.08524C11.9411 6.97539 11.7921 6.91368 11.6368 6.91368H11.6357C11.5199 6.9139 11.4067 6.94845 11.3105 7.01295C11.2144 7.07744 11.1395 7.169 11.0953 7.27605C11.0511 7.3831 11.0397 7.50084 11.0624 7.61439C11.0852 7.72793 11.141 7.8322 11.223 7.914C11.305 7.9958 11.4093 8.05148 11.5229 8.07399C11.6365 8.0965 11.7542 8.08483 11.8612 8.04046C11.9682 7.9961 12.0596 7.92102 12.1239 7.82472C12.1882 7.72842 12.2225 7.61522 12.2225 7.49942Z" fill="#212529"/>
+                    </svg>
+                    Official Hotlines:
+                  </p>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                  <path d="M4.55576 5.5C4.39645 5.5 4.23716 5.43998 4.11571 5.32018L0.293676 1.5486C0.0505454 1.30868 0.0505454 0.919689 0.293676 0.679867C0.536709 0.440044 0.930826 0.440044 1.17398 0.679867L4.55576 4.01717L7.93756 0.679983C8.18069 0.440161 8.57477 0.440161 8.81778 0.679983C9.06103 0.919806 9.06103 1.30879 8.81778 1.54871L4.99581 5.3203C4.87429 5.44011 4.71501 5.5 4.55576 5.5Z" fill="#212529"/>
+                </svg>
+              </div>
+           
+            
+             <div class="new-contact-details contact-numbers drop-the-hotline-numbers">
+              <div class="new-contact">
+                <div class="new-contact">
+                  <p><strong>Globe:</strong></p>
+                  <a href="tel:0917-891-6686">0917-891-6686</a>
+              </div>
+                <div class="new-contact">
+                  <p><strong>Smart:</strong></p>
+                  <a href="tel:0918-843-6686">0918-843-6686</a>
+              </div>
+                  <p><strong>NCR:</strong></p>r
+                  <a href="tel:02-8370-66866">(02)8370-6686</a>
+              </div>
+              <div class="new-contact">
+                  <p><strong>Provincial:</strong></p>
+                  <a href="tel:1-800-10-370-6686">1-800-10-370-6686</a>
+              </div>
+              
+              
+                <div class="messenger-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 0C8.02219 0 6.08879 0.58649 4.4443 1.6853C2.79981 2.78412 1.51809 4.3459 0.761209 6.17316C0.00433288 8.00043 -0.1937 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8078C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C20 7.34783 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0ZM10 15.325C9.3941 15.3254 8.79093 15.244 8.20682 15.083L6.07841 16.25V14.0432C4.65909 12.983 3.75 11.3636 3.75 9.5375C3.75 6.34091 6.54887 3.75 10 3.75C13.4511 3.75 16.25 6.34204 16.25 9.5375C16.25 12.733 13.4511 15.325 10 15.325Z" fill="#F8C606"/>
+                  <path d="M14.0375 7.91704L10.6205 11.5409L9.02954 9.84545L5.92386 11.5432L9.34091 7.91704L10.9716 9.6125L14.0375 7.91704Z" fill="#F8C606"/>
+                </svg>
+                <a href="https://www.facebook.com/motoliteexpresshatid/"><strong>Connect via Messenger</strong></a>
+            </div>
+            </div>
+      </div>
+
+      
+  <div class="official-hotlines-con">
+    <div class="official-hotlines new-contact-details">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21" fill="none">
+            <path
+                d="M25.099 11.4096C25.1376 12.3323 24.8086 13.2326 24.1843 13.9131C23.5599 14.5935 22.6911 14.9985 21.7686 15.0392C21.7146 15.0417 21.6607 15.043 21.607 15.043C21.3619 15.0428 21.1174 15.0163 20.878 14.9639C20.1675 16.0609 19.2358 16.9976 18.1426 17.7139C17.0494 18.4303 15.8187 18.9106 14.5292 19.1241C14.3767 19.5722 14.0724 19.9528 13.669 20.2004C13.2656 20.4479 12.7883 20.5467 12.3198 20.4796C11.8512 20.4126 11.4209 20.184 11.103 19.8333C10.7851 19.4826 10.5998 19.0319 10.579 18.559C10.5582 18.0862 10.7033 17.6209 10.9892 17.2437C11.275 16.8665 11.6837 16.601 12.1445 16.4931C12.6054 16.3852 13.0894 16.4417 13.513 16.6529C13.9366 16.8641 14.2731 17.2166 14.4644 17.6495C16.2798 17.3138 17.9198 16.3517 19.0986 14.9308C20.2774 13.51 20.9202 11.7205 20.9151 9.87438C20.9151 5.51282 17.3667 1.96446 13.0052 1.96446C8.64359 1.96446 5.09523 5.51282 5.09523 9.87438C5.09499 11.2231 5.43967 12.5494 6.0965 13.7273C6.11876 13.7662 6.13547 13.808 6.14614 13.8515C6.20958 14.0278 6.2028 14.2218 6.1272 14.3933C6.0516 14.5647 5.91296 14.7006 5.73998 14.7727C5.31642 14.9509 4.8615 15.0427 4.40195 15.0427C4.34787 15.0427 4.29367 15.0414 4.23936 15.0389C3.31716 14.9977 2.44893 14.5924 1.82506 13.912C1.2012 13.2316 0.872602 12.3316 0.911336 11.4093C0.926906 11.0415 0.918218 10.7133 0.909725 10.396C0.901817 10.0972 0.893568 9.78823 0.907138 9.46583C0.947636 8.56528 1.33502 7.71533 1.98815 7.094C2.64128 6.47267 3.50949 6.12816 4.41094 6.13263C5.85849 2.82066 9.16563 0.500107 13.0052 0.500107C16.8447 0.500107 20.1519 2.82066 21.5994 6.13268C22.501 6.12754 23.3694 6.47175 24.0227 7.09309C24.6759 7.71444 25.0632 8.56463 25.1031 9.46529C25.1167 9.78818 25.1085 10.0971 25.1005 10.3959C25.0921 10.7133 25.0834 11.0416 25.099 11.4096ZM19.1459 9.87438C19.1455 10.8152 18.9291 11.7433 18.5133 12.5872C18.0975 13.4311 17.4935 14.1682 16.7477 14.7417C16.002 15.3152 15.1345 15.7098 14.2121 15.895C13.2898 16.0802 12.3372 16.0511 11.4279 15.8099L8.94232 17.2453C8.8169 17.3177 8.67283 17.3513 8.52832 17.3419C8.38381 17.3324 8.24534 17.2803 8.13045 17.1921C8.01555 17.104 7.92938 16.9837 7.88283 16.8466C7.83629 16.7094 7.83145 16.5616 7.86895 16.4217L8.50418 14.052C7.4522 12.9149 6.86686 11.4234 6.86465 9.87438C6.86465 6.48744 9.61914 3.73222 13.0052 3.73222C16.3912 3.73222 19.1459 6.48744 19.1459 9.87438ZM11.298 9.87438C11.298 9.6802 11.2208 9.49397 11.0835 9.35666C10.9462 9.21935 10.76 9.14221 10.5658 9.14221H10.5646C10.4198 9.14248 10.2784 9.18565 10.1582 9.26627C10.0379 9.34688 9.94431 9.46133 9.8891 9.59514C9.8339 9.72895 9.81959 9.87612 9.848 10.0181C9.8764 10.16 9.94624 10.2903 10.0487 10.3926C10.1511 10.4948 10.2816 10.5644 10.4236 10.5926C10.5656 10.6207 10.7127 10.6061 10.8464 10.5507C10.9802 10.4952 11.0944 10.4014 11.1748 10.281C11.2552 10.1606 11.2981 10.0191 11.2981 9.87438H11.298ZM13.7375 9.87438C13.7374 9.85041 13.7361 9.82646 13.7336 9.80263C13.7313 9.7787 13.7277 9.75492 13.7229 9.73137C13.7185 9.70791 13.7126 9.68475 13.7053 9.66205C13.6985 9.63911 13.6902 9.61666 13.6814 9.5942C13.6726 9.57175 13.6619 9.55076 13.6506 9.52977C13.6395 9.50867 13.6273 9.48814 13.614 9.46827C13.6007 9.44819 13.5863 9.42881 13.571 9.41018C13.556 9.39153 13.5399 9.37376 13.5228 9.35698C13.5062 9.3399 13.4881 9.32379 13.4695 9.30817C13.4509 9.29352 13.4314 9.27888 13.4114 9.2657C13.3916 9.25246 13.3711 9.24025 13.35 9.22909C13.3289 9.21787 13.307 9.20762 13.285 9.19834C13.263 9.18914 13.2405 9.18115 13.2177 9.17442C13.172 9.15976 13.1249 9.15027 13.0771 9.14611C13.0054 9.13921 12.9331 9.14266 12.8623 9.15636C12.8388 9.16117 12.8155 9.1672 12.7926 9.17442C12.7697 9.18114 12.7472 9.18912 12.7252 9.19834C12.7033 9.20762 12.6813 9.21787 12.6603 9.22909C12.6393 9.24032 12.6188 9.25252 12.5987 9.2657C12.5787 9.27888 12.5592 9.29352 12.5412 9.30817C12.5222 9.32379 12.5046 9.3399 12.4875 9.35698C12.4704 9.37377 12.4542 9.39154 12.4391 9.41018C12.424 9.42881 12.4099 9.4482 12.3967 9.46827C12.3833 9.48812 12.3709 9.50865 12.3596 9.52977C12.3484 9.55068 12.3382 9.57219 12.3293 9.5942C12.32 9.6164 12.3119 9.63904 12.3049 9.66205C12.2981 9.68451 12.2923 9.70794 12.2874 9.73137C12.2826 9.75492 12.279 9.7787 12.2766 9.80263C12.2742 9.82655 12.2732 9.85047 12.2732 9.87438C12.2732 9.8983 12.2742 9.92271 12.2766 9.94662C12.279 9.97038 12.2826 9.99401 12.2874 10.0174C12.2923 10.0408 12.2981 10.0643 12.3049 10.0872C12.3119 10.1101 12.32 10.1325 12.3293 10.1546C12.3382 10.1767 12.3484 10.1984 12.3596 10.2195C12.3708 10.2405 12.3835 10.261 12.3967 10.281C12.4099 10.3009 12.424 10.3201 12.4391 10.3386C12.4543 10.3573 12.4705 10.3752 12.4875 10.3923C12.5046 10.4089 12.5222 10.4255 12.5412 10.4406C12.5596 10.4558 12.5788 10.47 12.5987 10.4831C12.6188 10.4962 12.6393 10.5089 12.6603 10.5202C12.7027 10.5423 12.747 10.5606 12.7926 10.5748C12.8155 10.5817 12.8389 10.5875 12.8623 10.5924C12.9094 10.602 12.9573 10.6068 13.0053 10.6066C13.1993 10.606 13.3852 10.529 13.5228 10.3923C13.5565 10.358 13.587 10.3208 13.614 10.281C13.6272 10.261 13.6394 10.2405 13.6506 10.2195C13.6619 10.1985 13.6721 10.1765 13.6814 10.1546C13.6907 10.1326 13.6985 10.1097 13.7053 10.0872C13.7126 10.0643 13.7184 10.041 13.7229 10.0174C13.7277 9.99401 13.7312 9.97038 13.7336 9.94662C13.7361 9.92259 13.7373 9.89845 13.7373 9.87429L13.7375 9.87438ZM16.1781 9.87438C16.1781 9.6802 16.1009 9.49397 15.9636 9.35666C15.8263 9.21935 15.6401 9.14221 15.4459 9.14221H15.4445C15.2997 9.14249 15.1583 9.18567 15.0381 9.26629C14.9179 9.34691 14.8242 9.46136 14.769 9.59517C14.7138 9.72898 14.6995 9.87615 14.7279 10.0181C14.7564 10.16 14.8262 10.2904 14.9287 10.3926C15.0311 10.4949 15.1616 10.5645 15.3036 10.5926C15.4455 10.6207 15.5927 10.6061 15.7264 10.5507C15.8601 10.4952 15.9744 10.4014 16.0548 10.281C16.1352 10.1606 16.1781 10.0191 16.1781 9.87438Z"
+                fill="#212529" />
+        </svg>
+        <p>Official Hotlines:</p>
+    </div>
+    <div class="new-contact-details contact-numbers">
+        <div class="new-contact">
+           <div class="new-contact">
+            <p><strong>Globe:</strong></p>
+            <a href="tel:0917-891-6686">0917-891-6686</a>
+        </div>
+           <div class="new-contact">
+            <p><strong>Smart:</strong></p>
+            <a href="tel:0918-843-6686">0918-843-6686</a>
+        </div>
+            <p><strong>NCR:</strong></p>
+            <a href="tel:02-8370-6686">(02)8370-6686</a>
+        </div>
+        <div class="new-contact">
+            <p><strong>Provincial:</strong></p>
+            <a href="tel:1-800-10-370-6686">1-800-10-370-6686</a>
+        </div>
+       
+       
+    </div>
+    <div class="view-more-hotlines">
+        <p class="trigger-hotlines">
+          View More Hotlines
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+              <path d="M4.55576 5.5C4.39645 5.5 4.23716 5.43998 4.11571 5.32018L0.293676 1.5486C0.0505454 1.30868 0.0505454 0.919689 0.293676 0.679867C0.536709 0.440044 0.930826 0.440044 1.17398 0.679867L4.55576 4.01717L7.93756 0.679983C8.18069 0.440161 8.57477 0.440161 8.81778 0.679983C9.06103 0.919806 9.06103 1.30879 8.81778 1.54871L4.99581 5.3203C4.87429 5.44011 4.71501 5.5 4.55576 5.5Z" fill="#212529"/>
+            </svg>
+        </p>
+        <div class="dropdown-hotlines">
+          <div class="new-contact">
+                <p><strong>Globe:</strong></p>
+                <a href="tel:0917-891-6686">0917-891-6686</a>
+            </div>
+           <div class="new-contact">
+                <p><strong>Smart:</strong></p>
+                <a href="tel:0918-843-6686">0918-843-6686</a>
+            </div>
+            <div class="new-contact">
+                <p><strong>NCR:</strong></p>
+                <a href="tel:(02)8370-6686">(02)8370-6686</a>
+            </div>
+            <div class="new-contact">
+                <p><strong>Provincial:</strong></p>
+                <a href="tel:1-800-10-370-6686">1-800-10-370-6686</a>
+            </div>
+           
+            
+        </div>
+    </div>
+  </div>
+  <div class="messenger-account-cart-con">
+      <div class="new-contact-details">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+              <path
+                  d="M10.1201 0.500053C8.14231 0.500053 6.20891 1.08654 4.56442 2.18536C2.91993 3.28417 1.6382 4.84596 0.881326 6.67322C0.12445 8.50048 -0.0735833 10.5111 0.312269 12.451C0.698121 14.3908 1.65053 16.1726 3.04905 17.5711C4.44758 18.9696 6.22941 19.922 8.16922 20.3079C10.109 20.6938 12.1197 20.4957 13.947 19.7388C15.7742 18.982 17.336 17.7002 18.4348 16.0558C19.5336 14.4113 20.1201 12.4779 20.1201 10.5001C20.1201 7.84789 19.0666 5.30435 17.1912 3.42899C15.3158 1.55362 12.7723 0.500053 10.1201 0.500053ZM10.1201 15.8251C9.51422 15.8254 8.91105 15.744 8.32694 15.583L6.19853 16.7501V14.5432C4.77921 13.483 3.87012 11.8637 3.87012 10.0376C3.87012 6.84096 6.66898 4.25005 10.1201 4.25005C13.5713 4.25005 16.3701 6.8421 16.3701 10.0376C16.3701 13.233 13.5713 15.8251 10.1201 15.8251Z"
+                  fill="#212529" />
+              <path
+                  d="M14.1576 8.4171L10.7406 12.041L9.14966 10.3455L6.04398 12.0432L9.46102 8.4171L11.0917 10.1126L14.1576 8.4171Z"
+                  fill="#212529" />
+          </svg>
+          <a href="https://www.facebook.com/motoliteexpresshatid/"><strong>Connect via Messenger</strong></a>
+      </div>
+      <div class="new-contact-details">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+              <path
+                  d="M10.9628 0.500053C5.44033 0.500053 0.962402 4.9771 0.962402 10.5001C0.962402 16.023 5.43989 20.5001 10.9628 20.5001C16.4862 20.5001 20.9633 16.023 20.9633 10.5001C20.9633 4.9771 16.4862 0.500053 10.9628 0.500053ZM10.9628 3.49017C12.7902 3.49017 14.271 4.97139 14.271 6.79788C14.271 8.62481 12.7902 10.1056 10.9628 10.1056C9.13635 10.1056 7.65557 8.62481 7.65557 6.79788C7.65557 4.97139 9.13635 3.49017 10.9628 3.49017ZM10.9606 17.8855C9.13811 17.8855 7.46888 17.2218 6.18138 16.1232C5.86774 15.8556 5.68676 15.4634 5.68676 15.0518C5.68676 13.1994 7.18599 11.7168 9.03884 11.7168H12.8877C14.741 11.7168 16.2345 13.1994 16.2345 15.0518C16.2345 15.4638 16.0544 15.8552 15.7404 16.1227C14.4533 17.2218 12.7836 17.8855 10.9606 17.8855Z"
+                  fill="#212529" />
+          </svg>
+          <a href="https://www.motolite.com/account/login"><strong>My Account</strong></a>
+      </div>
+      <div class="new-contact-details">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
+              <path
+                  d="M8.30566 20.5001C9.22614 20.5001 9.97233 19.7539 9.97233 18.8334C9.97233 17.9129 9.22614 17.1667 8.30566 17.1667C7.38519 17.1667 6.639 17.9129 6.639 18.8334C6.639 19.7539 7.38519 20.5001 8.30566 20.5001Z"
+                  fill="#212529" />
+              <path
+                  d="M19.9723 20.5001C20.8928 20.5001 21.639 19.7539 21.639 18.8334C21.639 17.9129 20.8928 17.1667 19.9723 17.1667C19.0519 17.1667 18.3057 17.9129 18.3057 18.8334C18.3057 19.7539 19.0519 20.5001 19.9723 20.5001Z"
+                  fill="#212529" />
+              <path
+                  d="M22.9307 3.45734C22.8136 3.31414 22.6661 3.1988 22.4989 3.11971C22.3317 3.04061 22.149 2.99974 21.964 3.00005H6.11243L5.79316 1.1886C5.75912 0.995641 5.65818 0.820853 5.50806 0.694932C5.35795 0.569012 5.16826 0.500012 4.97233 0.500053H1.639C1.41798 0.500053 1.20602 0.587851 1.04974 0.744131C0.893461 0.900412 0.805664 1.11237 0.805664 1.33339C0.805664 1.5544 0.893461 1.76636 1.04974 1.92264C1.20602 2.07892 1.41798 2.16672 1.639 2.16672H4.27337L6.6515 15.6448C6.68554 15.8378 6.78649 16.0126 6.9366 16.1385C7.08671 16.2644 7.2764 16.3334 7.47233 16.3334H20.8057C21.0267 16.3334 21.2386 16.2456 21.3949 16.0893C21.5512 15.933 21.639 15.7211 21.639 15.5001C21.639 15.279 21.5512 15.0671 21.3949 14.9108C21.2386 14.7545 21.0267 14.6667 20.8057 14.6667H8.17129L7.87754 13.0001H20.464C20.753 12.9997 21.033 12.8995 21.2566 12.7164C21.4802 12.5333 21.6337 12.2786 21.6911 11.9954L23.1911 4.49537C23.2272 4.31386 23.2226 4.12659 23.1776 3.94708C23.1325 3.76757 23.0482 3.6003 22.9307 3.45734Z"
+                  fill="#212529" />
+          </svg>
+          <a href="https://www.motolite.com/cart"><strong>Cart</strong></a>
+      </div>
+  </div>
+</div>
+  
+  <header class="header header-bg header--{{ section.settings.logo_position }}{% if section.settings.menu != blank %} header--has-menu{% endif %}" style="margin-right: 20px!important; margin-left: 30px!important;">
+    {%- if section.settings.menu != blank -%}
+      <header-drawer data-breakpoint="tablet">
+        <details id="Details-menu-drawer-container" class="menu-drawer-container white-text">
+          <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
+            <span>
+              {% render 'icon-hamburger' %}
+              {% render 'icon-close' %}
+            </span>
+          </summary>
+          <div id="menu-drawer" class="menu-drawer motion-reduce" tabindex="-1">
+            <div class="menu-drawer__inner-container">
+              <div class="menu-drawer__navigation-container">
+                <nav class="menu-drawer__navigation">
+                  <ul class="menu-drawer__menu list-menu" role="list">
+                    {%- for link in section.settings.menu.links -%}
+                      <li>
+                        {%- if link.links != blank -%}
+                          <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+                            <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
+                              {{ link.title | escape }}
+                              {% render 'icon-arrow' %}
+                              {% render 'icon-caret' %}
+                            </summary>
+                            <div id="link-{{ link.title | escape }}" class="menu-drawer__submenu motion-reduce" tabindex="-1">
+                              <div class="menu-drawer__inner-submenu">
+                                <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                  {% render 'icon-arrow' %}
+                                  {{ link.title | escape }}
+                                </button>
+                                <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                  {%- for childlink in link.links -%}
+                                    <li>
+                                      {%- if childlink.links == blank -%}
+                                        <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                          {{ childlink.title | escape }}
+                                        </a>
+                                      {%- else -%}
+                                        <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
+                                          <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                            {{ childlink.title | escape }}
+                                            {% render 'icon-arrow' %}
+                                            {% render 'icon-caret' %}
+                                          </summary>
+                                          <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu motion-reduce">
+                                            <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                              {% render 'icon-arrow' %}
+                                              {{ childlink.title | escape }}
+                                            </button>
+                                            <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1" style="color:white;>
+                                              {%- for grandchildlink in childlink.links -%}
+                                                <li>
+                                                  <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %} ">
+                                                    {{ grandchildlink.title | escape }}
+                                                  </a>
+                                                </li>
+                                              {%- endfor -%}
+                                            </ul>
+                                          </div>
+                                        </details>
+                                      {%- endif -%}
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              </div>
+                            </div>
+                          </details>
+                        {%- else -%}
+                          <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %} >
+                            {{ link.title | escape }}
+                          </a>
+                        {%- endif -%}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </nav>
+                <div class="menu-drawer__utility-links">
+
+                    <div class="show-on-small-only header-icons-container find-batter-order-now-con order-find-battery-inside-nav">
+                      <div class="btn-btn">
+                          <a href="https://www.motolite.com/pages/battery-finder">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21" fill="none">
+                                <path d="M21.8574 3.4201V2.03424C21.8574 1.41892 21.3586 0.920105 20.7433 0.920105H17.9716C17.3562 0.920105 16.8574 1.41892 16.8574 2.03424V3.4201H9.35742V2.03424C9.35742 1.41892 8.85861 0.920105 8.24329 0.920105H5.47155C4.85624 0.920105 4.35742 1.41892 4.35742 2.03424V3.4201H1.85742C1.16707 3.4201 0.607422 3.97975 0.607422 4.6701C0.607422 5.36046 1.16707 5.9201 1.85742 5.9201L1.85742 19.6701C1.85742 20.3605 2.41707 20.9201 3.10742 20.9201H23.1074C23.7978 20.9201 24.3574 20.3605 24.3574 19.6701V5.9201C25.0478 5.9201 25.6074 5.36046 25.6074 4.67011C25.6074 3.97975 25.0478 3.4201 24.3574 3.4201H21.8574ZM10.9424 17.3894L12.2324 13.4201H9.51529C9.29863 13.4201 9.1769 13.1708 9.31015 12.9999L13.1437 8.08507C13.3146 7.86609 13.6637 8.03124 13.6027 8.30219L12.7324 12.1701H16.2293C16.4611 12.1701 16.5772 12.4503 16.4133 12.6142L11.3738 17.6537C11.1804 17.8471 10.8579 17.6494 10.9424 17.3894Z" fill="#212529"></path>
+                            </svg>
+                            Find Battery
+                          </a>
+                      </div>
+                      <div class="btn-btn">
+                          <a href="https://www.motolite.com/collections/all">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6077 0.920105C8.39852 0.920105 6.60766 2.71096 6.60766 4.9201H3.67828C1.8482 4.9201 0.366254 6.50117 0.639544 8.34923L2.11833 18.3492C2.34029 19.8502 3.65693 20.9201 5.15707 20.9201H16.0581C17.5583 20.9201 18.8749 19.8502 19.0969 18.3492L20.5757 8.34923C20.849 6.50117 19.367 4.9201 17.5369 4.9201H14.6077C14.6077 2.71096 12.8168 0.920105 10.6077 0.920105ZM12.6077 4.9201C12.6077 3.81553 11.7123 2.9201 10.6077 2.9201C9.50306 2.9201 8.60766 3.81553 8.60766 4.9201H12.6077ZM14.3603 10.7616C14.724 11.1772 14.6818 11.809 14.2662 12.1727L10.2662 15.6727C9.86996 16.0194 9.27286 15.9995 8.90056 15.6272L6.90055 13.6272C6.51003 13.2367 6.51003 12.6035 6.90055 12.213C7.29108 11.8225 7.92424 11.8225 8.31477 12.213L9.65326 13.5515L12.9492 10.6675C13.3648 10.3038 13.9966 10.346 14.3603 10.7616Z" fill="white"></path>
+                            </svg>
+                            Order Now
+                          </a>
+                      </div>
+                    </div>
+              
+                  
+
+            <!-- this is being commented -->
+                  
+                  <!-- {%- if shop.customer_accounts_enabled -%}
+                    <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
+                      {% render 'icon-account' %}
+                      {%- liquid
+                        if customer
+                          echo 'customer.account_fallback' | t
+                        else
+                          echo 'customer.log_in' | t
+                        endif
+                      -%}
+                    </a>
+                  {%- endif -%}
+
+ 
+      
+                  <ul class="list list-social list-unstyled" role="list">
+                    {%- if settings.social_twitter_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_twitter_link }}" class="list-social__link link" style="color:white;">
+                          {%- render 'icon-twitter' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    {%- if settings.social_facebook_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_facebook_link }}" class="list-social__link link" style="color:white;">
+                          {%- render 'icon-facebook' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    {%- if settings.social_pinterest_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
+                          {%- render 'icon-pinterest' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    {%- if settings.social_instagram_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_instagram_link }}" class="list-social__link link" style="color:white;">
+                          {%- render 'icon-instagram' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    {%- if settings.social_tiktok_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_tiktok_link }}" class="list-social__link link">
+                          {%- render 'icon-tiktok' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    {%- if settings.social_tumblr_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_tumblr_link }}" class="list-social__link link">
+                          {%- render 'icon-tumblr' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    {%- if settings.social_snapchat_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_snapchat_link }}" class="list-social__link link">
+                          {%- render 'icon-snapchat' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    {%- if settings.social_youtube_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_youtube_link }}" class="list-social__link link">
+                          {%- render 'icon-youtube' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    {%- if settings.social_vimeo_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_vimeo_link }}" class="list-social__link link">
+                          {%- render 'icon-vimeo' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                  </ul>
+                </div> -->
+              
+              
+              
+              
+              
+              
+              
+              </div>
+            </div>
+          </div>
+        </details>
+      </header-drawer>
+    {%- endif -%}
+
+    {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
+      <details-modal class="header__search">
+          <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+            <span>
+              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-search">
+              </svg>
+              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-close">
+       </details>
+              </svg>
+            </span>
+          </summary>
+      
+          <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
+            <div class="modal-overlay"></div>
+            <div class="search-modal__content" tabindex="-1">
+              {%- if settings.predictive_search_enabled -%}
+                <!--<predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+              {%- endif -%}
+                <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                  <div class="field">
+                    <input class="search__input field__input"
+                      id="Search-In-Modal-1"
+                      type="search"
+                      name="q"
+                      value=""
+                      placeholder="{{ 'general.search.search' | t }}"
+                      {%- if settings.predictive_search_enabled -%}
+                        role="combobox"
+                        aria-expanded="true"
+                        aria-owns="predictive-search-results-list"
+                        aria-controls="predictive-search-results-list"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocorrect="on"
+                        autocomplete="on"
+                        autocapitalize="on"
+                        spellcheck="true"
+                      {%- endif -%}
+                    >
+                    <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
+                    <input type="hidden" name="type" value="article">
+                    <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                        <use href="#icon-search">
+                      </svg>
+                    </button>
+                  </div>-->
+
+                  {%- if settings.predictive_search_enabled -%}
+                    <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+                      <div class="predictive-search__loading-state">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+                  {%- endif -%}
+                </form>
+              {%- if settings.predictive_search_enabled -%}
+                </predictive-search>
+              {%- endif -%}
+              <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                  <use href="#icon-close">
+                </svg>
+              </button>
+            </div>
+          </div>
+        </details>
+      </details-modal>
+    {%- endif -%}
+
+    
+
+    {%- if request.page_type == 'index' -%}
+      <h1 class="header__heading">
+    {%- endif -%}
+        <a href="https://motolitestore.myshopify.com">
+        <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/MicrosoftTeams-image.png?v=1648436834" class="header__heading-link link link--text focus-inset motolite-logo" alt="Official Motolite Logo">
+
+        </a>
+    {%- if request.page_type == 'index' -%}
+      </h1>
+    {%- endif -%}
+    {%- if section.settings.menu != blank -%}
+      <nav class="header__inline-menu">
+        <ul class="list-menu list-menu--inline" role="list">
+          {%- for link in section.settings.menu.links -%}
+            <li>
+              {%- if link.links != blank -%}
+                <details-disclosure>
+                  <details id="Details-HeaderMenu-{{ forloop.index }}">
+                    <summary class="header__menu-item list-menu__item link focus-inset">
+                      <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                      {% render 'icon-caret' %}
+                    </summary>
+                    <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                      {%- for childlink in link.links -%}
+                        <li>
+                          {%- if childlink.links == blank -%}
+                            <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                              {{ childlink.title | escape }}
+                            </a>
+                          {%- else -%}
+                            <details id="Details-HeaderSubMenu-{{ forloop.index }}">
+                              <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
+                                {{ childlink.title | escape }}
+                                {% render 'icon-caret' %}
+                              </summary>
+                              <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
+                                {%- for grandchildlink in childlink.links -%}
+                                  <li>
+                                    <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                      {{ grandchildlink.title | escape }}
+                                    </a>
+                                  </li>
+                                {%- endfor -%}
+                              </ul>
+                            </details>
+                          {%- endif -%}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </details>
+                </details-disclosure>
+              {%- else -%}
+                <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                </a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+           <details-modal class="header__search">
+        <details>
+          <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+            <span>
+              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-search">
+              </svg>
+              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-close">
+              </svg>
+            </span>
+          </summary>
+          <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
+            <div class="modal-overlay"></div>
+            <div class="search-modal__content" tabindex="-1">
+              {%- if settings.predictive_search_enabled -%}
+                <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+              {%- endif -%}
+                <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                  <div class="field">
+                    <input class="search__input field__input"
+                      id="Search-In-Modal"
+                      type="search"
+                      name="q"
+                      value=""
+                      placeholder="{{ 'general.search.search' | t }}"
+                      {%- if settings.predictive_search_enabled -%}
+                        role="combobox"
+                        aria-expanded="true"
+                        aria-owns="predictive-search-results-list"
+                        aria-controls="predictive-search-results-list"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocorrect="on"
+                        autocomplete="on"
+                        autocapitalize="on"
+                        spellcheck="true"
+                      {%- endif -%}
+                    >
+                    <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                    <input type="hidden" name="type" value="article">
+                    <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                        <use href="#icon-search">
+                      </svg>
+                    </button>
+                  </div>
+                  {%- if settings.predictive_search_enabled -%}
+                    <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+                      <div class="predictive-search__loading-state">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+                  {%- endif -%}
+                </form>
+              {%- if settings.predictive_search_enabled -%}
+                </predictive-search>
+              {%- endif -%}
+              <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                  <use href="#icon-close">
+                </svg>
+              </button>
+            </div>
+          </div>
+        </details>
+      </details-modal>
+        </ul>
+      </nav>
+    {%- endif -%}
+
+    <div class="header__icons">
+      
+      <div style="position: relative;" class="find-batter-order-now-con">
+      <div class="btn-btn">
+          <a href="https://www.motolite.com/pages/battery-finder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21" fill="none">
+                <path
+                    d="M21.8574 3.4201V2.03424C21.8574 1.41892 21.3586 0.920105 20.7433 0.920105H17.9716C17.3562 0.920105 16.8574 1.41892 16.8574 2.03424V3.4201H9.35742V2.03424C9.35742 1.41892 8.85861 0.920105 8.24329 0.920105H5.47155C4.85624 0.920105 4.35742 1.41892 4.35742 2.03424V3.4201H1.85742C1.16707 3.4201 0.607422 3.97975 0.607422 4.6701C0.607422 5.36046 1.16707 5.9201 1.85742 5.9201L1.85742 19.6701C1.85742 20.3605 2.41707 20.9201 3.10742 20.9201H23.1074C23.7978 20.9201 24.3574 20.3605 24.3574 19.6701V5.9201C25.0478 5.9201 25.6074 5.36046 25.6074 4.67011C25.6074 3.97975 25.0478 3.4201 24.3574 3.4201H21.8574ZM10.9424 17.3894L12.2324 13.4201H9.51529C9.29863 13.4201 9.1769 13.1708 9.31015 12.9999L13.1437 8.08507C13.3146 7.86609 13.6637 8.03124 13.6027 8.30219L12.7324 12.1701H16.2293C16.4611 12.1701 16.5772 12.4503 16.4133 12.6142L11.3738 17.6537C11.1804 17.8471 10.8579 17.6494 10.9424 17.3894Z"
+                    fill="#212529" />
+            </svg>
+            Find Battery
+          </a>
+      </div>
+      <div class="btn-btn">
+          <a href="https://www.motolite.com/collections/all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.6077 0.920105C8.39852 0.920105 6.60766 2.71096 6.60766 4.9201H3.67828C1.8482 4.9201 0.366254 6.50117 0.639544 8.34923L2.11833 18.3492C2.34029 19.8502 3.65693 20.9201 5.15707 20.9201H16.0581C17.5583 20.9201 18.8749 19.8502 19.0969 18.3492L20.5757 8.34923C20.849 6.50117 19.367 4.9201 17.5369 4.9201H14.6077C14.6077 2.71096 12.8168 0.920105 10.6077 0.920105ZM12.6077 4.9201C12.6077 3.81553 11.7123 2.9201 10.6077 2.9201C9.50306 2.9201 8.60766 3.81553 8.60766 4.9201H12.6077ZM14.3603 10.7616C14.724 11.1772 14.6818 11.809 14.2662 12.1727L10.2662 15.6727C9.86996 16.0194 9.27286 15.9995 8.90056 15.6272L6.90055 13.6272C6.51003 13.2367 6.51003 12.6035 6.90055 12.213C7.29108 11.8225 7.92424 11.8225 8.31477 12.213L9.65326 13.5515L12.9492 10.6675C13.3648 10.3038 13.9966 10.346 14.3603 10.7616Z"
+                    fill="white" />
+            </svg>
+            Order Now
+          </a>
+      </div>
+    </div>
+      
+      <!-- <div id="batterySearch" style="display: none;">
+          <div class="dropdown-item" style="width: 100%; background-color: #ffffff;">
+            <p class="text-center text-battery">
+              Find A Battery
+            </p>
+            <div style="flex-direction: column; width: 100%;" class="form-inline find-battery-container">
+              <div style="margin-bottom: 10px;" class="battery-select">
+                <select id="vehicleCategoryFilter" style="width: 100%;"></select>
+              </div>
+              <div style="margin-bottom: 10px;" class="make-select">
+                <select id="vehicleManufacturerFilter" style="width: 100%;" disabled></select>
+              </div>
+              <div style="margin-bottom: 10px;" class="make-model">
+                <select id="vehicleModelFilter" style="width: 100%;" disabled></select>
+              </div>
+              <div style="margin-bottom: 10px;" class="make-model">
+                <select id="vehicleTrimFilter" style="width: 100%;" disabled></select>
+              </div>
+              <div style="margin-bottom: 10px;" class="make-year">
+                <select id="vehicleModelYearFilter" style="width: 100%;" disabled></select>
+              </div>
+              <div style="margin-bottom: 10px;">
+                <button id="searchButton" style="width: 100%;" class="btn-search-battery">
+                  Search
+                </button>
+              </div>
+            </div>
+            <script src="{{ 'battery-search.js' | asset_url }}"></script>
+            <script>
+              new BatterySearch("batterySearch");
+            </script>
+          </div>
+        </div> -->
+    </div>
+     <details-modal class="header__search">
+        <details>
+          <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+           <span>
+            <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-search">
+              </svg>
+              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-close">
+              </svg>
+            </span>
+          </summary>
+          <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
+            <div class="modal-overlay"></div>
+            <div class="search-modal__content" tabindex="-1">
+              {%- if settings.predictive_search_enabled -%}
+                <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+              {%- endif -%}
+                <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                  <div class="field">
+                    <input class="search__input field__input"
+                      id="Search-In-Modal"
+                      type="search"
+                      name="q"
+                      value=""
+                      placeholder="{{ 'general.search.search' | t }}"
+                      {%- if settings.predictive_search_enabled -%}
+                        role="combobox"
+                        aria-expanded="true"
+                        aria-owns="predictive-search-results-list"
+                        aria-controls="predictive-search-results-list"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocorrect="on"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                      {%- endif -%}
+                    >
+                    <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                    <input type="hidden" name="type" value="article">
+                    <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                        <use href="#icon-search">
+                      </svg>
+                    </button>
+                  </div>
+
+                  {%- if settings.predictive_search_enabled -%}
+                    <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+                      <div class="predictive-search__loading-state">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+                  {%- endif -%}
+                </form>
+              {%- if settings.predictive_search_enabled -%}
+                </predictive-search>
+              {%- endif -%}
+              <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                  <use href="#icon-close">
+                </svg>
+              </button>
+            </div>
+          </div>
+        </details>
+      </details-modal>
+		
+      {%- if shop.customer_accounts_enabled -%}
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+          {% render 'icon-account' %}
+          <span class="visually-hidden">
+            {%- liquid
+              if customer
+                echo 'customer.account_fallback' | t
+              else
+                echo 'customer.log_in' | t
+              endif
+            -%}
+          </span>
+        </a>
+      {%- endif -%}
+
+     
+    </div>
+  </header>
+</{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
+
+             
+                    
+{%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
+
+    <div class="show-on-small-only header-icons-container sticky-top find-batter-order-now-con" >
+      <div class="btn-btn">
+          <a href="https://www.motolite.com/pages/battery-finder-result">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21" fill="none">
+                <path
+                    d="M21.8574 3.4201V2.03424C21.8574 1.41892 21.3586 0.920105 20.7433 0.920105H17.9716C17.3562 0.920105 16.8574 1.41892 16.8574 2.03424V3.4201H9.35742V2.03424C9.35742 1.41892 8.85861 0.920105 8.24329 0.920105H5.47155C4.85624 0.920105 4.35742 1.41892 4.35742 2.03424V3.4201H1.85742C1.16707 3.4201 0.607422 3.97975 0.607422 4.6701C0.607422 5.36046 1.16707 5.9201 1.85742 5.9201L1.85742 19.6701C1.85742 20.3605 2.41707 20.9201 3.10742 20.9201H23.1074C23.7978 20.9201 24.3574 20.3605 24.3574 19.6701V5.9201C25.0478 5.9201 25.6074 5.36046 25.6074 4.67011C25.6074 3.97975 25.0478 3.4201 24.3574 3.4201H21.8574ZM10.9424 17.3894L12.2324 13.4201H9.51529C9.29863 13.4201 9.1769 13.1708 9.31015 12.9999L13.1437 8.08507C13.3146 7.86609 13.6637 8.03124 13.6027 8.30219L12.7324 12.1701H16.2293C16.4611 12.1701 16.5772 12.4503 16.4133 12.6142L11.3738 17.6537C11.1804 17.8471 10.8579 17.6494 10.9424 17.3894Z"
+                    fill="#212529" />
+            </svg>
+            Find Battery
+          </a>
+      </div>
+      <div class="btn-btn">
+          <a href="https://www.motolite.com/collections/all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.6077 0.920105C8.39852 0.920105 6.60766 2.71096 6.60766 4.9201H3.67828C1.8482 4.9201 0.366254 6.50117 0.639544 8.34923L2.11833 18.3492C2.34029 19.8502 3.65693 20.9201 5.15707 20.9201H16.0581C17.5583 20.9201 18.8749 19.8502 19.0969 18.3492L20.5757 8.34923C20.849 6.50117 19.367 4.9201 17.5369 4.9201H14.6077C14.6077 2.71096 12.8168 0.920105 10.6077 0.920105ZM12.6077 4.9201C12.6077 3.81553 11.7123 2.9201 10.6077 2.9201C9.50306 2.9201 8.60766 3.81553 8.60766 4.9201H12.6077ZM14.3603 10.7616C14.724 11.1772 14.6818 11.809 14.2662 12.1727L10.2662 15.6727C9.86996 16.0194 9.27286 15.9995 8.90056 15.6272L6.90055 13.6272C6.51003 13.2367 6.51003 12.6035 6.90055 12.213C7.29108 11.8225 7.92424 11.8225 8.31477 12.213L9.65326 13.5515L12.9492 10.6675C13.3648 10.3038 13.9966 10.346 14.3603 10.7616Z"
+                    fill="white" />
+            </svg>
+            Order Now
+          </a>
+      </div>
+    </div>
+
+<script>
+  let findByBatteryButtons = document.querySelectorAll(".find-battery-btn-desktop");
+  let batterySearch = document.getElementById("batterySearch");
+  
+  for (let index = 0; index < findByBatteryButtons.length; index++) {
+    let findByBatteryButton = findByBatteryButtons[index];
+    findByBatteryButton.onclick = toggleBatterySearch;
+  }
+  
+  function toggleBatterySearch() {
+    if (batterySearch.style.display === "none") {
+      batterySearch.style.display = "flex";
+    }
+    else {
+      batterySearch.style.display = "none";
+    }
+  }
+</script>
+
+                          <script>
+                            // save the selected value for sorting
+var v = jQuery("vehicleModelFilter").val();
+
+// sort the options and select the value that was saved
+$("vehicleModelFilter")
+    .html($("vehicleModelFilter option").sort(function(a,b){
+        return a.text == b.text ? 0 : a.text < b.text ? -1 : 1;}))
+    .val(v);
+                          </script>
+                          
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    {% if section.settings.logo %}
+      {% assign image_size = section.settings.logo.width | append: 'x' %}
+      "logo": {{ section.settings.logo | img_url: image_size | prepend: "https:" | json }},
+    {% endif %}
+    "sameAs": [
+      {{ settings.social_twitter_link | json }},
+      {{ settings.social_facebook_link | json }},
+      {{ settings.social_pinterest_link | json }},
+      {{ settings.social_instagram_link | json }},
+      {{ settings.social_tiktok_link | json }},
+      {{ settings.social_tumblr_link | json }},
+      {{ settings.social_snapchat_link | json }},
+      {{ settings.social_youtube_link | json }},
+      {{ settings.social_vimeo_link | json }}
+    ],
+    "url": {{ shop.url | append: page.url | json }}
+  }
+</script>
+
+{%- if request.page_type == 'index' -%}
+  {% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      },
+      "url": {{ shop.url | append: page.url | json }}
+    }
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.header.name",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.header.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.header.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.header.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.header.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.header.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.header.settings.color_scheme.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "default": 100,
+      "unit": "t:sections.header.settings.logo_width.unit",
+      "label": "t:sections.header.settings.logo_width.label"
+    },
+    {
+      "type": "select",
+      "id": "logo_position",
+      "options": [
+        {
+          "value": "middle-left",
+          "label": "t:sections.header.settings.logo_position.options__1.label"
+        },
+        {
+          "value": "top-left",
+          "label": "t:sections.header.settings.logo_position.options__2.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.header.settings.logo_position.options__3.label"
+        }
+      ],
+      "default": "middle-left",
+      "label": "t:sections.header.settings.logo_position.label"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_line_separator",
+      "default": true,
+      "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_header",
+      "default": true,
+      "label": "t:sections.header.settings.enable_sticky_header.label",
+      "info": "t:sections.header.settings.enable_sticky_header.info"
+    }
+  ]
+}
+{% endschema %}
+<script>
+    $(document).ready(function(){
+        var dropdownMenuHTML_company = `
+        <div class="dropdown company">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuHTML_company" data-bs-toggle="dropdown" aria-expanded="false">
+            Company
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuHTML_company">
+        <a href="/pages/about-us" class="dropdown-item">About Us</a>
+        <a href="/pages/history-timeline" class="dropdown-item">History/Timeline</a>
+        <a href="/pages/exports" class="dropdown-item">Exports</a>
+        </ul>
+        </div>`;
+        
+        // Replace the existing element with the dropdown menu
+        var company = $('nav.header__inline-menu ul.list-menu.list-menu--inline li:nth-child(1)');
+        if (company) {
+            company.replaceWith(dropdownMenuHTML_company);
+        } else {
+            console.error("Dropdown parent element not found.");
+        }
+        var links = $(".dropdown.company .dropdown-menu a");
+    
+        // Check if the current URL matches any of the links
+        links.each(function() {
+            var link = $(this).attr("href");
+            if (window.location.pathname === link) {
+            // Hide the dropdown menu
+           // $(".dropdown-menu").hide();
+            $("div#batteryServicesNavContainer").hide();
+              $("div#batteryCategoryMenuContainer").hide()
+            return false; // Exit the loop early
+            }
+        });
+        var dropdownMenuHTML_batteries = `
+          <div class="dropdown batteries">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuHTML_batteries" data-bs-toggle="dropdown" aria-expanded="false">
+              Batteries
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuHTML_batteries">
+             <a href="/pages/automobile-batteries" class="dropdown-item">Automotive</a>
+             <a href="/pages/motorcycle-batteries" class="dropdown-item">Motorcycle</a>
+             <a href="/pages/truck-batteries" class="dropdown-item">Heavy Commercial</a>
+             <a href="/pages/outdoor-sports-batteries" class="dropdown-item">Marine &amp; Leisure</a>
+             <a href="/pages/solar-storage-batteries" class="dropdown-item">Industrial</a>
+             <a href="/products/motolite-excel-agm" class="dropdown-item">AGM</a>
+             <a href="/collections/automotive" class="dropdown-item">Maintenance-Free</a>
+            </ul>
+          </div>
+        `;
+        // Replace the existing element with the dropdown menu
+        var dropdownParent = $('nav.header__inline-menu ul.list-menu.list-menu--inline li:nth-child(2)');
+        if (dropdownParent) {
+          dropdownParent.replaceWith(dropdownMenuHTML_batteries);
+        } else {
+          console.error("Dropdown parent element not found.");
+        }
+        var links = $(".dropdown.batteries .dropdown-menu a");
+    
+        // Check if the current URL matches any of the links
+        links.each(function() {
+            var link = $(this).attr("href");
+            if (window.location.pathname === link) {
+            // Hide the dropdown menu
+            //$(".dropdown-menu").hide();
+            $("div#batteryServicesNavContainer").hide();
+              $("div#batteryCategoryMenuContainer").hide()
+            return false; // Exit the loop early
+            }
+        });
+        var dropdownMenuHTML_service = `
+          <div class="dropdown service">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuHTML_service" data-bs-toggle="dropdown" aria-expanded="false">
+              Service
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuHTML_service">
+              <a class="dropdown-item" href="/pages/res-q">RES-Q</a>
+              <a class="dropdown-item" href="/pages/express-hatid">Express Hatid</a>
+              <a class="dropdown-item" href="/pages/cebu">Cebu Battery Delivery</a>
+              <a class="dropdown-item" href="/pages/pampanga">Motolite Express Hatid Pampanga</a>
+              <a class="dropdown-item" href="/pages/davao">Motolite Express Hatid Davao</a>
+              <a class="dropdown-item" href="/pages/car-battery-trade-in">Trade-In Batteries</a>
+             <!--<a class="dropdown-item" href="/pages/express-hatid-cebu">Express Hatid-Cebu</a>-->
+              <a class="dropdown-item" href="/pages/e-warranty">E-Warranty</a>
+              <a class="dropdown-item" href="/pages/warranty-policy">Warranty Policy</a>
+            </ul>
+          </div>
+        `;
+        var dropdownParent1 = $('nav.header__inline-menu ul.list-menu.list-menu--inline li:nth-child(3)');
+        if (dropdownParent1) {
+          dropdownParent1.replaceWith(dropdownMenuHTML_service);
+        } else {
+          console.error("Dropdown parent element not found.");
+        }
+        var links = $(".dropdown.service .dropdown-menu a");
+    
+        // Check if the current URL matches any of the links
+        links.each(function() {
+            var link = $(this).attr("href");
+            if (window.location.pathname === link) {
+            // Hide the dropdown menu
+            //$(".dropdown-menu").hide();
+            $("div#batteryServicesNavContainer").hide();
+              $("div#batteryCategoryMenuContainer").hide()
+            return false; // Exit the loop early
+            }
+        });
+        var dropdownMenuHTML_raffle = `
+        <div class="dropdown raffle">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuHTML_raffle" data-bs-toggle="dropdown" aria-expanded="false">
+            Raffle
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuHTML_raffle">
+        <a href="/pages/participating-outlets" class="dropdown-item">Participitating Outlets</a>
+        <a href="" class="dropdown-item">Winner</a>
+        </ul>
+        </div>`;
+        
+        // Replace the existing element with the dropdown menu
+        var raffle = $('nav.header__inline-menu ul.list-menu.list-menu--inline li:nth-child(4)');
+        if (raffle) {
+            //raffle.replaceWith(dropdownMenuHTML_raffle);
+        } else {
+            console.error("Dropdown parent element not found.");
+        }
+        var links = $(".dropdown.raffle  .dropdown-menua");
+    
+        // Check if the current URL matches any of the links
+        links.each(function() {
+            var link = $(this).attr("href");
+            if (window.location.pathname === link) {
+            // Hide the dropdown menu
+            $(".dropdown-menu").hide();
+              $("div#batteryCategoryMenuContainer").hide()
+            return false; // Exit the loop early
+            }
+        });
+    
+          $('nav.menu-drawer__navigation ul.menu-drawer__menu.list-menu li:nth-child(2)').replaceWith(`
+        <li><a href="/pages/automobile-batteries" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">Batteries</a></li>
+        <ul class="dropdown-menu show" aria-labelledby="dropdownMenuButton" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 62px, 0px);" data-popper-placement="bottom-start">
+             <a href="/pages/automobile-batteries" class="dropdown-item">Automotive</a>
+             <a href="/pages/motorcycle-batteries" class="dropdown-item">Motorcycle</a>
+             <a href="/pages/truck-batteries" class="dropdown-item">Heavy Commercial</a>
+             <a href="/pages/outdoor-sports-batteries" class="dropdown-item">Marine &amp; Leisure</a>
+             <a href="/pages/solar-storage-batteries" class="dropdown-item">Industrial</a>
+                          <a href="/products/motolite-excel-agm" class="dropdown-item">AGM</a>
+             <a href="/collections/automotive" class="dropdown-item">Maintenance-Free</a>
+            </ul>`)
+      $('nav.menu-drawer__navigation ul.menu-drawer__menu.list-menu li:nth-child(4)').replaceWith(`<li><a href="/pages/res-q" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">Services</a></li>
+            <ul class="dropdown-menu show" aria-labelledby="dropdownMenuButton" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 62px, 0px);" data-popper-placement="bottom-start">
+              <a class="dropdown-item" href="/pages/res-q">RES-Q</a>
+              <a class="dropdown-item" href="/pages/express-hatid">Express Hatid</a>
+                            <a class="dropdown-item" href="/pages/cebu">Cebu Battery Delivery</a>
+              <a class="dropdown-item" href="/pages/car-battery-trade-in">Trade-In Batteries</a>
+              <a class="dropdown-item" href="/pages/e-warranty">E-Warranty</a>
+              <a class="dropdown-item" href="/pages/warranty-policy">Warranty Policy</a>
+            </ul>`)
+    
+        // $("button#dropdownMenuHTML_company").click(function(){
+        //     $("div#batteryServicesNavContainer").toggleClass("d-none")
+        // })
+        // $("button#dropdownMenuHTML_batteries").click(function(){
+        //     $("div#batteryCategoryMenuContainer").toggleClass("d-none")
+        // })
+        // $("button#dropdownMenuHTML_service").click(function(){
+        //     $("div#batteryServicesNavContainer").toggleClass("d-none")
+        // })
+        $("button#dropdownMenuHTML_raffle").click(function(){
+            $("div#batteryServicesNavContainer").toggleClass("d-none")
+        })
+        
+        
+    })
+    </script>
+
+
+                  <!-- for-dropdown-hotlines-on-mobile-view -->
+<script>
+  // Select all dropdown elements
+  const mobilehotlines = document.querySelectorAll(".official-hotlines-mobile ");
+
+  mobilehotlines.forEach((dropdown) => {
+    // Select the numberSubmenu for the current dropdown
+    const numberSubmenu = dropdown.querySelector(".drop-the-hotline-numbers");
+
+    // Toggle the numberSubmenu when clicking the dropdown
+    dropdown.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevents click from affecting other elements
+
+      // Close all other numberSubmenus
+      mobilehotlines.forEach((otherDropdown) => {
+        if (otherDropdown !== dropdown) {
+          const othernumberSubmenu = otherDropdown.querySelector(".drop-the-hotline-numbers");
+          othernumberSubmenu.classList.remove("show"); // Hide other numberSubmenus
+        }
+      });
+
+      // Toggle the current numberSubmenu
+      numberSubmenu.classList.toggle("show"); // Toggles the 'show' class
+    });
+  });
+
+  // Hide the numberSubmenu when clicking outside any dropdown
+  document.addEventListener("click", function (event) {
+    mobilehotlines.forEach((dropdown) => {
+      const numberSubmenu = dropdown.querySelector(".drop-the-hotline-numbers");
+      if (!dropdown.contains(event.target)) {
+        numberSubmenu.classList.remove("show");
+      }
+    });
+  });
+</script>
+
+
+
+<!-- dropdown-for numbers-in- 1440 dimension -->
+    <script>
+  // Select all dropdown elements
+  const dropdowns = document.querySelectorAll(".view-more-hotlines");
+
+  dropdowns.forEach((dropdown) => {
+    // Select the submenu for the current dropdown
+    const subMenu = dropdown.querySelector(".dropdown-hotlines");
+
+    // Toggle the submenu when clicking the dropdown
+    dropdown.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevents click from affecting other elements
+
+      // Close all other submenus
+      dropdowns.forEach((otherDropdown) => {
+        if (otherDropdown !== dropdown) {
+          const otherSubMenu = otherDropdown.querySelector(".dropdown-hotlines");
+          otherSubMenu.classList.remove("show"); // Hide other submenus
+        }
+      });
+
+      // Toggle the current submenu
+      subMenu.classList.toggle("show"); // Toggles the 'show' class
+    });
+  });
+
+  // Hide the submenu when clicking outside any dropdown
+  document.addEventListener("click", function (event) {
+    dropdowns.forEach((dropdown) => {
+      const subMenu = dropdown.querySelector(".dropdown-hotlines");
+      if (!dropdown.contains(event.target)) {
+        subMenu.classList.remove("show");
+      }
+    });
+  });
+</script>

@@ -1,0 +1,539 @@
+  .box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.motolite-preview {
+  display: block;
+    position: absolute;
+    width: 162px;
+    height: auto;
+    right: -69px;
+    bottom: -81px;
+}
+.popup:hover {
+  background:#d3363d;
+  color:#fff;
+}
+.apply_button:hover {
+  background:#F6E828;
+   color:#d3363d;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup_modal {
+    margin: 28px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    width: 40%;
+    height: auto;
+    position: relative;
+    top: 28%;
+    transition: all 1s ease-in-out;
+}
+
+.popup_modal .close {
+  position: absolute;
+  top: 20px;
+  right: 23px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup_modal .close:hover {
+  color: #06D85F;
+}
+.popup_modal .content {
+  max-height: 100%;
+  overflow: auto;
+  text-align:center
+}
+  .popup_modal_apply {
+   margin: 33px auto;
+    padding: 35px;
+    background: #fff;
+    border-radius: 9px;
+    width: 29%;
+   height: 71%;
+    position: relative;
+    top: 7%;
+    transition: all 1s ease-in-out;
+}
+
+.popup_modal_apply .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup_modal_apply .close:hover {
+  color: #06D85F;
+}
+.popup_modal_apply .content {
+  max-height: 100%;
+  overflow: auto;
+}
+.gray__background {
+  background: #F3F2F1;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 15px;
+  padding: 15px 19px!important;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  top: 47px;
+}
+
+  .popup {
+    position: relative;
+    display: inline-flex;
+    right: 50%;
+    bottom: 0;
+    background: #F6E828;
+    color: #d3363d;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    align-items: center;
+    margin: 14px;
+    margin-top: 5px;
+    margin-right: -12px;
+    border: none;
+  }
+  .apply_button {
+    position: relative;
+    display: inline-flex;
+    left: 85px;
+    bottom: 85px;
+    background: #d3363d;
+    color: #fff;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+     padding: 15px 40px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    align-items: center;
+    margin: 14px;
+    margin-top: 5px;
+    margin-right: -12px;
+    border: none;
+}
+  .share_icon {
+    margin-left: 7px!important;
+    top: 0!important;
+  }
+ .content-text {
+   padding-left: 16px;
+ }
+  .text-columns {
+    color: red;
+    padding: 7px;
+    font-size: 17px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding-bottom: 0px;
+  }
+  .job_available {
+    text-decoration: none;
+    color: black;
+    margin: 8px;
+  }
+  .job_available: hover {
+    color:blue
+  }
+  .apply {
+  color: #fff;
+  text-decoration: none;
+  }
+  
+  /*/* SHARE BUTTON */*/
+  .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+  .col-4 {
+    width: 34.33%;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 608px;
+    height: 268px;
+    background-color: #FFF;
+    border: 1px solid #d3dbe2;
+    box-shadow: 4px 5px rgb(63 63 68 / 15%);
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 13px;
+    position: absolute;
+    z-index: 1;
+    bottom: 113%;
+    left: -44%;
+    margin-left: -80px;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.popup_text {
+    position: absolute;
+    top: 140px;
+    text-align: left;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 24px;
+    align-items: center;
+    color: #D3363D;
+}
+  .share_link {
+    position: absolute;
+    left: 39px;
+    top: 220px;
+    background: #FFFFFF;
+      }
+  .input_text {
+    background: #FFFFFF;
+    box-shadow: inset 8px 3px 31px rgb(63 63 68 / 15%);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 108%;
+    padding: 14px;
+    margin: 10px;
+  }
+  .copy_link {
+    background: #FFFFFF;
+    box-shadow: inset 3px 0px 4px rgb(63 63 68 / 15%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    color: #D3363D;
+    border: 1px solid;
+    margin-top: 10px;
+    padding: 11px 18px;
+    margin-left: 60%;
+  }
+  .copy_link:hover {
+   background-color: #008CBA;
+   color: white;
+  }
+  .min-hieght{
+    paddig-top: 15px !important;
+    padding-bottom: 15px !important;
+    min-height: 500px;
+  }
+  .aside {
+  background: #F3F2F1;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 15px;
+  padding: 12px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+    margin-top: 73px;
+
+}
+ .col-9 {
+    margin-top: 17px;
+ }
+  .job__details {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #595959;
+    margin-top: 5px;
+  }
+  .job_description {
+    position: relative;
+    bottom: 264px;
+  }
+   .motolite__logo {
+    width: 300px;
+    position: relative;
+    left: 4px;
+  }
+  .job__text {
+  position: relative;
+    top: 73px;
+    margin-bottom: 74px;
+    text-align: left;
+    color: #D3363D;
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: 600;
+  }
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+  
+  .box {
+  width: 23%;
+  padding: 17px
+  }
+    .apply_button {
+    left: 112px;
+    bottom: 117px;
+}
+  }
+@media only screen and (max-width: 1170px) {
+ .box{
+    width: 70%;
+  }
+  .popup_modal{
+    width: 60%;
+    top: 169px;
+  }
+.popup_modal_apply{
+  width: 42%;
+    height: 92%;
+    top: 159px;
+  }
+  .motolite-preview {
+    width: 125px;
+    right: -52px;
+    bottom: -45px;
+}
+}
+@media only screen and (max-width: 1040px) {
+ .box{
+    width: 70%;
+  }
+  .popup_modal{
+    width: 70%;
+    top: 169px;
+  }
+.popup_modal_apply{
+  width: 42%;
+    height: 92%;
+    top: 159px;
+  }
+  .popup {
+    right: 16%;
+  }
+  .motolite-preview {
+    width: 125px;
+    right: -52px;
+    bottom: -45px;
+}
+  .apply_button {
+    left: 156px;
+}
+}
+  @media screen and (max-width: 400px){
+  .box{
+    width: 70%;
+  }
+  .popup_modal{
+    max-width: 78%;
+  }
+    .popup_modal_apply{
+    max-width: 100%;
+        left: -26px;
+  }
+    .input_text {
+    width: 286px;
+}
+     .job_description {
+    bottom: 210px!important;
+  }
+    .popup_modal_apply .close {
+    right:8px;
+    }
+}
+  @media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup_modal{
+    max-width: 80%;
+  }
+    .popup_modal_apply{
+    width: 70%;
+      left: -26px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .col-3 {
+    width: 100%;
+  }
+  .job_description {
+    bottom: 214px;
+  }
+  .gray__background {
+    padding: 22px !important;
+    width: 92%;
+    left: 14px;
+  }
+  .job__details {
+    font-size: 15px!important;
+  }
+  .motolite-preview {
+   width: 120px;
+    height: auto;
+    right: -28px;
+    bottom: -50px;
+}
+  .popup .popuptext {
+   width: 350px;
+    margin-left: 46px;
+  }
+  .motolite__logo {
+    width: 228px;
+    left: 2px
+  }
+ 
+  .popup {
+    right: 27%;
+    padding: 15px;
+  }
+  .box{
+    width: 70%;
+  }
+  .popup_modal {
+    width: auto;
+    right: 0;
+    top: 178px;
+    margin: 20px;
+}
+  .popup_modal_apply{
+    height: 60%;
+    top: 23%;
+  }
+   .job__text {
+  top: 57px;
+  margin-bottom: 54px;
+}
+  .popup_text {
+  top:102px;
+  }
+  
+  .apply_button {
+    left: 78px;
+    padding: 15px 17px;
+  }
+  .share_link {
+    position: absolute;
+    top: 179px;
+    width: 207px;
+  }
+  .career-footer-title {
+    text-align: center;
+    font-size:22px;
+    margin-top: -15px;
+  }
+  .footer-address {
+    color: #fff;
+  }
+  .footer-title {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .career-footer-info {
+    text-align: center;
+    position: relative;
+    margin: 14px;
+    bottom: 28px;
+  }
+  .network {
+    color:#fff;
+    font-weight:500;
+  }
+}
+@media only screen and (max-width: 1294px) {
+  .copy_link {
+    margin-left: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .copy_link {
+    position: absolute;
+    margin-top: -68.5px;
+    margin-left: 155px;
+    text-align: center;
+  }
+  
+}
+@media only screen and (max-width: 460px){
+   .copy_link {
+        position: relative;
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 4px;
+        margin-bottom: 16px;
+        width: auto;
+     padding: 11px 55px;
+    }
+.input_text {
+   
+    width: 146%;
+ }
+}

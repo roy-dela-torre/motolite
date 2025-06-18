@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Urbanist:wght@400;500;900&display=swap');
+.col-sm-12,.col-md-6,.col-lg-4{
+    padding: 0 12px !important;
+}
+section .wrapper{
+    max-width: 1297px;
+    margin: 0 auto;
+}
+section img{
+    width: 100%;
+}
+section .left-content,section .right-content{
+    width: 48%;
+  padding: 0 12px !important;
+}
+section .left-content .content-container{
+    max-width: 582px;
+}
+section h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 59px;
+    letter-spacing: 0.69px;
+    margin-bottom: 14px;
+}
+section h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 30px;
+    letter-spacing: 0.69px;
+}
+section p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: #212529;
+}
+section p:last-child{
+    margin-bottom: 0;
+}
+
+section{
+    padding: 100px 0;
+}
+section .mobile{
+    display: none;
+    margin-bottom: 30px;
+}
+
+
+
+section.banner{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/automotive_batteries_banner.jpg?v=1687319401')no-repeat center center/cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+section.banner h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59.8px;
+    line-height: 77px;
+    letter-spacing: 0.69px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 1278px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+section.automotive-batteries{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/automotive_batteries-bg.jpg?v=1687319402')no-repeat center center/cover;
+}
+section.automotive-batteries h2{
+    margin-bottom: 14px;
+}
+section.automotive-batteries .single-content{
+    margin: 100px auto 72px auto;
+    max-width: 918px;
+}
+section.automotive-batteries .single-content h2,section.automotive-batteries .single-content p{
+    text-align: center;
+}
+
+section.automotive-batteries .batteries .content-container{
+    max-width: 376px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+section.automotive-batteries .batteries .content-container.agm{
+    justify-content: unset;
+}
+
+section.automotive-batteries .batteries .content-container.agm a{
+    margin-top: 68px;
+}
+
+section.automotive-batteries .batteries h3,section.automotive-batteries .batteries p{
+    text-align: center;
+    
+}
+section.automotive-batteries .batteries h3{
+  color: #000000;
+}
+section.automotive-batteries .batteries a{
+    padding: 14px 30px;
+    width: 100%;
+    background: linear-gradient(180deg, #DC3545 0%, #450007 100%);
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.66px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+
+
+section.what-to-consider .group-box .content-container{
+    padding: 40px;
+    background-color: #920200;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+section.what-to-consider .group-box{
+    margin-top: 50px;
+}
+section.what-to-consider .group-box .row{
+    gap: 24px 0;
+}
+section.what-to-consider .group-box img{
+    max-width: 75px;
+    margin-bottom: 40px;
+  height: 75px;
+  object-fit: contain;
+}
+section.what-to-consider .group-box h3{
+    margin-bottom: 20px;
+  text-align: center;
+}
+section.what-to-consider .group-box h3,section.what-to-consider .group-box p{
+    color: #FFFFFF;
+}
+
+
+section.why-choose-motolite{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/why_choose_motolite.jpg?v=1687319401')no-repeat center center/cover;
+}
+section.why-choose-motolite h2,section.why-choose-motolite p{
+    color: #FFFFFF;
+}
+section.why-choose-motolite .header{
+    max-width: 1036px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+section.why-choose-motolite .header h2,
+section.why-choose-motolite .header p{
+    text-align: center;
+}
+section.why-choose-motolite .group-box .row{
+    gap: 24px 0;
+}
+section.why-choose-motolite .group-box .content-container{
+    padding: 35px 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+section.why-choose-motolite .group-box img{
+    max-width: 75px;
+    margin-bottom: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+section.why-choose-motolite .group-box h3{
+    color: #000000;
+    margin-bottom: 20px;
+  text-align: center;
+}
+section.why-choose-motolite .group-box p{
+    color: #212529;
+}
+section.why-choose-motolite .col-lg-6{
+  padding: 0 12px !important;
+}
+
+
+section.choose-the-best-automotive{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/choose_the_best_automotive.jpg?v=1687319402')no-repeat center center/cover;
+}
+section.choose-the-best-automotive h2,section.choose-the-best-automotive p{
+    color: #FFFFFF;
+}
+section.choose-the-best-automotive h2{
+    margin: 0 auto 40px auto;
+    text-align: center;
+    max-width: 900px;
+}
+section.choose-the-best-automotive p a{
+    color: #FAFF00;
+    text-decoration: none;
+}
+@media (max-width:1366px) {
+    section .wrapper{
+        padding: 0 5%;
+    }
+}
+@media (max-width:1200px) {
+    section .wrapper{
+        padding: 0;
+    }
+    section{
+        padding: 70px 30px;
+    }
+    section.automotive-batteries .single-content{
+        margin: 70px 0;
+    }
+}
+@media (max-width:991px) {
+      section .mobile{
+        display: block !important;
+    }
+    .left-content,.right-content,section .left-content .content-container{
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    section.automotive-batteries .right-content,section.what-to-consider .right-content{
+        display: none;
+    }
+    section.banner h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    section h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    section h3{
+        font-size: 31px;
+        line-height: 40px;
+    }
+    section p{
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+@media (max-width:767px) {
+    section.automotive-batteries .single-content{
+        margin: 50px 0;
+    }
+    section{
+        padding: 50px 20px;
+    }
+    section.banner h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    section h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    section h3{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    section p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+
+}
+@media (max-width:575px) {
+    section.banner{
+        padding: 50px 0;
+        min-height: auto;
+        height: auto;
+    }
+}

@@ -1,0 +1,134 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+
+
+
+{
+  "sections": {
+    "164922681787dc27d1": {
+      "type": "batteries-navigation",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1654143615fdece725": {
+      "type": "image-technology",
+      "blocks": {
+        "1654143615d1226f51-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "1654143615d1226f51-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1654143615d1226f51-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1654143615d1226f51-0",
+        "1654143615d1226f51-1",
+        "1654143615d1226f51-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMAGE_BANNER_LEISURE_970_x_250_copy_c8fedea4-7870-43f9-95bf-6899b878262d.png",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "164922679527fef2c4": {
+      "type": "batteries-heading",
+      "settings": {
+        "head": "Outdoor & Sports Vehicles Batteries"
+      }
+    },
+    "1649226826e87a7bb9": {
+      "type": "custom-battery-section",
+      "settings": {
+        "section_title": "Marine Batteries",
+        "section_description": "<p>For watercraft and minor marine vessels, our marine batteries provides superior starting power, impact and vibration resistance and low self discharge. Engineer not to fail, even in the most turbulent situations. Powered with Expanded Grid Technology (EXG), our batteries  give  boating enthusiasts the power needed to meet the demands of their marine application and the added variable of heavy pounding from rough seas.</p>",
+        "section_image": "shopify://shop_images/MicrosoftTeams-image_16.png",
+        "img_max_height": 500,
+        "section_image_first": false
+      }
+    },
+    "1649226843b4e2dafb": {
+      "type": "battery-items",
+      "settings": {
+        "section_collection": "marine-batteries"
+      }
+    },
+    "5f0665b6-6072-4a2c-8b83-b2aadd8141b6": {
+      "type": "custom-battery-section",
+      "settings": {
+        "section_title": "Golf Cart Batteries",
+        "section_description": "<p>With 100 years of battery manufacturing excellence, Motolite brings you its deep cycle battery line for use not only with Golf Carts, but also with electric vehicles. pallet trucks, floor sweepers, DC / Standby power, scissors lifts, and other deep cycle battery applications.</p>",
+        "section_image": "shopify://shop_images/MicrosoftTeams-image_15.png",
+        "img_max_height": 300,
+        "section_image_first": false
+      }
+    },
+    "e24edf74-a25a-4179-9ce5-9d0671458bb6": {
+      "type": "battery-items",
+      "settings": {
+        "section_collection": "marine-leisure"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true
+      }
+    }
+  },
+  "order": [
+    "164922681787dc27d1",
+    "main",
+    "1654143615fdece725",
+    "164922679527fef2c4",
+    "1649226826e87a7bb9",
+    "1649226843b4e2dafb",
+    "5f0665b6-6072-4a2c-8b83-b2aadd8141b6",
+    "e24edf74-a25a-4179-9ce5-9d0671458bb6",
+    "footer"
+  ]
+}

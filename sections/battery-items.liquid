@@ -1,0 +1,390 @@
+  {{ 'collection-product.css' | asset_url | stylesheet_tag }}
+  
+<style>
+
+.carousel-inner {
+  padding: 1em;
+ 
+ 
+}
+.carousel-inner.card {
+  margin: 0 0.5em;
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  
+  
+  .carousel-item{
+   .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+  
+  }
+  
+@media (min-width: 300px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+  
+    
+@media (max-width: 991px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+  
+  
+  @media (max-width: 767px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 100%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+  
+ 
+  
+  
+  
+  
+
+  {%comment%}
+.card .card-img-top {
+    max-width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+}
+  .batterySearchResultItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+}
+  {%endcomment%}
+  
+  
+</style>
+
+{% assign productlist = section.settings.section_collection %}
+{% assign productsCount = productlist.all_products_count %}
+
+
+{% if productlist == blank or  productsCount == 0   %}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height:300px; background-color:#f0f0f0; ">
+ 
+<h4 style="color:#b5b5b5;">No product at this moment.</h4>
+</div>
+{%endif%}
+
+{% if productsCount <= 3 %}
+<div class="container" >
+
+  <div class="row justify-content-center">
+           
+         
+       
+          
+           {%for product in productlist.products%}
+            <div class="card col-4 text-center  border-0">
+                <div class="buy-battery-wrapper mx-auto" >
+                    <img src="{{product.featured_image | image_url: width: auto }}" alt="{{ product.featured_image.alt }}" class="card-img-top" >
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title fw-bold">{{product.title}}</h5>
+                    <div class="buy-battery-wrapper mx-auto truncate-box">
+                        <p class="card-text text-start">{{product.content}}</p>
+                    </div>
+                    <a href="{{product.url | append: '?batteryCategory=' | append: page.handle | append: '&pagetitle=' | append: page.title}}" class="btn btn-danger btn-lg">Buy Battery</a>
+                </div>
+            </div>
+
+            {%endfor%}
+		
+
+
+
+
+        </div>
+</div>
+{%endif%}
+
+   {% if productsCount > 3 %} 
+  <div  class="container">
+      
+  
+<div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+     
+   <button class="carousel-control-prev custom-carousel-previous-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next custom-carousel-next-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+  </button>
+     
+    <div class="carousel-inner">
+         
+           {%for product in productlist.products%}
+         <div class="carousel-item custom-carousel-item d-none"> 
+            <div class="card border-0">
+                <div class="buy-battery-wrapper mx-auto card-img-top">
+                    <img src="{{product.featured_image | image_url: height: auto }}" class="card-img-top img-product">
+                </div>
+                <div class="card-body">
+                  <div class="mx-auto text-center">
+                    <h3 class="card-title fw-bold">{{product.title }}</h3>
+                  </div>
+                    <div class="buy-battery-wrapper mx-auto truncate-box">
+                        <p class="card-text text-start">{{product.content}}</p>
+                    </div>
+                  <div class="d-grid justify-content-center" style="width:100%;">
+                    <a href="{{product.url | append: '?batteryCategory=' | append: page.handle | append: '&pagetitle=' | append: page.title}}" class="btn btn-danger btn-lg">Buy Battery</a>
+                  </div>
+                </div>
+            </div>
+ 	     </div>
+            {%endfor%}
+
+
+
+      
+      
+    </div>
+   
+</div>
+    
+     
+</div>
+  {%endif%}
+
+<script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'}}"></script>
+<!--<script>
+  var animationSpeed = 200;
+var multipleCardCarousel = document.querySelector(
+  "#carouselExampleControls"
+);
+  
+  
+  var carou = $("#carouselExampleControls").width();
+   var cardWidth = $(".carousel-item").width();
+  var countOfCard = carou / cardWidth;
+  
+  
+ 
+/*if (window.matchMedia("(min-width: 768px)").matches) {
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+  });*/
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+  
+  var carouselCount = parseInt(countOfCard);
+    console.log(carouselCount);
+
+  
+  
+  $("#carouselExampleControls .carousel-control-next").on("click", function () {
+   // if (scrollPosition < carouselWidth - cardWidth * countOfCard) {
+    if	(carouselCount < {{ productsCount }})
+    {
+           carouselCount++;
+      cardWidth =  $(".carousel-item").width();
+      scrollPosition +=  cardWidth;
+        $("#carouselExampleControls .carousel-inner").animate(
+          { scrollLeft: scrollPosition },
+          animationSpeed
+        );
+    
+     console.log({
+        scrollPosition : scrollPosition,
+        carouselCount :carouselCount,
+        ItemWidth : cardWidth
+      
+      })
+
+    }
+  //  }
+  });
+
+
+  
+  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+  //  if (scrollPosition > 0) {
+    if(carouselCount > 1 && scrollPosition > 0 ){
+   		 carouselCount--;
+     
+        cardWidth =  $(".carousel-item").width();
+      scrollPosition -= cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        animationSpeed
+      );
+      
+       console.log({
+        scrollPosition : scrollPosition,
+        carouselCount :carouselCount,
+        ItemWidth : cardWidth
+      
+      })
+    
+    }
+ //   }
+  });
+//} //else {
+ // $(multipleCardCarousel).addClass("slide");
+//}
+</script>-->
+
+<script>
+  $(document).ready(function () {
+    (function() {
+      initializeCarousels();
+    })();
+    
+    function initializeCarousels() {
+      let extraSmallScreenMediaQuery = window.matchMedia("(max-width: 575px)");
+      let smallScreenMediaQuery = window.matchMedia("(min-width: 576px) and (max-width: 767px)");
+      let mediumScreenMediaQuery = window.matchMedia("(min-width: 768px) and (max-width: 991px)");
+      let largeScreenMediaQuery = window.matchMedia("(min-width: 992px)");
+    
+      (function () {
+        extraSmallScreenMediaMatched(extraSmallScreenMediaQuery);
+        extraSmallScreenMediaQuery.addListener(extraSmallScreenMediaMatched);
+      
+        smallScreenMediaMatched(smallScreenMediaQuery);
+        smallScreenMediaQuery.addListener(smallScreenMediaMatched);
+      
+        mediumScreenMediaMatched(mediumScreenMediaQuery);
+        mediumScreenMediaQuery.addListener(mediumScreenMediaMatched);
+      
+        largeScreenMediaMatched(largeScreenMediaQuery);
+        largeScreenMediaQuery.addListener(largeScreenMediaMatched);
+      })();
+    
+      function carousel(elementId, numberOfItemsToDisplay) {
+        let element = $(`#${elementId}`);
+        let previousButton = element.find(".custom-carousel-previous-button");
+        let nextButton = element.find(".custom-carousel-next-button");
+        let itemContainer = element.find(".carousel-inner");
+        let items = itemContainer.find(".custom-carousel-item");
+        let previousItemIndex = -1;
+        let nextItemIndex = numberOfItemsToDisplay;
+      
+        for (let i = 0; i < items.length; i++) {
+          if (i < numberOfItemsToDisplay) {
+            $(items[i]).removeClass("d-none");
+          }
+          else {
+            $(items[i]).addClass("d-none");
+          }
+        }
+      
+        previousButton.off();
+        previousButton.click(function() {
+          if (previousItemIndex >= 0) {
+            $(items[--nextItemIndex]).addClass("d-none");
+            $(items[previousItemIndex]).removeClass("d-none");
+        
+            previousItemIndex--;
+          }
+        });
+    
+        nextButton.off();
+        nextButton.click(function() {
+          if (nextItemIndex < items.length) {
+            $(items[++previousItemIndex]).addClass("d-none");
+            $(items[nextItemIndex]).removeClass("d-none");
+      
+            nextItemIndex++;
+          }
+        });
+      }
+    
+      function extraSmallScreenMediaMatched(mediaQueryList) {
+        if (mediaQueryList.matches) {
+          carousel("carouselExampleControls", 1);
+        }
+      }
+    
+      function smallScreenMediaMatched(mediaQueryList) {
+        if (mediaQueryList.matches) {
+          carousel("carouselExampleControls", 1);
+        }
+      }
+    
+      function mediumScreenMediaMatched(mediaQueryList) {
+        if (mediaQueryList.matches) {
+          carousel("carouselExampleControls", 2);
+        }
+      }
+    
+      function largeScreenMediaMatched(mediaQueryList) {
+        if (mediaQueryList.matches) {
+          carousel("carouselExampleControls", 3);
+        }
+      }
+    }
+  });
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Battery List Section",
+    "settings": [{
+"type" : "collection",
+"label" : "Select collection",
+"id" : "section_collection"
+
+
+}],
+"presets": [
+{
+"name": "Battery List Section",
+"category": "ADVANCED LAYOUT"
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

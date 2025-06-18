@@ -1,0 +1,39 @@
+  .nav-link {
+            color: dimgrey !important;
+            height: 50px;
+            padding: 40px;
+        }
+
+            .nav-link.active {
+                background-color: transparent !important;
+                border: none;
+                border-radius: 0px;
+                color: red !important;
+                border-bottom: 2px solid red;
+            }
+
+        .mt-50px {
+            margin-top: 50px;
+            font: bold;
+            min-width: 130px;
+        }
+
+
+        .mt-100px {
+            margin-top: 100px;
+        }
+
+        .buy-battery-wrapper {
+            max-width: 380px;
+        }
+
+            .buy-battery-wrapper.text {
+                min-height:150px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+        .mb-20px {
+            margin-bottom: 20px;
+        }

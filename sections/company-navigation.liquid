@@ -1,0 +1,136 @@
+ {{ 'battery-services-navigation.css' | asset_url | stylesheet_tag }}
+ {{ 'collection-product.css' | asset_url | stylesheet_tag }}
+
+<style>
+
+btn:focus, a:focus
+{
+         outline: none;
+}
+.navbar-toggler:focus
+{
+         outline: none !important;
+         box-shadow: none;
+}
+  
+.navbar-brand {
+font-size:25px!important;
+
+}
+}
+.navbar-collapse {
+    margin: 0 50px;
+    font-size: large;
+}
+  .nav-item {
+  margin-left: 220px;
+    margin-right: -190px;
+  
+  }
+ 
+</style>
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed shadow-sm" style="z-index:2; width:100%; min-height:50px!important; margin-top:-10px">
+  <div class="container-fluid">
+ 
+   <a class="navbar-brand fw-bold mx-auto d-lg-none" id="active-nav" style="margin-top=0!important; font-size:30px!important"> RES-Q</a>
+  
+      <button class="navbar-toggler border-0 position-absolute float-end" style="outline:none; top:15px; right:0;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-justify-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+</svg>
+    </button>
+    
+    <div class="collapse navbar-collapse page-width" id="navbarText">
+      <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
+        <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/pages/res-q">RES-Q</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/pages/express-hatid">Express Hatid</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/pages/e-warranty">E-Warranty</a>
+            </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>-->
+<div id="batteryServicesNavContainer">
+  <div id="batteryServicesNav">
+    <div class="battery-service">
+      <a href="/pages/about-us" class="battery-service-link">About Us</a>
+    </div>
+    <div class="battery-service">
+      <a href="/pages/history-timeline" class="battery-service-link">History/Timeline</a>
+    </div>
+    <div class="battery-service">
+      <a href="/pages/exports" class="battery-service-link">Exports</a>
+    </div>
+    <!--<div class="battery-service">
+      <a href="/pages/sustainability" class="battery-service-link">Sustainability</a>
+    </div>
+    <div class="battery-service">
+      <a href="/pages/technology" class="battery-service-link">Technology</a>
+    </div>-->
+  </div>
+</div>
+{%comment%}
+<!--navbar-->
+    <nav class="navbar-light bg-light shadow-sm position-fixed 	d-none d-md-block d-lg-block" style="z-index:2; width:100%;">
+        <ul class="nav justify-content-center">
+            <li class="nav-item fw-bold">
+                <a class="nav-link" aria-current="page" href="/pages/about-us">About Us</a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a class="nav-link" href="/pages/history-timeline">History/Timeline</a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a class="nav-link" href="/pages/exports">Exports</a>
+            </li>
+          <li class="nav-item fw-bold">
+                <a class="nav-link" href="/pages/sustainability">Sustainability</a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a class="nav-link" href="/pages/technology">Technology</a>
+            </li>
+
+        </ul>
+    </nav>
+
+{%endcomment%}
+
+<script>
+ 
+
+ 
+  $(function($) {
+ let url = window.location.href;
+  $('.battery-service-link').each(function() {
+   if (this.href === url) {
+  	 $(this).parent().addClass('active');
+     
+     $('#active-nav').text($(this).text());
+     
+
+  }
+ });
+});
+ 
+ 
+ 
+</script>
+
+
+{% schema %}
+{
+"name": "Battery Navigation",
+"settings": [],
+"presets": [
+{
+"name": "Battery Navigation",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}

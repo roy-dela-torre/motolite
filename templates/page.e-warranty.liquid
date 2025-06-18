@@ -1,0 +1,93 @@
+{% section 'batteries-services-navigation' %}
+{% section 'image-express-hatid-banner' %}
+{% section 'rich-text' %}
+<style>
+  .text-motolite{
+    font-size: 5.5rem;
+    font-weight: 700!important;
+    color:#d5232b;
+    font-family:"Poppins", sans-serif;
+  }
+  .warranty-text h1 {
+    color: #000;
+   font-size: 5.5rem;
+    font-weight: 700!important;
+    font-family:"Poppins", sans-serif;
+  }
+  .title {
+    margin: -1.5rem 0 3rem;
+    font-weight: 500;
+    font-size: 3rem;
+  }
+ .form-warranty-xl {
+    font-size: 2.5rem;
+    padding: 0.75rem 1.2rem;
+    height: calc(1.5em + 1.5rem + 2px);
+}
+</style>
+
+<script type="text/javascript">
+
+      window.ymConfig = {"bot":"x1722944534597","host":"https://r3.cloud.yellow.ai"};
+
+    (function() {
+
+        var w = window,
+
+            ic = w.YellowMessenger;
+
+        if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+
+        else {
+
+            var d = document,
+
+                i = function() {
+
+                    i.c(arguments)
+
+                };
+
+            function l() {
+
+                var e = d.createElement("script");
+
+                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+
+                var t = d.getElementsByTagName("script")[0];
+
+                t.parentNode.insertBefore(e, t)
+
+            }
+
+            i.q = [], i.c = function(e) {
+
+                i.q.push(e)
+
+            }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
+
+    })();
+
+    </script>
+
+
+<div class="container">
+            <div class="h1 font-weight-bold text-uppercase mb-5 text-center warranty-text"><h1><span class="text-motolite">Battery</span> E-Warranty</h1></div>
+            <div class="row">
+                <div class="col-lg-12 pb-4 pb-lg-0">
+                    <h2 class="title mb-5 text-center text-lg-left">Warranty Registration</h2>
+
+
+                  <form method="post" action="https://warr.motolite.com" class="mb-5" target="_blank">
+                        <div class="input-group">
+                            <label class="sr-only" for="warranty-search">Serial number or plate number</label>
+                            <input class="form-control form-warranty-xl ph-light" type="text" id="warranty-search" name="serial" placeholder="Enter warranty serial...">
+                            <div class="input-group-append">
+                                <button class="btn btn-transparent ml-2" type="submit"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icons8-search-50.png?v=1666833466" alt="Search"></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+</div>
+ {% section 'footer' %}

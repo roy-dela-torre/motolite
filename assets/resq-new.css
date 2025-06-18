@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Urbanist:wght@400;500;900&display=swap');
+
+.col-sm-12,.col-md-6,.col-lg-4{
+    padding: 0 12px !important;
+}
+section .wrapper{
+    max-width: 1297px;
+    margin: 0 auto;
+}
+section img{
+    width: 100%;
+}
+section .left-content,section .right-content{
+    width: 48%;
+}
+
+section h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 59px;
+    letter-spacing: 0.69px;
+  margin-bottom: 14px;
+}
+section h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 30px;
+    letter-spacing: 0.69px;
+}
+section p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: #212529;
+}
+section p:last-child{
+    margin-bottom: 0;
+}
+
+section{
+    padding: 100px 0;
+}
+section .mobile{
+    display: none;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+section.banner h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59.8px;
+    line-height: 77px;
+    letter-spacing: 0.69px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 1278px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+section.banner{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/sorad-side-banner.jpg?v=1687402649')no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  padding: 250px 0;
+}
+section.banner p{
+    max-width: 684px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+section.banner .download{
+    gap: 10px;
+    justify-content: center;
+}
+section.banner .download img{
+    max-width: 155px;
+    min-height: 47px;
+    object-fit: contain;
+}
+
+
+section.resq .right-content img{
+    max-height: 700px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+section.resq p{
+    color: #000;
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    line-height: 34.546px;
+    letter-spacing: 0.66px;
+}
+section.resq h2{
+    color: var(--light-red, #D5232B);
+    font-size: 55px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90.087px;
+    letter-spacing: 0.69px;
+  margin-bottom: 40px;
+}
+
+section.resq p.light{
+    color: var(--lightish-black, #212529);
+    font-size: 18px;
+    font-family: 'Raleway';
+    line-height: 34.546px;
+    letter-spacing: 0.66px;
+    font-weight:500;
+}
+
+
+
+section.how-to-use-motolite{
+    background-color:#F8F6F6;
+}
+section.how-to-use-motolite .group{
+    margin-top: 60px;
+}
+section.how-to-use-motolite .group .row>div{
+    width: 33.33%;
+}
+section.how-to-use-motolite .group .content-left,
+section.how-to-use-motolite .group .content-right{
+    max-width: 431px;
+}
+section.how-to-use-motolite .group .content-left h3, section.how-to-use-motolite .group .content-right h3{
+    margin-bottom:20px;
+}
+section.how-to-use-motolite .group .middle-content{
+    max-width: 278px;
+}
+section.how-to-use-motolite .group .row h3{
+    color: #000;
+}
+section.how-to-use-motolite .group .middle-content h3{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.739px;
+    letter-spacing: 0.69px;
+}
+section.how-to-use-motolite .group .middle-content img{
+    margin-bottom: 50px;
+}
+section.how-to-use-motolite .group li::marker{
+    color: #000;
+    font-size: 31px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    line-height: 30.4px;
+    letter-spacing: 0.66px;
+}
+section.how-to-use-motolite h2 span{
+    color: #D5232B;
+}
+section.how-to-use-motolite .heading{
+    max-width:779px;
+    margin: 0 auto;
+}
+section.how-to-use-motolite h2{
+  margin-block: 14px;
+}
+
+
+section.what-does-motolite-emergency{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/what_does_motolite_bg.jpg?v=1687411764')no-repeat center center/cover;
+}
+section.what-does-motolite-emergency .heading img,section.what-does-motolite-emergency .heading .image-container{
+    max-width: 405px;
+}
+section.what-does-motolite-emergency .heading .content{
+    max-width: 791px;
+}
+section.what-does-motolite-emergency .group .row{
+    gap: 24px 0;
+    margin-top: 100px;
+}
+section.what-does-motolite-emergency .group img{
+    max-width: 63px;
+    margin: 0;
+}
+section.what-does-motolite-emergency .group .d-flex{
+    gap: 0 30px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+section.what-does-motolite-emergency .group h3,section.what-does-motolite-emergency .group p,
+section.what-does-motolite-emergency h2, section.what-does-motolite-emergency p{
+    color: #FFFFFF;
+}
+
+section.what-does-motolite-emergency .download{
+    gap: 10px;
+    justify-content: center;
+    margin-top: 71px;
+}
+section.what-does-motolite-emergency .download img{
+    max-width: 155px;
+    min-height: 47px;
+    object-fit: contain;
+}
+.heading.row.justify-content-between.align-items-between{
+    display:flex;
+}
+section.what-does-motolite-emergency h2{
+  margin-bottom: 14px;
+}
+
+
+
+section.advantage-of-motolite{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/advantage_of_motolite_bg.png?v=1687402648') no-repeat center center/cover;
+}
+section.advantage-of-motolite .heading{
+    max-width: 710px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+section.advantage-of-motolite .heading h2,section.advantage-of-motolite .heading p{
+    color: #FFFFFF;
+    text-align: center;
+}
+section.advantage-of-motolite .content-container{
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+section.advantage-of-motolite .content-container img{
+    max-width: 75px;
+    margin-bottom: 40px;
+    height: 75px;
+    object-fit: contain;
+}
+section.advantage-of-motolite .content-container h3{
+    color:#000;
+    margin-bottom: 20px;
+}
+section.advantage-of-motolite .content-container p{
+    color: #212529;
+}
+section.advantage-of-motolite .group .row{
+    gap: 24px 0;
+}
+section.advantage-of-motolite .heading h2{
+  margin-bottom: 14px
+}
+
+
+section.what-makes-the-motolite-the-best{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/what_make_motolite_best_bg.jpg?v=1687402648')no-repeat center left/50%;
+}
+section.what-makes-the-motolite-the-best .heading{
+    margin-bottom: 50px;
+}
+section.what-makes-the-motolite-the-best .heading h2 span{
+    color: #D5232B;
+}
+section.what-makes-the-motolite-the-best li{
+    list-style: none;
+}
+section.what-makes-the-motolite-the-best li img{
+    width: 52px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+section.what-makes-the-motolite-the-best li .d-flex{
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+section.what-makes-the-motolite-the-best .botton-text p{
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    line-height: 34.546px;
+    letter-spacing: 0.66px;
+}
+section.what-makes-the-motolite-the-best .botton-text p span{
+    color: #D5232B;
+}
+section.what-makes-the-motolite-the-best h3{
+  color: #000;
+  font-size: 31px;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0.69px;
+  margin-bottom: 14px;
+}
+
+
+section.download-motolite{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/download_motolite_bg_bf5d0ba0-6b89-4ce4-992a-a06417b333e7.jpg?v=1688360467')no-repeat center center/cover;
+}
+section.download-motolite h2,section.download-motolite p{
+    color:#FFFFFF;
+}
+section.download-motolite h2{
+  margin-bottom: 40px
+}
+section.download-motolite .content{
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+section.faq .accordion-button:not(.collapsed)::after{
+    background-image: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/add.png?v=1687419068');
+}
+section.faq .accordion-button::after{
+    background-image: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/minus.png?v=1687419068');
+}
+section.faq button.accordion-button{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    line-height: 34.546px;
+    background: transparent;
+}
+section.faq h2{
+    color: #000;
+    text-align: center;
+    font-size: 44px;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 56.626px;
+    letter-spacing: 0.69px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+section.faq h2 span{
+    color: #D5232B;
+}
+@media (max-width:1366px) {
+    section .wrapper{
+        padding: 0 5%;
+    }
+}
+@media (max-width:1200px) {
+    section .wrapper{
+        padding: 0;
+    }
+    section,section.banner{
+        padding: 70px 30px;
+    }
+  section.banner{
+    height: auto;
+  }
+}
+@media (max-width:991px) {
+    section.banner h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    section.how-to-use-motolite .group .content-left{
+        order: 1;
+        width: 50% !important;
+        max-width: 100%;
+    }
+    section.how-to-use-motolite .group .content-right{
+        order: 2;
+        width: 50% !important;
+        max-width: 100%;
+    }
+    section.how-to-use-motolite .group .middle-content{
+        order: 3;
+    }
+    section.how-to-use-motolite .group .row{
+        align-items: start !important;
+    }
+    section.how-to-use-motolite .group .middle-content img{
+        margin: 50px 0;
+    }
+}
+
+@media (max-width:767px) {
+    section,section.banner{
+        padding: 50px 30px;
+    }
+    section.banner h1{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    section .mobile{
+        display: block !important;
+    }
+    .left-content,.right-content{
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    section.resq .mobile{
+        max-height: 500px;
+        object-fit: contain;
+    }
+    section.resq .right-content{
+        display: none;
+    }
+    section.how-to-use-motolite .group .row>div{
+        width: 100% !important;
+        max-width: 100%;
+    }
+    section.how-to-use-motolite ol p{
+      margin-bottom: 10px !important;
+    }
+    section.what-makes-the-motolite-the-best{
+        background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/what_make_motolite_best_bg_mobile.jpg?v=1687424171')no-repeat center center/cover;
+    }
+    section.what-makes-the-motolite-the-best h3,section.what-makes-the-motolite-the-best p{
+        color: #FFFFFF;
+    }
+}
+@media (max-width:575px) {
+    section,section.banner{
+        padding: 50px 20px;
+    }
+}

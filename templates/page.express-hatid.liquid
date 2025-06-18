@@ -1,0 +1,725 @@
+{% section 'batteries-services-navigation' %}
+
+<style>
+      @media only screen and (min-width: 350px) {
+    .home-phone {
+      font-size: 35px;
+      color: #d5232b;
+      font-family: "Poppins", sans-serif;
+      font-weight: bolder;
+      line-height: 1.2;
+    }
+   }
+    .contact-details {
+      text-align: center;
+      position: relative;
+      letter-spacing: normal;
+      font-family: raleway;
+      font-weight:bolder;
+      font-size: 1.5rem;
+    }
+    @media (min-width: 1300px) {
+  .d-lg-block {
+      display: block!important;
+  }
+       .express-background {
+      background-image: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/express-hatid_background_dd2cbabc-b9b3-4dc8-8f81-4442e787fbac.png?v=1651077728');
+      height:850px;
+      margin-top: 0;
+      width: auto;
+      background-size: cover;
+      margin-top:30px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+       border: none;
+       position:relative;
+     }
+      .express-logo {
+    width: 300px;
+    display: none;
+    margin:auto;
+    }
+    }
+
+     .MEH-hatid {
+      color: yellow;
+      background: #d5232b;
+      font-style: italic;
+      position: absolute;
+      left: 0;
+      padding: 10px 30px;
+      text-align: right;
+      margin: -155px 0;
+      font-weight: 700;
+      font-size: 2rem;
+      top: 80%;
+      width: 700px;
+
+     }   }
+    @media (min-width: 992px){
+  .text-lg-left {
+      text-align: left !important;
+  }
+      .express-background {
+      background-image: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/express-hatid_background_dd2cbabc-b9b3-4dc8-8f81-4442e787fbac.png?v=1651077728');
+      height:850px;
+      width: auto;
+      background-size: cover;
+      margin-top:30px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+       border: none;
+       position:relative;
+     }
+      .express-logo {
+    width: 300px;
+    display: none;
+    margin:auto;
+    }
+       }
+      .advantages-list{
+      padding: 0px 60px;
+      font-weight: 600;
+      margin: -90px -100px;
+      letter-spacing: normal;
+      font-family: raleway;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #000;
+    }
+     .no-margin {
+      margin-top: -60px!important;
+      margin-left: 100px!important;
+
+     }
+    .row>* {
+      padding-right: calc(var(--bs-gutter-x) * 1)!important;
+      padding-left: calc(var(--bs-gutter-x) * 0)!important;
+        }
+   @media (max-width: 500px) {
+      .express-logo {
+    width: 300px;
+    display: block;
+    margin:auto;
+    }
+     .MEH-hatid {
+      color: yellow;
+      background: #d5232b;
+      font-style: italic;
+      position: absolute;
+      left: 0;
+      padding: 10px 30px;
+      text-align: right;
+      margin: -155px 0;
+      font-weight: 700;
+      font-size: 2rem;
+      top: 45%;
+      width: 700px;
+  }
+     .advantages-list {
+      padding: 0px 60px;
+      font-weight: 600;
+      letter-spacing: normal;
+      font-family: raleway;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #000;
+      margin-top: -180px;
+         margin-left: -50px;
+  }
+     .express-background {
+      background-image: url(https://cdn.shopify.com/s/files/1/0615/7982/1304/files/express-hatid_background_dd2cbabc-b9b3-4dc8-8f81-4442e787fbac.png?v=1651077728);
+      height: 2000px;
+      width: auto;
+      background-size: cover;
+      margin-top: 30px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      border: none;
+      position: relative;
+  }
+   }
+     @media all and (min-width: 1366px) {
+      .express-logo {
+    width: 300px;
+    display: none;
+    margin: auto;
+    }
+       .express-background {
+      background-image: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/express-hatid_background_dd2cbabc-b9b3-4dc8-8f81-4442e787fbac.png?v=1651077728');
+      height:850px;
+      width: auto;
+      background-size: cover;
+      margin-top:30px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+       border: none;
+       position:relative;
+     }
+    }
+    @media all and (min-width: 1171px) {
+        .express-logo {
+    width: 300px;
+    display: none;
+    margin: auto;
+    }
+       .express-background {
+      background-image: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/express-hatid_background_dd2cbabc-b9b3-4dc8-8f81-4442e787fbac.png?v=1651077728');
+      height:850px;
+      width: auto;
+      background-size: cover;
+      margin-top:30px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+       border: none;
+       position:relative;
+     }
+
+    }
+     @media all and (min-width: 501px) and (max-width: 1170px) {
+
+      .express-background {
+      background-image: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/express-hatid_background_dd2cbabc-b9b3-4dc8-8f81-4442e787fbac.png?v=1651077728');
+      height:auto;
+      width: auto;
+      background-size: cover;
+      margin-top:30px;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+       border: none;
+       position:relative;
+      }
+      .express-logo {
+    width: 300px;
+    display: block;
+    margin:auto;
+    }
+       .MEH-hatid {
+      color: yellow;
+      background: #d5232b;
+      font-style: italic;
+      position: absolute;
+      left: 0;
+      padding: 10px 30px;
+      text-align: right;
+      margin: -155px 0;
+      font-weight: 700;
+      font-size: 2rem;
+      top: 35%;
+      width: 700px;
+  }
+       .advantages-list {
+      padding: 0px 60px;
+      font-weight: 600;
+      letter-spacing: normal;
+      font-family: raleway;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #000;
+      margin-top: 0px;
+         margin-left: -50px;
+  }
+    }
+
+  @media (min-width: 992px){
+  .col-lg {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%
+  }}
+    @media only screen and (min-width: 1990px) {
+    .MEH-hatid {
+      width:50%;
+
+    }
+
+    }
+    .no-margin {
+      margin-top: 6px!important;
+      margin-left: 100px!important;
+      margin-bottom: 300px!important;
+    }
+    @media only screen and (max-width: 400px){
+
+    .no-margin {
+      margin-top: 6px!important;
+      margin-left: 100px!important;
+      margin-bottom: 300px!important;
+    }
+    }
+</style>
+
+<script type="text/javascript">
+
+      window.ymConfig = {"bot":"x1722944534597","host":"https://r3.cloud.yellow.ai"};
+
+    (function() {
+
+        var w = window,
+
+            ic = w.YellowMessenger;
+
+        if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+
+        else {
+
+            var d = document,
+
+                i = function() {
+
+                    i.c(arguments)
+
+                };
+
+            function l() {
+
+                var e = d.createElement("script");
+
+                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+
+                var t = d.getElementsByTagName("script")[0];
+
+                t.parentNode.insertBefore(e, t)
+
+            }
+
+            i.q = [], i.c = function(e) {
+
+                i.q.push(e)
+
+            }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
+
+    })();
+
+    </script>
+
+
+
+<section class="banner">
+  <div class="container-fuid">
+    <div class="row">
+      <div class="banner-logo">
+        <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/MEH_round.png?v=1713511756" alt="">
+      </div>
+      <div class="top-content">
+        <div class="top-content-left">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/MEH_round.png?v=1713511756" alt="">
+        </div>
+        <div class="top-content-right">
+          <p>Reach us through our OFFICIAL HOTLINES</p>
+          <p>
+            <b><a href="tel:02-8370-6686">(02)8370-6686</a></b>
+          </p>
+          <p>Metro Manila</p>
+          <p>
+            <b><a href="tel:1-800-10-370-6686">1-800-10-370-6686</a></b>
+          </p>
+          <p>Provincial Toll Free</p>
+          <p>
+            <b><a href="tel:0917-891-6686">0917-891-6686</a></b>
+          </p>
+          <p>Globe</p>
+          <p>
+            <b><a href="tel:0918-843-6686">0918-843-6686</a></b>
+          </p>
+          <p>Smart</p>
+        </div>
+      </div>
+      <div class="left-content">
+        <p class="red">The Motolite Express Hatid (MEH) Advantage</p>
+        <div class="wrapper">
+          <div class="content">
+            <ul>
+              <li><p>Free battery delivery and installation</p></li>
+              <li><p>Available 24/7 in Metro Manila and key cities nationwide</p></li>
+              <li>
+                <p>
+                  Accepts cash, debit and credit card payments ( 3 months installment at 0% interest available for BDO
+                  credit card )
+                </p>
+              </li>
+              <li>
+                <p>With trained technicians who can perform the following:</p>
+                <ul>
+                  <li><p>battery diagnostics</p></li>
+                  <li><p>battery jumpstart / recharging</p></li>
+                  <li><p>basic electrical check-up</p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reliable-and-quick">
+  <div class="container-fluid">
+    <div class="wrapper">
+      <div class="row">
+        <div class="content-container">
+          <h1 class="text-center text-uppercase">Reliable and Quick Car Battery Delivery in the Philippines</h1>
+          <p>
+            No driver wants to be stuck with a dead car battery especially while on the road. That’s why here at
+            Motolite, we provide our customers with fast and convenient car battery delivery and installation in the
+            Philippines.
+          </p>
+          <p>Trust our expert team and premium batteries to revive your ride, fast.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reason-you-need">
+  <div class="container-fluid">
+    <div class="wrapper">
+      <div class="row justify-content-between align-items-center">
+        <div class="row justify-content-between">
+          <div class="left-content">
+            <div class="content">
+              <h2>Reasons You Need Motolite’s Car Battery Delivery Services</h2>
+              <img
+                class="mobile"
+                src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Reasons_You_Need_Motolite_s_Car_Battery_Delivery_Services.jpg?v=1687245245"
+                alt="Reasons You Need Motolite’s Car Battery Delivery Services"
+              >
+              <p>
+                Motolite Batteries are known not only in the Philippines but also in the Asia-Pacific Region. We
+                manufacture some of the best batteries in the country and also export and distribute our products and
+                solutions to other countries.
+              </p>
+              <p>
+                We ensure that these products reach all our customers through our car battery delivery in the
+                Philippines! Here are some more reasons why you should avail yourself and trust our services:
+              </p>
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="image-container">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Reasons_You_Need_Motolite_s_Car_Battery_Delivery_Services.jpg?v=1687245245"
+                alt="Reasons You Need Motolite’s Car Battery Delivery Services"
+              >
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="row">
+            <div class="col-lg-4 col-md-12">
+              <div class="content">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Delivers_and_Installs_the_Battery_Quickly.png?v=1687245246"
+                  alt="Delivers and Installs the Battery Quickly"
+                >
+                <h3>Delivers and Installs the Battery Quickly</h3>
+                <p>
+                  When you reach out to Motolite for our Express Hatid services, our priority is to promptly respond to
+                  your request. We strive to have our technician at your location within 45 minutes of ending the call,
+                  ensuring swift and efficient assistance.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="content">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Replaces_Your_Car_Battery_for_You.png?v=1687245244"
+                  alt="Replaces Your Car Battery for You"
+                >
+                <h3>Replaces Your Car Battery for You</h3>
+                <p>
+                  At Motolite, we don't just stop at delivering your car battery. We go the extra mile by replacing any
+                  faulty or dead battery if needed. Our technicians will conduct basic tests of your battery and vehicle
+                  electrical system. If needed, they can even perform a battery jumpstart and recharge. You'll be back
+                  on the road in no time!
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="content">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Helps_You_Get_Back_on_the_Road_Safely.png?v=1687245244"
+                  alt="Helps You Get Back on the Road Safely"
+                >
+                <h3>Helps You Get Back on the Road Safely</h3>
+                <p>
+                  Motolite's car battery delivery service in the Philippines offers convenience and reliability,
+                  ensuring you get back on the road safely with a premium-quality battery. Whether you're stranded on
+                  the side of the road or at home, we're here to help anytime, anywhere. Trust us to deliver excellence
+                  straight to your doorstep.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how-does-motolite">
+  <div class="container-fluid">
+    <div class="wrapper">
+      <div class="row justify-content-between align-items-center">
+        <div class="left-content">
+          <div class="image-container">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/How_Does_Motolite_s_Car_Battery_Delivery_Service_Work.jpg?v=1687245245"
+              alt="How Does Motolite’s Car Battery Delivery Service Work"
+            >
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="content-container">
+            <h2>How Does Motolite’s Car Battery Delivery Service <span style="color:#D5232B">Work</span></h2>
+            <p>Curious about how Motolite's car battery delivery service in the Philippines works? It's simple!</p>
+            <p>Here's a breakdown of the steps we take to get you back on the road with a top-quality battery:</p>
+          </div>
+        </div>
+        <div class="group-box">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="content-container">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Free_Battery_Delivery_and_Installation_for_Motolite_Battery_Users.png?v=1687245245"
+                  alt="Free Battery Delivery and Installation for Motolite Battery Users"
+                >
+                <h3>Free Battery Delivery and Installation for Motolite Battery Users</h3>
+                <p>
+                  At Motolite, we value our loyal customers and strive to provide the best service possible. That's why
+                  we offer free battery delivery and installation as our way of showing our appreciation. Count on us to
+                  always go above and beyond for your car battery needs.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="content-container">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Available_24-7_in_Metro_Manila.png?v=1687245244"
+                  alt="Available 24-7 in Metro Manila"
+                >
+                <h3>Available 24/7 in Metro Manila</h3>
+                <p>
+                  Motolite's Express Hatid is always ready to serve you, 24/7 in Metro Manila. You can count on us to
+                  deliver high-quality car batteries to your location so that you can explore the road again in no time.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="content-container">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Accepts_Flexible_Payment_Options.png?v=1687245244"
+                  alt="Accepts Flexible Payment Options"
+                >
+                <h3>Accepts Flexible Payment Options</h3>
+                <p>
+                  Motolite's car battery delivery service in the Philippines offers you the flexibility to pay with
+                  cash, debit cards, or credit cards. We also accept Gcash payments in selected outlets. If you have a
+                  BDO credit card, you can also take advantage of our three-month installment plan at 0% interest. No
+                  need to stress about payment options – just choose the one that suits you best.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="batteries">
+  <div class="container-fluid">
+    <div class="wrapper">
+      <div class="row justify-content-between align-items-center">
+        <div class="left-content">
+          <div class="content-container">
+            <h2>Batteries that Motolite Supplies and Installs</h2>
+            <p>
+              Motolite offers a wide range of high-quality vehicle batteries available for delivery and installation
+              through our Express Hatid service. Here are the products that we supply and install for our loyal
+              customers:
+            </p>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="image-container">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Batteries_that_Motolite_Supplies_and_Installs.jpg?v=1687245245"
+              alt="Batteries that Motolite Supplies and Installs"
+            >
+          </div>
+        </div>
+        <div class="header">
+          <h2 class="text-center">Maintenance-Free Batteries</h2>
+          <p class="text-center">
+            Motolite’s line of Maintenance-Free batteries is available in our car battery delivery services in the
+            Philippines. These are all designed with the latest battery technology and undergo strict manufacturing
+            standards to ensure you'll receive only the best.
+          </p>
+        </div>
+        <div class="batteries">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="content-container">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Motolite_Gold.png?v=1687245245"
+                  alt="Motolite Gold"
+                >
+                <div class="content d-flex-justify-content-between h-100">
+                  <h3>Motolite Gold</h3>
+                  <p class="text-center">For high-performance vehicles that require long-lasting power</p>
+                </div>
+                <a href="https://www.motolite.com/products/motolite-gold?batteryCategory=automobile-batteries&pagetitle=automobile%20batteries"
+                  >Buy Battery</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="content-container">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Motolite_Enduro.png?v=1687245245"
+                  alt="Motolite Enduro"
+                >
+                <div class="content d-flex-justify-content-between h-100">
+                  <h3>Motolite Enduro</h3>
+                  <p class="text-center">For everyday driving conditions to provide you with reliable starting power</p>
+                </div>
+                <a href="https://www.motolite.com/products/enduro?batteryCategory=automobile-batteries&pagetitle=automobile%20batteries"
+                  >Buy Battery</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="content-container">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/sovisualco-ai-230626140652.png?v=1687759842"
+                  alt="Motolite Excel"
+                >
+                <div class="content d-flex-justify-content-between h-100">
+                  <h3>Motolite Excel</h3>
+                  <p class="text-center">For motorists who require long-lasting performance</p>
+                </div>
+                <a href="">Buy Battery</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="content-container">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Motolite_Excel_AGM.png?v=1687245245"
+                  alt="Motolite Excel AGM"
+                >
+                <div class="content d-flex-justify-content-between h-100">
+                  <h3>Motolite Excel AGM</h3>
+                  <p class="text-center">For motorists looking to upgrade their current battery</p>
+                </div>
+                <a href="https://www.motolite.com/products/excel?batteryCategory=automobile-batteries&pagetitle=automobile%20batteries"
+                  >Buy Battery</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="content-container">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Motolite_Excel_EFB.png?v=1687245245"
+                  alt="Motolite Excel EFB"
+                >
+                <div class="content d-flex-justify-content-between h-100">
+                  <h3>Motolite Excel EFB</h3>
+                  <p class="text-center">For vehicles with auto start-stop systems</p>
+                </div>
+                <a href="">Buy Battery</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="get-the-best-battery">
+  <div class="container-fluid">
+    <div class="wrapper">
+      <div class="row">
+        <div class="content-container">
+          <h2 class="text-center">Get the Best Car Battery Delivery Services in the Philippines from Motolite!</h2>
+          <p>
+            Say goodbye to the inconvenience of searching for a nearby auto shop or arranging for your car to be towed
+            when your battery unexpectedly dies. With Motolite's reliable car battery delivery in the Philippines, you
+            can have peace of mind knowing that our high-quality batteries will get your car up and running smoothly
+            again.
+          </p>
+          <p>
+            Get back on the road with ease and enjoy the drive!
+            <a href="/pages/contact-us/" target="_blank">Contact Motolite here</a> for more information about our 24/7
+            Express Hatid service. You can also reach us on our
+            <a href="https://www.facebook.com/motoliteexpresshatid/" target="_blank">official Facebook</a> page for any
+            other concerns. For roadside assistance, install our Motolite Res-Q app to get help in emergency situations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="red-section">
+  <div class="container-fluid">
+    <div class="wrapper">
+      <div class="row justify-content-between align-items-center">
+        <div class="left-content">
+          <div class="image-container">
+            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/left-red-image.jpg?v=1687245245" alt="">
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="content-container">
+            <p>
+              If you require the reliable assistance of Motolite's Express Hatid services, you can reach us at the
+              following numbers:
+            </p>
+            <div class="d-flex flex-column">
+              <p>
+                <svg width="15" height="23" viewBox="0 0 15 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.6923 0H2.30769C1.03846 0 0 1.035 0 2.3V20.7C0 21.965 1.03846 23 2.30769 23H12.6923C13.9615 23 15 21.965 15 20.7V2.3C15 1.035 13.9615 0 12.6923 0ZM8.07692 20.7H6.92308C6.34615 20.7 5.76923 20.24 5.76923 19.55C5.76923 18.975 6.34615 18.4 6.92308 18.4H8.07692C8.76923 18.4 9.23077 18.975 9.23077 19.55C9.23077 20.24 8.76923 20.7 8.07692 20.7ZM12.6923 16.1H2.30769V2.3H12.6923V16.1Z" fill="white"/>
+                </svg>
+                <a href="tel:02-8370-6686">+63 (2) 8370 6686</a> (Official Hotline)
+              </p>
+              <p>
+                <svg width="15" height="23" viewBox="0 0 15 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.6923 0H2.30769C1.03846 0 0 1.035 0 2.3V20.7C0 21.965 1.03846 23 2.30769 23H12.6923C13.9615 23 15 21.965 15 20.7V2.3C15 1.035 13.9615 0 12.6923 0ZM8.07692 20.7H6.92308C6.34615 20.7 5.76923 20.24 5.76923 19.55C5.76923 18.975 6.34615 18.4 6.92308 18.4H8.07692C8.76923 18.4 9.23077 18.975 9.23077 19.55C9.23077 20.24 8.76923 20.7 8.07692 20.7ZM12.6923 16.1H2.30769V2.3H12.6923V16.1Z" fill="white"/>
+                </svg>
+                <a href="tel:0917-891-6686">+63 917 891 6686</a> (Official Globe)
+              </p>
+              <p>
+                <svg width="15" height="23" viewBox="0 0 15 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.6923 0H2.30769C1.03846 0 0 1.035 0 2.3V20.7C0 21.965 1.03846 23 2.30769 23H12.6923C13.9615 23 15 21.965 15 20.7V2.3C15 1.035 13.9615 0 12.6923 0ZM8.07692 20.7H6.92308C6.34615 20.7 5.76923 20.24 5.76923 19.55C5.76923 18.975 6.34615 18.4 6.92308 18.4H8.07692C8.76923 18.4 9.23077 18.975 9.23077 19.55C9.23077 20.24 8.76923 20.7 8.07692 20.7ZM12.6923 16.1H2.30769V2.3H12.6923V16.1Z" fill="white"/>
+                </svg>
+                <a href="tel:0918-843-6686">+63 918 843 6686</a> (Official Smart)
+              </p>
+              <p>
+                <svg width="15" height="23" viewBox="0 0 15 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.6923 0H2.30769C1.03846 0 0 1.035 0 2.3V20.7C0 21.965 1.03846 23 2.30769 23H12.6923C13.9615 23 15 21.965 15 20.7V2.3C15 1.035 13.9615 0 12.6923 0ZM8.07692 20.7H6.92308C6.34615 20.7 5.76923 20.24 5.76923 19.55C5.76923 18.975 6.34615 18.4 6.92308 18.4H8.07692C8.76923 18.4 9.23077 18.975 9.23077 19.55C9.23077 20.24 8.76923 20.7 8.07692 20.7ZM12.6923 16.1H2.30769V2.3H12.6923V16.1Z" fill="white"/>
+                </svg>
+                <a href="tel:1-800-10-370-6686">+1 800 10 370 6686</a> (Provincial Toll Free)
+              </p>
+            </div>
+            <p>
+              To expedite the process, please provide our team with your vehicle's car model, allowing us to swiftly
+              determine the best battery solution for your specific needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="{{ 'express-hatid.css' | asset_url }}">
+{% section 'footer' %}

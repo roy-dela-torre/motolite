@@ -1,0 +1,135 @@
+<section class="why_should_you_book_motolite global-padding" id="why-book-{{ section.id }}">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="headers">
+          {% if section.settings.heading %}
+            <h2>{{ section.settings.heading }}</h2>
+          {% endif %}
+
+          {% if section.settings.description %}
+            <p>{{ section.settings.description }}</p>
+          {% endif %}
+        </div>
+
+        <div class="advantage-container">
+          {% for block in section.blocks %}
+            {% if block.type == 'reason' %}
+              <div class="red_box">
+                <div class="content">
+                  {% if block.settings.icon_image != blank %}
+                    <img src="{{ block.settings.icon_image | image_url }}" alt="{{ block.settings.title }}">
+                  {% elsif block.settings.icon_svg != blank %}
+                    {{ block.settings.icon_svg }}
+                  {% endif %}
+
+                  {% if block.settings.title %}
+                    <h3 class="text-center text-white">{{ block.settings.title }}</h3>
+                  {% endif %}
+
+                  {% if block.settings.content %}
+                    <p class="text-white">{{ block.settings.content }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+    "name": "Why Book",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Why Should You Book With Motolite Express Hatid in Pampanga"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "When it comes to car battery emergencies, you deserve a service that’s prompt, dependable, and hassle-free. With our Motolite Express Hatid in Pampanga, you can get the convenience of quick delivery, free installation, and 24/7 availability whenever you need it most. Here's why you should book with us:"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "reason",
+            "name": "Reason",
+            "settings": [
+                {
+                    "type": "html",
+                    "id": "icon_svg",
+                    "label": "SVG Icon",
+                    "default": "<svg></svg>"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon_image",
+                    "label": "Icon Image (optional, overrides SVG)"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Free Delivery and Installation"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Content",
+                    "default": "Enjoy more value with every battery purchase through our free delivery and installation service. No extra charges, and no surprise fees for Motolite battery users. Our trained technicians will bring your new battery directly to your location and handle the installation for you."
+                }
+            ]
+        }
+    ],
+    "max_blocks": 6,
+    "presets": [
+        {
+            "name": "Why Book Motolite Express Hatid",
+            "category": "Custom",
+            "blocks": [
+                {
+                    "type": "reason",
+                    "settings": {
+                        "icon_svg": "<svg></svg>",
+                        "title": "Free Delivery and Installation",
+                        "content": "Enjoy more value with every battery purchase through our free delivery and installation service. No extra charges, and no surprise fees for Motolite battery users. Our trained technicians will bring your new battery directly to your location and handle the installation for you."
+                    }
+                },
+                {
+                    "type": "reason",
+                    "settings": {
+                        "icon_svg": "<svg></svg>",
+                        "title": "24/7 Availability",
+                        "content": "Day or night, you can count on Motolite Express Hatid to be ready when your car battery lets you down. Our 24/7 availability means you’ll never have to wait until morning or business hours to get moving again. It’s a reliable, round-the-clock service made to keep you safe and worry-free on the road."
+                    }
+                },
+                {
+                    "type": "reason",
+                    "settings": {
+                        "icon_svg": "<svg></svg>",
+                        "title": "Trained Technicians",
+                        "content": "Our experts are equipped with the knowledge and skills to ensure your battery is installed quickly and correctly. No need to worry about DIY installations or delays; our team handles everything, so you don’t have to lift a finger. With years of experience, we guarantee that your battery is in good hands and your car will be back on the road in no time."
+                    }
+                },
+                {
+                    "type": "reason",
+                    "settings": {
+                        "icon_svg": "<svg></svg>",
+                        "title": "Multiple Payment Options",
+                        "content": "We provide you with multiple payment options, whether you prefer cash, card, or cashless mobile wallets. Plus, BDO credit card holders can enjoy 0% interest installment plans, making it even lighter on the budget."
+                    }
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

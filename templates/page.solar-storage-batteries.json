@@ -1,0 +1,113 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1649227586b7a4f4f4": {
+      "type": "batteries-navigation",
+      "settings": {}
+    },
+    "16545885638527db8a": {
+      "type": "image-banner",
+      "blocks": {
+        "1654588563c2e5dd30-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "1654588563c2e5dd30-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1654588563c2e5dd30-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1654588563c2e5dd30-0",
+        "1654588563c2e5dd30-1",
+        "1654588563c2e5dd30-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMAGE_BANNER_INDUSTRIAL_970_x_250_copy_cb8a9b64-c8c0-400f-8f8c-c1d7d15296a7.png",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "164922759513a9cdd6": {
+      "type": "batteries-heading",
+      "settings": {
+        "head": "Solar Storage Batteries"
+      }
+    },
+    "1649227602bf239524": {
+      "type": "custom-battery-section",
+      "settings": {
+        "section_title": "For Solar Installations",
+        "section_description": "<p>Specially designed for solar installations and similar applications requiring minimal maintenance, our batteries boast long life, low discharge rates,  long discharge period, and excellent cycling capability. The ideal choice for your solar power storage needs.</p>",
+        "section_image": "shopify://shop_images/MicrosoftTeams-image_14.png",
+        "img_max_height": 500,
+        "section_image_first": false
+      }
+    },
+    "1649227617b265cbba": {
+      "type": "battery-items",
+      "settings": {
+        "section_collection": "industrial"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true
+      }
+    }
+  },
+  "order": [
+    "1649227586b7a4f4f4",
+    "16545885638527db8a",
+    "main",
+    "164922759513a9cdd6",
+    "1649227602bf239524",
+    "1649227617b265cbba",
+    "footer"
+  ]
+}

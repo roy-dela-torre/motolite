@@ -1,0 +1,133 @@
+
+<section class="book-with-motolite">
+    <div class="book-now global-padding">
+        <div class="content">
+            <h2 class="text-white">{{ section.settings.book_title }}</h2>
+            <p class="text-white">{{ section.settings.book_description }}</p>
+            <a href="{{ section.settings.book_link }}" target="_blank" rel="noopener noreferrer" class="red_btn">
+                {{ section.settings.book_button_text }}
+            </a>
+        </div>
+    </div>
+    <div class="reach-us global-padding">
+        <div class="content">
+            <h2 class="text-white">{{ section.settings.reach_title }}</h2>
+            <p class="text-white headerp">{{ section.settings.reach_subtitle }}</p>
+            <div class="contact">
+                {% for contact in section.blocks %}
+                <div class="contact_item">
+                    <!-- Phone SVG icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="23" viewBox="0 0 15 23" fill="none">
+                        <path d="M12.6923 0H2.30769C1.03846 0 0 1.035 0 2.3V20.7C0 21.965 1.03846 23 2.30769 23H12.6923C13.9615 23 15 21.965 15 20.7V2.3C15 1.035 13.9615 0 12.6923 0ZM8.07692 20.7H6.92308C6.34615 20.7 5.76923 20.24 5.76923 19.55C5.76923 18.975 6.34615 18.4 6.92308 18.4H8.07692C8.76923 18.4 9.23077 18.975 9.23077 19.55C9.23077 20.24 8.76923 20.7 8.07692 20.7ZM12.6923 16.1H2.30769V2.3H12.6923V16.1Z" fill="white"/>
+                    </svg>
+                    <span class="text-white mb-0">{{ contact.settings.label }}:
+                        <a href="tel:{{ contact.settings.phone | replace: ' ', '' }}">{{ contact.settings.phone }}</a>
+                    </span>
+                </div>
+                {% endfor %}
+            </div>
+            <p class="text-white contentp">
+                {{ section.settings.reach_description }}
+            </p>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Book with Motolite",
+  "settings": [
+    {
+      "type": "text",
+      "id": "book_title",
+      "label": "Book Title",
+      "default": "Book with Motolite Now!"
+    },
+    {
+      "type": "textarea",
+      "id": "book_description",
+      "label": "Book Description",
+      "default": "With our quick, hassle-free service, getting a new battery delivered and installed is just a call or click away. Enjoy free delivery, expert installation, and 24/7 availability wherever you are in Pampanga."
+    },
+    {
+      "type": "text",
+      "id": "book_link",
+      "label": "Book Button Link",
+      "default": "https://www.motolite.com/pages/contact-us"
+    },
+    {
+      "type": "text",
+      "id": "book_button_text",
+      "label": "Book Button Text",
+      "default": "Book Now!"
+    },
+    {
+      "type": "text",
+      "id": "reach_title",
+      "label": "Reach Us Title",
+      "default": "Need a Battery Fast? Reach Us Now!"
+    },
+    {
+      "type": "text",
+      "id": "reach_subtitle",
+      "label": "Reach Us Subtitle",
+      "default": "Motolite Express Hatid Pampanga"
+    },
+    {
+      "type": "textarea",
+      "id": "reach_description",
+      "label": "Reach Us Description",
+      "default": "Call us anytime for fast, reliable battery delivery and installation. Trust the name drivers count on to get them moving again."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "contact",
+      "name": "Contact",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Smart"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone Number",
+          "default": "0918-843-6686"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "Book with Motolite",
+      "blocks": [
+        {
+          "type": "contact",
+          "settings": {
+            "label": "Smart",
+            "phone": "0918-843-6686"
+          }
+        },
+        {
+          "type": "contact",
+          "settings": {
+            "label": "Globe",
+            "phone": "0917-891-6686"
+          }
+        },
+        {
+          "type": "contact",
+          "settings": {
+            "label": "Provincial Toll Free",
+            "phone": "1-800-10-370-6686"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,1040 @@
+<style>
+  /* <!-- FAQ Panel --> */
+    * {
+      box-sizing: border-box;
+    }
+    *::before, *::after {
+      box-sizing: border-box;
+    }
+    .accordion .accordion-item {
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .accordion .accordion-item button[aria-expanded=true] {
+      border-bottom: 1px solid #03b5d2;
+    }
+    .accordion button {
+      position: relative!important;
+      display: block!important;
+      text-align: left!important;
+      width: 100%!important;
+      padding: 20px 40px!important;
+      color: #000000!important;
+      font-size: 20px!important;
+      font-weight: 600;
+      border: none!important;
+      background: none!important;
+      outline: none!important;
+      font-family: Raleway;
+     word-wrap: break-word;
+    }
+    .accordion button:hover, .accordion button:focus {
+      cursor: pointer;
+      color: #03b5d2;
+    }
+    .accordion button:hover::after, .accordion button:focus::after {
+      cursor: pointer;
+      color: #03b5d2;
+      border: 1px solid #03b5d2;
+    }
+    .accordion button .accordion-title {
+      padding: 1em 1.5em 1em 0;
+      color: black;
+      font-weight: 600;
+      font-family: Raleway;
+    }
+    .accordion button .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+    }
+    .accordion button .icon::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 9px;
+      left: 5px;
+      width: 10px;
+      height: 2px;
+      background: currentColor;
+    }
+    .accordion button .icon::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 9px;
+      width: 2px;
+      height: 10px;
+      background: currentColor;
+    }
+    .accordion button[aria-expanded=true] {
+      color: #03b5d2;
+    }
+    .accordion button[aria-expanded=true] .icon::after {
+      width: 0;
+    }
+    .accordion button[aria-expanded=true] + .accordion-content {
+      opacity: 1;
+      max-height: 500rem;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+    .accordion .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+    }
+    .accordion .accordion-content p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 1.5rem 0;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .text-faqs {
+    color: black;
+    font-weight:700;
+    font-size: 5rem;
+    }
+    .faq-battery {
+    font-size: 5rem;
+    color: red;
+    margin-top:80px;
+    font-weight:700;
+    }
+    .upper-text {
+     font-size: 2rem;
+      margin-bottom: 1.5rem !important;
+      margin-top: 2.5rem !important;
+      font-weight: bolder;
+      font-family: sans-serif;
+      color: #000;
+  
+  }
+    .background {
+    background-image: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/banner-faq-3_1.jpg?v=1653895866'); 
+      height:500px;
+      background-size: cover;
+      margin-top:-30px;
+      background-position: center;
+    }
+    .text-white {
+    color: white!important;
+      display: center;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      font-size:5rem;
+      letter-spacing: normal;
+      font-family: raleway;
+      font-weight: 700;
+      letter-spacing: normal;
+     
+    }
+   a {
+      color: #fff;
+     text-decoration:none;
+     font-size: 2.1rem;
+     font-family: raleway;
+     font-weight: 600;
+     letter-spacing: normal;
+     
+   }
+     .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 15px solid red;
+    border-bottom: 12px solid transparent;
+      display: inline-grid;
+    }
+   @media all and (min-width: 1366px) {
+     .offset-xxl-7 {
+      margin-left: 400px;
+   }
+  </style>
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What are the functions of a battery?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The primary purpose of a standard automotive battery is to provide power to a vehicle's starter. To start the engine, electricity from the battery is used to operate the starter motor and to provide current for the ignition system during engine cranking.
+
+When the engine is running, electricity from the battery may be needed to supplement the charging system when the vehicle's electrical load requirements exceed the charging system's ability to produce electricity. The battery also serves to ensure that should the car's alternator malfunction, there would still be some power left to get the car running for a limited time - hopefully enough to get to the intended destination.
+
+When the engine is off, electricity from the battery is used to operate lighting, accessories, or other electrical systems.
+
+Moreover, the battery acts as an electrical shock absorber, protecting vital electrical components from burning out during high voltage/current output. Developments in automotive technology have resulted in more sophisticated pieces of equipment becoming regular fixtures in today's vehicles. Since these gadgets continue to draw power even when the key is turned off, batteries have to deliver more power to serve the car's requirements."
+    }
+	},
+	{
+    "@type": "Question",
+    "name": "What does RC and CA stand for?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "RC stands for Reserve Capacity and is a very useful industry rating (for consumers) that refers to a battery's ability to maintain low amperage load for the automobile's ignition, lights and other vital electrical equipment should the alternator fail. RC is defined as the number of minutes that a battery can be discharged at 25 amperes until the voltage drops to 1.75 volts per cell or 10.5 terminal volts for a 12-volt battery.
+
+CA stands for Cranking Amperes. This is the load discharged in amperes by which a new fully-charged battery at 0 degrees Celsius (32 degrees Fahrenheit) can continuously deliver for 30 seconds and maintain a terminal voltage equal to or higher than 1.20 volts per cell."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "What does AH stand for?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AH stands for Ampere Hour and is a unit of electrical capacity. This tells you how much electrical energy the battery will store.
+
+The total energy, expressed in ampere hours, that a battery can deliver continuously for a specified period of time ,when discharging continuously at a specified rate, to a specified cut-off voltage.
+
+AH @ 20 ; AH @ 10."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "Some say that “bigger is better” as far as batteries are concerned. How true is this?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Since today's vehicles are equipped with numerous advanced electrical gadgets, choosing the right battery can be a tough task. Original Equipment batteries are rated at the minimum required rating, since they are designed for cars with all the Original Electrical Equipment in place. But once you start putting additional accessories like high-powered stereos, amplifiers and so on, it will certainly have an effect on the electrical system/battery requirements of your car.
+
+As suggested earlier, it is best to install a battery of HIGHER CAPACITY (AH, CCA or CA, RC) if you have installed additional electrical accessories. This is to ensure a margin of safety and better battery performance. Should you decide to install a bigger and more powerful battery, please note the following tips when carrying out the installation:
+
+1. Fit the battery first. Does the battery have a height clearance or fitting problem? If yes, do not proceed with the installation. Does the acid tray fit? If not, purchase a tray that will fit the battery. This is to protect your undertray from acid corrosion. Does the battery hold down fit? If not, purchase a hold-down that will fasten the battery to the vehicle.
+
+2. Check if the new battery's gas exhaust vents directly face your car's electronic module. Some designs have their exhaust gas vents located on different sides of the cover (for MF-sealed batteries). Vents with direct exhaust may damage your vehicle's electronic control module.
+
+3. Always consult a battery expert or technician first before attempting to install a battery."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "How do I determine the correct battery and power requirements for my automobile?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The best way is to consult your vehicle owner's manual. Your car dealer may also assist you in your car's minimum battery/power requirement. The OMMC's outlets and dealers are furnished with battery replacement manuals that specify the vehicle make, model and year along with the recommended OMMC battery size and capacity rating.
+
+Note: Never use a battery with a capacity rating LOWER than what the vehicle manufacturer/Original Equipment recommends.
+
+It is important to select a battery type that is consistent with your vehicle, its application, and your driving requirements or patterns. OMMC distributors will gladly help you make the right choice."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "What is the average service life of a battery?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A battery lasts for 2 to 3 years depending on the weather and road conditions, electrical load of the car and the specifications of the battery."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "What does the warranty cover?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The warranty covers failure of the battery due to material and/or workmanship for the duration of the warranty period. Just present your original guarantee certificate and sales invoice to facilitate replacement. If the battery fails within the warrantable period, OMMC thru its dealers will replace it with a new battery at no cost.
+
+For warranty concerns, contact us via email.
+
+*Warranty may vary depending on the variant/type of battery purchased. To know more about our battery warranty limitations please click here."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "How should I maintain my battery and how often must I do it?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For batteries labeled Low-Maintenance, the main items that should be checked are the fluid levels per battery cell and battery terminal post corrosion. The cables, terminals, cover, and container should be inspected and cleaned if they look dirty or corroded.
+
+Some batteries are equipped with removable vent caps so that the fluid/electrolyte levels can be checked when levels are low.
+
+Always use distilled water when filling the battery to prevent undesired chemicals from contaminating it. The water added should cover the battery's plates and be no higher than 2 to 4 mm from the bottom of the vent so as not to overfill the battery. You should check these levels periodically.
+
+Note: Do not use diluted sulfuric acid (battery electrolyte) solution for topping up purposes.
+
+Battery terminal post corrosion occurs when the battery is venting gasses during charging. Oxygen gas reacts with the lead alloy post and produces a whitish powdery substance called corrosion. Corrosion lessens the contact between the post terminals and the cable clamps thereby reducing the battery's ability to provide power. Remove corrosion by brushing the posts and the clamp (detached from the post) with water (mixed with caustic soda if possible) until all signs of corrosion are gone. To detach the clamp from the battery post, remove the negative (-) clamp first to avoid sparks that may cause an explosion. When re-installing the clamp to the battery post, connect the positive (+) clamp first.
+
+Check your battery at least once a month, more often if you have a battery older than six months. Have your battery checked by qualified technicians every two to four months to ensure optimum performance and life."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "How do I know when to test or replace my battery?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Your battery or electrical system has a problem when:
+
+1. Your instrument panel indicates battery discharge/low power for extended periods even if your engine is running
+
+2. Your headlights dim when the engine is idling
+
+3. Your starter motor is experiencing slow, labored or interrupted cranking/turnover.
+
+4. Your battery seems to lose power quickly in extended and/or short repetitive starts.
+
+Let our technicians run a check-up to confirm the most probable cause."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "What is the advantage of a maintenance-free battery over other battery types?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Being maintenance-free eliminates the need to add water and minimizes corrosion in the battery terminal posts."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "How should a battery be charged?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Automotive batteries should always be treated with extreme caution even if they are undercharged since they contain corrosive sulfuric acid and produce explosive gases. MF batteries, though sealed, have small vents through which internally generated gasses are released. They can leak or spurt acid if they are tipped or charged too vigorously. During charging, the production of hydrogen and oxygen is accelerated. Always make it a practice to read and follow the warning labels that are strategically located on the batteries.
+
+The following precautionary measures are recommended when charging a battery:
+
+1. Make sure that the charger is switched off and unplugged before connecting or disconnecting a battery. The leads should always be connected to the proper battery terminals. The red clamp/clip should be connected to the positive (+) terminal of the battery while the black clamp/clip should be connected to the negative (-) terminal.
+
+2. Read the charger's instruction manual carefully before attempting to use it.
+
+3. The battery should be charged in a well-ventilated and undisturbed area.
+
+4. Do not shake the connections to inspect the contact while the charger is activated or plugged in. This is to avoid sparks that may cause battery explosion.
+
+5. Always use protective eyewear and clothing during charging.
+
+6. Avoid overheating the battery during recharging. Stop charging when the cells are gassing (boiling) and the battery is warm to the touch.
+
+7. Smoking, open flames or sparks should never be allowed near a battery to avoid an explosion.
+
+8. Make sure that the vent plugs are in proper position during recharging and that the vent holes are free of dirt.
+
+9. The battery and the charger determine the amount of current and the time required to charge the battery. Most chargers can automatically adjust to the battery's state-of-charge and will shut down when the amount of charge becomes sufficient. Many chargers have minimum voltages that must be present in the battery before the charger is activated. Generally, these low voltages are substantially below those shown by a battery that looks dead to a vehicle's electrical system.
+
+10. Some chargers have optional settings for 6 and 12-volt batteries and/or low-maintenance versus standard or deep cycle batteries. Make sure that you have adjusted the settings properly before turning on the charger. If the charger needs manual adjustment, read the charger's instructions to determine the setting that is suitable to the battery's rating."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "Does extreme tropical heat affect the performance of my battery?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Like in most chemical reactions, heat is a catalyst that accelerates the chemical processes inside the battery and may cause overcharging conditions. Extreme heat accelerates corrosion, thus shortening battery life. In addition, high heat causes battery fluid to evaporate more rapidly; hence, more frequent distilled water top-ups are required for low-maintenance batteries."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "Can electrical gadgets that operate when the key is turned off affect the performance of a battery?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Key-off electrical loads are common. The vehicle's electrical system is adjusted to accommodate this extra drain. Nevertheless, if a car is equipped with devices that require power even after the key has been turned off, care must be taken during extended periods of vehicle inactivity or frequent short trips, since these do not allow the battery to recharge after the drain resulting from starting the engine. If a vehicle is used for short trips only and its electrical system is in good working condition, periodic recharging is required."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "Are today’s smaller batteries as powerful as the older and bigger ones?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Automotive batteries are classified according to group size. Some group sizes have become popular standards since they have been widely used over the years. With the latest advances in technology, it is now possible to manufacture original equipment batteries of smaller sizes but with higher ratings."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "Do four-cylinder engines require more power to start than six-cylinder engines?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There are some four-cylinder engines that require more power to start than six-cylinder engines. In a four-cylinder vehicle, the starter usually rotates at a higher revolution per minute (rpm), so there are less chances to fire per revolution. Other factors are compression ratios, the starter motor's design and vehicle options. Refer to your automobile's owner's manual or consult with your battery dealer to ensure that your battery has the minimum power requirement."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "Do fuel injection systems require more power to start your vehicle?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Spark ignition engines with fuel injection systems are not necessarily more difficult to start than engines with naturally aspirated carburator systems. However, diesel (compression ignition/fuel injection) engines do need substantially more starting time and power."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "How do I know if I need to replace my battery?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A battery's life varies according to the type of your vehicle, its application, and your driving requirements/patterns. You should take all of these factors into consideration when purchasing a battery. If you want better performance from your succeeding battery, consider upgrading to a battery with a higher RC rating than that specified by your car manufacturer."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "What does the New Technology Full Calcium Motolite offer?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Motolite now has calcium in both negative and positive grids, thus making it full calcium. Calcium strengthens the plates which gives the battery a longer life. Calcium also reduces the gassing caused by the reaction between the active material and the electrolyte. Corrosion is thus minimized."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "Why did Motolite come up with a new line of batteries?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The new Motolite line is a product of years of research and development and a thorough understanding of consumers' needs. Thus, OMMC now offers the best battery in the market to show gratitude to its loyal customers."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "Is the New Technology Full Calcium Motolite more expensive than the traditional Motolite Classic (Dry-Charged)?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There are three variants available: Excel. Gold and Enduro. Motolite Enduro is priced almost at par with the traditional Motolite. Motolite Gold and Excel are premium batteries with superior features."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "What are the differences among the Motolite variants?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Motolite offers several variants to address different needs of its customers. The variants differ in ratings, warranty, number of plates and other features."
+		}
+  },
+  {
+    "@type": "Question",
+    "name": "What makes Motolite a world-class product?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Trusted Leader:
+
+PBI , makers of Motolite ( Philippines ), Century ( Malaysia ) and Supercharge ( Australia ) is the undisputed no. 1 battery manufacturer in the country. For many decades, it has been powering the nation’s transportation and industries through its line of products- ranging from automotive, motorcycle, to industrial batteries for applications such as mining vessels, forklifts, solar power sites, and marine industries.
+
+Over the years, Motolite has remained to be the strong market leader with the best technology in the automotive battery industry. It has continuously delighted customers with its superior quality and unparalleled performance, making it the consumers’ battery brand of choice.
+
+Manufacturing Excellence:
+
+Philippine Batteries Incorporated (PBI), maker of Motolite , is a TS16949 and ISO-certified production plant that is one of the largest and most modern battery manufacturing facilities in Southeast Asia. PBI employs a fully-integrated closed-loop manufacturing and distribution process that covers material-sourcing, component design and production, assembly, charging, distribution and recycling.
+
+Globally recognized:
+
+PBI manufactured batteries, being at par with global standards, are distributed and sold in the United States, European, Middle Eastern, Australian and Asian markets.
+
+The Choice of Local Automotive Industry:
+
+In the Philippines, PBI Manufactured batteries, thru it’s OE Sales and Marketing arm, has 95% share of the Philippine Automotive Original Equipment Manufacturers market, making it the battery supplier of choice for many distinguished automotive brands. It is also a supplier to the leading motorcycle manufacturers in the Philippines."
+
+		}
+  }]
+}
+
+  </script>
+  <section class="section section-faq pt-5 pt-lg-7 mb-0 mb-lg-2">
+        <div class="background">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xxl-5 offset-xxl-7 text-center text-xxl-left">
+                      <h1 class="text-uppercase mb-4 mb-lg-5 text-white title-faq">Frequently Asked Questions</h1>
+                                          
+                                             
+    <span class="triangle-right" style="margin-left:-100px"></span>
+        <h2><a href="#battery-faq">Battery FAQs</a></h2>
+                 <br>                            
+       <span class="triangle-right" style="margin-left:-100px"></span>
+         <h2><a href="#motoring-tips">Motoring Tips</a></h2>
+  
+                                          
+                    </div>
+                  </div>
+                </div>
+              </div>
+         <div class="container">
+              <div class="row mb-4 mb-lg-5" >
+                  <div class="col-12">
+                      <div class="text-center">
+                          <a id="battery-faq"></a>
+                        <div class="h1 font-weight-bold text-uppercase mb-4 mb-lg-5 faq-section-header faq-battery"><h2 class="faq-battery">MOTORING<span class="text-faqs"> TIPS</h2></span></div>
+                      </div>
+                  </div>
+              </div>
+             
+            <div class="row mb-5">
+                  <div class="col-12">
+                      <h2 class="upper-text">Battery Basics</h2>
+            
+            
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <h3 class="accordion-title">What are the functions of a battery?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>The primary purpose of a standard automotive battery is to provide power to a vehicle's starter. To start the engine, electricity from the battery is used to operate the starter motor and to provide current for the ignition system during engine cranking.</p>
+  
+            <p>When the engine is running, electricity from the battery may be needed to supplement the charging system when the vehicle's electrical load requirements exceed the charging system's ability to produce electricity. The battery also serves to ensure that should the car's alternator malfunction, there would still be some power left to get the car running for a limited time - hopefully enough to get to the intended destination.</p>
+  
+            <p>When the engine is off, electricity from the battery is used to operate lighting, accessories, or other electrical systems.</p>
+  
+  <p>Moreover, the battery acts as an electrical shock absorber, protecting vital electrical components from burning out during high voltage/current output. Developments in automotive technology have resulted in more sophisticated pieces of equipment becoming regular fixtures in today's vehicles. Since these gadgets continue to draw power even when the key is turned off, batteries have to deliver more power to serve the car's requirements.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <h3 class="accordion-title">What does RC and CA stand for?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>"RC" stands for Reserve Capacity and is a very useful industry rating (for consumers) that refers to a battery's ability to maintain low amperage load for the automobile's ignition, lights and other vital electrical equipment should the alternator fail. RC is defined as the number of minutes that a battery can be discharged at 25 amperes until the voltage drops to 1.75 volts per cell or 10.5 terminal volts for a 12-volt battery.</p>
+  
+  <p>"CA" stands for Cranking Amperes. This is the load discharged in amperes by which a new fully-charged battery at 0 degrees Celsius (32 degrees Fahrenheit) can continuously deliver for 30 seconds and maintain a terminal voltage equal to or higher than 1.20 volts per cell.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">What does AH stand for?<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>"AH" stands for Ampere Hour and is a unit of electrical capacity. This tells you how much electrical energy the battery will store.</p>
+          <p>The total energy, expressed in ampere hours, that a battery can deliver continuously for a specified period of time ,when discharging continuously at a specified rate, to a specified cut-off voltage.</p>
+  <p>AH @ 20 ; AH @ 10</p>
+            </div>
+            </div>
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Some say that "bigger is better" as far as batteries are concerned. How true is this?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Since today's vehicles are equipped with numerous advanced electrical gadgets, choosing the right battery can be a tough task. Original Equipment batteries are rated at the minimum required rating, since they are designed for cars with all the Original Electrical Equipment in place. But once you start putting additional accessories like high-powered stereos, amplifiers and so on, it will certainly have an effect on the electrical system/battery requirements of your car.</p>
+                                  
+                                  <p>As suggested earlier, it is best to install a battery of HIGHER CAPACITY (AH, CCA or CA, RC) if you have installed additional electrical accessories. This is to ensure a margin of safety and better battery performance. Should you decide to install a bigger and more powerful battery, please note the following tips when carrying out the installation:</p>
+                                  
+                                  <p>1. Fit the battery first. Does the battery have a height clearance or fitting problem? If yes, do not proceed with the installation. Does the acid tray fit? If not, purchase a tray that will fit the battery. This is to protect your undertray from acid corrosion Does the battery hold down fit? If not, purchase a hold-down that will fasten the battery to the vehicle.</p>
+                                  
+                                  <p>2. Check if the new battery's gas exhaust vents directly face your car's electronic module. Some designs have their exhaust gas vents located on different sides of the cover (for MF-sealed batteries). Vents with direct exhaust may damage your vehicle's electronic control module.</p>
+                                  
+                                  <p>3. Always consult a battery expert or technician first before attempting to install a battery.</p>
+                                  
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <h3 class="accordion-title">How do I determine the correct battery and power requirements for my automobile?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             
+           <p>The best way is to consult your vehicle owner's manual. Your car dealer may also assist you in your car's minimum battery/power requirement. The OMMC's outlets and dealers are furnished with battery replacement manuals that specify the vehicle make, model and year along with the recommended OMMC battery size and capacity rating.</p>
+                                  
+             <p>Note: Never use a battery with a capacity rating LOWER than what the vehicle manufacturer/Original Equipment recommends.</p>
+                                  
+             <p>It is important to select a battery type that is consistent with your vehicle, its application, and your driving requirements or patterns. OMMC distributors will gladly help you make the right choice.</p>
+                                  
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">What is the average service life of a battery?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>A battery lasts for 2 to 3 years depending on the weather and road conditions, electrical load of the car and the specifications of the battery.</p>
+     </div>
+        </div>
+        
+          
+           <div class="row mb-5">
+                  <div class="col-12">
+                      <h2 class="upper-text">Warranty</h2>
+            
+            
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <h3 class="accordion-title">What does the warranty cover?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+              <p>The warranty covers failure of the battery due to material and/or workmanship for the duration of the warranty period. Just present your original guarantee certificate and sales invoice to facilitate replacement. If the battery fails within the warrantable period, OMMC thru its dealers will replace it with a new battery at no cost.</p>
+                                  
+                                  <p>For warranty concerns, contact us via email.</p>
+                                  
+                                  <p>*Warranty may vary depending on the variant/type of battery purchased. To know more about our battery warranty limitations please <a href="https://www.motolite.com/pages/warranty-policy" style="    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+    padding: 0 !important;
+    text-decoration: none;
+    color: rgba(var(--color-foreground), 0.75);" target="_blank">click here</a>.</p>                          
+          </div>
+        </div>
+        
+        <div class="row mb-5">
+                  <div class="col-12">
+                      <h3>Maintainance</h3>
+        
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <h3 class="accordion-title">How should I maintain my battery and how often must I do it?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>For batteries labeled Low-Maintenance, the main items that should be checked are the fluid levels per battery cell and battery terminal post corrosion. The cables, terminals, cover, and container should be inspected and cleaned if they look dirty or corroded.</p>
+                                  
+                                  <p>Some batteries are equipped with removable vent caps so that the fluid/electrolyte levels can be checked when levels are low.</p>
+                                  
+                                  <p>Always use distilled water when filling the battery to prevent undesired chemicals from contaminating it. The water added should cover the battery's plates and be no higher than 2 to 4 mm from the bottom of the vent so as not to overfill the battery. You should check these levels periodically.</p>
+                                  
+                                  <p>Note: Do not use diluted sulfuric acid (battery electrolyte) solution for topping up purposes.</p>
+                                  
+                                  <p>Battery terminal post corrosion occurs when the battery is venting gasses during charging. Oxygen gas reacts with the lead alloy post and produces a whitish powdery substance called corrosion. Corrosion lessens the contact between the post terminals and the cable clamps thereby reducing the battery's ability to provide power. Remove corrosion by brushing the posts and the clamp (detached from the post) with water (mixed with caustic soda if possible) until all signs of corrosion are gone. To detach the clamp from the battery post, remove the negative (-) clamp first to avoid sparks that may cause an explosion. When re-installing the clamp to the battery post, connect the positive (+) clamp first.</p>
+                                  
+                                  <p>Check your battery at least once a month, more often if you have a battery older than six months. Have your battery checked by qualified technicians every two to four months to ensure optimum performance and life.</p>
+                                  
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">How do I know when to test or replace my battery?<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Your battery or electrical system has a problem when:</p>
+                                  
+                                  <p>1. Your instrument panel indicates battery discharge/low power for extended periods even if your engine is running</p>
+                                  
+                                  <p>2. Your headlights dim when the engine is idling</p>
+                                  
+                                  <p>3. Your starter motor is experiencing slow, labored or interrupted cranking/turnover.</p>
+                                  
+                                  <p>4. Your battery seems to lose power quickly in extended and/or short repetitive starts.</p>
+                                  
+                                  <p>Let our technicians run a check-up to confirm the most probable cause.</p>
+            </div>
+            </div>
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">What is the advantage of a maintenance-free battery over other battery types?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Being maintenance-free eliminates the need to add water and minimizes corrosion in the battery terminal posts.</p>              
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <h3 class="accordion-title">How should a battery be charged?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Automotive batteries should always be treated with extreme caution even if they are undercharged since they contain corrosive sulfuric acid and produce explosive gases. MF batteries, though sealed, have small vents through which internally generated gasses are released. They can leak or spurt acid if they are tipped or charged too vigorously. During charging, the production of hydrogen and oxygen is accelerated. Always make it a practice to read and follow the warning labels that are strategically located on the batteries.</p>
+                                  
+                                  <p>The following precautionary measures are recommended when charging a battery:</p>
+                                  
+                                  <p>1. Make sure that the charger is switched off and unplugged before connecting or disconnecting a battery. The leads should always be connected to the proper battery terminals. The red clamp/clip should be connected to the positive (+) terminal of the battery while the black clamp/clip should be connected to the negative (-) terminal.</p>
+                                  
+                                  <p>2. Read the charger's instruction manual carefully before attempting to use it.</p>
+                                  
+                                  <p>3. The battery should be charged in a well-ventilated and undisturbed area.</p>
+                                  
+                                  <p>4. Do not shake the connections to inspect the contact while the charger is activated or plugged in. This is to avoid sparks that may cause battery explosion.</p>
+                                  
+                                  <p>5. Always use protective eyewear and clothing during charging.</p>
+                                  
+                                  <p>6. Avoid overheating the battery during recharging. Stop charging when the cells are "gassing" (boiling) and the battery is warm to the touch.</p>
+                                  
+                                  <p>7. Smoking, open flames or sparks should never be allowed near a battery to avoid an explosion.</p>
+                                  
+                                  <p>8. Make sure that the vent plugs are in proper position during recharging and that the vent holes are free of dirt.</p>
+                                  
+                                  <p>9. The battery and the charger determine the amount of current and the time required to charge the battery. Most chargers can automatically adjust to the battery's state-of-charge and will shut down when the amount of charge becomes sufficient. Many chargers have minimum voltages that must be present in the battery before the charger is activated. Generally, these low voltages are substantially below those shown by a battery that looks "dead" to a vehicle's electrical system.</p>
+                                  
+                                  <p>10. Some chargers have optional settings for 6 and 12-volt batteries and/or low-maintenance versus standard or deep cycle batteries. Make sure that you have adjusted the settings properly before turning on the charger. If the charger needs manual adjustment, read the charger's instructions to determine the setting that is suitable to the battery's rating.</p>
+                                    
+          </div>
+          </div>
+            
+          <div class="row mb-5">
+                  <div class="col-12">
+                      <h2 class="upper-text">Performance</h2>
+        
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <h3 class="accordion-title">Does extreme tropical heat affect the performance of my battery?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Like in most chemical reactions, heat is a catalyst that accelerates the chemical processes inside the battery and may cause "overcharging conditions." Extreme heat accelerates corrosion, thus shortening battery life. In addition, high heat causes battery fluid to evaporate more rapidly; hence, more frequent distilled water top-ups are required for low-maintenance batteries.</p>
+                                  
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Can electrical gadgets that operate when the key is turned off affect the performance of a battery?<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>Key-off electrical loads are common. The vehicle's electrical system is adjusted to accommodate this extra drain. Nevertheless, if a car is equipped with devices that require power even after the key has been turned off, care must be taken during extended periods of vehicle inactivity or frequent short trips, since these do not allow the battery to recharge after the drain resulting from starting the engine. If a vehicle is used for short trips only and its electrical system is in good working condition, periodic recharging is required.</p>
+                                  
+            </div>
+            </div>
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Are today's smaller batteries as powerful as the older and bigger ones?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>Automotive batteries are classified according to group size. Some group sizes have become popular standards since they have been widely used over the years. With the latest advances in technology, it is now possible to manufacture original equipment batteries of smaller sizes but with higher ratings.</p>
+                                                
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <h3 class="accordion-title">Do four-cylinder engines require more power to start than six-cylinder engines?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+           <p>There are some four-cylinder engines that require more power to start than six-cylinder engines. In a four-cylinder vehicle, the starter usually rotates at a higher revolution per minute (rpm), so there are less chances to "fire" per revolution. Other factors are compression ratios, the starter motor's design and vehicle options. Refer to your automobile's owner's manual or consult with your battery dealer to ensure that your battery has the minimum power requirement.</p>
+          </div>
+          </div>
+             <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Do fuel injection systems require more power to start your vehicle?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Spark ignition engines with fuel injection systems are not necessarily more difficult to start than engines with naturally aspirated carburator systems. However, diesel (compression ignition/fuel injection) engines do need substantially more starting time and power.</p>
+                                                                    
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <h3 class="accordion-title">How do I know if I need to replace my battery?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+           <p>A battery's life varies according to the type of your vehicle, its application, and your driving requirements/patterns. You should take all of these factors into consideration when purchasing a battery. If you want better performance from your succeeding battery, consider upgrading to a battery with a higher RC rating than that specified by your car manufacturer.</p>
+          </div>
+          </div>
+          
+          
+          <div class="row mb-5">
+                  <div class="col-12">
+                      <h2 class="upper-text">Products and Services</h2>
+        
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <h3 class="accordion-title">What does the New Technology Full Calcium Motolite offer?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Motolite now has calcium in both negative and positive grids, thus making it full calcium. Calcium strengthens the plates which gives the battery a longer life. Calcium also reduces the gassing caused by the reaction between the active material and the electrolyte. Corrosion is thus minimized.</p>
+                                                       
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Why did Motolite come up with a new line of batteries?<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>The new Motolite line is a product of years of research and development and a thorough understanding of consumers' needs. Thus, OMMC now offers the best battery in the market to show gratitude to its loyal customers.</p>
+                                                       
+            </div>
+            </div>
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Is the New Technology Full Calcium Motolite more expensive than the traditional Motolite Classic (Dry-charged)?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>There are three variants available: Excel. Gold and Enduro. Motolite Enduro is priced almost at par with the traditional Motolite. Motolite Gold and Excel are premium batteries with superior features.</p>
+                                                                    
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <h3 class="accordion-title">What are the differences among the Motolite variants?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+           <p>Motolite offers several variants to address different needs of its customers. The variants differ in ratings, warranty, number of plates and other features.</p>
+             
+          </div>
+          </div>
+             <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Does Motolite have a delivery service?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+              
+                                  <p>Yes. Motolite offers its Express Hatid Service in Metro Manila and key cities nationwide. Dial 8370-6686 for Metro Manila and 1-800-10-8370-6686 (toll-free outside Metro Manila) or Book your battery through the Motolite RES-Q app</p>
+                                                                                         
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <h3 class="accordion-title">What makes Motolite a world-class product?</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+           <p>The Trusted Leader:</p>
+                                  
+                                  <p>PBI , makers of Motolite ( Philippines ), Century ( Malaysia ) and Supercharge ( Australia ) is the undisputed no. 1 battery manufacturer in the country. For many decades, it has been powering the nation’s transportation and industries through its line of products- ranging from automotive, motorcycle, to industrial batteries for applications such as mining vessels, forklifts, solar power sites, and marine industries.</p>
+                                  
+                                  <p>Over the years, Motolite has remained to be the strong market leader with the best technology in the automotive battery industry. It has continuously delighted customers with its superior quality and unparalleled performance, making it the consumers’ battery brand of choice.</p>
+                                  
+                                  <p>Manufacturing Excellence:</p>
+                                  
+                                  <p>Philippine Batteries Incorporated (PBI), maker of Motolite , is a TS16949 and ISO-certified production plant that is one of the largest and most modern battery manufacturing facilities in Southeast Asia. PBI employs a fully-integrated closed-loop manufacturing and distribution process that covers material-sourcing, component design and production, assembly, charging, distribution and recycling.</p>
+                                  
+                                  <p>Globally recognized:</p>
+                                  
+                                  <p>PBI manufactured batteries, being at par with global standards, are distributed and sold in the United States, European, Middle Eastern, Australian and Asian markets.</p>
+                                  
+                                  <p>The Choice of Local Automotive Industry:</p>
+                                  
+                                  <p>In the Philippines, PBI Manufactured batteries, thru it’s OE Sales and Marketing arm, has 95% share of the Philippine Automotive Original Equipment Manufacturers market, making it the battery supplier of choice for many distinguished automotive brands. It is also a supplier to the leading motorcycle manufacturers in the Philippines.</p>
+                                  
+          </div>
+          </div>
+          
+          <section class="section section-faq pt-5 pt-lg-7 mb-0 mb-lg-2">
+      
+          <div class="container">
+              <div class="row mb-4 mb-lg-5">
+                  <div class="col-12"  id="motoring-tips">
+                    
+                      <div class="text-center">
+                          <a id="battery-faq"></a>
+                        <div class="h1 font-weight-bold text-uppercase mb-4 mb-lg-5 faq-section-header faq-battery"><h2 class="faq-battery">Battery<span class="text-faqs"> FAQs</h2></span></div>
+                      </div>
+                  </div>
+              </div>
+            
+            <div class="row mb-5">
+                  <div class="col-12">
+                      <h2 class="upper-text">Battery Tips</h2>
+            
+            
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <h3 class="accordion-title">Basic Maintenance</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Remove the battery from the tray, and make sure to detach all the clamps using proper tools (i.e. battery terminal puller, combination or battery wrench and battery pliers)</p>
+                                  
+                                  <p>Clean corrosion residue on top of the battery, especially in the terminals with a simple solution consisting of water and baking soda.</p>
+                                  
+                                  <p>Wipe grease and other liquid substances around the unit to prevent grounding.</p>
+                                  
+          </div>
+        </div>
+                    </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <h3 class="accordion-title">Check-up</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+           <p>Use a voltmeter to determine the charge level.</p>
+                                  
+                                  <p>If you can, check the electrolyte level by removing the covers found on top of the battery and filling the holes with distilled water. The battery should be half full. If the water starts leaking anywhere, replace the unit immediately. As for the electrolyte level, use a hydrometer and draw a solution from each cell. You should be looking at readings of 1.265 or higher for a fully charged battery. Fair readings will hover around 1.250 to 1.230, but recharging is necessary for readings below 1.200.</p>
+                                  
+                                  <p>Make sure the battery's fit is secure. Batteries that shake consistently may short circuit or even knock the car out indefinitely.</p>
+                                  
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Battery Monitoring<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Look out for power hiccups that typically manifest in the electronics of the car during start up or even while driving. When in doubt, check everything that requires power from the battery.</p>
+                                  
+                                  <p>If the voltmeter reads below 12.2, be very careful about driving the car. It means it has less than half the charge. As a safety precaution, don't bring the vehicle for long and heavy duty trips.</p>
+                                  
+            
+            </div>
+            </div>
+        
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Miscellaneous</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>Always park in a garage, a shaded area or have a car cover.</p>
+                                  
+                                  <p>Turn off all lights and electrical accessories when the car is off.</p>
+                                  
+                                  <p>Use a proper jumper, and never a makeshift one to avoid grounding or breaker the battery.</p>
+                                  
+                                  <p>Avoid short trips at all times.</p>
+                                  
+                                  <p>Disconnect the cables from the terminals if you won't use the car for two weeks or more.</p>
+                                  
+                                  <p>Don't trun on lights or electronics before turning the ignition on.</p>
+                                  
+          </div>
+        </div>
+        
+          
+           <div class="row mb-5">
+                  <div class="col-12">
+                      <h2 class="upper-text">Automotive Tips</h2>
+            
+            
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <h3 class="accordion-title">Check the Oil</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>In the engine department, you'll see dipsticks with yellow rubber handles. These determine the engine and transmission oil. You only need to look at the oil and check if it's still amber in color. If it seems black, even in daylight, then an oil change is necessary. As for the braking and steering fluids, just make sure there is enough oil in the reservoir and you're good.</p>
+                  
+          </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <h3 class="accordion-title">Check Your Lights</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>The easiest part of car maintenance is to check if all your lights are working. It can't be more than flashing everything, the headlights, indicators and breaking lights. Rather than simply discouraging you from taking the risk of driving when one major light is out, we'd rather you replace the bulb as soon as you can. The process usually just involves unscrewing some parts, and it's something everyone can learn with ease.</p>
+                                  
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Check Your Tires<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>It wouldn't take you half an hour to drive to a vulcanizing shop, have the tires checked for holes, and drive back home. They can usually plug small holes, but anything bigger, we recommend changing tires.</p>
+                                  
+            </div>
+          </button>
+            </div>
+        
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Check Your Steering and Transmission</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>Turn the steering wheel, and if the wheels are responding accurately, there's no problem. If you have a problem when turning the steering wheel, however, there may be an issue with the steering fluid.</p>
+                                  
+                                  <p>For automatic cars, checking the gear knob is painless. Put it on every mode, though have your foot on the brake every time you change, and see if the car responds as well. When in park and neutral, the car should sit still unless you're on a slope. The reverse should be easy to figure out, and the car should move forward regardless of driving mode.</p>
+                                                  
+          </div>
+        </div>
+           <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Check the Engine Coolant<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+               <p>If you don't have enough coolant, you run the risk of overheating your engine and damaging it. Keep the coolant level topped up, especially if you're going on a long trip during warmer months.</p>
+                                                     
+            </div>
+             </button>
+            </div>
+        
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Check the Belts</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+              <p>The belts, though small, are vital to the full delivery of power from your engine to the rest of your car. Any wear should be easy to spot.</p>
+                                                   
+          </div>
+        </div>
+        
+         <div class="row mb-5">
+                  <div class="col-12">
+                      <h2 class="upper-text">10 Ways to Reduce the Cost of Driving</h2>
+            
+            
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <h3 class="accordion-title">Fill Up in Cheaper Stations</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+              <p>There are gas stations that offer cheaper prices, if you still don’t know. Look for these real discounts while on the road. It should help you save hundreds in refueling expenses. Nonetheless, every peso you save is still a good sign.</p>
+                                                      
+          </div>
+        </div>
+                    </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <h3 class="accordion-title">Find Cheaper Car Parks</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>If there’s anything that costs more than fuel on a regular basis, it’s parking fees. Weekly expenses can run upwards of PhP700 to PhP1000. Unless you have a six-figure salary, that amount isn’t peanuts. If you have to walk a little more, it’s worth it especially when you look in your wallet and still see money.</p>
+                                                     
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Use Cooling and Heating Appropriately<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+              <p>These two consume quite an excessive amount of gas, so make sure to use them appropriately. Run on near low settings regularly, and only put them on full blast if absolutely necessary.</p>
+                                                      
+            </div>
+          </button>
+            </div>
+        
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Don't Drive Erratically</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+             <p>If you don’t notice it yet, you step on the gas pedal to swerve and overtake. Those short bursts cost a lot more fuel than you think, so just drive peacefully if you want to save on gas for the entire week.</p>
+                                                
+          </div>
+        </div>
+           <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Keep Your Tires Pumped<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+               <p>When the tires are full, your car won’t feel so sluggish. It’s a fact that lower air pressure leads to higher fuel usage, so keep the tires pumped. Check the tires every three days to keep on top of the air pressure.</p>
+                                                                       
+            </div>
+             </button>
+            </div>
+        
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">No Open Windows</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+                <p>The faster you drive, the more Mother Nature holds you down. Opening your windows is a drag nightmare, and it will certainly take more fuel to run the car. Keep it closed, unless you’re driving at a snail’s pace.</p>
+                                                                      
+          </div>
+        </div>
+        
+         <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <h3 class="accordion-title">Drive on Higher Gears</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+               <p>Shifting to higher gears doesn’t necessarily mean driving faster. This only means giving the engine more overhead. Still, never go higher than two gears.</p>
+                                                                         
+          </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <h3 class="accordion-title">Find the Right Car Insurance</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>If you’re a safe driver, you probably don’t need the most extensive car insurance. As such, look for the insurance that covers enough of your needs.</p>
+                                                                          
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Avoid Short Journeys<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+               <p>Walk to where you need to go if it is close enough and you are able to. Driving short distances is a mighty waster of fuel.</p>
+                                                                         
+            </div>
+          </button>
+            </div>
+        
+            
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <h3 class="accordion-title">Pool or Don't Drive on Coding Days</h3><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+              <p>Sharing on some days or just not driving on coding days should prolong fuel life and save you money. Remember, you still have to pay for parking daily. Not bringing your car should save you a few hundred bucks.</p>
+                                                                    
+          </div>
+        </div>
+           <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <h3 class="accordion-title">Don't buy Fuel Additives<span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+               <p>It doesn’t work, and the money you put into buying it is not going to improve your car’s fuel efficiency.</p>
+                                                                                         
+            </div>
+             </button>
+            </div>
+                    </div>
+        </div>
+             </div>
+          </div>
+                    </div>
+              </div>
+            </div>
+            </div>
+          </section>
+            {% section 'footer' %}  
+        
+        <script>
+    const items = document.querySelectorAll(".accordion button");
+  
+  function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+    
+    for (i = 0; i < items.length; i++) {
+      items[i].setAttribute('aria-expanded', 'false');
+    }
+    
+    if (itemToggle == 'false') {
+      this.setAttribute('aria-expanded', 'true');
+    }
+  }
+  
+  items.forEach(item => item.addEventListener('click', toggleAccordion));
+  </script>
+  
+           

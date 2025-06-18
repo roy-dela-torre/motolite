@@ -1,0 +1,253 @@
+div#ProductGridContainer select#SortBy {
+  padding: 0 11px;
+}
+
+div#ProductGridContainer .facet-filters__label {
+  margin-right: 20px;
+}
+
+.buy-maintenance-battery {
+  background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/buy-batter-bg.jpg?v=1728617658') center/cover no-repeat;
+}
+
+.buy-maintenance-battery .content {
+  gap: 70px;
+  margin-bottom: 70px;
+}
+
+.buy-maintenance-battery .content .text {
+  width: 100%;
+  max-width: 538px;
+}
+
+.buy-maintenance-battery .card {
+  border: 4px solid #920200;
+  padding: 40px 35px;
+  background: transparent;
+  height: 100%;
+}
+
+.buy-maintenance-battery .card .image {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+.additional-services .card .image img,
+.buy-maintenance-battery .card .image img {
+  width: 110px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.buy-maintenance-battery .card h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buy-maintenance-battery .card p {
+  margin-bottom: 30px;
+}
+
+.buy-maintenance-battery .card p:last-child {
+  margin-bottom: 0;
+}
+
+.buy-maintenance-battery .row {
+  justify-content: center;
+  row-gap: 70px;
+}
+
+.buy-maintenance-battery .row .col-xl-6 {
+  padding: 0px 23px !important;
+}
+
+.additional-services {
+  background: #920200;
+}
+
+.additional-services .row {
+  row-gap: 42px;
+}
+
+.additional-services .row .col-xl-6 {
+  padding: 0px 21px !important;
+}
+
+.additional-services .header {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+  width: 100%;
+  max-width: 845px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.additional-services .card {
+  padding: 40px 35px;
+  height: 100%;
+}
+
+
+.additional-services .card h3,
+.additional-services .card .image {
+  text-align: center;
+}
+
+.additional-services .card .image {
+  margin-bottom: 40px;
+}
+
+.additional-services .card h3 {
+  margin-bottom: 20px;
+}
+
+.additional-services .card p {
+  margin-bottom: 30px;
+}
+
+.additional-services .card p:last-child {
+  margin-bottom: 0;
+}
+
+.additional-services .header p,
+.additional-services .header h2 {
+  color: #fff;
+}
+
+.buy-motolite-battery {
+  background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/buy-motolite-battery.jpg?v=1728617658') center/cover no-repeat;
+}
+
+.buy-motolite-battery .content {
+  width: 100%;
+  max-width: 1026px;
+  margin: 0 auto;
+}
+
+.buy-motolite-battery .content p,
+.buy-motolite-battery .content h2 {
+  color: #fff;
+
+}
+
+.buy-motolite-battery .content h2 {
+  text-align: center;
+}
+
+.buy-motolite-battery .content a {
+  width: 100%;
+  max-width: 225px;
+  margin: 0 auto;
+}
+
+ul#product-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  row-gap: 50px;
+}
+
+.grid--quarter-max.grid--4-col-desktop .grid__item {
+  max-width: 100%;
+  padding: 0px !important;
+}
+
+.card--outline:not(.card--soft) {
+  border: none !important;
+}
+
+div#ProductGridContainer {
+  margin-bottom: 50px !important;
+}
+
+.grid--4-col-desktop .grid__item {
+  width: 100% !important;
+}
+
+#shopify-section-template--18619961934072__custom_liquid_cFyymi .custom-liquid-line {
+  padding: 50px 30px 100px 30px
+}
+
+.page-width {
+    width: 100% !important;
+    max-width: 1260px !important;
+    margin: 0 auto !important;
+}
+
+@media(max-width: 1199px) {
+  .buy-maintenance-battery .content {
+    flex-direction: column-reverse;
+  }
+
+  #shopify-section-template--18619961934072__custom_liquid_cFyymi .custom-liquid-line {
+    padding: 50px 30px 70px 30px;
+  }
+
+  .buy-maintenance-battery .row .col-xl-6 {
+    padding: 0px !important;
+  }
+
+  .buy-maintenance-battery .row {
+    row-gap: 30px;
+  }
+
+  .additional-services .row .col-xl-6 {
+    padding: 0px !important;
+  }
+
+}
+
+.custom-liquid-line p {
+  margin-bottom: 40px !important;
+}
+
+.custom-liquid-line p:last-child {
+  margin-bottom: 0px !important;
+}
+
+.grid--3-col-tablet .grid__item {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+@media(max-width: 820px) {
+  ul#product-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+
+  }
+
+  .grid--quarter-max.grid--4-col-desktop .grid__item {
+    display: flex;
+    place-content: center;
+    text-align: center;
+  }
+
+  .price {
+    justify-content: center;
+  }
+
+  .card-wrapper {
+    place-items: center;
+    text-align: center;
+  }
+}
+
+@media(max-width: 767px) {
+  #shopify-section-template--18619961934072__custom_liquid_cFyymi .custom-liquid-line {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .collection-hero__title {
+    font-size: 35px;
+  }
+
+}
+
+@media(max-width: 540px) {
+  ul#product-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+
+  }
+}

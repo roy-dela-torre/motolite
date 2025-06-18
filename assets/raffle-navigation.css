@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
+
+
+
+#batteryServicesNavContainer {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #f8f9fa;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+#batteryServicesNav {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding-left: 193px;
+  white-space: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+}
+  
+#batteryServicesNav::-webkit-scrollbar {
+  display: none;
+}
+  
+@media only screen and (min-width: 990px) and (max-width: 1170px) {
+  #batteryServicesNav {
+    padding: 0 66px;
+  }
+}
+  
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+  #batteryServicesNavContainer {
+    padding: 0;
+  }
+  
+  #batteryServicesNav {
+    padding: 0 57.5px;
+  }
+}
+  
+@media only screen and (max-width: 767px) {
+  #batteryServicesNavContainer {
+    padding: 0;
+  }
+  
+  #batteryServicesNav {
+    padding: 0 17px;
+  }
+}
+
+.raffle {
+  display: inline-block;
+  padding: 10px 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  margin: 0 10px;
+}
+
+.raffle.active {
+  border-bottom-color: #d91f2b;
+}
+
+.raffle-link {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  color: #808080;
+  margin: 0 0;
+  white-space: nowrap;
+}
+  
+.raffle-link:hover {
+  color: #d91f2b;
+}
+a {
+  text-decoration:none;
+}

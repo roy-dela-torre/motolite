@@ -1,0 +1,82 @@
+<!-- Example: Displaying the template name -->
+{% comment %} Display template name {% endcomment %}
+{% assign template_name = template.name %}
+{% comment %} Carousel for Featured Blogs {% endcomment %}
+{% assign blog_handle = 'news' %}
+<link rel="stylesheet" href="{{ 'single-blogs.css' | asset_url }}"> <section class="single-post">
+  <div class="container-fluid">
+    <div class="offset-xl-1 col-xl-10">
+      <div class="content">
+        <h1>{{ article.title }}</h1>
+        {{ article.content }}
+      </div>
+      <div class="share-social-media">
+        <div class="d-flex">
+          <span>Share us on</span>
+          <div class="d-flex">
+            <a href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/motoliteexpresshatid/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/fb.png?v=1692946532" alt=""></a>
+            <a href="https://twitter.com/share?url=https://twitter.com/Motolite_Ph" target="_blank" rel="noopener noreferrer"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/twitter.png?v=1692946532" alt=""></a>
+            <a href="https://www.instagram.com/share?url=https://www.instagram.com/motoliteph/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/instagram.png?v=1692946532" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blogs__footer-top-org">
+  <div class="container-fluid">
+    <div class="offset-xl-1 col-xl-10">
+      <div class="content">
+        <div class="row row-main">
+          <div class="col-xl-6 col-img">
+            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/top-org-featured-min.png?v=1694069694" alt="Motolite is Among the Top 1% of Trusted Automotive Battery Brands in the Philippines!" class="img-fluid img-featured">
+          </div>
+          <div class="col-xl-6 col-text">
+            <h2>Motolite is Among the Top 1% of Trusted Automotive Battery Brands in the Philippines!</h2>
+            <p>Experience automotive reliability with Motolite, a renowned name in the Philippines' <a
+                href="https://top.org.ph/automotive/automotive-batteries/" target="_blank"
+                rel="noopener noreferrer">automotive battery brands</a>. Explore our curated lists to find the top
+              businesses in various sectors. Click here to access Top Org's rankings and discover the best in the
+              country! </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="other-blogs">
+  <div class="container-fluid">
+    <div class="offset-xl-1 col-xl-10">
+      <div class="row">
+        <div class="headers text-center">
+          <h2 class="text-center text-uppercase">More Articles</h2>
+        </div>
+        <div class="more-blogs">
+          <div class="row">
+           {%- paginate blogs[blog_handle].articles by 3 -%}
+              {%- for article in blogs[blog_handle].articles -%}
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="content">
+                    <div class="blog-post">
+                        <img src="{{ article.image.src | img_url: '1024x768' }}" alt="{{ article.title }}" width="410" height="330" loading="eager">
+                        <p class="date">{{ article.published_at | date: "%Y-%m-%d" }}</p>
+                        <h3>{{ article.title }}</h3>
+                        <p>{{ article.content | split: '<!-- excerpt -->' | first | strip_html | truncatewords: 30 }}</p>
+                    </div>
+                    <a
+                      href="{{ article.url }}"
+                      class="read-more"
+                      target="_blank">Read More</a>
+                  </div>
+                </div>
+              {%- endfor -%}
+            {%- endpaginate -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% section 'footer' %}

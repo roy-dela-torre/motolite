@@ -1,0 +1,650 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+
+<style>
+
+
+:root{
+scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
+scrollbar-width: thin !important;
+--white:#fff;
+--black:#000;
+--dark:#2a2a2e;
+--yellow:#f7b500;
+--darkyellow:#f79300;
+--red:#d91f2b;
+--darkred:#f72729;
+--blue:#2588cf;
+--darkblue:#026dbe;
+--defaultfont:'Poppins', sans-serif;
+--titlefont:'Raleway', sans-serif;
+}
+
+::-webkit-scrollbar {
+height: 12px;
+width: 6px;
+background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--dark);
+-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+background: var(--dark);
+}
+
+
+/********************************
+          DEFAULT
+*********************************/
+body{
+margin:0;
+overflow-x:hidden !important;
+font-family:var(--defaultfont);
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+
+em{
+font-style:normal;
+color:var(--primary);
+}
+
+figure{
+margin:0;
+padding:0;
+}
+
+fieldset{
+width:100%;
+border:0;
+padding:0;
+margin:0;
+min-width: revert;  
+}
+
+.news-title{
+font-family:var(--titlefont);
+}
+
+.btn1, .btn2{
+padding:1rem 2rem;
+border-radius:10px;
+text-align:center;
+border:0;
+}
+
+.btn1{
+background-color:var(--red);
+color:var(--white);
+}
+
+.btn1:hover{
+background-color:var(--darkyellow);
+}
+
+.btn2{
+background-color:var(--red);
+color:var(--white);
+}
+
+.btn2:hover{
+background-color:var(--darkred);
+}
+
+/********************************
+        BLOG CONTAINER
+*********************************/
+.blog_container{
+width:100%;
+display:flex;
+align-items:top;
+background-color:#f1f1f1;
+}
+.spaced-section {
+    margin-top: 4.5px;
+}
+/*BLOG LEFT CONTENT*/
+.blog_content{
+padding:2rem;
+width:100%;
+}
+
+.blog_content .load-btn{
+display:block;
+width:150px;
+margin:5vh auto;
+}
+
+.left_content{
+display:flex;
+align-items:top;
+justify-content: space-between;
+flex-wrap:wrap;
+column-count: 2;
+gap: 20px 10px;
+flex:0 0 70%;
+}
+
+.right_content{
+flex:0 0 30%;
+}
+
+.blog_card{
+width:100%;
+flex:0 0 48.5%;
+overflow:hidden;
+background-color:var(--white);
+filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));  
+}
+
+.blog_card:nth-child(1){
+flex:0 0 100%;
+}
+
+.blog_card .figure{
+display:block;
+width:100%;
+height:200px;
+position:relative;
+overflow:hidden;
+}
+
+.blog_card:nth-child(1) .figure{
+height:300px;
+}
+
+.blog_card .figure img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.5s;
+}
+
+.blog_card .tag{
+padding:5px 10px;
+background-color:var(--red);
+color:var(--white);
+position:absolute;
+right:1%;
+top:3%;
+font-size:12px;
+}
+
+.blog_card section{
+padding:1rem;
+position:relative;
+background-color:var(--white);
+}
+
+.blog_card section .news-title{
+font-weight:600;
+font-size:18px;
+color:var(--dark);
+width:auto;
+}
+
+.blog_card section a:hover{
+color:var(--red);
+}
+
+.blog_card:hover > .figure img{
+transform:scale(1.1);
+}
+
+.share_icon{
+position:absolute;
+bottom:-30px;
+left:10px;
+background-color:var(--red);
+color:var(--white);
+display:flex;
+align-items:center;
+padding-right:5px;
+font-size:13px;
+cursor:pointer;
+transition:0.5s;
+}
+
+.share_icon .fa{
+padding:5px;
+background-color:var(--darkred);
+margin-right:10px;
+}
+
+.blog_card section img{
+width:30%;
+margin-right:20px;
+object-fit:cover;
+border:5px solid rgba(1,1,1,0.1);
+}
+
+.blog_card section img:nth-child(even){
+float:left;
+}
+
+.blog_card section img:nth-child(odd){
+float:right;
+}
+.banner__box {
+    border: 0;
+    padding: 0rem 3.5rem;
+    position: relative;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/*BLOG RIGHT CONTENT*/
+.columns{
+display:block;
+margin-bottom:4vh;
+background-color:var(--white);
+}
+
+.columns section{
+padding:1rem;
+}
+
+.columns .news-title{
+background-color:var(--red);
+color:var(--white);
+padding:1rem;
+text-align:left;
+width:100%;
+display:block;
+transition:0.2s;
+border-left:0px solid var(--dark);
+}
+
+.columns:hover > .news-title{
+border-left:5px solid var(--dark);
+}
+
+.columns .news-title a{
+float:right;
+}
+
+.columns .news-title a:hover{
+color:var(--dark);
+}
+
+.search form{
+width:100%;
+display:flex;
+align-items:center;
+}
+
+.search fieldset:nth-child(2){
+width:10%;
+}
+
+.search form input{
+border:1px solid rgba(1,1,1,0.1);
+padding:1rem;
+width:100%;
+font-weight:600;
+color:#000;
+font-family: sans-serif;
+}
+
+.search .btn1{
+border:1px solid var(--red);
+border-radius:0;
+}
+
+
+@keyframes opaqTransition {
+3% { transform: translateX( 0 ); }
+25% { transform: translateX( 0 ); }
+28% { transform: translateX( -700px ); }
+100% { transform: translateX( -700px ); }
+}
+
+
+
+
+/*CATEGORIES*/
+.categories a{
+display:inline-block;
+padding:0.2rem 1rem;
+border-radius:40px;
+background: linear-gradient(0deg,#f8e500 0,#f7c306 99.89%);
+margin:5px 3px;
+font-size:12px;
+white-space:nowrap;
+color:#000000;
+}
+
+.categories a:hover{
+background-color:var(--dark);
+}
+
+
+/*POSTS*/
+.posts a{
+display:flex;
+align-items:center;
+margin:0.4rem 0;
+}
+
+.posts a img{
+width:100px;
+margin-right:10px;
+}
+
+.posts a:hover > p{
+color:var(--black);
+}
+
+
+
+/*COMMENTS*/
+.comments{
+position:relative;
+overflow:hidden;
+max-height:60vh;
+}
+
+.marquee2 {
+position: relative;
+overflow:hidden;
+line-height:1.6em;
+}
+
+.marquee2 p{
+border-bottom:1px solid rgba(1,1,1,0.1);
+position:relative;
+padding:0.4rem 0;
+}
+
+.marquee2 p:before{
+content:"\f10d";
+font-family:"FontAwesome";
+margin-right:5px;
+position:relative;
+top:-5px;
+}
+
+@keyframes marquee1 {
+0% {
+top: 10%;
+}
+100% {
+top: -100%;
+}
+}
+
+
+.social_icons .fa{
+padding:7px 13px;
+background-color:#f1f1f1;
+color:var(--white);
+transition:0.2s;
+}
+
+.social_icons a:hover > .fa{
+transform:scale(1.1);
+}
+
+.social_icons .fa-facebook{
+background-color:#3b5998;
+}
+
+.social_icons .fa-instagram{
+background-color:#fb3958;
+}
+
+.social_icons .fa-youtube{
+background-color:#c4302b;
+}
+
+.social_icons .fa-whatsapp{
+background-color:#25d366;
+}
+
+.social_icons .fa-telegram{
+background-color:#3399ff;
+}
+
+
+@media (max-width:1000px){
+.blog_container{
+flex-wrap:wrap;
+}
+.blog_content{
+padding:0;
+order:2;
+}
+.left_content{
+flex:0 0 100%;
+order:2;
+padding:1rem;
+}
+.right_content{
+flex:0 0 100%;
+order:1;
+padding:1rem;
+}
+.books,.posts, .comments, .categories{
+display:inline-block;
+width:47%;
+margin:1.3%;
+margin-bottom:0;
+vertical-align:top;
+height:30vh;
+}
+.posts{
+overflow-y:auto;
+}
+.right_content{
+flex:0 0 100%;
+}
+}
+
+@media (max-width:740px){
+.blog_card{
+flex:0 0 100%;
+}
+.posts, .comments, .books, .categories{
+width:100%;
+margin:0;
+height:auto;
+margin-bottom:4vh;
+}
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+
+</style>
+
+
+<div class="blog_container">
+<div class="blog_content">
+<div id="articleContainer" class="left_content">
+  
+{%- paginate blog.articles by 6 -%}
+
+  <div class="main-blog page-width">
+    <h1 class="title--primary">{{ blog.title | escape }}</h1>
+
+    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+      {%- for article in blog.articles -%}
+        <div class="blog-articles__article article">
+          {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+  </div>
+{%- endpaginate -%}
+</div>
+</div>
+<div class="blog_content right_content">
+<!--SEARCH COLUMN BEGINNING-->
+<div class="columns search_column">
+<section class="search">
+<form>
+<fieldset><input type="text" name="search" placeholder="Search..." maxlength="100" id="searchArticleInput"></fieldset>
+<fieldset><button type="button" id="searchArticleButton" class="btn1"><i class="fa fa-search"></i></button></fieldset>
+</form>
+</section>
+</div>
+
+<!--CATEGORIES COLUMN BEGINING-->
+<div class="columns categories">
+<span class="news-title">Categories</span>
+<section>
+<span class = "category-title active" id = "all">
+  <a class="blog-link" href="{{ blog.url }}">All</a>
+</span>
+                     {% for tag in blog.all_tags %}
+                       <span class = "category-title" id = "all">
+                            
+                       <span>{{ tag | link_to_tag: tag}}</span>
+                        </span>
+                {% endfor %}
+                    
+</section>
+</div>
+<!--CATEGORIES COLUMN ENDS-->
+<!--POSTS COLUMN BEGINING-->
+<div class="columns posts">
+<span class="news-title">Recent News</span>
+<section>
+  
+  {% assign sorted_articles = blog.articles | sort: "updated" %}
+  {% for article in sorted_articles limit: 3 %}
+     <a href="{{ article.url }}">
+
+          {%- if article.image -%}
+            <img src="{{ article.image | img_url: '100x100' }}" alt="">
+            {% endif %}
+    <span>{{ article.title }}</span>
+       <br>
+  
+  {% endfor %}
+</section>
+</div>
+<!--POSTS COLUMN ENDS-->
+
+</div>
+</div>
+
+<script>
+  (function() {
+    let searchInput = document.getElementById("searchArticleInput");
+    let searchButton = document.getElementById("searchArticleButton");
+    let articleContainer = document.getElementById("articleContainer");
+
+    searchButton.addEventListener("click", function() {
+      if (searchInput.value !== "") {
+        fetch(`${window.Shopify.routes.root}search?q=${searchInput.value}&type=article&options[prefix]=none&sections=news-search-result`)
+        .then(response => response.json())
+        .then(section => {
+          let document = new DOMParser().parseFromString(section["news-search-result"], "text/html");
+          let searchResult = document.getElementById("shopify-section-news-search-result");
+    
+          if (articleContainer.hasChildNodes()) {
+            articleContainer.removeChild(articleContainer.firstElementChild);
+          }
+    
+          articleContainer.appendChild(searchResult);
+        });
+      }
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "t:sections.main-blog.settings.layout.options__1.label"
+        },
+        {
+          "value": "collage",
+          "label": "t:sections.main-blog.settings.layout.options__2.label"
+        }
+      ],
+      "default": "collage",
+      "label": "t:sections.main-blog.settings.layout.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label",
+      "info": "t:sections.main-blog.settings.image_height.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-blog.settings.paragraph.content"
+    }
+  ]
+}
+{% endschema %}

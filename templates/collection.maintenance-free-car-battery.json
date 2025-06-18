@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false
+      }
+    },
+    "custom_liquid_cFyymi": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".custom-liquid-line {padding-top: 50px; padding-bottom: 100px;}",
+        "@media (max-width: 7px) {.custom-liquid-line {padding: 50px 30px 70px 30px !important; }}",
+        "@media (max-width: 767px) {.custom-liquid-line {padding: 50px 20px 50px 20px; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"custom-liquid-line\">\n  <div class=\"wrapper\">\n    <div class=\"container-fluid\">\n      <p>\n        Car owners often seek ways to save time and effort in maintaining their vehicle batteries. Since traditional ones require constant attention, such as checking water levels, topping them off, and risking spills of dangerous acids, Motolite's maintenance-free car battery offers a smart solution by delivering reliable power without the hassle.\n      </p>\n      <p>\n        As the country's leading battery brand, we understand the importance of convenience and safety. Our maintenance-free car batteries are built to meet the demands of Filipino drivers, offering a perfect blend of performance and ease of use.\n      </p>\n    </div>\n  </div>\n</div>"
+      }
+    },
+    "maintenance_free_battery_VbYDem": {
+      "type": "maintenance-free-battery",
+      "settings": {}
+    },
+    "166376126558cf7bb8": {
+      "type": "Feature-slider",
+      "disabled": true,
+      "settings": {
+        "collection_main": "",
+        "collection_limit": 4,
+        "bg": "",
+        "title": "Featured Collection Slider",
+        "img_width": 200,
+        "cell_align": "center",
+        "title_mb": 48,
+        "cell_width": "25%",
+        "wrap_around": "true",
+        "mr": 16
+      }
+    },
+    "footer_for_collections_B4fEVJ": {
+      "type": "footer-for-collections",
+      "settings": {}
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "custom_liquid_cFyymi",
+    "maintenance_free_battery_VbYDem",
+    "166376126558cf7bb8",
+    "footer_for_collections_B4fEVJ"
+  ]
+}

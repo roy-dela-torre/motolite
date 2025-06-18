@@ -1,0 +1,107 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1649225124d9333c5c": {
+      "type": "batteries-navigation",
+      "settings": {}
+    },
+    "1654143253b5581695": {
+      "type": "image-technology",
+      "blocks": {
+        "1654143252ef4e3477-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "1654143252ef4e3477-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1654143252ef4e3477-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1654143252ef4e3477-0",
+        "1654143252ef4e3477-1",
+        "1654143252ef4e3477-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMAGE_BANNER_HEAVY_COMMERCIAL_1200X400_copy_fe48e14b-397d-44e8-90ae-c2d38fdbbe26.png",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "batteries-heading",
+      "settings": {
+        "head": "Heavy Commercial Batteries"
+      }
+    },
+    "1649225114180c99f2": {
+      "type": "custom-battery-section",
+      "settings": {
+        "section_title": "Truck Batteries",
+        "section_description": "<p>Specialty designed for demanding truck, bus and heavy equipment applications.<br/>Built tough to withstand extreme heat and vibration.</p>",
+        "section_image": "shopify://shop_images/MicrosoftTeams-image_13.png",
+        "img_max_height": 500,
+        "section_image_first": false
+      }
+    },
+    "1649225135a6d4249e": {
+      "type": "battery-items",
+      "settings": {
+        "section_collection": "heavy-commercial"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true
+      }
+    }
+  },
+  "order": [
+    "1649225124d9333c5c",
+    "1654143253b5581695",
+    "main",
+    "1649225114180c99f2",
+    "1649225135a6d4249e",
+    "footer"
+  ]
+}

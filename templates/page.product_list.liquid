@@ -1,0 +1,87 @@
+
+<script>
+ 
+  $(function($) {
+ let url = window.location.href;
+  $('nav ul li a').each(function() {
+   if (this.href === url) {
+   $(this).addClass('active');
+  }
+ });
+});
+ 
+ 
+</script>
+
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+{%- assign getType = '' -%}
+{%- for i in (1..1) -%}
+   {%- unless pageUrl contains "?" -%}{% break %}{%- endunless -%}
+   {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+{%- assign parts= pageQuerystring | split:'&' -%}
+  {%- for part in parts -%}
+     {%- assign keyAndValue = part | split:'=' -%}
+    {%- if keyAndValue.size > 1 -%}
+    {% if keyAndValue[0] == 'type'%}
+
+{%- assign getType = keyAndValue[1] | replace : " " , "-" -%}
+{% endif%}
+         {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+
+
+
+  <!--navbar-->
+    <nav class="navbar-light bg-light shadow-sm position-fixed 	d-none d-md-block d-lg-block" style="z-index:500; width:100%;">
+        <ul class="nav justify-content-center">
+            <li class="nav-item fw-bold">
+                <a class="nav-link" aria-current="page" href="/pages/batteries?type=automobile">Automobile</a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a class="nav-link" href="/pages/batteries?type=motorcycle" >Motorcycle</a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a class="nav-link" href="#">Truck</a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a class="nav-link" href="#">Outdoor Sports</a>
+            </li>
+            <li class="nav-item fw-bold">
+                <a class="nav-link" href="#">Solar Storage</a>
+            </li>
+
+        </ul>
+    </nav>
+
+<br/><br/><br/>
+
+{% if getType == 'automobile'%}
+{% section 'collection-automobile' %}
+{%else%}
+{% section 'collection-motorcycle' %}
+{% endif %}
+
+{% comment %}
+<h1>{{content_for_header}}</h1>
+
+{% assign autoMobile = collections['automobile'] %}
+
+{{autoMobile}}
+
+
+{%for collection in collections %}
+<h1>{{collection.title}} </h1>
+	{% for product in collection.products%}
+<p>{{product.title}}</p>
+{%endfor%}
+{%endfor%}
+
+
+{% endcomment %}

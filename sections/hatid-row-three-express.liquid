@@ -1,0 +1,110 @@
+
+
+<section class="motolite_express_hatid global-padding " id="motolite-services-{{ section.id }}">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <div class="content">
+          {% if section.settings.heading %}
+            <h2>{{ section.settings.heading }}</h2>
+          {% endif %}
+          
+          {% if section.settings.mobile_image and section.settings.desktop_image %}
+            <div class="image d-block d-xl-none">
+              <img src="{{ section.settings.mobile_image | image_url }}" 
+                   alt="{{ section.settings.image_alt }}" 
+                   class="img-fluid w-100 mb-0" />
+            </div>
+          {% endif %}
+          
+          {% if section.settings.description %}
+            <p>{{ section.settings.description }}</p>
+          {% endif %}
+          
+          {% if section.settings.button_text and section.settings.button_url %}
+            <a href="{{ section.settings.button_url }}" class="btn btn-primary">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+        
+        {% if section.settings.desktop_image %}
+          <div class="image d-none d-xl-block">
+            <img src="{{ section.settings.desktop_image | image_url }}" 
+                 alt="{{ section.settings.image_alt }}" 
+                 class="img-fluid w-100 mb-0" />
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Motolite Express Services",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Motolite Express Hatid Services in Pampanga"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Good news, Pampanga drivers! Motolite is now bringing its trusted Express Hatid service straight to your doorstep. Anytime, anywhere you are in Pampanga, you can count on our trained and experienced technicians to deliver and install a brand-new car battery for you."
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image Alt Text",
+      "default": "Motolite Express Hatid Services"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Order Now"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Motolite Express Services",
+      "category": "Custom Sections",
+      "settings": {
+        "heading": "Motolite Express Hatid Services in Pampanga",
+        "description": "Good news, Pampanga drivers! Motolite is now bringing its trusted Express Hatid service straight to your doorstep. Anytime, anywhere you are in Pampanga, you can count on our trained and experienced technicians to deliver and install a brand-new car battery for you."
+      }
+    }
+  ]
+}
+{% endschema %}

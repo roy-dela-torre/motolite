@@ -1,0 +1,251 @@
+{{ 'collection-product.css' | asset_url | stylesheet_tag }}
+
+<style>
+
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-inner.card {
+  margin: 0 0.5em;
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  
+  
+  .carousel-item{
+   .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+  
+  }
+  
+@media (min-width: 300px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+  
+  {%comment%}
+.card .card-img-top {
+    max-width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+}
+  {%endcomment%}
+  
+  .card-body {
+    flex: 1 1 auto;
+    padding: 0;
+}
+</style>
+
+
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+{%- assign getType = '' -%}
+{%- for i in (1..1) -%}
+   {%- unless pageUrl contains "?" -%}{% break %}{%- endunless -%}
+   {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+{%- assign parts= pageQuerystring | split:'&' -%}
+  {%- for part in parts -%}
+     {%- assign keyAndValue = part | split:'=' -%}
+    {%- if keyAndValue.size > 1 -%}
+    {% if keyAndValue[0] == 'type'%}
+
+{%- assign getType = keyAndValue[1]  -%}
+{% endif%}
+         {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+
+{% assign productlist = collections[getType] %}
+
+
+
+
+
+
+
+<!--automobile section-->
+    <div class="container section-height mt-50px" id="automobile">
+
+        <h1 style="font-weight:bold">
+            Motorcycle Batteries
+
+        </h1>
+        <br />
+        <!--row one-->
+
+        <div class="row px-1">
+            <div class="col-lg-5 col-md-6 col-sm-12 mb-20px pr-20">
+
+
+            <!--    <h2  class="text-muted fw-bold">Maintenance Free</h2> -->
+                <p>
+              Motolite is all about providing quality batteries for vehicles. Each Motolite motorcycle battery is equipped with the same trusted technology use in Motolite's automotive batteries. You get the same quality, performance, satisfaction, and reliability every time. We spared no expense in making the kind of motorcycle battery that provides the best value for your money.
+              </p>
+            
+              <a type="button" class="btn btn-lg btn-outline-danger" href="/collections/{{getType}}">Shop Now!</a>
+      
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="d-flex justify-content-center shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/motiv_banner.png?v=1648665181" class="img-fluid" style="width:100%;" alt="...">
+                </div>
+
+            </div>
+          
+          
+
+        </div>
+        <br />
+        <br />
+
+        <!--row two-->
+      
+   
+        <div class="row justify-content-center">
+           
+         
+           {%if productlist.products.size <= 3 %}
+          
+           {%for product in productlist.products%}
+            <div class="card col-4 text-center  border-0">
+                <div class="buy-battery-wrapper mx-auto" >
+                    <img src="{{product.featured_image | image_url: width: auto }}" class="card-img-top" >
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title fw-bold">{{product.title}}</h5>
+                    <div class="buy-battery-wrapper mx-auto truncate-box">
+                        <p class="card-text text-start">{{product.content}}</p>
+                    </div>
+                    <a href="{{product.url}}" class="btn btn-danger btn-lg">Buy Battery</a>
+                </div>
+            </div>
+
+            {%endfor%}
+		{%endif%}
+
+
+
+
+        </div>
+</div>
+  
+      
+      <!--test area-->
+
+    <div  class="container">
+      
+     {% if productlist.products.size > 3%} 
+
+<div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+        
+      
+           
+           {%for product in productlist.products%}
+         <div class="carousel-item"> 
+            <div class="card border-0">
+                <div class="buy-battery-wrapper mx-auto">
+                    <img src="{{product.featured_image | image_url: height: 500 }}" class="card-img-top" >
+                </div>
+                <div class="card-body">
+                  <div class="mx-auto text-center">
+                    <h3 class="card-title fw-bold">{{product.title }}</h3>
+                  </div>
+                    <div class="buy-battery-wrapper mx-auto truncate-box">
+                        <p class="card-text text-start">{{product.content}}</p>
+                    </div>
+                  <div class="d-grid justify-content-center" style="width:100%;">
+                   <a href="{{product.url}}" class="btn btn-danger btn-lg">Buy Battery</a>
+                  </div>
+                </div>
+            </div>
+ 	     </div>
+            {%endfor%}
+
+
+
+      
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+      
+      {%endif%}
+</div>
+
+
+
+<script>
+  
+  var animationSpeed = 200;
+var multipleCardCarousel = document.querySelector(
+  "#carouselExampleControls"
+);
+if (window.matchMedia("(min-width: 768px)").matches) {
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+  });
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+  $("#carouselExampleControls .carousel-control-next").on("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 4) {
+      scrollPosition += cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        animationSpeed
+      );
+    }
+  });
+  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        animationSpeed
+      );
+    }
+  });
+} else {
+  $(multipleCardCarousel).addClass("slide");
+}
+</script>

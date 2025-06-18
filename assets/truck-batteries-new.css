@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Urbanist:wght@400;500;900&display=swap');
+
+.col-sm-12,.col-md-6,.col-lg-4,.col-lg-6{
+    padding: 0 12px !important;
+}
+section .wrapper{
+    max-width: 1297px;
+    margin: 0 auto;
+}
+section img{
+    width: 100%;
+}
+section .left-content,section .right-content{
+    width: 48%;
+}
+
+section h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.69px;
+  margin-bottom: 14px;
+}
+section h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 40px;
+    letter-spacing: 0.69px;
+  text-align: center;
+}
+section p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: #212529;
+}
+section p:last-child{
+    margin-bottom: 0;
+}
+
+section{
+    padding: 100px 0;
+}
+section .mobile{
+    display: none;
+    margin-bottom: 30px;
+}
+
+
+
+
+section.banner{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/truck-batteries-banner.jpg?v=1687335801')no-repeat center center/cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.banner h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 77px;
+    letter-spacing: 0.69px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 1278px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+section.heav-commercial img{
+    width: 100%;
+}
+section.heav-commercial .left-content .content-container{
+    max-width: 520px;
+}
+section.heav-commercial .single-content{
+    max-width: 1148px;
+    margin: 100px auto 50px auto;
+}
+section.heav-commercial .group-box .row{
+    gap: 24px 0;
+}
+section.heav-commercial .group-box .content-container{
+    padding: 40px 35px;
+    background-color: #920200;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+section.heav-commercial .group-box img{
+    max-width: 75px;
+    margin-bottom: 40px;
+  height:75px;
+  object-fit: contain;
+}
+section.heav-commercial .group-box h3,section.heav-commercial .group-box p{
+    color: #FFFFFF;
+}
+section.heav-commercial .group-box h3{
+  margin-bottom: 20px;
+}
+
+
+section.what-consider{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/what_to_consider_187a9e9d-417a-4a0e-904e-02a876454b82.jpg?v=1687335801')no-repeat center center/cover;
+}
+section.what-consider .group-box{
+    margin-top: 50px;
+}
+section.what-consider .group-box .row{
+    gap: 24px 0;
+}
+section.what-consider .group-box .content-container{
+    padding: 40px 35px;
+    border: 4px solid #920200;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.what-consider .group-box h3{
+    color: #000000;
+    margin-bottom: 20px;
+}
+section.what-consider .group-box p{
+    color: #212529;
+}
+section.what-consider .group-box img{
+    max-width: 75px;
+    margin-bottom: 40px;
+  height:95px;
+  object-fit: contain;
+}
+
+
+section.how-often{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/How_Often_Should_You_Replace_Your_Truck_Batteries.jpg?v=1687335801')no-repeat center center/cover;
+}
+section.how-often h2,section.how-often p{
+    color: #FFFFFF;
+}
+section.how-often h2{
+    max-width: 987px;
+    margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+
+
+section.truck-batter-by-motolite{
+  background-color:#F8F6F6;
+}
+section.truck-batter-by-motolite a{
+    padding: 14px 30px;
+    width: 100%;
+    background: linear-gradient(180deg, #DC3545 0%, #450007 100%);
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.66px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 40px;
+    display: block;
+}
+
+
+section.why-choose-motolite{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Why_Choose_Motolite_for_Your_Truck_Batteries.jpg?v=1687335801')no-repeat center center/cover;
+}
+section.why-choose-motolite .header{
+    max-width: 1026px;
+    margin: 0 auto;
+}
+section.why-choose-motolite .header h2{
+    margin: 0 auto 14px auto;
+    max-width: 700px;
+    text-align: center;
+}
+section.why-choose-motolite .header{
+    display: flex;
+    flex-direction: column;
+}
+section.why-choose-motolite .header h2,section.why-choose-motolite .header p{
+    color: #FFFFFF;
+}
+section.why-choose-motolite .group-box .row{
+    margin-top: 80px;
+    gap: 24px 0;
+}
+section.why-choose-motolite .group-box img{
+    max-width: 75px;
+    margin-bottom: 40px;
+  height: 75px;
+  object-fit: contain;
+}
+section.why-choose-motolite .group-box .content-container{
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+section.why-choose-motolite .group-box h3{
+    color: #000000;
+    margin-bottom: 20px;
+}
+section.why-choose-motolite .group-box p{
+    color: #212529;
+}
+
+
+section.trust-motolite{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Trust_Motolite_to_Provide_You_with_the_Best_Truck_Batteries_in_the_Philippines.jpg?v=1687335801')no-repeat center center/cover;
+}
+section.trust-motolite h2{
+    color: #FFFFFF;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+section.trust-motolite p{
+    color: #FFFFFF;
+}
+section.trust-motolite a{
+      color: #faff00;
+    text-decoration: none;
+}
+section.trust-motolite a:hover{
+  text-decoration: underline;
+}
+@media (max-width:1366px) {
+    section .wrapper{
+        padding: 0 5%;
+    }
+}
+@media (max-width:1200px) {
+    section .wrapper{
+        padding: 0;
+    }
+    section{
+        padding: 70px 30px;
+    }
+}
+@media (max-width:991px) {
+    section.banner h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    section h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    section h3{
+        font-size: 31px;
+        line-height: 40px;
+    }
+    section p{
+        font-size: 18px;
+        line-height: 35px;
+    }
+      section .mobile{
+        display: block !important;
+    }
+    .left-content,.right-content,section.heav-commercial .left-content .content-container{
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    section.heav-commercial .right-content,section.what-consider .left-content{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    section{
+        padding: 50px 30px;
+    }
+    section.banner h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    section h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    section h3{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    section p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+@media (max-width:575px) {
+    section{
+        padding: 50px 20px;
+    }
+}

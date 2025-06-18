@@ -1,0 +1,33 @@
+<STYLE>
+  h2.outlets_title {
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  color:red;
+}
+  .giftcard_500 {
+   font-family: raleway;
+  font-size: 2rem;
+  font-weight: 700;    
+  }
+  .giftcard_100 {
+   font-family: raleway;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .img-fluid {
+    width: 100%!important;
+    height: auto;
+    margin-top: 55px;
+    margin-bottom: 7px;
+  }
+  .promo_mechanics {
+  color: red;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: 29px;
+    margin-bottom: 14px;
+    background-color: #d3dbe2;
+    padding: 8px;
+}

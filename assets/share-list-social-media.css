@@ -1,0 +1,177 @@
+// Social Sharing
+.share__wrapper {
+  display: flex;
+  margin: 2rem 0;
+}
+.button.facebook {
+    border-radius: 69px;
+    background: #385898;
+    min-width: 49px;
+    min-height: 47px;
+    border: none;
+    box-shadow: none;
+    font-size: 12px;
+    padding: 9px 17px;
+    margin-right: 8px;
+}
+.button.facebook-messenger {
+    border-radius: 69px;
+    background: #385898;
+    min-width: 49px;
+    min-height: 47px;
+    border: none;
+    box-shadow: none;
+    font-size: 22px;
+    padding: 9px 13px;
+    margin-right: 8px;
+}
+.button.twitter {
+    border-radius: 69px;
+    background:rgb(29, 155, 240);
+    min-width: 49px;
+    min-height: 47px;
+    border: none;
+    box-shadow: none;
+    font-size: 12px;
+    padding: 9px 13px;
+    margin-right: 8px;
+  color:#fff;
+}
+.button.linkedin{
+    border-radius: 69px;
+    background:rgb(29, 155, 240);
+    min-width: 49px;
+    min-height: 47px;
+    border: none;
+    box-shadow: none;
+    font-size: 12px;
+    padding: 9px 13px;
+    margin-right: 8px;
+}
+.button.google {
+    border-radius: 69px;
+    background: #d73030;
+    min-width: 49px;
+    min-height: 47px;
+    border: none;
+    box-shadow: none;
+    font-size: 15px;
+    padding: 9px 13px;
+    margin-right: 8px;
+}
+.button.viber {
+    border-radius: 69px;
+    background: #1a0dab;
+    min-width: 49px;
+    min-height: 47px;
+    border: none;
+    box-shadow: none;
+    font-size: 22px;
+    padding: 9px 13px;
+    margin-right: 8px;
+}
+.button.telegram {
+    border-radius: 69px;
+    background:rgb(29, 155, 240);
+    min-width: 49px;
+    min-height: 47px;
+    border: none;
+    box-shadow: none;
+    font-size: 22px;
+    padding: 9px 13px;
+    margin-right: 8px;
+}
+.share__list {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  list-style: none;
+  margin-left: -21px;
+  margin-top: 9px;
+}
+
+.share__item {
+  & + & {
+    margin-left: 1rem;
+  }
+}
+
+.share__link {
+  border: none;  
+  
+  > * {
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+.button.facebook {
+    min-width: 100%;
+    min-height: 38px;
+    border: none;
+    box-shadow: none;
+    font-size: 11px;
+    padding: 10px 11px;
+    
+}
+  .button.facebook-messenger {
+   min-width: 94%;
+    min-height: 42px;
+    border: none;
+    box-shadow: none;
+    font-size: 19px;
+    padding: 10px 11px;
+}
+.button.twitter {
+    min-width: 94%;
+    min-height: 42px;
+    border: none;
+    box-shadow: none;
+    font-size: 11px;
+    padding: 10px 8px;
+   
+}
+.button.linkedin{
+    min-width: 96%;
+    min-height: 41px;
+    border: none;
+    box-shadow: none;
+    font-size: 11px;
+    padding: 10px 9px;
+    
+}
+.button.google {
+   min-width: 100%;
+    min-height: 41px;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 10px 9px;
+}
+
+.button.viber {
+   min-width: 100%;
+    min-height: 42px;
+    border: none;
+    box-shadow: none;
+    font-size: 22px;
+    padding: 10px 7px;
+    margin-left: 1px;
+}
+.button.telegram {
+    min-width: 100%;
+    min-height: 43px;
+    border: none;
+    box-shadow: none;
+    font-size: 23px;
+    padding: 10px 7px;
+    margin-left: 3px;
+}  
+  .share__list {
+flex-wrap: wrap;
+}
+}
+@media all and (min-width: 1440px) {
+.share__list {
+    margin: 9px 0 0 -8px;
+}

@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;900&display=swap');
+
+.carousel-indicators [data-bs-target] {
+  background-color: #C4C4C4;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #D22429;
+}
+
+.carousel-control-prev-icon.dark {
+  filter: invert(1) grayscale(100);
+}
+
+.carousel-control-next-icon.dark {
+  filter: invert(1) grayscale(100);
+}
+
+.carousel-inner.show-on-small {
+  display: none;
+}
+
+.motolite-advantages {
+  display: flex;
+  margin-top: 20px;
+}
+
+.motolite-advantages.show-on-small {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+}
+
+.home-footer {
+  display: flex;
+  margin-top: 30px;
+}
+
+.home-footer-section1 {
+  padding-top: 25px;
+  padding-right: 35px;
+  width: 430px;
+}
+
+.home-footer-section2 {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 1px;
+  background-color: #FFFFFF;
+  width: 430px;
+  padding: 40px 20px 20px;
+}
+
+.home-footer-menu {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel-inner.show-on-large {
+    display: none;
+  }
+  
+  .carousel-inner.show-on-small {
+    display: block;
+  }
+  
+  .motolite-advantages.show-on-large {
+    display: none;
+  }
+  
+  .motolite-advantages.show-on-small {
+    display: flex;
+  }
+  
+  .home-footer {
+    flex-direction: column;
+  }
+  
+  .home-footer-section1 {
+    width: 100%;
+  }
+  
+  .home-footer-section2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .home-footer-menu {
+    flex-direction: column;
+  }
+}
+
+
+/*-----Cards-----*/
+
+.custom-card {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 1px;
+}
+
+/*-----Cards-----*/
+
+/*-----Form-----*/
+
+.custom-input {
+  width: 100%;
+  padding: 7px 20px;
+  outline: none!important;
+  box-shadow: none!important;
+  border: 1px solid #807F7F;
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 14px;
+  color: #424242;
+}
+
+.custom-input:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+/*-----Button-----*/
+
+.custom-button {
+  width: 100%;
+  background-color: #D22429E5;
+  border-radius: 1px;
+  border: none;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/*-----Button-----*/
+
+/*-----Form-----*/
+
+/*-----Text-----*/
+.text-light-16 {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 16px;
+  color: #424242;
+}
+
+.text-regular-13 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 13px;
+  color: #424242;
+}
+
+.text-regular-14 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 14px;
+  color: #424242;
+}
+
+.text-regular-15 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 15px;
+  color: #424242;
+}
+
+.text-regular-16 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 16px;
+  color: #424242;
+}
+
+.text-regular-18 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+  color: #424242;
+}
+
+.text-medium-14 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 14px;
+  color: #424242;
+}
+
+.text-medium-16 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 16px;
+  color: #424242;
+}
+
+.text-medium-18 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+}
+
+.text-medium-20 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 20px;
+  color: #424242;
+}
+
+.text-medium-22 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 22px;
+  color: #424242;
+}
+.text-medium-25 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 25px;
+  color: #424242;
+}
+
+.text-semibold-10 {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 10px;
+  color: #424242;
+}
+
+.text-semibold-25 {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 25px;
+  color: #424242;
+}
+
+.text-black-25 {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 25px;
+  color: #424242;
+}
+.text-black-40 {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 40px;
+  color: #424242;
+}
+
+.text-color-424242 {
+  color: #424242;
+}
+
+.text-color-D22429 {
+  color: #D22429;
+}
+
+.text-color-807F7F {
+  color: #807F7F;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.lh-16 {
+  line-height: 16px;
+}
+
+.lh-18 {
+  line-height: 18px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+.lh-22 {
+  line-height: 22px;
+}
+
+.lh-25 {
+  line-height: 25px;
+}
+
+.lh-28 {
+  line-height: 28px;
+}
+/*-----Text-----*/
+
+/*-----Sizing-----*/
+
+.w-0 {
+  width: 0;
+}
+
+.width-25 {
+  width: 25px;
+}
+
+.width-35 {
+  width: 35px;
+}
+
+.width-45 {
+  width: 45px;
+}
+
+.width-202-5 {
+  width: 202.5px;
+}
+
+.width-215 {
+  width: 215px;
+}
+
+.width-229 {
+  width: 229px;
+}
+
+.width-420 {
+  width: 420px;
+}
+
+.width-430 {
+  width: 430px;
+}
+
+.width-748 {
+  width: 748px;
+}
+
+.height-25 {
+  height: 25px;
+}
+
+.height-35 {
+  height: 35px;
+}
+
+.height-45 {
+  height: 45px;
+}
+
+.height-105 {
+  height: 105px;
+}
+
+.height-260 {
+  height: 260px;
+}
+.height-350 {
+  height: 350px;
+}
+
+
+/*-----Sizing-----*/
+
+/*-----Spacing-----*/
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.padding-top-25 {
+  padding-top: 25px;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+.padding-left-25 {
+  padding-left: 25px;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
+}
+
+.padding-right-25 {
+  padding-right: 25px;
+}
+
+.padding-right-35 {
+  padding-right: 35px;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 50px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-top-70 {
+  margin-top: 70px;
+}
+
+.margin-left-5 {
+  margin-left: 5px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-left-30 {
+  margin-left: 30px;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
+.margin-bottom-35 {
+  margin-bottom: 35px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
+.padding-5-10 {
+  padding: 5px 10px;
+}
+
+.padding-15-20-20 {
+  padding: 15px 20px 20px;
+}
+
+.padding-30-10-20 {
+  padding: 30px 10px 20px;
+}
+
+.padding-30-15-20 {
+  padding: 30px 15px 20px;
+}
+
+.padding-30-20-20 {
+  padding: 30px 20px 20px;
+}
+
+.padding-40-20-20 {
+  padding: 40px 20px 20px;
+}
+
+.margin-20-10-0 {
+  margin: 20px 10px 0;
+}
+/*-----Spacing-----*/
+
+/*-----Background Color-----*/
+
+.bg-color-424242 {
+  background-color: #424242;
+}
+
+.bg-color-99ffbb {
+  background-color: #99ffbb;
+}
+
+.bg-color-ff9999 {
+  background-color: #ff9999;
+}
+/*-----Background Color-----*/
+
+/*-----Postion-----*/
+
+.left--10 {
+  left: -10px;
+}
+
+.right--10 {
+  right: -10px;
+}
+
+.bottom--40px {
+  bottom: -40px;
+}
+
+.bottom--50px {
+  bottom: -50px;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+/*-----Postion-----*/
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}

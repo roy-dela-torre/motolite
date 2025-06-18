@@ -1,0 +1,788 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "colors_solid_button_labels": "#121212",
+    "colors_accent_1": "#e22120",
+    "colors_accent_2": "#334FB4",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#ffffff",
+    "colors_background_2": "#f3f3f3",
+    "type_header_font": "raleway_n4",
+    "heading_scale": 115,
+    "type_body_font": "dm_sans_n4",
+    "body_scale": 110,
+    "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "background-1",
+    "accent_icons": "text",
+    "page_width": "1200",
+    "social_twitter_link": "https://twitter.com/Motolite_Ph",
+    "social_facebook_link": "https://www.facebook.com/motoliteexpresshatid",
+    "social_instagram_link": "https://www.instagram.com/motoliteph/",
+    "favicon": "shopify://shop_images/12447835_979963802125364_1121894874_n.png",
+    "currency_code_enabled": true,
+    "checkout_logo_image": "shopify://shop_images/Untitled.png",
+    "checkout_logo_position": "right",
+    "checkout_logo_size": "small",
+    "checkout_input_background_color_mode": "white",
+    "checkout_accent_color": "#e22120",
+    "checkout_button_color": "#e22120",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-2",
+              "link": "shopify://collections/frontpage"
+            }
+          },
+          "926ad0fb-23f6-436b-8ff2-a27bde6f4328": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": ""
+            }
+          },
+          "c3776f44-1269-4a3b-99f3-d54661e661d5": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0",
+          "926ad0fb-23f6-436b-8ff2-a27bde6f4328",
+          "c3776f44-1269-4a3b-99f3-d54661e661d5"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "accent-1",
+          "logo": "shopify://shop_images/MicrosoftTeams-image.png",
+          "logo_width": 110,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "e3d8e2b6-e1bb-4f46-b90e-681b2eca47fe": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/logo-top.jpg",
+              "image_width": 100,
+              "alignment": "right"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "disabled": true,
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "e3d8e2b6-e1bb-4f46-b90e-681b2eca47fe",
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
+        }
+      },
+      "batteries-navigation": {
+        "type": "batteries-navigation",
+        "settings": {}
+      },
+      "custom-battery-section": {
+        "type": "custom-battery-section",
+        "settings": {
+          "section_title": "Motorcycle Batteries",
+          "section_description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. </p>",
+          "section_image": "shopify://shop_images/motiv_banner_2.png",
+          "img_max_height": 500,
+          "section_image_first": false
+        }
+      },
+      "battery-items": {
+        "type": "battery-items",
+        "settings": {
+          "section_collection": "motorcycle"
+        }
+      },
+      "batteries-heading": {
+        "type": "batteries-heading",
+        "settings": {
+          "head": "Motorcycle Batteries"
+        }
+      },
+      "image-banner": {
+        "type": "image-banner",
+        "blocks": {
+          "d95935ca-b2f9-4198-a15c-075a1301c5ba": {
+            "type": "heading",
+            "settings": {
+              "heading": "YOUR ALL-WEATHER PARTNER FOR ROADSIDE EMERGENCIES",
+              "heading_size": "large"
+            }
+          },
+          "b8d15792-69e1-491f-9478-8aa7548c5cd4": {
+            "type": "text",
+            "settings": {
+              "text": "MOTOLITE RES-Q is available on Google Play Store, AppStore and Huawei App Gallery. Download Now!"
+            }
+          }
+        },
+        "block_order": [
+          "d95935ca-b2f9-4198-a15c-075a1301c5ba",
+          "b8d15792-69e1-491f-9478-8aa7548c5cd4"
+        ],
+        "settings": {
+          "image": "shopify://shop_images/banner_resq.jpg",
+          "image_height": "small",
+          "adapt_height_first_image": true,
+          "desktop_text_box_position": "flex-start",
+          "show_text_box": false,
+          "image_overlay_opacity": 0,
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": false,
+          "show_text_below": false
+        }
+      },
+      "collection-motorcycle": {
+        "type": "collection-motorcycle",
+        "settings": {}
+      },
+      "batteries-services-navigation": {
+        "type": "batteries-services-navigation",
+        "settings": {}
+      },
+      "image-express-hatid-banner": {
+        "type": "image-express-hatid-banner",
+        "blocks": {
+          "ee5d27d3-b4d2-4cbe-b8b9-35fd083defd5": {
+            "type": "text",
+            "settings": {
+              "text": ""
+            }
+          }
+        },
+        "block_order": [
+          "ee5d27d3-b4d2-4cbe-b8b9-35fd083defd5"
+        ],
+        "settings": {
+          "image": "shopify://shop_images/E-WARRANTY_-_IMAGE_BANNER_1200_x_400_copy.png",
+          "image_height": "small",
+          "adapt_height_first_image": false,
+          "desktop_text_box_position": "center",
+          "show_text_box": false,
+          "image_overlay_opacity": 0,
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": true,
+          "show_text_below": true
+        }
+      },
+      "image-company-banner": {
+        "type": "image-company-banner",
+        "blocks": {
+          "578df14e-5ea9-4c69-9977-262b75ecd5d0": {
+            "type": "heading",
+            "settings": {
+              "heading": "100TH ANNIVERSARY",
+              "heading_size": "large"
+            }
+          },
+          "31bb3edb-2404-450a-b02a-bcdb69b34105": {
+            "type": "text",
+            "settings": {
+              "text": "For 100 years, Motolite has provided Pangmatagalan service and best quality batteries."
+            }
+          }
+        },
+        "block_order": [
+          "578df14e-5ea9-4c69-9977-262b75ecd5d0",
+          "31bb3edb-2404-450a-b02a-bcdb69b34105"
+        ],
+        "settings": {
+          "image": "shopify://shop_images/banner-ramcar-bw_1.jpg",
+          "image_height": "small",
+          "adapt_height_first_image": false,
+          "desktop_text_box_position": "center",
+          "show_text_box": false,
+          "image_overlay_opacity": 0,
+          "color_scheme": "accent-2",
+          "stack_images_on_mobile": false,
+          "show_text_below": false
+        }
+      },
+      "image-technology": {
+        "type": "image-technology",
+        "settings": {
+          "image": "shopify://shop_images/hands-typing-on-laptop.jpg",
+          "image_height": "medium",
+          "adapt_height_first_image": false,
+          "desktop_text_box_position": "center",
+          "show_text_box": false,
+          "image_overlay_opacity": 0,
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": true,
+          "show_text_below": false
+        }
+      },
+      "image-news-banner": {
+        "type": "image-news-banner",
+        "settings": {
+          "image": "shopify://shop_images/cascas_20015bc4-3663-41b9-ae31-b6e996ae819c.jpg",
+          "image_height": "large",
+          "adapt_height_first_image": true,
+          "desktop_text_box_position": "flex-end",
+          "show_text_box": false,
+          "image_overlay_opacity": 0,
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": false,
+          "show_text_below": true
+        }
+      },
+      "rich-text": {
+        "type": "rich-text",
+        "blocks": {
+          "5e9176e7-6495-488f-9f9c-2334aab9ca87": {
+            "type": "heading",
+            "disabled": true,
+            "settings": {
+              "heading": "Talk about your brand",
+              "heading_size": "h1"
+            }
+          },
+          "d244b1a0-df28-4fb0-916b-b020c6f35e02": {
+            "type": "text",
+            "settings": {
+              "text": "<p>Never lose track of your Motolite Warranty Card again. With the E-Warranty function in your registered Motolite RES-Q app, you can make sure that your Motolite Battery’s E-Warranty is claimed and stored in your smart device. With Motolite’s E-Warranty service, your Nationwide Motolite Warranty details are always at your fingertips.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "5e9176e7-6495-488f-9f9c-2334aab9ca87",
+          "d244b1a0-df28-4fb0-916b-b020c6f35e02"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "full_width": true
+        }
+      },
+      "main-list-collections": {
+        "type": "main-list-collections",
+        "settings": {
+          "title": "Collections",
+          "sort": "alphabetical",
+          "image_ratio": "adapt",
+          "color_scheme": "background-1",
+          "image_padding": true
+        }
+      },
+      "promos-blog": {
+        "type": "promos-blog",
+        "settings": {}
+      },
+      "promo-blog": {
+        "type": "promo-blog",
+        "settings": {
+          "layout": "grid",
+          "show_image": true,
+          "image_height": "small",
+          "show_date": true,
+          "show_author": false
+        }
+      },
+      "custom-liquid": {
+        "type": "custom-liquid",
+        "settings": {
+          "custom_liquid": ""
+        }
+      },
+      "featured-blog": {
+        "type": "featured-blog",
+        "settings": {
+          "heading": "",
+          "blog": "career",
+          "post_limit": 2,
+          "show_image": true,
+          "show_date": false,
+          "show_author": false,
+          "soft_background": false,
+          "show_view_all": false
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "",
+          "products_to_show": 4,
+          "show_view_all": true,
+          "swipe_on_mobile": true,
+          "image_ratio": "adapt",
+          "show_secondary_image": false,
+          "add_image_padding": false,
+          "show_image_outline": true,
+          "show_vendor": false,
+          "show_rating": false
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "blocks": {
+          "73971322-fc69-4886-99fb-5820da62ff19": {
+            "type": "featured_collection",
+            "disabled": true,
+            "settings": {
+              "collection": ""
+            }
+          },
+          "e6a42911-1ba0-41e1-b89c-bb327853aa89": {
+            "type": "featured_collection",
+            "disabled": true,
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "73971322-fc69-4886-99fb-5820da62ff19",
+          "e6a42911-1ba0-41e1-b89c-bb327853aa89"
+        ],
+        "settings": {
+          "title": "Collections",
+          "image_ratio": "square",
+          "color_scheme": "background-1",
+          "swipe_on_mobile": false,
+          "image_padding": false,
+          "show_view_all": false
+        }
+      },
+      "article": {
+        "type": "article",
+        "settings": {
+          "blog_category": "news, blog",
+          "blog_show_meta": true,
+          "tags": true,
+          "social": false,
+          "image_height": "use_image",
+          "parallax": true,
+          "sidebar_tags": true,
+          "recent": true,
+          "info_page": ""
+        }
+      },
+      "main-blog": {
+        "type": "main-blog",
+        "settings": {
+          "layout": "collage",
+          "show_image": true,
+          "image_height": "adapt",
+          "show_date": true,
+          "show_author": false
+        }
+      },
+      "feature-blog-news": {
+        "type": "feature-blog-news",
+        "settings": {
+          "heading": "Blog posts",
+          "blog": "news",
+          "post_limit": 3,
+          "show_image": true,
+          "show_date": true,
+          "show_author": false,
+          "soft_background": false,
+          "show_view_all": true
+        }
+      },
+      "image-promo-banner": {
+        "type": "image-promo-banner",
+        "settings": {
+          "image": "shopify://shop_images/3b043be8eb32d32f16e6598fce630babf7d1544a.jpg",
+          "image_height": "small",
+          "adapt_height_first_image": false,
+          "desktop_text_box_position": "center",
+          "show_text_box": true,
+          "image_overlay_opacity": 0,
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": true,
+          "show_text_below": true
+        }
+      },
+      "image-raffle-banner": {
+        "type": "image-raffle-banner",
+        "settings": {
+          "image": "shopify://shop_images/Website_Banner_Dec2023_a47bb7cb-7dde-4418-82ef-f10908e95888.png",
+          "image_height": "medium",
+          "adapt_height_first_image": true,
+          "desktop_text_box_position": "center",
+          "show_text_box": false,
+          "image_overlay_opacity": 0,
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": false,
+          "show_text_below": false
+        }
+      },
+      "image-application-process-banner": {
+        "type": "image-application-process-banner",
+        "settings": {
+          "image_height": "small",
+          "adapt_height_first_image": true,
+          "desktop_text_box_position": "center",
+          "show_text_box": false,
+          "image_overlay_opacity": 0,
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": true,
+          "show_text_below": true
+        }
+      },
+      "image-express-hatid-cebu": {
+        "type": "image-express-hatid-cebu",
+        "blocks": {
+          "heading_NHUdgE": {
+            "type": "heading",
+            "settings": {
+              "heading": "NOW: FAST & RELIABLE CAR BATTERY DELIVERY IN METRO CEBU",
+              "heading_size": "medium"
+            }
+          },
+          "text_aiXMjd": {
+            "type": "text",
+            "settings": {
+              "text": "No one wants to be stuck with a dead car battery in your garage or on the road. That’s why we at Motolite provide our customers with quick and convenient car battery delivery and installation.Trust our expert team and premium batteries to revive your ride, fast."
+            }
+          }
+        },
+        "block_order": [
+          "heading_NHUdgE",
+          "text_aiXMjd"
+        ],
+        "settings": {
+          "image": "shopify://shop_images/MEH_tools.png",
+          "image_height": "medium",
+          "adapt_height_first_image": false,
+          "desktop_text_box_position": "center",
+          "show_text_box": false,
+          "image_overlay_opacity": 40,
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": false,
+          "show_text_below": false
+        }
+      },
+      "raffle-navigation": {
+        "type": "raffle-navigation",
+        "settings": {}
+      },
+      "footer_new": {
+        "type": "footer_new",
+        "settings": {}
+      },
+      "hatid-banner": {
+        "type": "hatid-banner",
+        "blocks": {
+          "location_DkihV8": {
+            "type": "location",
+            "name": "San Fernando City",
+            "settings": {
+              "icon": "shopify://shop_images/Symbol.svg",
+              "city_name": "San Fernando City"
+            }
+          },
+          "location_6DK8Er": {
+            "type": "location",
+            "name": "Angeles City",
+            "settings": {
+              "icon": "shopify://shop_images/Symbol.svg",
+              "city_name": "Angeles City"
+            }
+          },
+          "location_g4tyaU": {
+            "type": "location",
+            "name": "Mexico City",
+            "settings": {
+              "icon": "shopify://shop_images/Symbol.svg",
+              "city_name": "Mexico City"
+            }
+          },
+          "location_Y64Jei": {
+            "type": "location",
+            "name": "Mabalacat City",
+            "settings": {
+              "icon": "shopify://shop_images/Symbol.svg",
+              "city_name": "Mabalacat City"
+            }
+          }
+        },
+        "block_order": [
+          "location_DkihV8",
+          "location_6DK8Er",
+          "location_g4tyaU",
+          "location_Y64Jei"
+        ],
+        "settings": {
+          "background_image": "shopify://shop_images/pampanga-banner-bg.jpg",
+          "banner_logo": "shopify://shop_images/pampanga-banner-logo.png",
+          "logo_alt": "Pampanga Banner Logo",
+          "headline": "NOW COVERING Pampanga!",
+          "smart_number": "0918-843-6686",
+          "globe_number": "0917-891-6686",
+          "tollfree_number": "1-800-10-370-6686",
+          "promo_text": "FREE Battery Delivery & Installation"
+        }
+      },
+      "hatid-row-two-intro": {
+        "type": "hatid-row-two-intro",
+        "settings": {
+          "title": "Fast, Reliable Car Battery & Installation in Pampanga!",
+          "description": "When your car battery fails, you need an immediate and trusted solution. Motolite Express Hatid in Pampanga offers prompt delivery and installation of high-quality car batteries, ensuring you're back on the road in no time. With 24/7 availability, you can count on us anytime, anywhere, for all your car battery needs in Pampanga.",
+          "button_text": "Learn More",
+          "button_url": "",
+          "text_color": "#ffffff",
+          "button_color": "#d5232b"
+        }
+      },
+      "hatid-row-three-express": {
+        "type": "hatid-row-three-express",
+        "settings": {
+          "heading": "Motolite Express Hatid Services in Pampanga",
+          "description": "Good news, Pampanga drivers! Motolite is now bringing its trusted Express Hatid service straight to your doorstep. Anytime, anywhere you are in Pampanga, you can count on our trained and experienced technicians to deliver and install a brand-new car battery for you.",
+          "mobile_image": "shopify://shop_images/Motolite_Express_Hatid_Services_in_Pampanga.jpg",
+          "desktop_image": "shopify://shop_images/Motolite_Express_Hatid_Services_in_Pampanga.jpg",
+          "image_alt": "Motolite Express Hatid Services",
+          "button_text": "Order Now",
+          "button_url": "",
+          "background_color": "#ffffff",
+          "text_color": "#000000"
+        }
+      },
+      "hatid-row-products": {
+        "type": "hatid-row-products",
+        "settings": {
+          "heading": "Car Batteries Available for Delivery in Pampanga",
+          "subheading": "Motolite brings hassle-free car battery delivery anywhere in Pampanga. Pick the perfect battery that matches your vehicle and driving needs.",
+          "collection": "",
+          "product_limit": 6,
+          "show_description": true,
+          "description_length": 100,
+          "button_text": "Buy Battery",
+          "empty_message": "No batteries found in this collection.",
+          "show_price": true
+        }
+      },
+      "hatid-row-reliable-battery": {
+        "type": "hatid-row-reliable-battery",
+        "settings": {
+          "desktop_image": "shopify://shop_images/24-7_Battery_Delivery_across_Metro_pampanga.jpg",
+          "mobile_image": "shopify://shop_images/24-7_Battery_Delivery_across_Metro_pampanga.jpg",
+          "image_alt": "Reliable 24/7 Battery Delivery across Pampanga",
+          "heading": "Reliable 24/7 Battery Delivery across  Davao",
+          "description": "No need to stress when your car won’t start — our trained technicians are ready to head to your location anytime, anywhere in Pampanga. With MEH, we’ll deliver and install your new car battery right where you are. It’s quick, hassle-free, and made for Kapampangan drivers on the move.",
+          "button_text": "Order Now",
+          "button_url": "",
+          "background_color": "#ffffff",
+          "text_color": "#000000"
+        }
+      },
+      "hatid-row-why-you-should": {
+        "type": "hatid-row-why-you-should",
+        "blocks": {
+          "reason_PKiA7q": {
+            "type": "reason",
+            "name": "Free Delivery and Installation",
+            "settings": {
+              "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70\" height=\"71\" viewbox=\"0 0 70 71\" fill=\"none\">\n  <path d=\"M51.4029 39.4474L49.2961 33.3031C49.2298 33.1105 49.1223 32.9389 48.9862 32.7935C48.8915 34.2112 47.7469 35.37 46.293 35.4446C45.9336 35.4625 45.5795 35.4719 45.2406 35.4719H45.2085C44.2418 35.4716 43.3229 35.4005 42.4506 35.2713C42.4464 35.4497 42.474 35.6318 42.5408 35.8091C42.8183 36.5442 43.639 36.9147 44.3746 36.6372V36.6367L47.0798 35.6142L53.4993 54.3357C54.6106 53.1211 56.0147 52.1982 57.6169 51.6549C58.647 51.3058 59.7173 51.1279 60.7962 51.1279C64.2333 51.1279 67.3565 52.9005 69.1454 55.7102C70.2097 55.6592 70.4823 55.036 68.772 52.8075C66.0145 49.2141 62.1787 48.5175 59.4809 48.5536C59.3115 48.0972 59.1365 47.6202 58.9541 47.1159C57.301 42.5451 53.5881 40.368 51.4029 39.4474Z\" fill=\"white\"></path>\n  <path d=\"M38.5039 11.2562C38.5039 11.2753 38.5044 11.2949 38.5061 11.3168C38.579 12.6936 38.8923 13.6527 38.8969 14.604C38.898 15.0946 38.8032 15.5844 38.5363 16.0798C38.5104 16.1282 38.4686 16.1697 38.4193 16.1959C37.6362 16.6148 36.7947 16.7463 35.9387 16.7463C35.1908 16.7457 34.4273 16.6481 33.6567 16.5474C32.9375 16.4537 32.3026 16.3058 31.7363 16.1043C32.606 17.2295 33.8536 18.0738 35.3468 18.4213C38.7901 19.2233 42.231 17.0818 43.0338 13.6387C43.3883 12.1154 43.1661 10.5926 42.5104 9.29834C41.3641 9.43892 39.8212 9.72435 39.0426 10.3257C38.6871 10.5986 38.507 10.8854 38.5039 11.2562Z\" fill=\"white\"></path>\n  <path d=\"M28.3385 24.6612L28.3368 24.6573L28.3245 24.6311C28.0095 23.9393 27.9833 23.1658 28.25 22.4543C28.5166 21.7429 29.0451 21.1774 29.7366 20.8633C30.11 20.6928 30.5061 20.6072 30.9136 20.6072C32.0272 20.6072 33.0443 21.2617 33.505 22.2748L33.5189 22.3029C33.54 22.3459 33.575 22.4151 33.6239 22.5064C33.723 22.6931 33.89 22.9905 34.1222 23.3528C34.3937 23.7779 34.787 24.3414 35.2981 24.9538C35.8112 22.2642 34.7298 19.2978 32.4731 18.7358C30.0437 18.1299 26.522 19.4495 25.0892 23.616C23.1526 29.3573 22.7363 33.0941 23.4722 39.416C24.1839 43.0785 26.3334 44.1129 28.499 44.3639C28.5087 44.3656 28.5178 44.3685 28.5274 44.3699L39.3189 46.0478L43.3613 56.2943C43.9131 57.6932 45.2532 58.547 46.6712 58.547C47.1055 58.547 47.5474 58.467 47.976 58.298C49.803 57.5769 50.7 55.5108 49.9794 53.6838L45.1889 41.5415C44.7262 40.3696 43.6707 39.5253 42.4265 39.3318L33.4853 37.941C33.439 35.8428 33.67 33.6698 34.0004 31.5995C33.3468 31.0856 32.7676 30.5622 32.2639 30.0588C29.8615 27.6669 28.6524 25.3229 28.3385 24.6612Z\" fill=\"white\"></path>\n  <path d=\"M45.2092 34.903H45.2413C45.5797 34.903 45.9206 34.8936 46.2644 34.8762C47.5202 34.8119 48.4863 33.7427 48.4223 32.4872C48.3583 31.2313 47.2883 30.2655 46.0333 30.3295C45.761 30.3435 45.4972 30.35 45.2413 30.35C40.8796 30.3406 37.9166 28.4288 35.8733 26.4237C34.8648 25.4243 34.1217 24.4092 33.6434 23.661C33.404 23.2871 33.2307 22.9792 33.1217 22.776C33.0677 22.6741 33.029 22.5984 33.0071 22.5523C32.9977 22.5335 32.9911 22.5196 32.9869 22.5116C32.4658 21.367 31.1166 20.8613 29.9723 21.3824C28.8275 21.9026 28.3221 23.2521 28.8426 24.3967C28.9183 24.5535 30.0634 27.0666 32.6673 29.6571C35.243 32.2328 39.4334 34.9027 45.2092 34.903Z\" fill=\"white\"></path>\n  <path d=\"M21.0109 42.6559V24.9353C21.0109 24.0966 20.331 23.4165 19.4924 23.4165H1.5185C0.679855 23.4168 0 24.0969 0 24.9356V42.6562C0 43.4951 0.679855 44.175 1.5185 44.175H19.4924C20.331 44.175 21.0109 43.4951 21.0109 42.6559Z\" fill=\"white\"></path>\n  <path d=\"M26.6777 58.3094C25.174 53.8751 20.3609 51.4989 15.9261 53.0026C11.4918 54.506 9.1156 59.3199 10.6193 63.7542C12.1227 68.1885 16.9361 70.5647 21.3709 69.0613C25.8052 67.5576 28.1811 62.7437 26.6777 58.3094ZM19.7238 64.2038C17.9719 64.798 16.0698 63.8587 15.4762 62.1074C14.8826 60.3555 15.8214 58.4534 17.5727 57.8598C19.3245 57.2656 21.2266 58.205 21.8203 59.9562C22.4147 61.7081 21.4759 63.6096 19.7238 64.2038Z\" fill=\"white\"></path>\n  <path d=\"M56.3935 38.9701C58.7899 38.9701 58.7899 30.2905 56.3935 30.2905C53.9968 30.2905 52.0537 32.2333 52.0537 34.6303C52.0537 37.0273 53.9968 38.9701 56.3935 38.9701Z\" fill=\"white\"></path>\n  <path d=\"M51.0057 59.5424H32.8613C31.2927 56.3776 30.7532 53.1468 30.5745 51.0452C31.0403 50.9026 31.3812 50.4741 31.3812 49.9615V46.8312C31.3812 46.2025 30.8715 45.6929 30.2429 45.6929H7.04988C6.42125 45.6929 5.91157 46.2025 5.91157 46.8312V49.9615C5.91157 50.5902 6.42125 51.0998 7.04988 51.0998H7.17538C5.93918 54.1331 4.03137 59.3913 4.03137 62.9573H8.93805C8.51119 60.8278 8.79292 58.6292 9.77015 56.6494C10.9412 54.278 12.9651 52.5037 15.4694 51.655C16.5004 51.305 17.5698 51.1283 18.6492 51.1283C22.894 51.1283 26.6618 53.8301 28.0252 57.8526C28.6029 59.5558 28.6854 61.3088 28.3556 62.9573H30.3548H35.0503H51.0862C50.8588 61.8238 50.8324 60.6716 51.0057 59.5424Z\" fill=\"white\"></path>\n  <path d=\"M58.0745 53.0025C53.6403 54.5059 51.264 59.3198 52.7677 63.7541C54.2712 68.1884 59.0845 70.5646 63.5194 69.0612C67.9536 67.5577 70.3299 62.7438 68.8261 58.3095C67.3227 53.8753 62.5094 51.499 58.0745 53.0025ZM61.8725 64.204C60.1206 64.7982 58.2185 63.8588 57.6249 62.1075C57.0313 60.3557 57.9701 58.4535 59.7214 57.8599C61.4732 57.2657 63.3754 58.2051 63.969 59.9564C64.5632 61.7083 63.6244 63.6098 61.8725 64.204Z\" fill=\"white\"></path>\n  <path d=\"M43.2194 8.65204C43.0979 7.78778 42.825 6.96478 42.4246 6.2135C41.3372 4.17337 39.3179 2.67222 36.8514 2.34951C36.5262 2.30683 36.2029 2.28662 35.8833 2.28662C35.883 2.28662 35.8827 2.28662 35.8822 2.28662C32.2242 2.28662 29.0426 5.0012 28.5566 8.72802C28.5145 9.05216 28.4934 9.3743 28.4934 9.69217C28.4934 10.1321 28.5327 10.565 28.6084 10.9881C28.8893 12.565 29.3639 13.6973 30.1505 14.4884C30.9365 15.279 32.0626 15.7639 33.7308 15.983C34.4997 16.0838 35.2419 16.1774 35.9388 16.1765C36.7089 16.1765 37.4195 16.0641 38.0737 15.7343C38.2627 15.3535 38.3267 15.0007 38.3278 14.604C38.3324 13.7901 38.0191 12.7938 37.9382 11.3493C37.936 11.3185 37.9354 11.2875 37.9348 11.2562C37.9325 10.6703 38.2575 10.1996 38.7001 9.87146C39.1446 9.53736 39.718 9.30799 40.3224 9.13497C41.3674 8.83787 42.5165 8.71721 43.2194 8.65204Z\" fill=\"white\"></path>\n</svg>",
+              "title": "Free Delivery and Installation",
+              "content": "Enjoy more value with every battery purchase through our free delivery and installation service. No extra charges, no surprise fees for Motolite battery users. Our trained technicians will bring your new battery directly to your location and handle the installation for you."
+            }
+          },
+          "reason_hRw7Bz": {
+            "type": "reason",
+            "name": "24/7 Availability",
+            "settings": {
+              "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70\" height=\"71\" viewbox=\"0 0 70 71\" fill=\"none\">\n  <path d=\"M70 35.8989C70 16.5694 54.3295 0.898926 35 0.898926C15.6705 0.898926 0 16.5694 0 35.8989C0 42.3421 1.73409 48.3876 4.77273 53.558V50.2171C4.77273 48.4353 5.36136 46.7967 6.33182 45.4762C5.31364 42.4694 4.77273 39.2398 4.77273 35.8989C4.77273 19.2103 18.3114 5.67165 35 5.67165C51.6886 5.67165 65.2273 19.2103 65.2273 35.8989C65.2273 39.2398 64.6864 42.4694 63.6682 45.4762C64.6386 46.7967 65.2273 48.4353 65.2273 50.2171V53.558C68.2659 48.3876 70 42.3421 70 35.8989Z\" fill=\"white\"></path>\n  <path d=\"M57.2728 35.899C57.2728 35.024 57.9887 34.3081 58.8637 34.3081H61.966C61.7433 30.5376 60.741 27.0058 59.1342 23.8081L57.8455 24.5558C57.0819 24.9854 56.1115 24.7308 55.666 23.9672C55.2205 23.2036 55.491 22.2331 56.2546 21.7877L57.5433 21.0399C55.5228 17.9854 52.9137 15.3763 49.8592 13.3558L49.1115 14.6445C48.666 15.4081 47.6955 15.6786 46.9319 15.2331C46.1683 14.7877 45.9137 13.8172 46.3433 13.0536L47.091 11.7649C43.8933 10.1581 40.3615 9.15583 36.591 8.93311V12.0354C36.591 12.9104 35.8751 13.6263 35.0001 13.6263C34.1251 13.6263 33.4092 12.9104 33.4092 12.0354V8.93311C29.6387 9.15583 26.1069 10.1581 22.9092 11.7649L23.6569 13.0536C24.0865 13.8172 23.8319 14.7877 23.0683 15.2331C22.3046 15.6786 21.3342 15.4081 20.8887 14.6445L20.141 13.3558C17.0865 15.3763 14.4774 17.9854 12.4569 21.0399L13.7455 21.7877C14.5092 22.2331 14.7796 23.2036 14.3342 23.9672C13.8887 24.7308 12.9183 24.9854 12.1546 24.5558L10.866 23.8081C9.25918 27.0058 8.25691 30.5376 8.03418 34.3081H11.1365C12.0115 34.3081 12.7274 35.024 12.7274 35.899C12.7274 36.774 12.0115 37.4899 11.1365 37.4899H8.03418C8.14554 39.4627 8.47963 41.3558 8.98873 43.1854C10.1024 42.5967 11.3751 42.2626 12.7274 42.2626H57.2728C58.6251 42.2626 59.8978 42.5967 61.0115 43.1854C61.5205 41.3558 61.8546 39.4627 61.966 37.4899H58.8637C57.9887 37.4899 57.2728 36.774 57.2728 35.899ZM35.0001 39.0808C33.8228 39.0808 32.8046 38.4445 32.2637 37.4899H22.2728C21.3978 37.4899 20.6819 36.774 20.6819 35.899C20.6819 35.024 21.3978 34.3081 22.2728 34.3081H32.2637C32.5342 33.8308 32.9319 33.4331 33.4092 33.1627V19.9899C33.4092 19.1149 34.1251 18.399 35.0001 18.399C35.8751 18.399 36.591 19.1149 36.591 19.9899V33.1627C37.5455 33.7036 38.1819 34.7217 38.1819 35.899C38.1819 37.649 36.7501 39.0808 35.0001 39.0808Z\" fill=\"white\"></path>\n  <path d=\"M57.2728 45.4443H12.7273C10.0912 45.4443 7.95459 47.5809 7.95459 50.2171V66.1262C7.95459 68.7623 10.0912 70.8989 12.7273 70.8989H57.2728C59.9089 70.8989 62.0455 68.7623 62.0455 66.1262V50.2171C62.0455 47.5809 59.9089 45.4443 57.2728 45.4443ZM22.2728 56.5807C22.2728 58.3355 20.8457 59.7625 19.091 59.7625H15.9091V62.9443H20.6819C21.56 62.9443 22.2728 63.6571 22.2728 64.5352C22.2728 65.4134 21.56 66.1262 20.6819 66.1262H15.9091C14.1544 66.1262 12.7273 64.6991 12.7273 62.9443V59.7625C12.7273 58.0077 14.1544 56.5807 15.9091 56.5807H19.091V53.3989H14.3182C13.44 53.3989 12.7273 52.6862 12.7273 51.808C12.7273 50.9298 13.44 50.2171 14.3182 50.2171H19.091C20.8457 50.2171 22.2728 51.6441 22.2728 53.3989V56.5807ZM35 64.5352C35 65.4134 34.2873 66.1262 33.4091 66.1262C32.531 66.1262 31.8182 65.4134 31.8182 64.5352V59.7625H28.6364C26.8816 59.7625 25.4546 58.3355 25.4546 56.5807V51.808C25.4546 50.9298 26.1673 50.2171 27.0455 50.2171C27.9237 50.2171 28.6364 50.9298 28.6364 51.808V56.5807H31.8182V51.808C31.8182 50.9298 32.531 50.2171 33.4091 50.2171C34.2873 50.2171 35 50.9298 35 51.808V64.5352ZM41.3319 66.438C41.1807 67.1937 40.5157 67.7171 39.7744 67.7171C39.671 67.7171 39.566 67.7075 39.461 67.6852C38.5987 67.5134 38.0403 66.675 38.2137 65.8127L41.3955 49.9037C41.5657 49.043 42.4025 48.483 43.268 48.6564C44.1303 48.8282 44.6887 49.6666 44.5153 50.5289L41.3335 66.438H41.3319ZM56.3644 54.5157L52.3982 65.0937C52.158 65.7316 51.5519 66.1262 50.9075 66.1262C50.7214 66.1262 50.5337 66.0927 50.3491 66.0243C49.5266 65.7157 49.1098 64.7977 49.4185 63.9752L53.3846 53.3973H49.3166C48.4385 53.3973 47.7257 52.6846 47.7257 51.8064C47.7257 50.9282 48.4385 50.2155 49.3166 50.2155H53.3846C54.4282 50.2155 55.405 50.7277 56 51.5837C56.595 52.4412 56.7303 53.5389 56.3644 54.5157Z\" fill=\"white\"></path>\n</svg>",
+              "title": "24/7 Availability",
+              "content": "Day or night, you can count on Motolite Express Hatid to be ready when your car battery lets you down. Our 24/7 availability means you’ll never have to wait until morning or business hours to get moving again. It’s a reliable, round-the-clock service made to keep you safe and worry-free on the road."
+            }
+          },
+          "reason_MB3Uxc": {
+            "type": "reason",
+            "name": "Trained Technicians",
+            "settings": {
+              "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70\" height=\"71\" viewbox=\"0 0 70 71\" fill=\"none\">\n  <path d=\"M55.7812 48.6641V44.6489L57.9688 42.4614H60.1562L62.3438 44.6489V51.2114L67.8125 45.7427V38.0864L62.3438 33.7114V20.5864L67.8125 16.2114V8.55518L62.3438 3.08643V9.64893L60.1562 11.8364H57.9688L55.7812 9.64893V3.08643L50.3125 8.55518V16.2114L55.7812 20.5864V33.7114L50.3125 38.0864V43.7094C52.4654 44.9555 54.3294 46.6443 55.7812 48.6641Z\" fill=\"white\"></path>\n  <path d=\"M19.6875 41.3677H41.5625C46.2038 41.3677 50.655 43.2114 53.9369 46.4933C57.2188 49.7752 59.0625 54.2264 59.0625 58.8677V68.7114H2.1875V58.8677C2.1875 54.2264 4.03124 49.7752 7.31313 46.4933C10.595 43.2114 15.0462 41.3677 19.6875 41.3677Z\" fill=\"white\"></path>\n  <path d=\"M18.5938 18.3989V31.5239C18.5938 33.2644 19.2852 34.9336 20.5159 36.1643C21.7466 37.395 23.4158 38.0864 25.1562 38.0864H36.0938C37.8342 38.0864 39.5034 37.395 40.7341 36.1643C41.9648 34.9336 42.6562 33.2644 42.6562 31.5239V18.3989\" fill=\"white\"></path>\n  <path d=\"M18.5938 11.8364V7.46143C18.5938 6.3011 19.0547 5.18831 19.8752 4.36783C20.6956 3.54736 21.8084 3.08643 22.9688 3.08643H38.2812C39.4416 3.08643 40.5544 3.54736 41.3748 4.36783C42.1953 5.18831 42.6562 6.3011 42.6562 7.46143V11.8364\" fill=\"white\"></path>\n  <path d=\"M42.6562 11.8364H18.5938C17.3856 11.8364 16.4062 12.8158 16.4062 14.0239V16.2114C16.4062 17.4195 17.3856 18.3989 18.5938 18.3989H42.6562C43.8644 18.3989 44.8438 17.4195 44.8438 16.2114V14.0239C44.8438 12.8158 43.8644 11.8364 42.6562 11.8364Z\" fill=\"white\"></path>\n  <path d=\"M42.6562 18.3989C42.0192 20.31 40.797 21.9721 39.1628 23.1499C37.5286 24.3277 35.5652 24.9615 33.5508 24.9614H27.6992C25.6848 24.9615 23.7214 24.3277 22.0872 23.1499C20.453 21.9721 19.2308 20.31 18.5938 18.3989\" fill=\"white\"></path>\n  <path d=\"M42.6562 24.9614H43.75C44.6202 24.9614 45.4548 24.6157 46.0702 24.0004C46.6855 23.385 47.0312 22.5504 47.0312 21.6802C47.0312 20.8099 46.6855 19.9753 46.0702 19.36C45.4548 18.7446 44.6202 18.3989 43.75 18.3989H42.6562\" fill=\"white\"></path>\n  <path d=\"M18.5938 24.9614H17.5C16.6298 24.9614 15.7952 24.6157 15.1798 24.0004C14.5645 23.385 14.2188 22.5504 14.2188 21.6802C14.2188 20.8099 14.5645 19.9753 15.1798 19.36C15.7952 18.7446 16.6298 18.3989 17.5 18.3989H18.5938\" fill=\"white\"></path>\n  <path d=\"M29.5312 45.7427H31.7188V61.0552H29.5312V45.7427Z\" fill=\"white\"></path>\n  <path d=\"M32.8125 52.3052H35V54.4927H32.8125V52.3052Z\" fill=\"white\"></path>\n  <path d=\"M32.8125 56.6802H35V58.8677H32.8125V56.6802Z\" fill=\"white\"></path>\n  <path d=\"M14.2188 59.9614H16.4062V68.7114H14.2188V59.9614Z\" fill=\"white\"></path>\n  <path d=\"M44.8438 59.9614H47.0312V68.7114H44.8438V59.9614Z\" fill=\"white\"></path>\n  <path d=\"M39.375 41.3677L40.4688 52.3052L30.625 47.9302V41.3677H39.375Z\" fill=\"white\"></path>\n  <path d=\"M21.875 41.3677L20.7812 52.3052L30.625 47.9302V41.3677H21.875Z\" fill=\"white\"></path>\n  <path d=\"M25.1562 38.0864V41.3677L30.625 47.9302L36.0938 41.3677V38.0864\" fill=\"white\"></path>\n  <path d=\"M32.8125 52.3052H35V54.4927H32.8125V52.3052Z\" fill=\"#920200\"></path>\n  <path d=\"M32.8125 56.6802H35V58.8677H32.8125V56.6802Z\" fill=\"#920200\"></path>\n  <path d=\"M68.4961 17.0656C68.6241 16.9631 68.7275 16.8331 68.7985 16.6853C68.8695 16.5374 68.9063 16.3755 68.9062 16.2114V8.55518C68.9062 8.26512 68.7909 7.98697 68.5858 7.78189L63.117 2.31314C62.9641 2.16023 62.7692 2.0561 62.5571 2.01391C62.3449 1.97173 62.125 1.99339 61.9252 2.07615C61.7254 2.15892 61.5546 2.29907 61.4344 2.47889C61.3142 2.65872 61.25 2.87014 61.25 3.08643V9.19611L59.7034 10.7427H58.4216L56.875 9.19611V3.08643C56.875 2.87014 56.8108 2.65872 56.6906 2.47889C56.5704 2.29907 56.3996 2.15892 56.1998 2.07615C56 1.99339 55.7801 1.97173 55.5679 2.01391C55.3558 2.0561 55.1609 2.16023 55.008 2.31314L49.5392 7.78189C49.3341 7.98697 49.2188 8.26512 49.2188 8.55518V16.2114C49.2187 16.3755 49.2555 16.5374 49.3265 16.6853C49.3975 16.8331 49.5009 16.9631 49.6289 17.0656L54.6875 21.1114V33.1864L49.6289 37.2333C49.501 37.3357 49.3977 37.4655 49.3268 37.6132C49.2558 37.7609 49.2189 37.9226 49.2188 38.0864V41.943C46.8155 40.8451 44.2046 40.276 41.5625 40.2739H37.1875V39.0927C39.0082 38.8299 40.6733 37.9204 41.8784 36.5305C43.0835 35.1407 43.7478 33.3634 43.75 31.5239V26.0552C44.7489 26.0566 45.7182 25.7156 46.4962 25.0891C47.2742 24.4625 47.814 23.5883 48.0255 22.612C48.2371 21.6357 48.1077 20.6164 47.6589 19.724C47.2101 18.8316 46.469 18.1199 45.5591 17.7077C45.8042 17.2468 45.934 16.7334 45.9375 16.2114V14.0239C45.9347 13.3477 45.723 12.6889 45.3315 12.1375C44.9399 11.5862 44.3876 11.1693 43.75 10.9439V7.46143C43.7483 6.01156 43.1715 4.62157 42.1463 3.59635C41.1211 2.57114 39.7311 1.99441 38.2812 1.99268H22.9688C21.5189 1.99441 20.1289 2.57114 19.1037 3.59635C18.0785 4.62157 17.5017 6.01156 17.5 7.46143V10.9439C16.8624 11.1693 16.3101 11.5862 15.9185 12.1375C15.527 12.6889 15.3153 13.3477 15.3125 14.0239V16.2114C15.316 16.7334 15.4458 17.2468 15.6909 17.7077C14.781 18.1199 14.0399 18.8316 13.5911 19.724C13.1423 20.6164 13.0129 21.6357 13.2245 22.612C13.436 23.5883 13.9758 24.4625 14.7538 25.0891C15.5318 25.7156 16.5011 26.0566 17.5 26.0552V31.5239C17.5022 33.3634 18.1665 35.1407 19.3716 36.5305C20.5767 37.9204 22.2418 38.8299 24.0625 39.0927V40.2739H19.6875C14.7578 40.2794 10.0316 42.2402 6.54581 45.726C3.06 49.2118 1.09925 53.938 1.09375 58.8677V68.7114C1.09375 69.0015 1.20898 69.2797 1.4141 69.4848C1.61922 69.6899 1.89742 69.8052 2.1875 69.8052H59.0625C59.3526 69.8052 59.6308 69.6899 59.8359 69.4848C60.041 69.2797 60.1562 69.0015 60.1562 68.7114V58.8677C60.1588 55.1075 59.0141 51.4361 56.875 48.3436V45.1017L58.4216 43.5552H59.7034L61.25 45.1017V51.2114C61.25 51.4277 61.3142 51.6391 61.4344 51.819C61.5546 51.9988 61.7254 52.1389 61.9252 52.2217C62.125 52.3045 62.3449 52.3261 62.5571 52.2839C62.7692 52.2418 62.9641 52.1376 63.117 51.9847L68.5858 46.516C68.7909 46.3109 68.9062 46.0327 68.9062 45.7427V38.0864C68.9063 37.9224 68.8695 37.7605 68.7985 37.6126C68.7275 37.4647 68.6241 37.3347 68.4961 37.2322L63.4375 33.1864V21.1114L68.4961 17.0656ZM39.1934 50.541L32.3914 47.5189L36.6056 42.4614H38.3906L39.1934 50.541ZM22.8648 42.4614H24.6444L28.8586 47.5189L22.0566 50.541L22.8648 42.4614ZM26.25 39.1802H35V40.9717L30.625 46.2217L26.25 40.9717V39.1802ZM43.75 23.8677V19.4927C44.3302 19.4927 44.8866 19.7231 45.2968 20.1334C45.707 20.5436 45.9375 21.1 45.9375 21.6802C45.9375 22.2603 45.707 22.8167 45.2968 23.227C44.8866 23.6372 44.3302 23.8677 43.75 23.8677ZM22.9688 4.18018H38.2812C39.1515 4.18018 39.9861 4.52588 40.6014 5.14123C41.2168 5.75659 41.5625 6.59118 41.5625 7.46143V10.7427H19.6875V7.46143C19.6875 6.59118 20.0332 5.75659 20.6486 5.14123C21.2639 4.52588 22.0985 4.18018 22.9688 4.18018ZM17.5 14.0239C17.5 13.7338 17.6152 13.4556 17.8204 13.2505C18.0255 13.0454 18.3037 12.9302 18.5938 12.9302H42.6562C42.9463 12.9302 43.2245 13.0454 43.4296 13.2505C43.6348 13.4556 43.75 13.7338 43.75 14.0239V16.2114C43.75 16.5015 43.6348 16.7797 43.4296 16.9848C43.2245 17.1899 42.9463 17.3052 42.6562 17.3052H18.5938C18.3037 17.3052 18.0255 17.1899 17.8204 16.9848C17.6152 16.7797 17.5 16.5015 17.5 16.2114V14.0239ZM40.9697 19.4927C40.2364 20.8179 39.1616 21.9227 37.8569 22.692C36.5523 23.4614 35.0654 23.8673 33.5508 23.8677H27.6992C26.1846 23.8673 24.6977 23.4614 23.3931 22.692C22.0884 21.9227 21.0136 20.8179 20.2803 19.4927H40.9697ZM15.3125 21.6802C15.3125 21.1 15.543 20.5436 15.9532 20.1334C16.3634 19.7231 16.9198 19.4927 17.5 19.4927V23.8677C16.9198 23.8677 16.3634 23.6372 15.9532 23.227C15.543 22.8167 15.3125 22.2603 15.3125 21.6802ZM19.6875 31.5239V22.4458C20.6904 23.5814 21.9235 24.4905 23.3049 25.1128C24.6862 25.7351 26.1842 26.0563 27.6992 26.0552H33.5508C35.0658 26.0563 36.5638 25.7351 37.9451 25.1128C39.3265 24.4905 40.5596 23.5814 41.5625 22.4458V31.5239C41.5608 32.9738 40.984 34.3638 39.9588 35.389C38.9336 36.4142 37.5436 36.9909 36.0938 36.9927H25.1562C23.7064 36.9909 22.3164 36.4142 21.2912 35.389C20.266 34.3638 19.6892 32.9738 19.6875 31.5239ZM57.9688 67.6177H47.0312V59.9614H44.8438V67.6177H16.4062V59.9614H14.2188V67.6177H3.28125V58.8677C3.28617 54.518 5.01626 50.3478 8.09196 47.2721C11.1677 44.1964 15.3378 42.4663 19.6875 42.4614H20.6719L19.6984 52.1958C19.6794 52.3862 19.7106 52.5783 19.789 52.7529C19.8674 52.9274 19.9902 53.0784 20.1452 53.1906C20.3001 53.3029 20.4819 53.3725 20.6722 53.3926C20.8625 53.4126 21.0547 53.3824 21.2297 53.3049L29.5312 49.6135V61.0552H31.7188V49.6135L40.0247 53.3049C40.1997 53.3824 40.3919 53.4126 40.5822 53.3926C40.7725 53.3725 40.9542 53.3029 41.1092 53.1906C41.2642 53.0784 41.387 52.9274 41.4654 52.7529C41.5438 52.5783 41.575 52.3862 41.5559 52.1958L40.5781 42.4614H41.5625C45.9122 42.4663 50.0823 44.1964 53.158 47.2721C56.2337 50.3478 57.9638 54.518 57.9688 58.8677V67.6177ZM61.6602 34.5656L66.7188 38.6114V45.2899L63.4375 48.5711V44.6489C63.4374 44.3589 63.3222 44.0807 63.117 43.8756L60.9295 41.6881C60.7245 41.483 60.4463 41.3677 60.1562 41.3677H57.9688C57.6787 41.3677 57.4005 41.483 57.1955 41.6881L55.008 43.8756C54.8028 44.0807 54.6876 44.3589 54.6875 44.6489V45.711C53.6941 44.7266 52.5935 43.8568 51.4062 43.1177V38.6114L56.4648 34.5646C56.5927 34.4622 56.696 34.3323 56.767 34.1847C56.838 34.037 56.8749 33.8753 56.875 33.7114V20.5864C56.8751 20.4224 56.8382 20.2605 56.7672 20.1126C56.6962 19.9647 56.5929 19.8347 56.4648 19.7322L51.4062 15.6864V9.00799L54.6875 5.72674V9.64893C54.6876 9.93898 54.8028 10.2171 55.008 10.4222L57.1955 12.6097C57.4005 12.8148 57.6787 12.9301 57.9688 12.9302H60.1562C60.4463 12.9301 60.7245 12.8148 60.9295 12.6097L63.117 10.4222C63.3222 10.2171 63.4374 9.93898 63.4375 9.64893V5.72674L66.7188 9.00799V15.6864L61.6602 19.7333C61.5323 19.8357 61.429 19.9655 61.358 20.1132C61.287 20.2609 61.2501 20.4226 61.25 20.5864V33.7114C61.2499 33.8755 61.2868 34.0374 61.3578 34.1853C61.4288 34.3331 61.5321 34.4631 61.6602 34.5656Z\" fill=\"#920200\"></path>\n</svg>",
+              "title": "Trained Technicians",
+              "content": "Our experts are equipped with the knowledge and skills to ensure your battery is installed quickly and correctly. No need to worry about DIY installations or delays; our team handles everything, so you don’t have to lift a finger. With years of experience, we guarantee that your battery is in good hands and your car will be back on the road in no time."
+            }
+          },
+          "reason_ddzttX": {
+            "type": "reason",
+            "name": "Multiple Payment Options",
+            "settings": {
+              "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70\" height=\"71\" viewbox=\"0 0 70 71\" fill=\"none\">\n  <path d=\"M42.5 53.3989V63.3989C42.5 66.1565 40.2576 68.3989 37.5 68.3989H7.5C4.74243 68.3989 2.5 66.1565 2.5 63.3989V8.39893C2.5 5.64136 4.74243 3.39893 7.5 3.39893H37.5C40.2576 3.39893 42.5 5.64136 42.5 8.39893V18.3989H45V8.39893C45 4.26318 41.6357 0.898926 37.5 0.898926H7.5C3.36426 0.898926 0 4.26318 0 8.39893V63.3989C0 67.5347 3.36426 70.8989 7.5 70.8989H37.5C41.6357 70.8989 45 67.5347 45 63.3989V53.3989H42.5Z\" fill=\"white\"></path>\n  <path d=\"M27.5 53.3989C24.7424 53.3989 22.5 51.1553 22.5 48.3989V23.3989C22.5 20.6426 24.7424 18.3989 27.5 18.3989H40V8.39893C40 7.01816 38.8808 5.89893 37.5 5.89893H27.5C27.5 8.66031 25.2614 10.8989 22.5 10.8989C19.7386 10.8989 17.5 8.66031 17.5 5.89893H7.5C6.11938 5.89893 5 7.01816 5 8.39893V63.3989C5 64.7797 6.11938 65.8989 7.5 65.8989H37.5C38.8808 65.8989 40 64.7797 40 63.3989V53.3989H27.5Z\" fill=\"white\"></path>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M67.5 20.8989H27.5C26.1194 20.8989 25 22.0182 25 23.3989V48.3989C25 49.7795 26.1194 50.8989 27.5 50.8989H67.5C68.8808 50.8989 70 49.7795 70 48.3989V23.3989C70 22.0182 68.8808 20.8989 67.5 20.8989ZM40 43.3989C40 44.7795 38.8808 45.8989 37.5 45.8989H32.5C31.1194 45.8989 30 44.7795 30 43.3989V40.8989C30 39.5182 31.1194 38.3989 32.5 38.3989H37.5C38.8808 38.3989 40 39.5182 40 40.8989V43.3989ZM59.4773 30.1336C58.7173 29.6402 57.6707 29.3936 56.3373 29.3936H53.2173V32.2336H51.4773V33.3136H53.2173V35.0936H51.4773V36.1736H53.2173V43.6736H54.8773V39.0136H55.9973C56.9307 39.0136 57.724 38.8936 58.3773 38.6536C59.0307 38.4002 59.564 38.0603 59.9773 37.6336C60.3907 37.2069 60.6973 36.7203 60.8973 36.1736H62.5173V35.0936H61.1773C61.204 34.9202 61.224 34.7469 61.2373 34.5736C61.2507 34.3869 61.2573 34.2069 61.2573 34.0336C61.2573 33.9136 61.2507 33.7936 61.2373 33.6736C61.2373 33.5536 61.2307 33.4336 61.2173 33.3136H62.5173V32.2336H61.0173C60.7507 31.3269 60.2373 30.6269 59.4773 30.1336ZM54.8773 36.1736H59.0373C58.7707 36.6536 58.3773 37.0002 57.8573 37.2136C57.3373 37.4269 56.684 37.5336 55.8973 37.5336H54.8773V36.1736ZM54.8773 33.3136H59.4373C59.464 33.4469 59.4773 33.5802 59.4773 33.7136C59.4907 33.8336 59.4973 33.9669 59.4973 34.1136C59.4973 34.2869 59.4907 34.4602 59.4773 34.6336C59.464 34.7936 59.444 34.9469 59.4173 35.0936H54.8773V33.3136ZM54.8773 30.8736H56.2773C56.984 30.8736 57.5707 30.9869 58.0373 31.2136C58.504 31.4403 58.8573 31.7803 59.0973 32.2336H54.8773V30.8736Z\" fill=\"white\"></path>\n</svg>",
+              "title": "Multiple Payment Options",
+              "content": "We provide you with multiple payment options, whether you prefer cash, card, or cashless mobile wallets. Plus, BDO credit card holders can enjoy 0% interest installment plans, making it even lighter on the budget."
+            }
+          }
+        },
+        "block_order": [
+          "reason_PKiA7q",
+          "reason_hRw7Bz",
+          "reason_MB3Uxc",
+          "reason_ddzttX"
+        ],
+        "settings": {
+          "heading": "Why Should You Book With Motolite  Express Hatid in Pampanga",
+          "description": "When it comes to car battery emergencies, you deserve a service that’s prompt, dependable, and hassle-free. With our Motolite Express Hatid in Pampanga, you can get the convenience of quick delivery, free installation, and 24/7 availability whenever you need it most. Here's why you should book with us:"
+        }
+      },
+      "hatid-row-book-with-motolite": {
+        "type": "hatid-row-book-with-motolite",
+        "blocks": {
+          "contact_DygjB9": {
+            "type": "contact",
+            "name": "Smart",
+            "settings": {
+              "label": "Smart",
+              "phone": "0918-843-6686"
+            }
+          },
+          "contact_RPThnU": {
+            "type": "contact",
+            "name": "Globe",
+            "settings": {
+              "label": "Globe",
+              "phone": "0917-891-6686"
+            }
+          },
+          "contact_HNyXxh": {
+            "type": "contact",
+            "name": "Provincial Toll Free",
+            "settings": {
+              "label": "Provincial Toll Free",
+              "phone": "1-800-10-370-6686"
+            }
+          }
+        },
+        "block_order": [
+          "contact_DygjB9",
+          "contact_RPThnU",
+          "contact_HNyXxh"
+        ],
+        "settings": {
+          "book_title": "Book with Motolite Now!",
+          "book_description": "Getting a new car battery has never been this easy. With Motolite Express Hatid, you can rely on dependable delivery, free installation, and round-the-clock service. Our skilled technicians are ready to assist whenever you need a fast fix.",
+          "book_link": "https://www.motolite.com/pages/contact-us",
+          "book_button_text": "Book Now!",
+          "reach_title": "Need a Battery Fast? Reach Us Now!",
+          "reach_subtitle": "Motolite Express Hatid Davao",
+          "reach_description": "Enjoy swift and reliable battery delivery and professional installation service, available anytime, anywhere in Davao. Contact us now for quick assistance!"
+        }
+      }
+    },
+    "content_for_index": []
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {}
+        }
+      }
+    },
+    "Craft": {
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_accent_1": "#2A332F",
+      "colors_accent_2": "#476154",
+      "colors_text": "#1C1A1A",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_background_1": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_header_font": "americana_n4",
+      "type_body_font": "quattrocento_sans_n4",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "menu": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "menu",
+            "text"
+          ],
+          "settings": {
+            "color_scheme": "accent-1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+
+
+<section class="battery_delivery global-padding" id="battery-delivery-{{ section.id }}">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        {% if section.settings.desktop_image %}
+          <div class="image d-none d-xl-block">
+            <img src="{{ section.settings.desktop_image | image_url }}" 
+                 alt="{{ section.settings.image_alt | escape }}" 
+                 class="w-100 img-fluid"
+                 loading="lazy"
+                 width="800"
+                 height="600">
+          </div>
+        {% endif %}
+        
+        <div class="content">
+          {% if section.settings.heading %}
+            <h2>{{ section.settings.heading }}</h2>
+          {% endif %}
+          
+          {% if section.settings.mobile_image %}
+            <div class="image d-block d-xl-none">
+              <img src="{{ section.settings.mobile_image | image_url }}" 
+                   alt="{{ section.settings.image_alt | escape }}" 
+                   class="w-100 img-fluid"
+                   loading="lazy"
+                   width="400"
+                   height="300">
+            </div>
+          {% endif %}
+          
+          {% if section.settings.description %}
+            <p>{{ section.settings.description }}</p>
+          {% endif %}
+          
+          {% if section.settings.button_text and section.settings.button_url %}
+            <a href="{{ section.settings.button_url }}" class="btn btn-primary">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "24/7 Battery Delivery",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image",
+      "info": "Recommended size: 800x600px"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image",
+      "info": "Recommended size: 400x300px"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image Alt Text",
+      "default": "24/7 Battery Delivery Service"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Reliable 24/7 Battery Delivery across Pampanga"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "No need to stress when your car won't start — our trained technicians are ready to head to your location anytime, anywhere in Pampanga. With MEH, we'll deliver and install your new car battery right where you are. It's quick, hassle-free, and made for Kapampangan drivers on the move."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Order Now"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "24/7 Battery Delivery",
+      "category": "Service Sections",
+      "settings": {
+        "heading": "Reliable 24/7 Battery Delivery across Pampanga",
+        "description": "No need to stress when your car won't start — our trained technicians are ready to head to your location anytime, anywhere in Pampanga. With MEH, we'll deliver and install your new car battery right where you are. It's quick, hassle-free, and made for Kapampangan drivers on the move."
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,142 @@
+{{ 'raffle-navigation.css' | asset_url | stylesheet_tag }}
+
+<style>
+  btn:focus, a:focus
+  {
+           outline: none;
+  }
+  .navbar-toggler:focus
+  {
+           outline: none !important;
+           box-shadow: none;
+  }
+
+  .navbar-brand {
+  font-size:25px!important;
+
+  }
+  }
+  .navbar-collapse {
+      margin: 0 50px;
+      font-size: large;
+  }
+    .nav-item {
+    margin-left: 220px;
+      margin-right: -190px;
+
+    }
+</style>
+
+<div id="batteryServicesNavContainer">
+  <div id="batteryServicesNav">
+    <div class="raffle">
+      <a href="/pages/march-2024-final-winners" class="raffle-link">MAR24</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/february-2024-winners" class="raffle-link">FEB24</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/january-2024-winners" class="raffle-link">JAN24</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/december-2023-winner" class="raffle-link">DEC23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/november-2023-winners" class="raffle-link">NOV23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/october-2023-winners" class="raffle-link">OCT23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/september-2023-winners" class="raffle-link">SEP23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/august-2023-winners" class="raffle-link">AUG23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/july-2023-winners" class="raffle-link">JULY23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/june2023-winners" class="raffle-link">JUN23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/may2023-winners" class="raffle-link">MAY23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/april2023-winners" class="raffle-link">APR23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/march2023-winners" class="raffle-link">MAR23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/february2023-winners" class="raffle-link">FEB23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/january2023-winners" class="raffle-link">JAN23</a>
+    </div>
+    <div class="raffle">
+      <a href="/pages/december-winners" class="raffle-link">DEC22</a>
+    </div>
+  </div>
+</div>
+{% comment %}
+  <!--navbar-->
+      <nav class="navbar-light bg-light shadow-sm position-fixed 	d-none d-md-block d-lg-block" style="z-index:2; width:100%;">
+          <ul class="nav justify-content-center">
+          <li class="nav-item fw-bold">
+                  <a class="nav-link" aria-current="page" href="/pages/july2023-winners">JULY23</a>
+              </li>
+            <li class="nav-item fw-bold">
+                  <a class="nav-link" aria-current="page" href="/pages/june2023-winners">JUN23</a>
+              </li>
+            <li class="nav-item fw-bold">
+                  <a class="nav-link" aria-current="page" href="/pages/may2023-winners">MAY23</a>
+              </li>
+            <li class="nav-item fw-bold">
+                  <a class="nav-link" aria-current="page" href="/pages/april2023-winners">APR23</a>
+              </li>
+            <li class="nav-item fw-bold">
+                  <a class="nav-link" aria-current="page" href="/pages/march2023-winners">MAR23</a>
+              </li>
+            <li class="nav-item fw-bold">
+                  <a class="nav-link" aria-current="page" href="/pages/february2023-winners">FEB23</a>
+              </li>
+            <li class="nav-item fw-bold">
+                  <a class="nav-link" aria-current="page" href="/pages/january2023-winners">JAN23</a>
+              </li>
+              <li class="nav-item fw-bold">
+                  <a class="nav-link" aria-current="page" href="/pages/december-winners">DEC22</a>
+              </li>
+
+
+          </ul>
+      </nav>
+{% endcomment %}
+
+<script>
+    $(function($) {
+   let url = window.location.href;
+    $('.battery-service-link').each(function() {
+     if (this.href === url) {
+    	 $(this).parent().addClass('active');
+
+       $('#active-nav').text($(this).text());
+
+
+    }
+   });
+  });
+</script>
+
+{% schema %}
+{
+"name": "Battery Navigation",
+"settings": [],
+"presets": [
+{
+"name": "Battery Navigation",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,120 @@
+{{ 'collection-product.css' | asset_url | stylesheet_tag }}
+
+
+
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+{%- assign getType = '' -%}
+{%- for i in (1..1) -%}
+   {%- unless pageUrl contains "?" -%}{% break %}{%- endunless -%}
+   {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+{%- assign parts= pageQuerystring | split:'&' -%}
+  {%- for part in parts -%}
+     {%- assign keyAndValue = part | split:'=' -%}
+    {%- if keyAndValue.size > 1 -%}
+    {% if keyAndValue[0] == 'type'%}
+
+{%- assign getType = keyAndValue[1]  -%}
+{% endif%}
+         {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+
+{% assign productlist = collections[getType] %}
+
+
+<!--automobile section-->
+<span>hello world</span>
+    <div class="container section-height mt-50px" id="automobile">
+
+        <h1 style="font-weight:bold">
+            Automobile Batteries
+
+        </h1>
+        <br />
+        <!--row one-->
+
+        <div class="row px-1">
+            <div class="col-lg-5 col-md-6 col-sm-12 mb-20px pr-20">
+
+
+                <h2  class="text-muted fw-bold">Maintenance Free</h2>
+                <p style="font-color: black">Motolite automotive batteries are designed using state-of-the-art technology and are manufactured under the strictest of standards, which is why Motolite is the preferred battery brand of automotive manufacturers and experts.</p>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="d-flex justify-content-center shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/motiv_banner.png?v=1648665181" class="img-fluid" style="width:100%;" alt="...">
+                </div>
+
+            </div>
+
+        </div>
+        <br />
+        <br />
+
+        <!--row two-->
+      
+   
+        <div class="row">
+             {%for product in productlist.products%}
+            <div class="card col-4 text-center  border-0">
+                <div class="buy-battery-wrapper mx-auto">
+                    <img src="{{product.featured_image | image_url: width: auto }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{product.title}}</h5>
+                    <div class="buy-battery-wrapper mx-auto truncate-box">
+                        <p class="card-text text-start">{{product.content}}</p>
+                    </div>
+                    <a href="{{product.url}}" class="btn btn-danger btn-lg">Buy Battery</a>
+                </div>
+            </div>
+
+            {%endfor%}
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <br />
+        <br />
+
+
+
+        <!--row three-->
+
+        <div class="row px-1">
+
+            <div class="col-lg-7 col-md-6 col-sm-12 mb-20px">
+                <div class="d-flex justify-content-center shadow">
+                    <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/motiv_banner.png?v=1648665181" class="img-fluid" style="width:100%;" alt="...">
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-5 col-md-6 col-sm-12 pl-20">
+
+
+                <h2 class="text-muted fw-bold">Low Maintenance</h2>
+                <p>Designed using advanced battery technology to deliver the optimum power and minimal fluid loss. This technology provides real value for your money.</p>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>

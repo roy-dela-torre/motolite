@@ -1,0 +1,196 @@
+section.footer{
+    background-color: #D91F2B;
+}
+section.footer .footer_content img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 14px;
+}
+
+section.footer .footer_content p,
+section.footer p,
+section.footer .but_also_on a span {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    margin-bottom: 0;
+}
+
+section.footer .footer_content {
+    max-width: 311px;
+}
+
+section.footer .row {
+    justify-content: space-between;
+    gap: 30px 0;
+}
+
+section.footer {
+    padding: 100px 30px;
+}
+
+section.footer .wrapper {
+    max-width: 1597px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.footer .top_menu {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+section.footer .top_menu>div {
+    display: flex;
+    flex-direction: column;
+    gap: 14px 0;
+    width: fit-content;
+}
+
+section.footer .top_menu>div img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+section.footer span.yellow_text {
+    color: #F8C606;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.66px;
+}
+
+section.footer .row>*{
+  padding: 0 12px !important;
+}
+
+section.footer .dpo_dps button:hover{
+  background-color: transparent;
+  border: none;
+}
+
+section.footer .dpo_dps button:focus-visible{
+  all: unset;
+}
+
+section.footer .modal-content{
+  background-color: transparent;
+  border: none;
+}
+
+section.footer button:focus:not(:focus-visible){
+  outline: none;
+}
+
+section.footer a {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    text-decoration: none;
+}
+
+section.footer .oriental_and_motolite{
+    max-width: 397px;
+}
+section.footer .but_also_on{
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+}
+section.footer .menus{
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+    max-width: 950px;
+}
+
+section.footer .bottom_menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.footer .bottom_menu>div>span:first-of-type{
+    width: 100%;
+    display: block;
+}
+
+section.footer .bottom_menu>div{
+    width: calc(50% - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+}
+
+section.footer button{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    max-width: 0;
+    max-width: 144px;
+}
+
+section.footer .bottom_menu>div a{
+    width: fit-content;
+}
+
+section.footer .dpo_dps{
+    display: flex;
+    justify-content: end;
+}
+
+section.footer .dpo_dps button{
+    width: fit-content;
+}
+
+section.footer img{
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+    section.footer{
+        padding: 70px 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    section.footer .footer_content{
+        max-width: 100%;
+    }
+
+    section.footer .dpo_dps{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    section.footer{
+        padding: 50px 8px;
+    }
+}
+
+@media (max-width: 575px) {
+    section.footer .bottom_menu{
+        flex-direction: column;
+        gap: 30px 0;
+    }
+
+    section.footer .bottom_menu>div{
+        width: 100%;
+        max-width: 100%;
+    }
+}

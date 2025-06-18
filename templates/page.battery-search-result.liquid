@@ -1,0 +1,191 @@
+<link href="{{ 'battery-search-result.css' | asset_url }}" rel="stylesheet">
+<link href="{{ 'global.css' | asset_url }}" rel="stylesheet">
+
+<style>
+  .batterySearchResultItemTitle {
+    display: none;
+}
+
+  .batterySearchResultItem,
+  .batterySearchResultBatteryList {
+    padding: 0px;
+    margin: 0px;
+}
+
+.batterySearchResultItem {
+    background: transparent !important;
+}
+  
+  div#batterySearchResultItemListTitle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+  div#batterySearchResultItemList .text h1 {
+    margin-bottom: 0px;
+  }
+
+  .battery-search-result-item-card{
+    min-width: unset;
+    max-width: unset;
+  }
+
+  .batterySearchResultBatteryList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+  .battery-search-result-item-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    height: 100%;
+}
+
+  a.battery-search-result-item-buy-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+  .battery-search-result-item-buy-button-container {
+    width: 100%;
+    padding: 0px;
+}
+
+  .battery-search-result-item-details {
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+  .battery-search-result-item-card {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: white;
+    filter: none;
+}
+
+  .battery-search-result-item-price {
+    display: none;
+}
+
+  .battery-search-result-item-image {
+    width: 100%;
+    min-width: 403px;
+    height: 100%;
+    max-height: 323px;
+    margin: 0px;
+    margin-bottom: 23px;
+        object-fit: contain;
+}
+
+  .Motolite-Golfmaster-Tubular {
+    color: var(--Lightish-black, #212529);
+    font-family: Segoe UI, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.5px;
+    letter-spacing: .66px;
+}
+
+  .battery-search-result-item-description p,
+  .battery-search-result-item-description {
+    margin: 0px;
+}
+
+  a.battery-search-result-item-name {
+    display: block;
+    margin-bottom: 23px;
+}
+
+
+h2#batterySearchResultItemListTitle {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    line-height: 50px;
+    font-size: 40px;
+  margin: 0px;
+  margin-bottom: 40px;
+      order: -1;
+}
+  
+
+  div#batterySearchResultItemList .btn-btn a {
+    background: #D91F2B;
+    padding: 12px;
+    color: #fff;
+    font-style: italic;
+    display: block;
+    margin-bottom: 70px;
+}
+
+@media(max-width: 1199px){
+    .batterySearchResultBatteryList{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  .battery-search-result-item-image {
+    min-width: unset;
+    max-height: unset;
+  }
+}
+
+
+@media(max-width: 1060px){
+    .batterySearchResultBatteryList{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
+</style>
+
+<section class="search-result global-padding">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="content">
+                <div id="batterySearchResultItemList">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% section 'footer' %}
+<script src="{{ 'battery-search-result-loader.js' | asset_url }}"></script>
+<script>
+  BatterySearchResultLoader.load("{{shop.currency}}");
+</script>
+
+
+
+
+<script>
+// Select the existing div with id 'batterySearchResultItemList'
+const batterySearchResultItemList = document.getElementById('batterySearchResultItemList');
+
+// Create a new div element
+const newDiv = document.createElement('div');
+newDiv.classList.add('btn-btn');  // Add the 'btn-btn' class to the new div
+
+// Create an anchor tag
+const anchor = document.createElement('a');
+anchor.href = 'https://www.motolite.com/pages/battery-finder-result';  // Set your desired href here
+anchor.textContent = 'Back to Find Battery';  // Set your desired link text here
+anchor.target = '_blank';  // Open the link in a new tab
+
+// Append the anchor to the new div
+newDiv.appendChild(anchor);
+
+// Append the new div to the batterySearchResultItemList div
+batterySearchResultItemList.appendChild(newDiv);
+
+
+</script>

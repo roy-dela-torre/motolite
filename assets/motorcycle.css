@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Urbanist:wght@400;500;900&display=swap');
+.col-sm-12,.col-md-6,.col-lg-4,.col-lg-6{
+    padding: 0 12px !important;
+}
+section .wrapper{
+    max-width: 1297px;
+    margin: 0 auto;
+}
+section img{
+    width: 100%;
+}
+section .left-content,section .right-content{
+    width: 48%;
+  padding: 0 12px !important;
+}
+
+section h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.69px;
+  margin-bottom: 14px;s
+}
+section h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 40px;
+    letter-spacing: 0.69px;
+}
+section p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: #212529;
+}
+section p:last-child{
+    margin-bottom: 0;
+}
+
+section{
+    padding: 100px 0;
+}
+section .mobile{
+    display: none;
+    margin-bottom: 30px;
+}
+
+
+
+
+section.banner{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/motorcycle-banner.jpg?v=1687331244')no-repeat center center/cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.banner h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 77px;
+    letter-spacing: 0.69px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 1278px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+section.motorcycle-batteries{
+    background-color: #F8F6F6;
+}
+section.motorcycle-batteries .single-content{
+    max-width: 958px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 74px;
+}
+section.motorcycle-batteries a{
+    padding: 14px 30px;
+    display: block;
+    width: 100%;
+    background: linear-gradient(180deg, #DC3545 0%, #450007 100%);
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.66px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+}
+section.motorcycle-batteries .group-box .row{
+    gap: 24px 0;
+}
+section.motorcycle-batteries .group-box .content-container{
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+section.motorcycle-batteries .left-content .content-container{
+    max-width: 520px;
+}
+section.motorcycle-batteries h3{
+    color: #000;
+    text-align: center;
+    font-size: 31px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.69px;
+  margin-bottom: 20px;
+}
+
+
+
+section.thing-to-consider{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Things_to_Consider_Before_Purchasing_Your_Motorcycle_Batteries.jpg?v=1687331244')no-repeat center center/cover    ;
+}
+
+section.thing-to-consider .header{
+    max-width: 845px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+section.thing-to-consider .header h2,section.thing-to-consider .header p{
+    color: #FFFFFF;
+}
+section.thing-to-consider .group-box .row{
+    gap: 24px 0;
+}
+section.thing-to-consider .group-box h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+section.thing-to-consider .group-box p{
+    color: #212529;
+}
+section.thing-to-consider .group-box img{
+    max-width: 75px;
+    margin-bottom: 40px;
+}
+section.thing-to-consider .group-box .content-container{
+    background-color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 35px;
+}
+
+
+
+
+section.why-choose-motolite .right-content .content-container{
+    max-width: 520px;
+    margin: 0 auto auto auto;
+}
+section.why-choose-motolite .group-box .row{
+    gap: 24px 0;
+    margin-top: 50px;
+}
+section.why-choose-motolite .group-box .content-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 35px;
+    background-color: #920200;
+}
+section.why-choose-motolite .group-box img{
+    max-width: 75px;
+    margin-bottom: 40px;
+}
+section.why-choose-motolite .group-box h3,section.why-choose-motolite .group-box p{
+    color: #FFFFFF;
+}
+section.why-choose-motolite .group-box h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section.get-the-best-motorcycle{
+    background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Get_the_Best_Motorcycle_Batteries_in_the_Philippines_from_Motolite.jpg?v=1687331244')no-repeat center center/cover;
+}
+section.get-the-best-motorcycle h2,section.get-the-best-motorcycle p{
+    color: #FFFFFF;
+}
+section.get-the-best-motorcycle h2{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+section.get-the-best-motorcycle p a{
+    color: #FAFF00;
+}
+@media (max-width:1366px) {
+    section .wrapper{
+        padding: 0 5%;
+    }
+}
+@media (max-width:1200px) {
+    section .wrapper{
+        padding: 0;
+    }
+    section{
+        padding: 70px 30px;
+    }
+}
+@media (max-width:991px) {
+    section.banner h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    section h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    section h3{
+        font-size: 31px;
+        line-height: 40px;
+    }
+    section p{
+        font-size: 18px;
+        line-height: 35px;
+    }
+      section .mobile{
+        display: block !important;
+    }
+    .left-content,.right-content,section .left-content .content-container,section.why-choose-motolite .right-content .content-container{
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    section.motorcycle-batteries .right-content,section.why-choose-motolite .left-content{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    section{
+        padding: 50px 30px;
+    }
+    section.banner h1{
+        font-size: 29px;
+        line-height: 40px;
+    }
+    section h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    section h3{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    section p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+  section.banner{
+    min-height: auto;
+  }
+}
+@media (max-width:575px) {
+    section{
+        padding: 50px 20px;
+    }
+}

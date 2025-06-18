@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
+
+#batteryCategoryMenuContainer {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #f8f9fa;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+#batteryCategoryMenu {
+  max-width: none;
+  width: 100%;
+  padding-left: 205px;
+  white-space: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+  
+#batteryCategoryMenu::-webkit-scrollbar {
+  display: none;
+}
+  
+@media only screen and (min-width: 990px) and (max-width: 1170px) {
+  #batteryCategoryMenu {
+    padding: 0 66px;
+  }
+}
+  
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+  #batteryCategoryMenu {
+    padding: 0 57.5px;
+  }
+}
+  
+@media only screen and (max-width: 767px) {
+  #batteryCategoryMenu {
+    padding: 0 17px;
+  }
+}
+
+.battery-category {
+  display: inline-block;
+  padding: 10px 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.battery-category.active {
+  border-bottom-color: #d91f2b;
+}
+
+.battery-category-link {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  color: #808080;
+  margin: 0 15px;
+  white-space: nowrap;
+}
+  
+.battery-category-link:hover {
+  color: #d91f2b;
+}

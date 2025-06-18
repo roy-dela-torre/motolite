@@ -1,0 +1,664 @@
+{% section 'batteries-services-navigation' %}
+{% section 'image-banner' %}
+
+<style>
+  
+  .font-weight-light {
+  font-weight: 300 !important;  
+  }
+  h4 {
+    color: black;
+    
+  }
+  .download-button {
+     display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: -220px;
+    z-index: 0;
+  }
+  @media only screen and (max-width: 749px) {
+    .download-button {
+      margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+  }
+  .mr-10 {
+    margin-right: 10px;
+  }
+  .mr-30 {
+    margin-right: 30px;
+  }
+  .pt-100 {
+    padding-top: 100px;
+  }
+  .res-q-title {
+    font-size: 70px;
+    color: #000000;
+    font-weight: bolder;
+    position: relative;
+    width: 100%;
+    margin-bottom: 3rem !important;
+  }
+  .pt-100{
+    width: 100%;
+    padding: 50px;
+  }
+ @media only screen and (max-width: 992px) {
+    .res-q-title {
+     margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+  }
+  p {
+    color: black;
+    margin-bottom: 3rem !important; 
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  p {
+    margin-bottom: 3rem !important;
+  }
+  p {
+    margin-bottom: 3rem !important;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  .h1 {
+    color: #000000;
+  }
+  .red-text {
+    color: #d5232b;
+  }
+  .how-it-works-text {
+    color: #000000;
+    margin-bottom: 1rem !important;
+  }
+  .gray-background {
+    background-color: #f8f6f6;
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
+    display: block;
+    box-sizing: border-box;
+     }
+  .payment-option {
+    font-family: "Poppins", sans-serif;
+     margin-bottom: 2rem !important;
+    font-weight: 900;
+    font-size: 2rem;
+    
+  }
+  img {
+   background-image: url(/assets/img/resq/services-background.jpg);
+    background-size: 300;
+    background-position: center bottom 5%;
+  }
+  .pb-lg {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    top: 100px;
+    left: 150px;
+    
+}
+  h1 {
+    margin-bottom: 1.5rem !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.7rem;
+    font-weight: bolder;
+    color: #fff;
+    
+  }
+  h2 {
+    color: #fff; 
+  }
+ .section-resq-features {
+   background-image: url("https://cdn.shopify.com/s/files/1/0615/7982/1304/files/services-background.jpg?v=1650783906");
+   background-size: cover; 
+   background-position: center bottom 5%;
+   text-shadow: 0px 0px 20px #000;
+ }
+  .py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    
+  }
+  .pt-3rem {
+    padding-top: 3rem !important;
+    width: 100%
+  }
+  .motolite-resq {
+    font-weight: bold;
+    margin-bottom: 1rem !important;
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    
+  }
+   .white-text {
+     color: #ffffff;
+   }
+   .resq-checklist {
+     color: #000000;
+     padding: 5px 5px;
+     font-size: 2rem;
+    
+   }
+  
+  .section-resq-grid {
+    background-image: url("https://cdn.shopify.com/s/files/1/0615/7982/1304/files/grid-mockup.png?v=1650783906");
+    background-repeat: no-repeat;
+    background-position: right 50vw center;
+    width: 100%
+    margin: 20px;
+   }
+  .img-bullet {
+    width: 100%;
+    min-width: 2.5em;
+   }
+  
+  <!-- FAQ Panel -->
+  * {
+    box-sizing: border-box;
+  }
+  *::before, *::after {
+    box-sizing: border-box;
+  }
+  .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  .accordion button {
+    position: relative!important;
+    display: block!important;
+    text-align: left!important;
+    width: 100%!important;
+    padding: 20px 40px!important;
+    color: #000000!important;
+    font-size: 20px!important;
+    font-weight: 600;
+    border: none!important;
+    background: none!important;
+    outline: none!important;
+    font-family: Raleway;
+  }
+  .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+  }
+  .accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+  }
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+    font size: 50px;
+  }
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  .accordion button[aria-expanded=true] {
+    color: #03b5d2;
+  }
+  .accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 500rem;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+    padding: 0 30px;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  strong {
+  font-size:4rem;
+    
+  }
+   @media screen and (min-width: 750px){
+.banner__content--flex-start {
+    align-items: flex-start;
+    padding-bottom: 18rem;
+    font-family: sans-serif;
+    letter-spacing: normal;
+  font-size:2rem;
+    
+}
+  }
+  .banner__heading {
+    margin-bottom: 0;
+    font-family: system-ui;
+    font-weight: 600;
+    
+}
+  @media screen and (min-width: 750px){
+  .banner__content--flex-start {
+    align-items: flex-start;
+    padding-bottom: 18rem;
+    font-family: sans-serif;
+    letter-spacing: normal;
+    font-size: 2rem;
+    z-index: 0;
+  }}
+  @media screen and (max-width: 749px){
+.banner:not(.banner--stacked) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 0;
+}}
+</style>
+
+<script type="text/javascript">
+
+      window.ymConfig = {"bot":"x1722944534597","host":"https://r3.cloud.yellow.ai"};
+
+    (function() {
+
+        var w = window,
+
+            ic = w.YellowMessenger;
+
+        if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+
+        else {
+
+            var d = document,
+
+                i = function() {
+
+                    i.c(arguments)
+
+                };
+
+            function l() {
+
+                var e = d.createElement("script");
+
+                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+
+                var t = d.getElementsByTagName("script")[0];
+
+                t.parentNode.insertBefore(e, t)
+
+            }
+
+            i.q = [], i.c = function(e) {
+
+                i.q.push(e)
+
+            }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
+
+    })();
+
+    </script>
+
+<!-- Image Banner -->
+<div class="row">
+  <div class="col-12 text-center text-lg-left download-button">
+	<a href="https://play.google.com/store/apps/details?id=com.motolite.motoliteuser&amp;hl=en" target="_blank" class="mr-md-1 mr-0" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/google-1_25f2332a-83e1-45b8-860e-964d3b6cc5ea.png?v=1667504699" alt="Google Play Store" class="mr-10" style="height:47px;width: 155px;"></a>	
+    <a href="https://itunes.apple.com/ph/app/motolite-res-q/id1099175316" target="_blank" class="mr-md-1 mr-0" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/btn-app-store_4a3fbd85-5a84-4dae-98f1-88337167d94d.png?v=1650709184" alt="Apple App Store" class="mr-10"></a>
+		<a href="https://appgallery1.huawei.com/#/app/C102451557" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/btn-huawei.png?v=1650709184" alt="Huawei AppGallery" class="mr-10"></a>
+	</div>
+</div>
+
+                                                                                                           
+                                                                                                             
+                                                                                                                                    
+<!--<div class="download-button">
+         <a href="https://play.google.com/store/apps/details?id=com.motolite.motoliteuser&hl=en" target="_blank" class="mr-md-1 mr-0" rel="noopener">
+  <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/btn-play-store.png?v=1650709184" class="mr-10">
+      </a>
+  <a href="https://itunes.apple.com/ph/app/motolite-res-q/id1099175316" target="_blank" class="mr-md-1 mr-0" rel="noopener">
+    	<img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/btn-app-store_4a3fbd85-5a84-4dae-98f1-88337167d94d.png?v=1650709184" alt="Apple App store" class="mr-10">
+  </a>
+  <a href="https://appgallery1.huawei.com/#/app/C102451557" target="_blank" class="mr-md-1 mr-0" rel="noopener">
+	<img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/btn-huawei.png?v=1650709184" class="mr-10">
+  </a>
+</div>-->
+
+
+<!-- RES-Q -->
+<div class="row justify-content-center pt-100">
+  <div class="col-lg-4 offset-lg-2">
+    <h1 class="res-q-title "><span>RES-Q</span></h1>
+   	  <p>Motolite’s on demand 24/7 roadside assistance service, free on mobile or tablet.</p>
+      <p><b><i>But because of the community quarantine, RES-Q services are only available from 8am to 6pm. Have your RES-Q services scheduled in advance instead!</i></b></p>
+      <p>Whether you’re a driver or a passenger, Motolite RES-Q gives you peace of mind while on the road.</p>
+      <p>With RES-Q, help for a dead battery, flat tire, overheating, or empty fuel tank is just a few taps and clicks away.</p>
+  </div>
+  <div class="col-lg-5 offset-lg-1 d-flex justify-content-center">
+    <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/mockup-01.png?v=1650702673" alt="...">
+  </div>
+</div>
+
+<!-- how it works-->
+<div class="gray-background">
+  <div class="container">
+  	<div class="row justify-content-center">
+  		<div class="col-lg-6 order-lg-last">
+          <div class="h1 text-uppercase pt-3rem"><strong>How it</strong><span class="red-text"> Works</span></div>
+          	<ol>
+				<li class="how-it-works-text">Register your vehicle.</li>
+				<li class="how-it-works-text">Select the service you need.</li>
+				<li class="how-it-works-text">Verify your details and destination.</li>
+				<li class="how-it-works-text">Get RES-Q’ed!</li>
+			</ol>
+       <br>
+          <h3 class="text-uppercase payment-option"><p style="font-family: "Poppins", sans-serif;"><b>Flexible Payment Options</b></p></h3>
+         <p>You may pay with via Cash or Credit Card.</p>
+      </div>
+      	<div class="col-lg-6 order-lg-first d-flex justify-content-center">
+  			<img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/mockup-02.png?v=1650783906" alt="...">
+  		</div>
+  	</div>
+  </div>
+</div>
+
+<!-- motolite res-q-->
+<div class="section py-5 text-white section-resq-features">
+        <div class="container py-5">
+            <div class="row h-100">
+                <div class="col-lg-4 text-center text-lg-left">
+                    <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/logo-resq-red.png?v=1650783906" class="img-fluid pb-5 pb-lg-0" alt="">
+                </div>
+             
+                <div class="col-xl-4 offset-xl-2 col-lg-6 offset-lg-2">
+                    <h1 class="text-uppercase mb-4 d-none d-lg-block motolite-resq" style="color:#fff;">Motolite Res-Q</h1>
+                  
+                  <div class="battery-replacement">
+                    <div class="row mb-4">
+                        <div class="col-xxl-2 col-lg-3 col-2">
+                            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-resq-battery-replacement.png?v=1650783906" alt="" class="mr-30">
+                        </div>
+                    
+                        <div class="col-xxl-10 col-lg-9 col-10">
+                            <h2 class="font-weight-bold mb-3">Battery Troubles</h2>
+                          <p class="white-text">"We can check or service your current Motolite battery, or delivery a new Motolite battery for FREE!"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-xxl-2 col-lg-3 col-2">
+                            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-resq-tire-assistance.png?v=1650783906" alt="" class="mr-30">
+                        </div>
+                        <div class="col-xxl-10 col-lg-9 col-10">
+                            <h2 class="font-weight-bold mb-3">Tire Troubles</h2>
+                          <p class="white-text">Got a Flat Tire? We’re ready to help you!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-xxl-2 col-lg-3 col-2">
+                            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-resq-overheating.png?v=1650783906" alt="" class="mr-30">
+                        </div>
+                        <div class="col-xxl-10 col-lg-9 col-10">
+                            <h2 class="font-weight-bold mb-3">Overheating</h2>
+                          <p class="white-text">Let our technicians help you diagnose your car’s engine cooling system.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-xxl-2 col-lg-3 col-2">
+                            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-resq-emergency-refuel.png?v=1650783906" alt="" class="mr-30">
+                        </div>
+                        <div class="col-xxl-10 col-lg-9 col-10">
+                            <h2 class="font-weight-bold mb-3">Empty or Low Fuel </h2>
+                          <p class="white-text">Running out of fuel? We can provide this for you!</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              <div class="row">
+                   <div class="col-12 text-center">
+                     <a href="https://play.google.com/store/apps/details?id=com.motolite.motoliteuser&amp;hl=en" target="_blank" class="mr-md-1 mr-0" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/google-1_25f2332a-83e1-45b8-860e-964d3b6cc5ea.png?v=1667504699" alt="Google Play Store" class="my-2 mr-10" style="height:48px;width: 155px;"></a>
+                        <a href="https://itunes.apple.com/ph/app/motolite-res-q/id1099175316" target="_blank" class="mr-md-1 mr-0" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/btn-app-store_4a3fbd85-5a84-4dae-98f1-88337167d94d.png?v=1650709184" alt="Apple App Store" class="my-2 mr-10"></a>
+                   <a href="https://appgallery1.huawei.com/#/app/C102451557" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/btn-huawei_9c4aaaf2-cdf4-4f01-8259-aec972557f03.png?v=1650816372" alt="Huawei AppGallery" class="my-2 mr-10"></a>
+                           
+                   </div>
+              </div>
+        </div>
+	</div>
+
+</div>
+
+
+<!-- res-q checklist-->
+<div class="section section-alt section-resq-grid py-5">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-6">
+					<h2 class="title mb-5 text-left resq-checklist">RES-Q gives trustworthy and reliable roadside help, a first of its kind in the Philippines.</h2>
+					
+					<div class="row mb-4">
+						<div class="col-1">
+							<img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check_50c3ba98-b302-456c-b9de-3beeb4e9416e.png?v=1650783906" alt="" class="img-bullet">
+						</div>
+						<div class="col-9 offset-1">
+							<h4 class="font-weight-bold mb-3 black-text">RES-Q is the country’s first App-based roadside
+								assistance service. </h4>
+                          <p class="black-text">And it’s easily accessed with just a few clicks on your mobile device.</p>
+						</div>
+					</div>
+					
+					<div class="row mb-4">
+						<div class="col-1">
+							<img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check_50c3ba98-b302-456c-b9de-3beeb4e9416e.png?v=1650783906" alt="" class="img-bullet">
+						</div>
+						<div class="col-9 offset-1">
+							<h4 class="font-weight-bold mb-3 black-text">RES-Q has Real-time locating system.</h4>
+                          <p class="black-text">You can monitor the location and ETA of the authorized service rider-technician for added peace of mind.</p>
+						</div>
+					</div>
+					
+					<div class="row mb-4">
+						<div class="col-1">
+							<img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check_50c3ba98-b302-456c-b9de-3beeb4e9416e.png?v=1650783906" alt="" class="img-bullet">
+						</div>
+						<div class="col-9 offset-1">
+							<h4 class="font-weight-bold mb-3 black-text">RES-Q service fee is free of charge </h4>
+							<p>- Free of charge if your vehicle has a Motolite battery installed.</p>
+							<p>- Non-Motolite battery users availing of the   service will be charged a minimal fee.</p>
+							<p>- Does not include fees for radiator coolant, fuel, and car battery purchase.</p>
+							<br>
+							<br>
+							<p>Res-Q is initially available in Metro Manila only.</p>
+							<p><em>Download now and enjoy hassle-free driving!</em></p><p>
+						</p></div>
+					</div>							
+				</div>
+			</div>
+		</div>
+</div>
+  
+  
+<!-- FAQs-->
+<div class="section py-5">
+		<div class="container py-5">
+			<div class="row mb-4 mb-lg-5">
+                <div class="col-12">
+                    <div class="text-center">
+                        <a id="battery-faq"></a>
+                        <div class="h1 font-weight-bold text-uppercase mb-4 mb-lg-5 faq-section-header text-responsive"><strong>Frequently Asked</strong><span class="red-text" style="font-weight: bolder;"> Questions</span>
+                </div>
+            </div>
+          
+		</div>
+  <div class="container">
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Can I request any Res-Q service if I don't have or have a weak data signal?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Res-Q needs a stable data connection for you to request services and to track the location of our rider. If you don't have a stable data connection, please call our hotline at (+632) 8370-6686.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Can I pay using my credit card?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Yes, we accept Visa and Mastercard credit cards issued in the Philippines.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How can I pay for your services/products?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>We accept COD (G-Cash payment is now accepted), local credit cards, debit cards, and ATM cards for battery purchases. We only accept cash payment for flat tire, refuel and overheat transactions.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Will I receive order confirmation after placing an order?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Once you have successfully submitted your request, you will be able to see the progress of your transaction on your mobile device on the Res-Q App screen.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do I follow up for my order/service?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Once your order/ service has been assigned to a Technician Rider, you may be able to see his/her contact details in the App. If no Technician Rider has been assigned yet, you may call our hotline at (+632) 8370-6686.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will I be provided with a Sales Invoice/Official Receipt?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Yes, our Technician will provide you with a Sales Invoice/Official Receipt.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Are there any delivery fees for battery purchase?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Delivery for Motolite battery purchase is free of charge.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Can you deliver anywhere in the Philippines?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Not at this point. Our Res-Q Services are currently available in the following areas: 1. Metro Manila; 2. Carino, Baguio City; 3. Binan, Laguna; 4. San Pablo, Laguna; 5. Sta. Cruz, Laguna; 6. San Fernando, Pampanga; 7. Calicanto, Batangas; 8. Sto. Tomas, Batangas; 9. Dasmarinas, Cavite</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">My battery was pulled out and is being recharged in an outlet. How do I check on the status and when I would get my battery back?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Please call our hotline at (+632) 8370-6686 to check on the status of the battery recharging. You may also call our Mobile Numbers: Globe - 09178916686 / Smart - 09188436686. Battery recharging normally takes up to 5 calendar days to complete. We will also get in touch with you when your battery is ready to be returned.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How do I contact you for questions or feedback?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>You may call our Customer Support Hotline: (+632) 8370-6686. You may also call our Mobile Numbers: Globe - 09178916686 / Smart - 09188436686 or email us at online@motolite.com. You may also reach out to us through our Official Facebook Page (Motolite Express Hatid).</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">In case of overheating, will RES-Q services include replacement of hoses, or quick repairs on water pump and/or radiator?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>No, RES-Q roadside assistance for overheating only includes the addition of coolant/water to your radiator, to get you back on the road and to a nearest car service center.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">In case of a flat tire, will RES-Q services include vulcanizing?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>RES-Q tire assistance only includes help in replacing a flat tire using your functional spare tire.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How long will it take to fix a flat tire?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Replacing a tire properly will take about 30 minutes. This is due to having to take the tire off the car to inspect it properly.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What causes car to overheat while driving?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+			<p>		
+              </p>
+          <lo>
+							<li>Low coolant</li>
+                            <li>Faulty water-pump</li>
+							<li>Faulty thermostat</li>
+							<li>locked radiator</li>
+							<li>Blocked coolant hose(s)</li>
+							<li>Slipping fan-belt</li>
+                            <li>Head gasket failure</li>
+          </lo>
+          <p></p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What is the minimum fuel delivery?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Minimum fuel delivery is 4 liters.</p>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% section 'footer' %} 
+
+<script>
+  const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+
+            
+          

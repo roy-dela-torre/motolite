@@ -1,0 +1,23 @@
+.header-wrapper{
+  background-color: white!important;
+}
+
+
+.header-wrapper a span:hover,
+.header-wrapper a span:active,
+.header-wrapper a:hover,
+.header-wrapper a:active{
+  color: #fff !important;
+  background: #D91F2B !important;
+}
+
+.header__icon .icon{
+  color: #ffffff!important;
+}
+.header__active-menu-item{
+  color: #d5232b!important;
+}
+
+.motolite-logo{
+  max-width: 200px!important;
+}

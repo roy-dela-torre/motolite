@@ -1,0 +1,136 @@
+ {{ 'collection-product.css' | asset_url | stylesheet_tag }}
+
+
+<div class="container section-height">
+
+        
+        <br />
+        <!--row one-->
+
+  {% if section.settings.section_image_first == false %}
+        <div class="row px-1">
+            <div class="col-lg-5 col-md-6 col-sm-12 mb-20px pr-20">
+
+
+             <h2  class="text-muted fw-bold">{{section.settings.section_title}}</h2>
+                <p>
+              {{section.settings.section_description}}
+              </p>
+            
+            <!--  <a type="button" class="btn btn-lg btn-outline-danger" href="/collections/{{getType}}">Shop Now!</a> -->
+      
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="d-flex justify-content-center shadow" style="max-height:{{section.settings.img_max_height}}px!important">
+                    <img src="{{section.settings.section_image | img_url: 'master' }}" class="img-fluid" style="width:100%;" alt="...">
+                </div>
+
+            </div>
+          
+          
+
+        </div>
+  
+  {% else %}
+  <div class="row px-1">
+
+            <div class="col-lg-7 col-md-6 col-sm-12 mb-20px" >
+                <div class="d-flex justify-content-center shadow" style="max-height:{{section.settings.img_max_height}}px!important">
+                    <img src="{{section.settings.section_image | img_url: 'master' }}" class="img-fluid" style="width:100%;" alt="...">
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-5 col-md-6 col-sm-12">
+
+
+              <div style="margin:0 0 0 20px;">
+              
+               <h2 class="text-muted fw-bold">{{section.settings.section_title}}</h2>
+                <p>
+                  
+                {{section.settings.section_description}}    
+              
+              </p>
+              </div>
+            </div>
+
+
+        </div>
+
+  
+  {%endif%}
+  
+  <br />
+        <br />
+
+        <!--row two-->
+      
+   
+</div>
+  
+
+
+{% schema %}
+  {
+ 	"name": "Custom Details Section",
+ 	"settings": [{
+ 			"type": "text",
+ 			"label": "Title",
+ 			"id": "section_title",
+"default" : "Your title here .."
+
+
+ 		},
+
+ 		{
+ 			"type": "richtext",
+ 			"label": "Description",
+			"default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. </p>",
+ 			"id": "section_description"
+ 		},
+{
+"type" : "image_picker",
+"label" : "select image",
+"id" : "section_image"
+
+},
+
+{
+	"type" : "number",
+    "label" : "Image max-height",
+    "id" : "img_max_height",
+	"default" : 300
+
+}
+
+
+
+
+,{
+"type" : "checkbox",
+"label" : "Is Image First?",
+"default" : false,
+"id" : "section_image_first"
+
+}
+
+
+			
+    		
+ 	],
+	
+ 	
+ 	"presets": [{
+ 		"name": "Battery Custom Details Section",
+ 		"category": "ADVANCED LAYOUT"
+ 	}]
+ }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

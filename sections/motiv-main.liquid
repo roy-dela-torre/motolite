@@ -1,0 +1,302 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{{ 'motolite-home.css' | asset_url | stylesheet_tag }}
+
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/motiv-banner-3.jpg?v=1648699534" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon width-35 height-35" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon width-35 height-35" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="d-flex justify-content-center padding-30-10-20" id="batteryCategories">
+  <div>
+    <div style="max-width: 748px;">
+      <div class="d-flex align-items-end">
+        <span class="text-black-25 lh-25">Motolite Batteries</span>
+        <div style="text-align: right;" class="flex-grow-1">
+          <a href="#" class="text-regular-13 text-color-D22429">View All Batteries</a>
+        </div>
+      </div>
+      <div class="margin-top-20 position-relative w-100" id="batteryCategoriesCarousel">
+        <div style="position: absolute; top: 0; bottom: 0; left: 0; z-index: 1;" class="d-flex align-items-center" id="previous">
+          <span class="material-icons bg-white align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px;">
+            navigate_before
+          </span>
+        </div>
+        
+        <!--<div class="d-flex custom-carousel-items">
+          {% for collection in collections %}
+          <div class="custom-card bg-white padding-30-20-20 margin-left-10 margin-right-10  d-inline-block width-229 d-none">
+            <img src="{{ collection.image | image_url: width: 129 }}" width="129" height="117" style="display: block; margin: 0 auto;">
+            <div class="text-medium-16 lh-25">{{ collection.title }}</div>
+            <div class="text-regular-13 text-color-807F7F lh-16 height-105">
+              {{ collection.description }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>-->
+        <div class="d-flex justify-content-center">
+          <div class="d-flex custom-carousel-items">
+            <div class="custom-card bg-white padding-30-20-20 margin-left-10 margin-right-10  d-inline-block w-100">
+              <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/battery-truckmaster.png?v=1639487048" width="129" height="117" style="display: block; margin: 0 auto;">
+              <div class="text-medium-16 lh-25">Title</div>
+              <div class="text-regular-13 text-color-807F7F lh-16 height-105">
+                Description
+              </div>
+            </div>
+          </div>
+          
+          <!--<div class="d-flex custom-carousel-items">
+            <div class="custom-card bg-white padding-30-20-20 margin-left-10 margin-right-10  d-inline-block" style="width: 258px">
+              <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/battery-truckmaster.png?v=1639487048" width="129" height="117" style="display: block; margin: 0 auto;">
+              <div class="text-medium-16 lh-25">Title</div>
+              <div class="text-regular-13 text-color-807F7F lh-16 height-105">
+                Description
+              </div>
+            </div>
+          </div>-->
+        </div>
+        
+        <div style="position: absolute; top: 0; bottom: 0; right: 0; z-index: 1;" class="d-flex align-items-center" id="next">
+          <span class="material-icons bg-white align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px;">
+            navigate_next
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="margin-top-30">
+      <div class="text-black-25 lh-25">Motolite Services</div>
+      <div class="margin-top-20 position-relative">
+        
+        <div style="position: absolute; top: 0; bottom: 0; left: -0; z-index: 1;" class="d-flex align-items-center" id="previous">
+          <span class="material-icons bg-white align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px;">
+            navigate_before
+          </span>
+        </div>
+        
+        <div class="d-flex">
+          <div class="custom-card margin-left-10 margin-right-10" style="width: 354px;">
+            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/motolite-service-1.png?v=1648710178" class="w-100 height-260">
+            <div class="bg-white padding-15-20-20">
+              <div class="text-medium-18 lh-20">Motolite Res-Q</div>
+              <div class="margin-top-10 text-regular-13 lh-16 text-color-807F7F">
+                 Motolite’s on demand 24/7 roadside assistance service, free on mobile or tablet.
+              </div>
+              <a href="https://www.motolite.com/resq" class="margin-top-10 text-semibold-10 lh-16 text-color-D22429">LEARN MORE</a>
+            </div>
+          </div>
+          
+          <div class="custom-card margin-left-10 margin-right-10" style="width: 354px;">
+            <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/motolite-service-2.png?v=1648710178" class="w-100 height-260">
+            <div class="bg-white padding-15-20-20">
+              <div class="text-medium-18 lh-20">The Motolite Express Hatid</div>
+              <div class="margin-top-10 text-regular-13 lh-16 text-color-807F7F">
+                 Motolite’s on demand 24/7 roadside assistance service, free on mobile or tablet.
+              </div>
+              <a href="https://www.motolite.com/resq" class="margin-top-10 text-semibold-10 lh-16 text-color-D22429">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        
+        <div style="position: absolute; top: 0; bottom: 0; right: 0; z-index: 1;" class="d-flex align-items-center" id="next">
+          <span class="material-icons bg-white align-middle" style="border-radius: 50%; filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); padding: 5px;">
+            navigate_next
+          </span>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="margin-top-30">
+      <div class="text-black-25 lh-25">The Motolite Advantage</div>
+      <div class="motolite-advantages show-on-large">
+        <div class="custom-card bg-white padding-30-20-20 width-215 margin-right-10 height-260">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
+          <div class="text-regular-16 lh-20 margin-top-10">Nationwide Coverage</div>
+          <div class="text-regular-13 lh-16 text-color-807F7F margin-top-10">
+            No matter where you are in the Philippines, your Motolite warranty goes with you.
+          </div>
+        </div>
+        <div class="custom-card bg-white padding-30-20-20 width-215 margin-left-10 margin-right-10 height-260">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
+          <div class="text-regular-16 lh-20 margin-top-10">Online Warranty Registration</div>
+          <div class="text-regular-13 lh-16 text-color-807F7F margin-top-10">
+            Register your warranty online thru the Motolite RES-Q app to know your battery warranty status.
+          </div>
+        </div>
+        <div class="custom-card bg-white padding-30-20-20 width-215 margin-left-10 margin-right-10 height-260">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
+          <div class="text-regular-16 lh-20 margin-top-10">Trade-in Discount</div>
+          <div class="text-regular-13 lh-16 text-color-807F7F margin-top-10">
+            Trade-in your used battery for discounts and help recycle for our environment.
+          </div>
+        </div>
+        <div class="custom-card bg-white padding-30-20-20 width-215 margin-left-10 height-260">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
+          <div class="text-regular-16 lh-20 margin-top-10">Integrated Battery Manufacturing Facilities</div>
+        </div>
+      </div>
+      
+      <div class="motolite-advantages show-on-small">
+        <div class="margin-top-20 custom-card bg-white padding-30-20-20 w-100 height-260">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
+          <div class="text-regular-16 lh-20 margin-top-10">Nationwide Coverage</div>
+          <div class="text-regular-13 lh-16 text-color-807F7F margin-top-10">
+            No matter where you are in the Philippines, your Motolite warranty goes with you.
+          </div>
+        </div>
+        <div class="margin-top-20 custom-card bg-white padding-30-20-20 w-100 height-260">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
+          <div class="text-regular-16 lh-20 margin-top-10">Online Warranty Registration</div>
+          <div class="text-regular-13 lh-16 text-color-807F7F margin-top-10">
+            Register your warranty online thru the Motolite RES-Q app to know your battery warranty status.
+          </div>
+        </div>
+        <div class="margin-top-20 custom-card bg-white padding-30-20-20 w-100 height-260">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
+          <div class="text-regular-16 lh-20 margin-top-10">Trade-in Discount</div>
+          <div class="text-regular-13 lh-16 text-color-807F7F margin-top-10">
+            Trade-in your used battery for discounts and help recycle for our environment.
+          </div>
+        </div>
+        <div class="margin-top-20 custom-card bg-white padding-30-20-20 w-100 height-260">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/icon-warranty-check.png?v=1648714257" width="57" height="58" class="d-block mx-auto">
+          <div class="text-regular-16 lh-20 margin-top-10">Integrated Battery Manufacturing Facilities</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-footer">
+      <div class="home-footer-section1">
+        <div class="text-medium-20 lh-25">We respond in 24 hours.</div>
+        <div class="margin-top-20 text-regular-15 lh-18 text-color-807F7F">
+          For Product Price Inquiries, Service Requests, or Warranty Concerns you may reach us through our Express Hatid hotline for immediate assistance.
+        </div>
+
+        <div class="d-flex margin-top-30">
+          <div class="text-center">
+            <div class="text-regular-18 lh-20">Metro Manila</div>
+            <a href="tel:8370-6686" class="text-light-16 lh-28">8370-6686</a>
+          </div>
+          <div class="text-center margin-left-30">
+            <div class="text-regular-18 lh-20">Provincial Toll Free</div>
+            <a href="tel:1-800-10-370-6686" class="text-light-16 lh-28">1-800-10-370-6686</a>
+          </div>
+        </div>
+
+        <div class="margin-top-20 text-regular-15 lh-18 text-color-807F7F">
+          Motolite is the one to call for battery purchase and replacements. We are able to reach you anywhere in the country, day or night. Whether your battery needs a jump or you need a replacement car battery delivered, call us for the most reliable service.   
+        </div>
+
+        <div class="margin-top-20 text-medium-22 lh-25">
+          About Us
+        </div>
+
+        <div class="margin-top-10 text-regular-15 lh-18 text-color-807F7F">
+          Motolite Batteries are proudly manufactured by Philippine Batteries Inc., one of the largest manufacturers, exporters and distributors of automotive, motorcycle, and industrial battery products and solutions in the Asia-Pacific Region.
+        </div>
+      </div>
+
+      <div class="home-footer-section2">
+        {% form 'contact' %}
+        <div class="text-semibold-25 lh-25">Contact Us</div>
+        <input type="text" name="contact[email]" placeholder="Email" class="margin-top-20 custom-input" style="margin-top: 20px; width: 100%;"/>
+        <input type="text" name="contact[name]" placeholder="Name" class="margin-top-20 custom-input" style="margin-top: 20px; width: 100%;"/>
+        <input type="text" name="contact[contact_number]" placeholder="Contact Number" class="margin-top-20 custom-input" style="margin-top: 20px; width: 100%;"/>
+        <textarea name="contact[message]" placeholder="Message" class="margin-top-20 custom-input" style="margin-top: 20px; width: 100%; height: 125px;"></textarea>
+        
+        {% if form.posted_successfully? %}
+        <div class="padding-5-10 margin-top-20 text-center bg-color-99ffbb">
+          <span class="material-icons align-middle">task_alt</span>
+          <span class="margin-left-5 text-regular-14 align-middle">Successfully Sent</span>
+        </div>
+        {% else %}
+			{% if form.error.size > 0 %}
+			<div class="padding-5-10 margin-top-20 text-center bg-color-ff9999">
+				<span class="material-icons align-middle text-color-424242">error_outline</span>
+            	<span class="margin-left-5 text-regular-14 align-middle">An Unknown Error Occured</span>
+			</div>
+			{% endif %}
+        {% endif %}
+        
+        <button type="submit" class="margin-top-20 custom-button">SEND</button>
+        {% endform %}
+      </div>
+    </div>
+    
+    <div class="home-footer-menu show-on-large">
+      <div class="text-regular-15 text-center flex-grow-1">CONTACT US</div>
+      <div class="text-regular-15 text-center flex-grow-1">FAQ</div>
+      <div class="text-regular-15 text-center flex-grow-1">WARRANTY POLICY</div>
+      <div class="text-regular-15 text-center flex-grow-1">PRIVACY</div>
+      <div class="text-regular-15 text-center flex-grow-1">SOCIAL MEDIA</div>
+    </div>
+    
+    <div class="home-footer-menu show-on-small">
+      <div class="text-regular-15 text-center w-100">CONTACT US</div>
+      <div class="text-regular-15 text-center w-100">FAQ</div>
+      <div class="text-regular-15 text-center w-100">WARRANTY POLICY</div>
+      <div class="text-regular-15 text-center w-100">PRIVACY</div>
+      <div class="text-regular-15 text-center w-100">SOCIAL MEDIA</div>
+    </div>-->
+    
+  </div>
+</div>
+
+<script>
+  /*$(document).ready(function () {
+    let carousel = $("#batteryCategoriesCarousel");
+    let items = carousel.find(".custom-card");
+    let displayedItemsCount = 3;
+    let previousItemIndex = -1;
+    let nextItemIndex = displayedItemsCount;
+    
+    for (let i = 0; i < displayedItemsCount; i++) {
+      $(items[i]).toggleClass("d-none");
+    }
+    
+    carousel.find("#previous").click(function() {
+      if (previousItemIndex >= 0) {
+      	$(items[--nextItemIndex]).addClass("d-none");
+        $(items[previousItemIndex]).removeClass("d-none");
+        
+        previousItemIndex--;
+      }
+    });
+    
+    carousel.find("#next").click(function() {
+      if (nextItemIndex < items.length) {
+      	$(items[++previousItemIndex]).addClass("d-none");
+      	$(items[nextItemIndex]).removeClass("d-none");
+      
+      	nextItemIndex++;
+      }
+    });
+  });*/
+</script>
+
+{% schema %}
+  {
+    "name": "motiv-main"
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

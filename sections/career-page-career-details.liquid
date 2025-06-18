@@ -1,0 +1,73 @@
+<style>
+.gray__background {
+  background: #F3F2F1;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 15px;
+  padding: 12px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  top: 47px;
+}
+.job__details {
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #595959;
+}
+</style>
+<div class="hide-on-small">
+<div class="gray__background">
+  <div class="row">
+    <div class="col-6">
+      {% if page.metafields.career.date_posted != null %}
+        <div class="job__details">Date posted: <span style="font-weight:400; margin-left: 10px;">{{ page.metafields.career.date_posted.value | date: "%B %d, %Y" }}</span></div>
+      {% endif %}
+      
+      {% if page.metafields.career.work_arrangement != null %}
+        <div class="job__details">Working set-up: <span style="font-weight:400;">{{ page.metafields.career.work_arrangement.value }}</span></div>
+      {% endif %}
+    </div>
+    <div class="col-6">
+      {% if page.metafields.career.job_type != null %}
+        <div class="job__details">Employment type: <span style="font-weight:400; margin-left: 10px;">{{ page.metafields.career.job_type.value }}</span></div>
+      {% endif %}
+     
+      {% if page.metafields.career.locations != null %}
+        <div class="job__details">Location: <span style="font-weight:400; margin-left: 10px;">{{ page.metafields.career.locations.value }}</span></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="show-on-small">
+<div class="gray__background">
+    <div>
+      {% if page.metafields.career.date_posted != null %}
+        <div class="job__details">Date posted: <span style="font-weight:400; margin-left: 10px;">{{ page.metafields.career.date_posted.value | date: "%B %d, %Y" }}</span></div>
+      {% endif %}
+      
+      {% if page.metafields.career.work_arrangement != null %}
+        <div class="job__details">Working set-up: <span style="font-weight:400;">{{ page.metafields.career.work_arrangement.value }}</span></div>
+      {% endif %}
+    </div>
+    <div>
+      {% if page.metafields.career.job_type != null %}
+        <div class="job__details">Employment type: <span style="font-weight:400; margin-left: 10px;">{{ page.metafields.career.job_type.value }}</span></div>
+      {% endif %}
+     
+      {% if page.metafields.career.locations != null %}
+        <div class="job__details">Location: <span style="font-weight:400; margin-left: 10px;">{{ page.metafields.career.locations.value }}</span></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+</div>

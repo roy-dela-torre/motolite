@@ -1,0 +1,412 @@
+<link rel="stylesheet" href="{{ 'motolite-express-hatid-default.css' | asset_url }}">
+
+<section class="contact-details-for-default global-padding"
+    style="background: url('{{ section.settings.background_image | image_url }}') no-repeat center center/cover;"
+    id="now_covering_default">
+
+    <div class="content">
+        <div class="logo-contact-con">
+            <div class="image">
+                {% if section.settings.banner_logo %}
+                <img src="{{ section.settings.banner_logo | image_url }}" alt="{{ section.settings.logo_alt }}">
+                {% endif %}
+            </div>
+            <div class="contact-details">
+                {% if section.settings.headline %}
+                <p>{{ section.settings.headline }}</p>
+                {% endif %}
+
+                {% if section.settings.smart_number %}
+                <a href="tel:{{ section.settings.smart_number | remove: ' ' }}">{{ section.settings.smart_number }}</a>
+                <p>Smart</p>
+                {% endif %}
+
+                {% if section.settings.globe_number %}
+                <a href="tel:{{ section.settings.globe_number | remove: ' ' }}">{{ section.settings.globe_number }}</a>
+                <p>Globe</p>
+                {% endif %}
+
+                {% if section.settings.tollfree_number %}
+                <a href="tel:{{ section.settings.tollfree_number | remove: ' ' }}">{{ section.settings.tollfree_number }}</a>
+                <p>Provincial Toll-Free</p>
+                {% endif %}
+            </div>
+        </div>
+
+      <div class="advantage">
+        {% if section.settings.promo_text %}
+          <p class="sub-title">{{ section.settings.promo_text }}</p>
+        {% endif %}
+      
+        {% for block in section.blocks %}
+          {% if block.type == 'location' %}
+            <div class="d-flex logo-tex">
+              {% if block.settings.icon %}
+                <img src="{{ block.settings.icon | image_url }}" alt="">
+              {% endif %}
+              <p>{{ block.settings.city_name }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+</section>
+
+
+<section class="banner global-padding" id="dynamic-banner">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content">
+          {% if section.settings.title %}
+            <h1 class="text-center text-white text-uppercase">
+              {{ section.settings.title }}
+            </h1>
+          {% endif %}
+          
+          {% if section.settings.description %}
+            <p class="text-center text-white mb-0">
+              {{ section.settings.description }}
+            </p>
+          {% endif %}
+          
+          {% if section.settings.button_text and section.settings.button_url %}
+            <div class="text-center mt-4">
+              <a href="{{ section.settings.button_url }}" class="btn btn-primary">
+                {{ section.settings.button_text }}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="motolite_express_hatid global-padding " id="motolite-services-{{ section.id }}">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <div class="content">
+          {% if section.settings.heading %}
+            <h2>{{ section.settings.heading }}</h2>
+          {% endif %}
+          
+          {% if section.settings.mobile_image and section.settings.desktop_image %}
+            <div class="image d-block d-xl-none">
+              <img src="{{ section.settings.mobile_image | image_url }}" 
+                   alt="{{ section.settings.image_alt }}" 
+                   class="img-fluid w-100 mb-0" />
+            </div>
+          {% endif %}
+          
+          {% if section.settings.description %}
+            <p>{{ section.settings.description }}</p>
+          {% endif %}
+          
+          {% if section.settings.button_text and section.settings.button_url %}
+            <a href="{{ section.settings.button_url }}" class="btn btn-primary">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+        
+        {% if section.settings.desktop_image %}
+          <div class="image d-none d-xl-block">
+            <img src="{{ section.settings.desktop_image | image_url }}" 
+                 alt="{{ section.settings.image_alt }}" 
+                 class="img-fluid w-100 mb-0" />
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="car_batteries global-padding" id="car-batteries-{{ section.id }}">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="headers">
+            {% if section.settings.heading %}
+              <h2 class="text-center">{{ section.settings.heading }}</h2>
+            {% endif %}
+            
+            {% if section.settings.subheading %}
+              <p class="text-center">{{ section.settings.subheading }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      
+       <div class="row">
+          <div class="col-md-12">
+              <div class="card-container">
+                  {% for battery in collections['car-batteries-available-for-delivery-in-pampanga'].products %}
+                  <div class="car_cards">
+                      <div class="content">
+                          <div class="image">
+                              <img src="{{ battery.featured_image | img_url: 'medium' }}"
+                                  alt="{{ battery.title }}" alt="Motolite Excel AGM" class="img-fluid w-100">
+                          </div>
+                          <div class="text-content">
+                              <h3 class="text-center">{{ battery.title }}</h3>
+                              <p class="description text-center">{{ battery.description | strip_html }}
+                              </p>
+                              <a href="{{ battery.url }}" target="_blank" rel="noopener noreferrer"
+                                  class="buy_now red_btn">Buy
+                                  Battery</a>
+                          </div>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="battery_delivery global-padding" id="battery-delivery-{{ section.id }}">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        {% if section.settings.desktop_image %}
+          <div class="image d-none d-xl-block">
+            <img src="{{ section.settings.desktop_image | image_url }}" 
+                 alt="{{ section.settings.image_alt | escape }}" 
+                 class="w-100 img-fluid"
+                 loading="lazy"
+                 width="800"
+                 height="600">
+          </div>
+        {% endif %}
+        
+        <div class="content">
+          {% if section.settings.heading %}
+            <h2>{{ section.settings.heading }}</h2>
+          {% endif %}
+          
+          {% if section.settings.mobile_image %}
+            <div class="image d-block d-xl-none">
+              <img src="{{ section.settings.mobile_image | image_url }}" 
+                   alt="{{ section.settings.image_alt | escape }}" 
+                   class="w-100 img-fluid"
+                   loading="lazy"
+                   width="400"
+                   height="300">
+            </div>
+          {% endif %}
+          
+          {% if section.settings.description %}
+            <p>{{ section.settings.description }}</p>
+          {% endif %}
+          
+          {% if section.settings.button_text and section.settings.button_url %}
+            <a href="{{ section.settings.button_url }}" class="btn btn-primary">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="why_should_you_book_motolite global-padding" id="why-book-{{ section.id }}">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="headers">
+          {% if section.settings.heading %}
+            <h2>{{ section.settings.heading }}</h2>
+          {% endif %}
+
+          {% if section.settings.description %}
+            <p>{{ section.settings.description }}</p>
+          {% endif %}
+        </div>
+
+        <div class="advantage-container">
+          {% for block in section.blocks %}
+            {% if block.type == 'reason' %}
+              <div class="red_box">
+                <div class="content">
+                  {% if block.settings.icon_image != blank %}
+                    <img src="{{ block.settings.icon_image | image_url }}" alt="{{ block.settings.title }}">
+                  {% elsif block.settings.icon_svg != blank %}
+                    {{ block.settings.icon_svg }}
+                  {% endif %}
+
+                  {% if block.settings.title %}
+                    <h3 class="text-center text-white">{{ block.settings.title }}</h3>
+                  {% endif %}
+
+                  {% if block.settings.content %}
+                    <p class="text-white">{{ block.settings.content }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Motolite Express Sections",
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "hatid_banner",
+      "name": "Hatid Banner",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Banner Settings"
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "banner_logo",
+          "label": "Banner Logo"
+        },
+        {
+          "type": "text",
+          "id": "logo_alt",
+          "label": "Logo Alt Text",
+          "default": "Motolite Express Logo"
+        },
+        {
+          "type": "text",
+          "id": "headline",
+          "label": "Headline Text",
+          "default": "NOW COVERING [LOCATION]!"
+        },
+        {
+          "type": "header",
+          "content": "Contact Information"
+        },
+        {
+          "type": "text",
+          "id": "smart_number",
+          "label": "Smart Number",
+          "default": "0918-843-6686"
+        },
+        {
+          "type": "text",
+          "id": "globe_number",
+          "label": "Globe Number",
+          "default": "0917-891-6686"
+        },
+        {
+          "type": "text",
+          "id": "tollfree_number",
+          "label": "Toll-Free Number",
+          "default": "1-800-10-370-6686"
+        },
+        {
+          "type": "header",
+          "content": "Promo Information"
+        },
+        {
+          "type": "text",
+          "id": "promo_text",
+          "label": "Promo Text",
+          "default": "FREE Battery Delivery & Installation"
+        },
+        {
+          "type": "header",
+          "content": "Service Areas"
+        },
+        {
+          "type": "text",
+          "id": "service_areas_heading",
+          "label": "Service Areas Heading",
+          "default": "Available in:"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Motolite Express Sections",
+      "category": "Custom Sections",
+      "settings": {
+        "title": "Motolite Express Service"
+      }
+    }
+  ],
+
+  "name": "Dynamic Content Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Fast, Reliable Car Battery & Installation!"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "When your car battery fails, you need an immediate and trusted solution. We offer prompt delivery and installation of high-quality car batteries, ensuring you're back on the road in no time."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Color",
+      "default": "#D5232B"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dynamic Content Banner",
+      "category": "Custom Sections",
+      "settings": {
+        "title": "Fast, Reliable Car Battery & Installation in Pampanga!",
+        "description": "When your car battery fails, you need an immediate and trusted solution. Motolite Express Hatid in Pampanga offers prompt delivery and installation of high-quality car batteries, ensuring you're back on the road in no time. With 24/7 availability, you can count on us anytime, anywhere, for all your car battery needs in Pampanga."
+      }
+    }
+  ]
+}
+{% endschema %}
+
+
+
+

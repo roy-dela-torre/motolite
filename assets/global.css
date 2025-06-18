@@ -1,0 +1,159 @@
+
+@font-face {
+    font-family: 'Dm sans'; /* Name of the font */
+    src: url('{{ 'DMSans-Regular.ttf' | asset_url }}') format('ttf')
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+section .wrapper {
+    max-width: 1306px;
+    margin: 0 auto;
+}
+
+.global-padding {
+    padding: 100px 0px;
+}
+
+ section.headerr{
+    width: 100%;
+    max-width: 918px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+ }
+
+section h1{
+    font-family: 'Raleway',sans-serif;
+    font-size: 59px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 118.644% */
+    margin-bottom: 40px;
+}
+
+section h2{
+    color: #121212;
+    font-family: 'Raleway',sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 125% */
+    letter-spacing: 0.69px;
+    margin-bottom: 14px;
+}
+
+section h3{
+    color: #000;
+    font-family: 'Raleway',sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; /* 112.903% */
+    letter-spacing: 0.69px;
+}
+
+section p,
+section li,
+section span{
+    color: var(--Lightish-black, #212529);
+    font-family: "Segoe UI",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.5px; /* 191.667% */
+    letter-spacing: 0.66px;
+}
+
+section li{
+    margin-bottom: unset;
+}
+
+section p:last-child{
+    margin-bottom: 0;
+}
+
+section p a{
+    color: var(--links, #FAFF00);
+    font-family: "Segoe UI",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.5px;
+    letter-spacing: 0.66px;
+    text-decoration: none;
+}
+
+section p a:active{
+    color: var(--links, #FAFF00);
+}
+
+section .red_btn{
+    padding: 13px;
+    border-radius: 5px;
+    background: var(--CTA-1, linear-gradient(180deg, #DC3545 0%, #450007 100%));
+    color: #FFF;
+    text-align: center;
+    font-family: "Segoe UI",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20.625px; /* 128.906% */
+    letter-spacing: 0.66px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}   
+
+section .red_btn:hover{
+    transition: .5s ease all;
+    background: var(--CTA-2, linear-gradient(180deg, #FF7A00 6.03%, #7D2D00 100%));
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+}
+
+
+button.product-form__submit.button.button--full-width.button--secondary span{
+     font-family: 'Dm sans';
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 1.1px;
+}
+
+section.contact-details-for-cebu .d-flex.logo-tex {
+    margin-left: 100px;
+    align-items: center;
+    gap: 10px;
+}
+
+section.contact-details-for-cebu .d-flex.logo-tex img {
+    object-fit: contain;
+    width: 18px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .global-padding {
+        padding: 70px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .global-padding {
+        padding: 50px 20px;
+    }
+}

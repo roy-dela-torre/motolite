@@ -1,0 +1,538 @@
+@font-face {
+            font-family: 'Aganè';
+            src: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/Agane_C_75_Extra_Bold.ttf?v=1686194319');
+        }
+
+.hotlines-banner {
+  background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/hotlines-banner.jpg?v=1732687163') center/cover
+    no-repeat;
+  height: 100%;
+  max-height: 669px;
+}
+
+.links-contact-con .links .links-details p,
+.links-contact-con .contact-details-con .contact p,
+.links-contact-con  .numbers-con .numbers strong {
+  color: #f8c606 !important;
+}
+.hotlines-banner h1 {
+  margin-top: 0px;
+  color: #fff;
+  text-shadow: 6px 5px 20px #000;
+      font-family: 'Aganè';
+  font-size: 67.2px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.69px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.hotlines-banner p {
+  color: #fff;
+  margin: 0px;
+  line-height: normal;
+}
+
+.hotlines-banner .text {
+  width: 100%;
+  max-width: 890px;
+  height: 100%;
+}
+
+.hotlines-banner .content {
+  display: flex;
+  place-content: end;
+  height: 100%;
+  min-height: 669px;
+  place-items: center;
+}
+
+.cta-hotlines {
+border-radius: 5px;
+    background: #d22429;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    display: inline-block;
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: .66px;
+    width: 100%;
+    padding: 15px 0px;
+  transition: all ease .5s;
+  padding: 15px;
+}
+
+.cta-hotlines:hover {
+  color: #fff;
+  background: #920200;
+    transition: all ease .5s
+  
+}
+
+section.reach-us .text h2 {
+  color: #424242;
+}
+
+section.reach-us .text p {
+  color: #807F7F;
+  line-height: normal;
+}
+
+.hotlines-details {
+  border-radius: 5px;
+  background: #424242;
+}
+
+section.reach-us .hotlines-details {
+  width: 100%;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+section.reach-us .hotlines-con {
+  display: flex;
+  gap: 20px;
+}
+
+section.reach-us .card-con {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+section.reach-us .hotlines-details h3 {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0.69px;
+  margin-bottom: 30px;
+}
+
+section.reach-us .card {
+  border: none;
+  background: #fff;
+  display: flex;
+  place-content: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+section.reach-us .hotlines-number p {
+  margin: 0px;
+  margin-bottom: 14px;
+  color: #424242;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 140% */
+  letter-spacing: 0.69px;
+}
+
+section.reach-us .text {
+  text-align: center;
+  width: 100%;
+  max-width: 984px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.contact-us .text {
+  background: url('https://cdn.shopify.com/s/files/1/0615/7982/1304/files/contact-img.jpg?v=1732687371') center/cover
+    no-repeat;
+  height: 100%;
+  min-height: 585px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: end;
+  padding: 0px 50px 0px 15px;
+      max-width: 960px;
+}
+
+.contact-us .text h2,
+.contact-us .text p {
+  color: #fff;
+  width: 100%;
+  max-width: 602px;
+}
+
+section.contact-us {
+  display: flex;
+  align-items: center;
+      background: #F8F6F6;
+}
+
+.contact-form-con {
+  width: 100%;
+      max-width: 960px;
+        padding: 0 20px 0 50px;
+}
+
+.contact-form-con form {
+    width: 100%;
+    max-width: 602px;
+}
+
+.footer {
+  background: #d91f2b;
+}
+
+.footer .content {
+  display: flex;
+  gap: 50px;
+}
+
+.footer .logo-text {
+  width: 100%;
+  max-width: 347px;
+}
+
+.footer .logo-text img {
+  margin-bottom: 14px;
+}
+
+.footer .links-contact-con {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+      width: 100%;
+    max-width: 907px;
+}
+
+.footer .links-contact-con .links {
+  display: flex;
+      justify-content: space-between;
+}
+
+.footer .links-contact-con p {
+  margin: 0px;
+}
+
+.footer .links-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer .contact-details-con {
+  display: flex;
+justify-content: space-between;
+}
+
+.footer .contact-details-con .numbers-con {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 14px;
+}
+
+.footer .links-details p:nth-of-type(1) {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.66px;
+}
+
+.footer .links-details p:last-child,
+.footer .links-details a {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.66px;
+  text-decoration: none;
+}
+
+.footer .links-details:nth-of-type(3) a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-details-con .contact .numbers-con p a {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.66px;
+  text-decoration: none;
+}
+
+.contact-details-con .contact .numbers-con p {
+  margin-bottom: 0px;
+      white-space: nowrap;
+}
+
+.contact-details-con .contact .numbers-con p strong {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.66px;
+  margin-right: 5px;
+}
+
+.contact-details-con .contact p {
+  margin-bottom: 14px;
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.66px;
+}
+
+.links-contact-con .links-details:last-child {
+    width: 100%;
+    max-width: 308px;
+}
+
+
+.logo-text p {
+    color: #fff;
+}
+
+.contact-form-con form#contact_form .text-semibold-25.lh-25 {
+color: #424242;
+font-size: 31px;
+font-style: normal;
+font-weight: 700;
+line-height: 35px;
+letter-spacing: 0.69px;
+}
+
+form#contact_form button#contact_form_submit,
+form#contact_form textarea.margin-top-20.custom-input,
+form#contact_form input.margin-top-20.margin-bottom-5.custom-input,
+form#contact_form .margin-top-20 input {
+    border-radius: 5px;
+}
+
+form#contact_form button#contact_form_submit {
+  background: #D22429;
+  font-weight: 700;
+}
+
+form#contact_form button#contact_form_submit:hover {
+  background: #920200;
+}
+
+
+  .contact-us .text p {
+    line-height: normal;
+  }
+
+@media(max-width: 1200px){
+
+  .hotlines-banner p{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form-con,
+  .contact-us .text{
+    padding: 0px 50px;
+  }
+
+
+
+    section.reach-us{
+      padding: 30px 50px
+  }
+  
+
+  .hotlines-banner h1{
+    font-size: 45px;
+  }
+
+  .hotlines-banner .content {
+    justify-content:center;
+  }
+section.hotlines-banner{
+        padding: 0px 30px;
+}
+
+
+  .hotlines-banner .content .text {
+    text-align: center;
+
+  }
+  
+
+  .hotlines-banner {
+    background-position: unset;
+  }
+  
+  section.reach-us .hotlines-con{
+    flex-direction: column;
+  }
+
+  section.contact-us{
+        flex-direction: column;
+
+  }
+
+  .contact-us .text{
+    padding: 0px 20px;
+    max-width: unset;
+    place-items: center;
+                min-height: 300px;
+  }
+
+  .contact-us .text h2, .contact-us .text p {
+    text-align: center;
+  }
+
+
+  .contact-form-con {
+    max-width: unset;
+    padding: 70px 30px;
+  }
+
+  .contact-form-con form {
+    max-width: unset;
+  }
+
+  .footer .content {
+    flex-direction: column;
+  }
+
+  .footer .logo-text {
+    max-width: unset;
+  }
+
+  .footer .links-contact-con {
+    max-width: unset;
+  }
+  
+}
+
+@media(max-width: 991px){
+  .footer .contact-details-con{
+    flex-direction: column;
+            gap: 30px;
+  }
+
+  .footer .links-contact-con .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media(max-width: 767px){
+
+      .contact-form-con,
+  .contact-us .text,
+  section.reach-us{
+      padding: 30px 50px;
+  }
+  
+  section.reach-us .hotlines-details{
+    padding: 20px;
+  }
+
+
+    .hotlines-banner .content .text {
+    text-align: center;
+            width: 100%;
+        max-width: 587px;
+
+  }
+
+  .contact-form-con form#contact_form .text-semibold-25.lh-25 {
+    text-align: center;
+  }
+
+  .hotlines-banner h1{
+          font-size: 40px;
+
+  }
+
+  section.hotlines-banner {
+    padding: 0px 20px;
+  }
+  
+    .footer .links-contact-con .links{
+              
+    }
+
+  .footer .links-contact-con .links,
+  .footer .contact-details-con .numbers-con {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer .links-contact-con .links {
+    place-items: center;
+            text-align: center;
+  }
+
+  .footer .contact-details-con{
+    place-items: center;
+        text-align: center;
+  }
+
+  .footer .logo-text{
+    text-align: center;
+  }
+
+  section.reach-us .card-con {
+        grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cta-hotlines {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hotlines-banner .text{
+    text-align: center;
+  }
+    
+}
+
+@media(max-width: 449px){
+  .contact-us .text h2 {
+              width: 100%;
+        max-width: 300px;
+  }
+
+    .contact-us .text h2, .contact-us .text p {
+        width: 100%;
+        max-width: 300px;
+  }
+
+  .cta-hotlines {
+    font-size: 16px;
+  }
+
+  section.reach-us .card {
+    padding: 20px;
+  }
+}
+

@@ -1,0 +1,20 @@
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+<div class="blog-articles">
+  {%- for result in search.results -%}
+  <div class="blog-articles__article article">
+    {%- render 'article-card', article: result, image_height: "medium", show_image: true, show_date: true, show_author: false -%}
+  </div>
+  {%- endfor -%}
+</div>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

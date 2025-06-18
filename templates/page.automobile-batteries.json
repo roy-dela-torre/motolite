@@ -1,0 +1,91 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "16491162926b9342a1": {
+      "type": "batteries-navigation",
+      "settings": {}
+    },
+    "1653611421b7216215": {
+      "type": "image-company-banner",
+      "settings": {
+        "image": "shopify://shop_images/MAIN_BANNER_BATTERIES_970_X_250_copy_f52ed612-1615-4360-a2fa-fc6882ce8370.png",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "flex-end",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "16491162728afef9ed": {
+      "type": "batteries-heading",
+      "settings": {
+        "head": "Automotive Batteries"
+      }
+    },
+    "1649116282ffdf5e0d": {
+      "type": "custom-battery-section",
+      "settings": {
+        "section_title": "Maintenance Free",
+        "section_description": "<p>Motolite automotive batteries are designed using state-of-the-art technology and are manufactured under the strictest of standards, which is why Motolite is the preferred battery brand of automotive manufacturers and experts. Offers wide range of batteries for Japanese, Korean, American, and European vehicles.</p>",
+        "section_image": "shopify://shop_images/MicrosoftTeams-image_18.png",
+        "img_max_height": 500,
+        "section_image_first": false
+      }
+    },
+    "main": {
+      "type": "battery-items",
+      "settings": {
+        "section_collection": "automotive"
+      }
+    },
+    "16491163023be0b584": {
+      "type": "custom-battery-section",
+      "settings": {
+        "section_title": "SLow Maintenance",
+        "section_description": "<p>Designed using advanced battery technology to deliver the optimum power and minimal fluid loss. This technology provides real value for your money.</p>",
+        "section_image": "shopify://shop_images/MicrosoftTeams-image_20.png",
+        "img_max_height": 500,
+        "section_image_first": true
+      }
+    },
+    "16568298671aecf861": {
+      "type": "battery-items",
+      "settings": {
+        "section_collection": "low-maintenance"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true
+      }
+    }
+  },
+  "order": [
+    "16491162926b9342a1",
+    "1653611421b7216215",
+    "16491162728afef9ed",
+    "1649116282ffdf5e0d",
+    "main",
+    "16491163023be0b584",
+    "16568298671aecf861",
+    "footer"
+  ]
+}

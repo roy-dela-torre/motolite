@@ -1,0 +1,255 @@
+<script type="text/javascript">
+
+      window.ymConfig = {"bot":"x1722944534597","host":"https://r3.cloud.yellow.ai"};
+
+    (function() {
+
+        var w = window,
+
+            ic = w.YellowMessenger;
+
+        if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+
+        else {
+
+            var d = document,
+
+                i = function() {
+
+                    i.c(arguments)
+
+                };
+
+            function l() {
+
+                var e = d.createElement("script");
+
+                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+
+                var t = d.getElementsByTagName("script")[0];
+
+                t.parentNode.insertBefore(e, t)
+
+            }
+
+            i.q = [], i.c = function(e) {
+
+                i.q.push(e)
+
+            }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
+
+    })();
+
+    </script>
+
+
+
+<!-- Example: Displaying the template name -->
+{% comment %} Display template name {% endcomment %}
+{% assign template_name = template.name %}
+{% comment %} Carousel for Featured Articles {% endcomment %}
+{% assign blog_handle = 'news' %} <!-- Replace 'sample-blog' with your actual blog's handle -->
+<link rel="stylesheet" href="{{ 'blogs.css' | asset_url }}">
+<section class="banner blogs">
+  <div class="container-fluid p-0">
+    <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        {% assign visible_articles = blogs[blog_handle].articles | limit: 5 %}
+        {% for article in visible_articles %}
+        <div class="carousel-item {% if forloop.first %}active {% endif %}{% if forloop.last %}last-slide{% endif %}"
+          style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('{{ article.image.src | img_url: '1024x768' }}')no-repeat center center/cover">
+          <div class="carousel-captions">
+            {% if forloop.first %}
+            <h1> Featured Articles</h1>
+            {% else %}
+            <p class="feauted"> Featured Articles</p>
+            {% endif %}
+            <h3>{{ article.title }}</h3>
+            <p>{{ article.content | strip_html | truncatewords: 30 }}</p>
+            <a href="/blogs/{{ article.handle }}" class="read-more" target="_blank">Read More</a>
+
+          </div>
+        </div>
+        {% if forloop.index == 5 %}{% break %}{% endif %}
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/prev-banner.png?v=1693381237" alt="prev">
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+          <img src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/next-banner.png?v=1693381238" alt="next">
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="moreblogs">
+  <div class="container-fluid">
+    <div class="headers">
+      <h2 class="text-center">More Articles</h2>
+    </div>
+    <div class="more-blogs">
+      <div class="row">
+        {%- paginate blogs[blog_handle].articles by 9 -%}
+        {%- for article in blogs[blog_handle].articles -%}
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="content">
+            <img src="{{ article.image.src | img_url: '1024x768' }}" alt="{{ article.title }}" width="410" height="330"
+              loading="eager">
+            <div class="post-content">
+              <p class="date">{{ article.published_at | date: "%B %d, %Y" }}</p>
+              <h3>{{ article.title }}</h3>
+              <p>{{ article.content | strip_html | truncatewords: 30 }}</p>
+            </div>
+            <a href="/blogs/{{ article.handle }}" class="read-more" target="_blank">Read More</a>
+
+          </div>
+        </div>
+        {%- endfor -%}
+
+        {%- if paginate.pages > 1 -%}
+        <nav role="navigation">
+          <ol class="pagination">
+            {%- if paginate.previous-%}
+            <li>
+              <a href="{{ paginate.previous.url }}">
+                <span class="visuallyhidden"><img
+                    src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/prev.png?v=1693293963" alt=""></span>
+              </a>
+            </li>
+            {%- else -%}
+            <li class="disabled">
+              <span class="visuallyhidden"><img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/prev.png?v=1693293963" alt=""></span>
+            </li>
+            {%- endif -%}
+
+            {%- for part in paginate.parts -%}
+            {%- if part.is_link -%}
+            <li>
+              <a href="{{ part.url }}">
+                <span class="visuallyhidden">{{ part.title }}</span>
+              </a>
+            </li>
+            {%- else -%}
+            {%- if part.title == paginate.current_page -%}
+            <li class="active" aria-current="page">
+              <span class="visuallyhidden">{{ part.title }}</span>
+            </li>
+            {%- else -%}
+            <li>
+              <span class="visuallyhidden">{{ part.title }}</span>
+            </li>
+            {%- endif -%}
+            {%- endif -%}
+            {%- endfor -%}
+
+            {%- if paginate.next -%}
+            <li>
+              <a href="{{ paginate.next.url }}">
+                <span class="visuallyhidden"><img
+                    src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/next.png?v=1693293963" alt=""></span>
+              </a>
+            </li>
+            {%- else -%}
+            <li class="disabled">
+              <span class="visuallyhidden"><img
+                  src="https://cdn.shopify.com/s/files/1/0615/7982/1304/files/next.png?v=1693293963" alt=""></span>
+            </li>
+            {%- endif -%}
+          </ol>
+        </nav>
+        {%- endif -%}
+        {%- endpaginate -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% section 'footer' %}
+<script>
+  $(document).ready(function () {
+    $(window).on('load', function () {
+      $(".carousel-captions").height()
+      let previousWidth = $(window).width();
+
+      // Function to update the displayed width
+      function updateViewportWidth() {
+        const viewportWidth = $(window).width();
+        $('#width').text(`Width: ${viewportWidth}px`);
+      }
+
+      // Initial update of viewport width
+      updateViewportWidth();
+
+      // Bind the resize event handler
+      $(window).on('resize', function () {
+        const currentWidth = $(window).width();
+        if (currentWidth !== previousWidth) {
+          // Width has changed, update and print new width
+          updateViewportWidth();
+          previousWidth = currentWidth;
+        }
+      });
+
+      function setEqualHeightForSection(sectionSelector, secondSelector) {
+        var elementsToResize = $(sectionSelector).find(secondSelector);
+        elementsToResize.css('height', 'auto'); // Reset height to auto first
+
+        var isDesktop = $(window).width() > 991;
+        var groupSize = isDesktop ? 3 : 2;
+
+        console.log("Group size:", groupSize); // Log the group size
+
+        for (var i = 0; i < elementsToResize.length; i += groupSize) {
+          var tallestHeight = 0;
+          var group = elementsToResize.slice(i, i + groupSize); // Select the next group based on groupSize
+
+          // Find the tallest height in the current group
+          group.each(function () {
+        var height = $(this).height();
+        if (height > tallestHeight) {
+          tallestHeight = height;
+        }
+          });
+
+          // Apply tallest height to all elements in the group
+          group.height(tallestHeight);
+        }
+      }
+
+      setEqualHeightForSection("section.moreblogs", "h3")
+
+
+      var maxHeightBlogs = 0;
+      $('section.moreblogs h3').each(function () {
+        var heightBlogs = $(this).height();
+        if (heightBlogs > maxHeightBlogs) {
+          maxHeightBlogs = heightBlogs;
+        }
+      });
+      $('section.moreblogs h3').height(maxHeightBlogs);
+    });
+  })
+</script>

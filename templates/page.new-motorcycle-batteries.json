@@ -1,0 +1,107 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "16491150122478a495": {
+      "type": "batteries-navigation",
+      "settings": {}
+    },
+    "1653613437e7066ea4": {
+      "type": "image-banner",
+      "blocks": {
+        "1653613436098261a6-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "1653613436098261a6-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1653613436098261a6-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1653613436098261a6-0",
+        "1653613436098261a6-1",
+        "1653613436098261a6-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMAGE_BANNER_MOTORCYCLE_970_x_250_copy_47eda962-3c54-464c-b75e-d35d6d72dccc.png",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "16491149935cf51f4a": {
+      "type": "batteries-heading",
+      "settings": {
+        "head": "Motorcyle Batteries"
+      }
+    },
+    "1649115005c67e7c04": {
+      "type": "custom-battery-section",
+      "settings": {
+        "section_title": "",
+        "section_description": "<p>In line with Motolite mission to provide quality batteries for vehicles, each Motolite motorcycle battery is equipped with the same trusted technology used in Motolite's automotive batteries. You get the same quality, performance, satisfaction, and reliability each time - the kind of motorcycle battery that provides the best value for your money.</p>",
+        "section_image": "shopify://shop_images/MicrosoftTeams-image_17.png",
+        "img_max_height": 500,
+        "section_image_first": false
+      }
+    },
+    "main": {
+      "type": "battery-items",
+      "settings": {
+        "section_collection": "motorcycle"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true
+      }
+    }
+  },
+  "order": [
+    "16491150122478a495",
+    "1653613437e7066ea4",
+    "16491149935cf51f4a",
+    "1649115005c67e7c04",
+    "main",
+    "footer"
+  ]
+}

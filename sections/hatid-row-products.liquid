@@ -1,0 +1,125 @@
+
+
+<section class="car_batteries global-padding" id="car-batteries-{{ section.id }}">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="headers">
+            {% if section.settings.heading %}
+              <h2 class="text-center">{{ section.settings.heading }}</h2>
+            {% endif %}
+            
+            {% if section.settings.subheading %}
+              <p class="text-center">{{ section.settings.subheading }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      
+       <div class="row">
+          <div class="col-md-12">
+              <div class="card-container">
+                  {% for battery in collections['car-batteries-available-for-delivery-in-pampanga'].products %}
+                  <div class="car_cards">
+                      <div class="content">
+                          <div class="image">
+                              <img src="{{ battery.featured_image | img_url: 'medium' }}"
+                                  alt="{{ battery.title }}" alt="Motolite Excel AGM" class="img-fluid w-100">
+                          </div>
+                          <div class="text-content">
+                              <h3 class="text-center">{{ battery.title }}</h3>
+                              <p class="description text-center">{{ battery.description | strip_html }}
+                              </p>
+                              <a href="{{ battery.url }}" target="_blank" rel="noopener noreferrer"
+                                  class="buy_now red_btn">Buy
+                                  Battery</a>
+                          </div>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Car Batteries Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Car Batteries Available for Delivery in Pampanga"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Motolite brings hassle-free car battery delivery anywhere in Pampanga. Pick the perfect battery that matches your vehicle and driving needs."
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection",
+      "info": "Choose the collection of batteries to display"
+    },
+    {
+      "type": "range",
+      "id": "product_limit",
+      "label": "Maximum Products to Show",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show Product Description",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "description_length",
+      "label": "Description Length (characters)",
+      "min": 50,
+      "max": 200,
+      "step": 10,
+      "default": 100
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Buy Battery"
+    },
+    {
+      "type": "text",
+      "id": "empty_message",
+      "label": "Empty Collection Message",
+      "default": "No batteries found in this collection."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "label": "Show Price",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Car Batteries Collection",
+      "category": "Product Display",
+      "settings": {
+        "heading": "Car Batteries Available for Delivery in Pampanga",
+        "subheading": "Motolite brings hassle-free car battery delivery anywhere in Pampanga. Pick the perfect battery that matches your vehicle and driving needs.",
+        "collection": "car-batteries-available-for-delivery-in-pampanga"
+      }
+    }
+  ]
+}
+{% endschema %}

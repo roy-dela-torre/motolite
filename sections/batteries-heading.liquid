@@ -1,0 +1,34 @@
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+
+  <h1 class="fw-bold">{{section.settings.head}}</h1>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Battery Header",
+    "settings": [{
+"type" : "text",
+"label" : "Header",
+ "id" : "head",
+"default" : "Header here .."
+
+}],
+"presets" : [
+{
+"category" : "ADVANCED LAYOUT",
+"name" : "Battery Header"
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

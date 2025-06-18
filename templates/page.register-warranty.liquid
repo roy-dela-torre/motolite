@@ -1,0 +1,509 @@
+<style>
+  .reg-warranty {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight:600;
+    
+  }
+</style>
+<div class="container py-3">
+		<h4 class="mb-4 text-center reg-warranty">Register Warranty</h4>
+
+		<!-- battery info -->
+		<div class="card mb-5">
+			<div class="row no-gutters">
+				<div class="col-4" style="padding-left: 15px">
+					<img src="https://resqaws.jankstudio.com/battery/generic.png" height="100">
+				</div>
+				<div class="col-8">
+					<div class="card-body battery-info">
+						<div class="card-title"><strong>ENDURO</strong></div>
+
+						<div><small>Size: <strong>1SMF</strong></small></div>
+						<div><small>Serial Number: <strong>QRME4000014819</strong></small></div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- end battery info -->
+
+		<form id="warranty_form" method="POST" action="https://warr.motolite.com/w/QRME4000014819/update" enctype="multipart/form-data">
+			<h4>Vehicle Details</h4>
+			<div class="form-block mb-5">
+				<div class="form-group row form-row">
+					<label for="vmfg_id" class="col-5 col-form-label">Car Brand (required)</label>
+					<div class="col-7">
+                    <select id="vmfg_id" name="vmfg_id" class="form-control" required="">
+                        <option value="">Select Brand</option>
+                                                                                    <option value="1383">ACURA</option>
+                                                                                                                <option value="1384">ALFA ROMEO</option>
+                                                                                                                <option value="1385">AUDI</option>
+                                                                                                                <option value="1386">BACKHOE</option>
+                                                                                                                <option value="1387">BAIC</option>
+                                                                                                                <option value="1388">BENTLEY</option>
+                                                                                                                <option value="1389">BMW</option>
+                                                                                                                <option value="1467">BRUDER</option>
+                                                                                                                <option value="1390">BYD</option>
+                                                                                                                <option value="1438">CADILLAC</option>
+                                                                                                                <option value="1439">CHANA</option>
+                                                                                                                <option value="1391">CHERY</option>
+                                                                                                                <option value="1440">CHERY</option>
+                                                                                                                <option value="1392">CHEVROLET</option>
+                                                                                                                <option value="1393">CHRYSLER</option>
+                                                                                                                <option value="1482">CITROEN</option>
+                                                                                                                <option value="1441">CLARK</option>
+                                                                                                                <option value="1394">DAEWOO</option>
+                                                                                                                <option value="1395">DAIHATSU</option>
+                                                                                                                <option value="1396">DODGE</option>
+                                                                                                                <option value="1442">E-BIKE</option>
+                                                                                                                <option value="1397">FERRARI</option>
+                                                                                                                <option value="1398">FIAT UNO</option>
+                                                                                                                <option value="1399">FORD</option>
+                                                                                                                <option value="1443">FORKLIFT</option>
+                                                                                                                <option value="1400">FOTON</option>
+                                                                                                                <option value="1473">FOTON</option>
+                                                                                                                <option value="1476">GAC</option>
+                                                                                                                <option value="1401">GEELY</option>
+                                                                                                                <option value="1444">GENSET</option>
+                                                                                                                <option value="1402">GMC</option>
+                                                                                                                <option value="1403">GOLDEN DRAGON</option>
+                                                                                                                <option value="1445">GOLF CART</option>
+                                                                                                                <option value="1487">GOLFCART</option>
+                                                                                                                <option value="1404">GREATWALL</option>
+                                                                                                                <option value="1405">HAIMA</option>
+                                                                                                                <option value="1406">HINO</option>
+                                                                                                                <option value="1407">HONDA</option>
+                                                                                                                <option value="1408">HUMMER</option>
+                                                                                                                <option value="1409">HYUNDAI</option>
+                                                                                                                <option value="1410">INFINITI</option>
+                                                                                                                <option value="1411">ISUZU</option>
+                                                                                                                <option value="1412">JAC</option>
+                                                                                                                <option value="1413">JAGUAR</option>
+                                                                                                                <option value="1414">JEEP</option>
+                                                                                                                <option value="1446">JEEPNEY</option>
+                                                                                                                <option value="1447">JMC</option>
+                                                                                                                <option value="1486">JMC</option>
+                                                                                                                <option value="1485">KAWASAKI</option>
+                                                                                                                <option value="1415">KIA</option>
+                                                                                                                <option value="1488">KING LONG</option>
+                                                                                                                <option value="1460">KUBOTA</option>
+                                                                                                                <option value="1416">LAMBORGHINI</option>
+                                                                                                                <option value="1417">LAND ROVER</option>
+                                                                                                                <option value="1418">LEXUS</option>
+                                                                                                                <option value="1448">LEYLAND</option>
+                                                                                                                <option value="1419">LINCOLN</option>
+                                                                                                                <option value="1483">LOTUS</option>
+                                                                                                                <option value="1479">MAHINDRA</option>
+                                                                                                                <option value="1449">MAN</option>
+                                                                                                                <option value="1420">MASERATI</option>
+                                                                                                                <option value="1480">MAXUS</option>
+                                                                                                                <option value="1421">MAZDA</option>
+                                                                                                                <option value="1422">MERCEDES BENZ</option>
+                                                                                                                <option value="1463">MESERATI</option>
+                                                                                                                <option value="1451">MG</option>
+                                                                                                                <option value="1450">MGB</option>
+                                                                                                                <option value="1423">MINI</option>
+                                                                                                                <option value="1452">MINI COOPER</option>
+                                                                                                                <option value="1424">MITSUBISHI</option>
+                                                                                                                <option value="1470">MORRIS GARAGE</option>
+                                                                                                                <option value="1425">NISSAN</option>
+                                                                                                                <option value="1426">OPEL</option>
+                                                                                                                <option value="1453">OWNER TYPE JEEP</option>
+                                                                                                                <option value="1464">PELAGGIO</option>
+                                                                                                                <option value="1427">PEUGEOT</option>
+                                                                                                                <option value="1466">PIAGGIO</option>
+                                                                                                                <option value="1465">PONTIAC</option>
+                                                                                                                <option value="1428">PORSCHE</option>
+                                                                                                                <option value="1429">PROTON</option>
+                                                                                                                <option value="1477">RENAULT SAMSUNG MOTORS</option>
+                                                                                                                <option value="1455">ROADSTER</option>
+                                                                                                                <option value="1462">ROLLS ROYCE</option>
+                                                                                                                <option value="1489">Rolls Royce</option>
+                                                                                                                <option value="1469">RUSCO</option>
+                                                                                                                <option value="1456">SAAB</option>
+                                                                                                                <option value="1457">SOLAR PANEL</option>
+                                                                                                                <option value="1458">SPEED BOAT</option>
+                                                                                                                <option value="1430">SSANGYONG</option>
+                                                                                                                <option value="1431">SUBARU</option>
+                                                                                                                <option value="1432">SUZUKI</option>
+                                                                                                                <option value="1433">TATA</option>
+                                                                                                                <option value="1434">TOYOTA</option>
+                                                                                                                <option value="1468">TRIUMPH</option>
+                                                                                                                <option value="1478">Unknown</option>
+                                                                                                                <option value="1435">VOLKSWAGEN</option>
+                                                                                                                <option value="1436">VOLVO</option>
+                                                                                                                <option value="1459">WRANGLER</option>
+                                                                                                                <option value="1484">YAMAHA</option>
+                                                                        </select>
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="vmake_id" class="col-5 col-form-label">Car Make (required)</label>
+					<div class="col-7">
+                    <select id="vmake_id" name="vmake_id" class="form-control" required=""><option value="">Select Make</option></select>
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="vmodel" class="col-5 col-form-label">Car Model Year (required)</label>
+					<div class="col-7">
+						<input type="text" name="vmodel" class="form-control shadow-none" id="vmodel" placeholder="" value="" required="">
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="plate_num" class="col-5 col-form-label">Plate Number (required)</label>
+					<div class="col-7">
+						<input type="text" class="form-control shadow-none" id="plate_num" name="plate_num" placeholder="" value="" required="">
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="odometer" class="col-5 col-form-label">Odometer Reading</label>
+					<div class="col-7">
+						<div class="input-group">
+							<input type="number" class="form-control shadow-none" id="odometer" name="odometer" placeholder="" value="0">
+							<div class="input-group-append text-muted">&nbsp;&nbsp;km</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="dealer_name" class="col-5 col-form-label">Dealer Name</label>
+					<div class="col-7">
+                    <select id="dealer_id" name="dealer_id" class="form-control">
+                        <option value="">Select Dealer</option>
+                                                                                    <option value="105">1 STOP BATTERY SHOP - BACOOR 2</option>
+                                                                                                                <option value="53">1 STOP BATTERY SHOP - CAMARIN</option>
+                                                                                                                <option value="106">1 STOP BATTERY SHOP - IMUS</option>
+                                                                                                                <option value="54">1 STOP BATTERY SHOP - NOVALICHES</option>
+                                                                                                                <option value="61">1 STOP BATTERY SHOP - VALENZUELA</option>
+                                                                                                                <option value="107">1 STOP BATTERY SHOP- DASMARINAS</option>
+                                                                                                                <option value="75">5J1R BATTERY TRADING</option>
+                                                                                                                <option value="26">ASIAN RING POINT BACOOR 1</option>
+                                                                                                                <option value="23">ASIAN RING POINT BATANGAS 3</option>
+                                                                                                                <option value="25">ASIAN RING POINT BATANGAS 3</option>
+                                                                                                                <option value="22">ASIAN RING POINT BAYANIHAN</option>
+                                                                                                                <option value="10">ASIAN RING POINT CAINTA 1</option>
+                                                                                                                <option value="103">ASIAN RING POINT EDSA</option>
+                                                                                                                <option value="27">ASIAN RING POINT LIPUNAN</option>
+                                                                                                                <option value="65">BATERYAHAN BATASAN</option>
+                                                                                                                <option value="62">BATERYAHAN TANONG</option>
+                                                                                                                <option value="64">BATPARTS - E.RODRIGUEZ</option>
+                                                                                                                <option value="63">BATPARTS - PACO</option>
+                                                                                                                <option value="68">BATPARTS - SANGANDAAN</option>
+                                                                                                                <option value="1">BATPARTS MARCOS BRANCH</option>
+                                                                                                                <option value="92">BATTERY&nbsp;</option>
+                                                                                                                <option value="71">BATTERY MASTER BINAN 2</option>
+                                                                                                                <option value="113">BATTERY MASTER CAVITE</option>
+                                                                                                                <option value="12">BATTERY MASTER CAVITE 3</option>
+                                                                                                                <option value="70">BATTERY MASTER CAVITE 5</option>
+                                                                                                                <option value="91">BATTERY MASTER CAVITE 6</option>
+                                                                                                                <option value="74">BATTERY MASTER HEAD OFFICE CAVITE</option>
+                                                                                                                <option value="29">BATTERY MASTER LAS PINAS</option>
+                                                                                                                <option value="72">BATTERY MASTER LAS PINAS 2</option>
+                                                                                                                <option value="11">BATTERY MASTER LAS PINAS 3</option>
+                                                                                                                <option value="69">BATTERY MASTER LAS PINAS 5</option>
+                                                                                                                <option value="2">BATTERY MASTER'S INC.  (LAS PINAS)</option>
+                                                                                                                <option value="28">BATTERY MASTER'S INC.(PALAWAN)</option>
+                                                                                                                <option value="4">BATTERY WORKZ MERALCO AVE</option>
+                                                                                                                <option value="31">BATTERY WORKZ MERCEDES</option>
+                                                                                                                <option value="32">BATTERY WORKZ PASAY</option>
+                                                                                                                <option value="5">BATTERYWORLD INC. (MACEDA)</option>
+                                                                                                                <option value="6">BATTERYWORLD INC. (PASONG TAMO)</option>
+                                                                                                                <option value="33">BATTERYWORLD, INC.(KATIPUNAN)</option>
+                                                                                                                <option value="66">BDOCLI - BATTERY DEPOT OF CENTRAL LUZON INC.</option>
+                                                                                                                <option value="67">BDOCLI SAN FERNANDO</option>
+                                                                                                                <option value="110">BMI PUERTO PRINCESA</option>
+                                                                                                                <option value="30">BRAZA MARKETING</option>
+                                                                                                                <option value="35">CAGAYAN VALLEY BATTERY SALES INC 2</option>
+                                                                                                                <option value="34">CAGAYAN VALLEY BATTERY SALES INC 4</option>
+                                                                                                                <option value="36">CAGAYAN VALLEY BATTERY SALES INC. 1</option>
+                                                                                                                <option value="37">CEBU MASSIVE AUTOPARTS CENTER - CEBU</option>
+                                                                                                                <option value="38">CHIU TIEN UN HARDWARE - ZAMBOANGA</option>
+                                                                                                                <option value="102">D2 AFPOVAI RETAIL</option>
+                                                                                                                <option value="60">D2 BATTERY KARPORT</option>
+                                                                                                                <option value="108">D2 BATTERY MACAPAGAL</option>
+                                                                                                                <option value="39">DAGUPAN MOTOLIGHT ENTERPRISE - PANGASINAN</option>
+                                                                                                                <option value="40">DSD BATTERY &amp; TIRE SUPPLY INC.</option>
+                                                                                                                <option value="41">E D BATTERY TARLAC 1</option>
+                                                                                                                <option value="42">EBR-SN TIRE PLAZA</option>
+                                                                                                                <option value="43">ECSD TRADING</option>
+                                                                                                                <option value="44">F &amp; E (ILOILO) INC. WH2</option>
+                                                                                                                <option value="45">FGR BINONDO</option>
+                                                                                                                <option value="46">FGR CAPITOLYO</option>
+                                                                                                                <option value="109">FGR TAGUIG</option>
+                                                                                                                <option value="20">G-SIX ABAD SANTOS</option>
+                                                                                                                <option value="52">G-SIX AURORA, E. RODRIGUEZ</option>
+                                                                                                                <option value="114">G-SIX BETTER LIVING, BICUTAN 1</option>
+                                                                                                                <option value="7">G-SIX BETTER LIVING, BICUTAN 2</option>
+                                                                                                                <option value="47">G-SIX BONNY SERRANO, CUBAO</option>
+                                                                                                                <option value="48">G-SIX COMMONWEALTH NORTH FAIRVIEW</option>
+                                                                                                                <option value="8">G-SIX COMMONWEALTH REGALADO (COMMONWEALTH)</option>
+                                                                                                                <option value="49">G-SIX EVANGELISTA</option>
+                                                                                                                <option value="14">G-SIX MALABON 2</option>
+                                                                                                                <option value="115">G-SIX MASINAG</option>
+                                                                                                                <option value="15">G-SIX MEYCAUAYAN</option>
+                                                                                                                <option value="9">G-SIX MINDANAO</option>
+                                                                                                                <option value="101">G-SIX MOLINO</option>
+                                                                                                                <option value="13">G-SIX PASIG</option>
+                                                                                                                <option value="16">G-SIX QUEZON AVE.</option>
+                                                                                                                <option value="17">G-SIX SUMULONG</option>
+                                                                                                                <option value="50">G-SIX TUNASAN, MUNTINLUPA 2</option>
+                                                                                                                <option value="51">G-SIX WEST AVE.</option>
+                                                                                                                <option value="3">G-SIX WEST SERVICE</option>
+                                                                                                                <option value="55">ILIGAN DENNIE SO MOTOR PARTS (CTBD MARKETTING )- CAGAYAN DE ORO</option>
+                                                                                                                <option value="57">ILOILO LUCKY AUTO SUPPLY - ILOILO</option>
+                                                                                                                <option value="76">JESOLLY - GILMORE</option>
+                                                                                                                <option value="77">JLB BATTERY AND PARTS SUPPLY - LA UNION</option>
+                                                                                                                <option value="78">JSR ENTERPRISES - NUEVA ECIJA</option>
+                                                                                                                <option value="79">K &amp; E BATTERY CENTER - CABANATUAN</option>
+                                                                                                                <option value="80">KAPITAN PARTS CENTER CO.,</option>
+                                                                                                                <option value="82">KINGSWAY - ANTIPOLO</option>
+                                                                                                                <option value="81">KINGSWAY - BAGONG-ILOG</option>
+                                                                                                                <option value="83">KINGSWAY - BLUERIDGE</option>
+                                                                                                                <option value="18">KINGSWAY - CAPITOL HILLS</option>
+                                                                                                                <option value="84">KINGSWAY - E. RODRIGUEZ</option>
+                                                                                                                <option value="85">LCG MARKETING- CAGAYAN DE ORO</option>
+                                                                                                                <option value="86">LEGS TRADING COMPANY</option>
+                                                                                                                <option value="104">MAXEMEGA BAGONG BARRIO</option>
+                                                                                                                <option value="87">MAXEMEGA CALOOCAN</option>
+                                                                                                                <option value="111">MAXEMEGA DEL MONTE</option>
+                                                                                                                <option value="88">MAXEMEGA LAS PINAS</option>
+                                                                                                                <option value="89">MGK3 PASAY</option>
+                                                                                                                <option value="90">NEW LAOAG AUTO SUPPLY 1</option>
+                                                                                                                <option value="112">OLDRICH CAR CLINIC</option>
+                                                                                                                <option value="58">P.A JASARENO TRADING NAGA</option>
+                                                                                                                <option value="100">PILI BATT - LIPA</option>
+                                                                                                                <option value="19">PILI BATT - MAKATI</option>
+                                                                                                                <option value="99">SAMSON MERCHANDISING, INC. - BACOLOD</option>
+                                                                                                                <option value="56">SAN PABLO BATTERY DEPOT INC - STA. CRUZ, LAGUNA</option>
+                                                                                                                <option value="59">SAN PABLO BATTERY DEPOT INC.</option>
+                                                                                                                <option value="98">SEARTON ANTIPOLO</option>
+                                                                                                                <option value="97">SEARTON SUCAT 2</option>
+                                                                                                                <option value="96">SEARTON URDANETA</option>
+                                                                                                                <option value="95">SEGURO MARKETING</option>
+                                                                                                                <option value="94">SERIES &amp; PARALLEL MARKETING</option>
+                                                                                                                <option value="73">STALWART BATTERY CENTER CALAMBA</option>
+                                                                                                                <option value="93">STARCHARGE MARKETING CORPORATION</option>
+                                                                                                                <option value="24">ULTRAVOLTS CORP.  WH1 - DAVAO</option>
+                                                                                                                <option value="21">ULTRAVOLTS CORP.  WH2 - GENERAL SANTOS</option>
+                                                                        </select>
+                    <input type="hidden" class="form-control shadow-none" id="dealer_name" name="dealer_name" placeholder="" value="">
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="mobile_num" class="col-5 col-form-label">Dealer Address</label>
+					<div class="col-7">
+						<input type="text" class="form-control shadow-none" id="dealer_address" name="dealer_address" placeholder="" value="" readonly="">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" name="flag_accept" id="flag_accept" required="required">
+			  <label class="form-check-label" for="flag_accept">
+                I have read and agree to the new <a href="https://resqaws.jankstudio.com/terms.html" target="_blank">Terms and Conditions</a> and <a href="https://resqaws.jankstudio.com/privacy.html" target="_blank">Privacy Policy</a>.
+			  </label>
+			</div>
+
+            <br><br>
+			<button type="submit" class="btn btn-brand btn-lg w-100">Submit Vehicle and Warranty Information</button>
+            <br><br><br>
+
+
+			<h4>Customer Details</h4>
+			<div class="form-block mb-5">
+				<div class="form-group row form-row">
+					<label for="first_name" class="col-5 col-form-label">First Name</label>
+					<div class="col-7">
+						<input type="text" class="form-control shadow-none" id="first_name" name="first_name" placeholder="" value="">
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="last_name" class="col-5 col-form-label">Last Name</label>
+					<div class="col-7">
+						<input type="text" class="form-control shadow-none" id="last_name" name="last_name" placeholder="" value="">
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="email" class="col-5 col-form-label">Email</label>
+					<div class="col-7">
+						<input type="email" class="form-control shadow-none" id="email" name="email" placeholder="" value="">
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="contact_num" class="col-5 col-form-label">Contact Number</label>
+					<div class="col-7">
+						<input type="text" class="form-control shadow-none" id="contact_num" name="contact_num" placeholder="" value="">
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="cust_address" class="col-5 col-form-label">Address</label>
+					<div class="col-7">
+                        <textarea id="cust_address" class="form-control" name="cust_address" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="province_id" class="col-5 col-form-label">Province</label>
+					<div class="col-7">
+                    <select id="province_id" name="province_id" class="form-control">
+                        <option value="">Select Province</option>
+                                                                                    <option value="PH140100000">ABRA</option>
+                                                                                                                <option value="PH160200000">AGUSAN DEL NORTE</option>
+                                                                                                                <option value="PH160300000">AGUSAN DEL SUR</option>
+                                                                                                                <option value="PH060400000">AKLAN</option>
+                                                                                                                <option value="PH050500000">ALBAY</option>
+                                                                                                                <option value="PH060600000">ANTIQUE</option>
+                                                                                                                <option value="PH148100000">APAYAO</option>
+                                                                                                                <option value="PH037700000">AURORA</option>
+                                                                                                                <option value="PH150700000">BASILAN</option>
+                                                                                                                <option value="PH030800000">BATAAN</option>
+                                                                                                                <option value="PH020900000">BATANES</option>
+                                                                                                                <option value="PH041000000">BATANGAS</option>
+                                                                                                                <option value="PH141100000">BENGUET</option>
+                                                                                                                <option value="PH087800000">BILIRAN</option>
+                                                                                                                <option value="PH071200000">BOHOL</option>
+                                                                                                                <option value="PH101300000">BUKIDNON</option>
+                                                                                                                <option value="PH031400000">BULACAN</option>
+                                                                                                                <option value="PH021500000">CAGAYAN</option>
+                                                                                                                <option value="PH051600000">CAMARINES NORTE</option>
+                                                                                                                <option value="PH051700000">CAMARINES SUR</option>
+                                                                                                                <option value="PH101800000">CAMIGUIN</option>
+                                                                                                                <option value="PH061900000">CAPIZ</option>
+                                                                                                                <option value="PH052000000">CATANDUANES</option>
+                                                                                                                <option value="PH042100000">CAVITE</option>
+                                                                                                                <option value="PH072200000">CEBU</option>
+                                                                                                                <option value="PH099700000">CITY OF ISABELA (Not a Province)</option>
+                                                                                                                <option value="PH118200000">COMPOSTELA VALLEY</option>
+                                                                                                                <option value="PH124700000">COTABATO (NORTH COTABATO)</option>
+                                                                                                                <option value="PH129800000">COTABATO CITY (Not a Province)</option>
+                                                                                                                <option value="PH112300000">DAVAO DEL NORTE</option>
+                                                                                                                <option value="PH112400000">DAVAO DEL SUR</option>
+                                                                                                                <option value="PH118600000">DAVAO OCCIDENTAL</option>
+                                                                                                                <option value="PH112500000">DAVAO ORIENTAL</option>
+                                                                                                                <option value="PH168500000">DINAGAT ISLANDS</option>
+                                                                                                                <option value="PH082600000">EASTERN SAMAR</option>
+                                                                                                                <option value="PH067900000">GUIMARAS</option>
+                                                                                                                <option value="PH142700000">IFUGAO</option>
+                                                                                                                <option value="PH012800000">ILOCOS NORTE</option>
+                                                                                                                <option value="PH012900000">ILOCOS SUR</option>
+                                                                                                                <option value="PH063000000">ILOILO</option>
+                                                                                                                <option value="PH023100000">ISABELA</option>
+                                                                                                                <option value="PH143200000">KALINGA</option>
+                                                                                                                <option value="PH013300000">LA UNION</option>
+                                                                                                                <option value="PH043400000">LAGUNA</option>
+                                                                                                                <option value="PH103500000">LANAO DEL NORTE</option>
+                                                                                                                <option value="PH153600000">LANAO DEL SUR</option>
+                                                                                                                <option value="PH083700000">LEYTE</option>
+                                                                                                                <option value="PH153800000">MAGUINDANAO</option>
+                                                                                                                <option value="PH174000000">MARINDUQUE</option>
+                                                                                                                <option value="PH054100000">MASBATE</option>
+                                                                                                                <option value="PH104200000">MISAMIS OCCIDENTAL</option>
+                                                                                                                <option value="PH104300000">MISAMIS ORIENTAL</option>
+                                                                                                                <option value="PH144400000">MOUNTAIN PROVINCE</option>
+                                                                                                                <option value="PH133900000">NCR, CITY OF MANILA, FIRST DISTRICT (Not a Province)</option>
+                                                                                                                <option value="PH137600000">NCR, FOURTH DISTRICT (Not a Province)</option>
+                                                                                                                <option value="PH137400000">NCR, SECOND DISTRICT (Not a Province)</option>
+                                                                                                                <option value="PH137500000">NCR, THIRD DISTRICT (Not a Province)</option>
+                                                                                                                <option value="PH184500000">NEGROS OCCIDENTAL</option>
+                                                                                                                <option value="PH184600000">NEGROS ORIENTAL</option>
+                                                                                                                <option value="PH084800000">NORTHERN SAMAR</option>
+                                                                                                                <option value="PH034900000">NUEVA ECIJA</option>
+                                                                                                                <option value="PH025000000">NUEVA VIZCAYA</option>
+                                                                                                                <option value="PH175100000">OCCIDENTAL MINDORO</option>
+                                                                                                                <option value="PH175200000">ORIENTAL MINDORO</option>
+                                                                                                                <option value="PH175300000">PALAWAN</option>
+                                                                                                                <option value="PH035400000">PAMPANGA</option>
+                                                                                                                <option value="PH015500000">PANGASINAN</option>
+                                                                                                                <option value="PH045600000">QUEZON</option>
+                                                                                                                <option value="PH025700000">QUIRINO</option>
+                                                                                                                <option value="PH045800000">RIZAL</option>
+                                                                                                                <option value="PH175900000">ROMBLON</option>
+                                                                                                                <option value="PH086000000">SAMAR (WESTERN SAMAR)</option>
+                                                                                                                <option value="PH128000000">SARANGANI</option>
+                                                                                                                <option value="PH076100000">SIQUIJOR</option>
+                                                                                                                <option value="PH056200000">SORSOGON</option>
+                                                                                                                <option value="PH126300000">SOUTH COTABATO</option>
+                                                                                                                <option value="PH086400000">SOUTHERN LEYTE</option>
+                                                                                                                <option value="PH126500000">SULTAN KUDARAT</option>
+                                                                                                                <option value="PH156600000">SULU</option>
+                                                                                                                <option value="PH166700000">SURIGAO DEL NORTE</option>
+                                                                                                                <option value="PH166800000">SURIGAO DEL SUR</option>
+                                                                                                                <option value="PH036900000">TARLAC</option>
+                                                                                                                <option value="PH157000000">TAWI-TAWI</option>
+                                                                                                                <option value="PH037100000">ZAMBALES</option>
+                                                                                                                <option value="PH097200000">ZAMBOANGA DEL NORTE</option>
+                                                                                                                <option value="PH097300000">ZAMBOANGA DEL SUR</option>
+                                                                                                                <option value="PH098300000">ZAMBOANGA SIBUGAY</option>
+                                                                        </select>
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<label for="municipality_id" class="col-5 col-form-label">City / Municipality</label>
+					<div class="col-7">
+                    <select id="municipality_id" class="form-control">
+                        <option value="">Select City / Municipality</option>
+                    </select>
+					</div>
+				</div>
+
+			</div>
+
+			<h4>Battery Details</h4>
+			<div class="form-block mb-5">
+				<div class="form-group row form-row">
+					<label for="date_purchased" class="col-5 col-form-label">Purchase Date</label>
+					<div class="col-7">
+						<input type="date" class="form-control shadow-none" id="date_purchase" name="date_purchase" placeholder="" value="2022-10-27">
+					</div>
+				</div>
+                <!--
+				<div class="form-group row form-row">
+					<div class="col-12">
+						<label class="col-form-label" for="invoice">Upload Sales Invoice</label>
+						<div class="mb-2">
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="invoice" name="invoice" aria-describedby="invoice_label">
+								<label class="custom-file-label" id="invoice_label" for="invoice">Choose file</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row form-row">
+					<div class="col-12">
+						<label class="col-form-label" for="warr_card">Upload Warranty Card</label>
+						<div class="mb-2">
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="warr_card" name="warr_card" aria-describedby="warr_card_label">
+								<label class="custom-file-label" id="warr_card_label" for="warr_card">Choose file</label>
+							</div>
+						</div>
+					</div>
+				</div>
+                -->
+			</div>
+
+            <!--
+			<div class="form-check">
+			  <input
+				class="form-check-input"
+				type="checkbox"
+				
+                name="flag_accept"
+				id="flag_accept"
+                required="required"
+			  />
+			  <label class="form-check-label" for="flag_accept">
+                I have read and agree to the new <a href="https://resqaws.jankstudio.com/terms.html" target="_blank">Terms and Conditions</a> and <a href="https://resqaws.jankstudio.com/privacy.html" target="_blank">Privacy Policy</a>.
+			  </label>
+			</div>
+            -->
+			<div class="form-check">
+			  <input class="form-check-input" type="checkbox" value="1" name="priv_promo" id="priv_promo">
+			  <label class="form-check-label" for="priv_promo">
+                Subscribe to receive important updates and reminders plus information on the latest deals, promos and events of Motolite and its affiliates.
+			  </label>
+			</div>
+
+			<br><br>
+
+			<button type="submit" class="btn btn-brand btn-lg w-100">Submit and Activate E-Warranty</button>
+		</form>
+	</div>
