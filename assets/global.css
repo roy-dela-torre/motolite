@@ -3,14 +3,6 @@
     --black_text: #212529
 }
 
-li.has-submenu ul.submenu {
-    display: none;
-}
-
-li.has-submenu:hover ul.submenu {
-    display: block;
-}
-
 .grey_btn {
     padding: 13px 34px;
     border-radius: 5px;
@@ -74,4 +66,29 @@ li.has-submenu:hover ul.submenu {
 
 img {
     max-width: 100%;
+}
+
+h3 {
+    color: #424242;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+        letter-spacing: 0.69px;
+}
+
+p {
+    color: #807F7F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 0.66px;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
 }
