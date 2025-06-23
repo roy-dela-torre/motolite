@@ -227,7 +227,6 @@
   .container-main-menu .find-batter-order-now-con .btn-btn {
     width: 100%;
     max-width: 205px;
-    height: 100%;
     min-height: 46px;
     display: flex;
     justify-content: center;
@@ -364,14 +363,17 @@
     }
   }
   @media (max-width: 1199px) {
-    /* .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    } */
+    li.nav-item.dropdown:has(ul) .dropdown-toggle::after {
+      display: none;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
     span#offcanvasNavbarLabel {
       display: none;
     }
     button.btn-close.text-reset {
-      background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path  stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e");
     }
     .main-menu-nav div#offcanvasNavbar .offcanvas-header {
       min-height: 50px;
@@ -416,6 +418,15 @@
   }
 
   @media (max-width: 768px) {
+    .main-menu-nav div#offcanvasNavbar li a {
+      padding: 10px;
+    }
+    .header-wrapper a span:hover,
+    .header-wrapper a span:active,
+    .header-wrapper a:hover,
+    .header-wrapper a:active {
+      background: transparent;
+    }
     .top-navbar-actions.mobile-only {
       display: flex;
       flex-direction: column;
@@ -433,6 +444,16 @@
       justify-content: center;
       flex-wrap: wrap;
       text-align: center;
+    }
+  }
+  @media (max-width: 575px) {
+    .main-menu-nav .container-main-menu{
+      padding: 0;
+    }
+    .main-menu-nav,
+    .top-navbar-wrapper,
+    .top-notification-wrapper {
+      padding: 30px 20px;
     }
   }
 
