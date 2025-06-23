@@ -315,6 +315,11 @@
     .hotlines-section::after {
       max-width: 240px;
     }
+
+    main#MainContent .carousel-control-next,
+    main#MainContent .carousel-control-prev {
+      bottom: 0;
+    }
   }
   @media (max-width: 1500px) {
     .top-navbar-actions .nav-item:not(:last-child) a strong {
@@ -455,16 +460,18 @@
   @media (max-width: 767px) {
     div#hotlinesCollapse .accordion-body {
       padding: 30px 30px;
+      box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.25);
     }
 
     div#hotlinesCollapse {
+      overflow-x: hidden;
       position: fixed;
       background: #fff;
-      width: 100%;
+      width: 101%;
       left: 50%;
       transform: translate(-50%, 0);
       top: 0;
-      margin-top: 44px;
+      margin-top: 45px;
     }
 
     /* .hotlines-section .accordion-collapse.show ~ .top-navbar-actions {
@@ -483,6 +490,8 @@
 
     .hotlines-section .accordion-item,
     .hotlines-section .accordion-item button {
+      box-shadow: none !important;
+      background-color: #fff !important;
       border: none !important;
       border-bottom-right-radius: 0 !important;
       border-bottom-left-radius: 0 !important;
@@ -564,6 +573,15 @@
     }
     .top-navbar-actions {
       gap: 0px;
+    }
+
+    main#MainContent .carousel-control-next,
+    main#MainContent .carousel-control-prev {
+      bottom: -70%;
+    }
+
+    #demo .carousel-inner .carousel-caption {
+      left: 10%;
     }
   }
 
