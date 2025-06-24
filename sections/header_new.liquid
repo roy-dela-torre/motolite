@@ -22,7 +22,7 @@
     gap: 10px;
     align-items: center;
     float: right;
-    margin: 0 5px;
+    margin: 0 5px 0 5px;
   }
   .header-wrapper {
     display: block;
@@ -55,12 +55,20 @@
     height: 100%;
     min-height: 45px;
   }
+  .top-notification-wrapper svg {
+    min-width: 20px;
+    height: 20px;
+  }
+  .hotline-item p {
+    margin-bottom: 0;
+  }
 
   .hotlines-section {
     display: flex;
     align-items: center;
     gap: 35px;
     position: relative;
+    width: 65%;
   }
 
   .hotlines-header {
@@ -89,6 +97,7 @@
     align-items: center;
     gap: 10px;
     z-index: 10;
+    transition: all 0.3s ease;
   }
 
   .hotline-container {
@@ -146,8 +155,11 @@
 
   .top-navbar-actions {
     display: flex;
+    align-items: center;
+    justify-content: end;
     gap: 16px;
     z-index: 10;
+    width: 35%;
   }
 
   .top-navbar-actions .nav-item svg {
@@ -303,6 +315,7 @@
 
   .official-hotlines-mobile {
     display: none;
+    border: 1px solid #e5e5e5;
   }
 
   @media (max-width: 1599px) {
@@ -322,6 +335,12 @@
     }
   }
   @media (max-width: 1500px) {
+    .hotlines-section {
+      width: 80%;
+    }
+    .top-navbar-actions {
+      width: 20%;
+    }
     .top-navbar-actions .nav-item:not(:last-child) a strong {
       display: none;
     }
@@ -356,6 +375,11 @@
       align-items: center;
       gap: 24px;
     }
+
+    .top-navbar-actions {
+      width: 40%;
+    }
+
     .container-main-menu .find-batter-order-now-con .btn-btn a {
       gap: 5px;
       padding: 5px;
@@ -454,6 +478,10 @@
     }
     .container-main-menu .find-batter-order-now-con .btn-btn {
       max-width: 100%;
+    }
+
+    .hotlines-section {
+      width: 70%;
     }
   }
 
@@ -575,9 +603,9 @@
       gap: 0px;
     }
 
-    main#MainContent .carousel-control-next,
-    main#MainContent .carousel-control-prev {
-      bottom: -70%;
+    main#MainContent .carousel-control-next-icon {
+      margin-top: auto;
+      margin-bottom: 45px;
     }
 
     #demo .carousel-inner .carousel-caption {
@@ -623,14 +651,6 @@
   }
 
   /* CUSTOM */
-  .hotlines-content {
-    display: none;
-    transition: all 0.3s ease;
-  }
-
-  .hotlines-content.active {
-    display: block;
-  }
 
   .top-navbar-actions.mobile-only {
     display: none;
@@ -640,9 +660,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-  }
-  .hotline-item p {
-    margin-bottom: 0;
   }
 {% endstylesheet %}
 
