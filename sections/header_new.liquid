@@ -61,6 +61,7 @@
   }
   .hotline-item p {
     margin-bottom: 0;
+    white-space: pre;
   }
 
   .hotlines-section {
@@ -200,6 +201,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    margin-left: 15px;
   }
 
   .main-menu-nav .nav-item a {
@@ -242,7 +244,8 @@
   }
 
   .main-menu-nav .container-main-menu .offcanvas-body ul.navbar-nav {
-    width: 100%;
+    justify-content: start;
+    margin-right: 20px;
   }
 
   .container-main-menu .find-batter-order-now-con .btn-btn {
@@ -272,11 +275,13 @@
 
   .container-main-menu .find-batter-order-now-con .btn-btn:nth-of-type(1) a {
     color: #212529;
-    border: 2px solid transparent;
+    /* border: 2px solid transparent; */
   }
 
   .container-main-menu .header__icons {
-    width: 100%;
+    display: contents;
+    /* width: 100%; */
+    /* max-width: 435px; */
   }
 
   .top-navbar-wrapper .accordion-toggle {
@@ -319,6 +324,15 @@
   }
 
   @media (max-width: 1599px) {
+    .main-menu-nav .find-batter-order-now-con {
+      gap: 20px;
+    }
+    .main-menu-nav .nav-item {
+      margin-left: 10px;
+    }
+    .main-menu-nav .nav-item a {
+      font-size: 21px;
+    }
     .top-navbar-wrapper {
       gap: 12px;
     }
@@ -344,13 +358,18 @@
     .top-navbar-actions .nav-item:not(:last-child) a strong {
       display: none;
     }
+    .main-menu-nav .container-main-menu .offcanvas-body ul.navbar-nav {
+      margin-right: 10px;
+    }
+    .main-menu-nav .nav-item {
+      margin-left: 5px;
+    }
     .main-menu-nav .nav-item a {
       font-size: 18px;
     }
-
     .main-menu-nav .find-batter-order-now-con {
-      gap: 10px;
-      margin-left: 10px;
+      gap: 14px;
+      margin-left: 0;
     }
 
     .main-menu-nav .container-main-menu {
@@ -882,31 +901,31 @@
               {% endif %}
             {% endfor %}
             <!-- Icons (Find Battery, Order Now) -->
-            <div class="header__icons">
-              <div class="find-batter-order-now-con">
-                <div class="btn-btn">
-                  <a href="https://www.motolite.com/pages/battery-finder">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21" fill="none">
-                      <path
-                        d="M21.8574 3.4201V2.03424C21.8574 1.41892 21.3586 0.920105 20.7433 0.920105H17.9716C17.3562 0.920105 16.8574 1.41892 16.8574 2.03424V3.4201H9.35742V2.03424C9.35742 1.41892 8.85861 0.920105 8.24329 0.920105H5.47155C4.85624 0.920105 4.35742 1.41892 4.35742 2.03424V3.4201H1.85742C1.16707 3.4201 0.607422 3.97975 0.607422 4.6701C0.607422 5.36046 1.16707 5.9201 1.85742 5.9201L1.85742 19.6701C1.85742 20.3605 2.41707 20.9201 3.10742 20.9201H23.1074C23.7978 20.9201 24.3574 20.3605 24.3574 19.6701V5.9201C25.0478 5.9201 25.6074 5.36046 25.6074 4.67011C25.6074 3.97975 25.0478 3.4201 24.3574 3.4201H21.8574ZM10.9424 17.3894L12.2324 13.4201H9.51529C9.29863 13.4201 9.1769 13.1708 9.31015 12.9999L13.1437 8.08507C13.3146 7.86609 13.6637 8.03124 13.6027 8.30219L12.7324 12.1701H16.2293C16.4611 12.1701 16.5772 12.4503 16.4133 12.6142L11.3738 17.6537C11.1804 17.8471 10.8579 17.6494 10.9424 17.3894Z"
-                        fill="#212529" />
-                    </svg>
-                    Find Battery
-                  </a>
-                </div>
-                <div class="btn-btn">
-                  <a href="https://www.motolite.com/collections/all">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M10.6077 0.920105C8.39852 0.920105 6.60766 2.71096 6.60766 4.9201H3.67828C1.8482 4.9201 0.366254 6.50117 0.639544 8.34923L2.11833 18.3492C2.34029 19.8502 3.65693 20.9201 5.15707 20.9201H16.0581C17.5583 20.9201 18.8749 19.8502 19.0969 18.3492L20.5757 8.34923C20.849 6.50117 19.367 4.9201 17.5369 4.9201H14.6077C14.6077 2.71096 12.8168 0.920105 10.6077 0.920105ZM12.6077 4.9201C12.6077 3.81553 11.7123 2.9201 10.6077 2.9201C9.50306 2.9201 8.60766 3.81553 8.60766 4.9201H12.6077ZM14.3603 10.7616C14.724 11.1772 14.6818 11.809 14.2662 12.1727L10.2662 15.6727C9.86996 16.0194 9.27286 15.9995 8.90056 15.6272L6.90055 13.6272C6.51003 13.2367 6.51003 12.6035 6.90055 12.213C7.29108 11.8225 7.92424 11.8225 8.31477 12.213L9.65326 13.5515L12.9492 10.6675C13.3648 10.3038 13.9966 10.346 14.3603 10.7616Z"
-                        fill="white" />
-                    </svg>
-                    Order Now
-                  </a>
-                </div>
+          </ul>
+          <div class="header__icons">
+            <div class="find-batter-order-now-con">
+              <div class="btn-btn">
+                <a href="https://www.motolite.com/pages/battery-finder">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" viewBox="0 0 26 21" fill="none">
+                    <path
+                      d="M21.8574 3.4201V2.03424C21.8574 1.41892 21.3586 0.920105 20.7433 0.920105H17.9716C17.3562 0.920105 16.8574 1.41892 16.8574 2.03424V3.4201H9.35742V2.03424C9.35742 1.41892 8.85861 0.920105 8.24329 0.920105H5.47155C4.85624 0.920105 4.35742 1.41892 4.35742 2.03424V3.4201H1.85742C1.16707 3.4201 0.607422 3.97975 0.607422 4.6701C0.607422 5.36046 1.16707 5.9201 1.85742 5.9201L1.85742 19.6701C1.85742 20.3605 2.41707 20.9201 3.10742 20.9201H23.1074C23.7978 20.9201 24.3574 20.3605 24.3574 19.6701V5.9201C25.0478 5.9201 25.6074 5.36046 25.6074 4.67011C25.6074 3.97975 25.0478 3.4201 24.3574 3.4201H21.8574ZM10.9424 17.3894L12.2324 13.4201H9.51529C9.29863 13.4201 9.1769 13.1708 9.31015 12.9999L13.1437 8.08507C13.3146 7.86609 13.6637 8.03124 13.6027 8.30219L12.7324 12.1701H16.2293C16.4611 12.1701 16.5772 12.4503 16.4133 12.6142L11.3738 17.6537C11.1804 17.8471 10.8579 17.6494 10.9424 17.3894Z"
+                      fill="#212529" />
+                  </svg>
+                  Find Battery
+                </a>
+              </div>
+              <div class="btn-btn">
+                <a href="https://www.motolite.com/collections/all">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.6077 0.920105C8.39852 0.920105 6.60766 2.71096 6.60766 4.9201H3.67828C1.8482 4.9201 0.366254 6.50117 0.639544 8.34923L2.11833 18.3492C2.34029 19.8502 3.65693 20.9201 5.15707 20.9201H16.0581C17.5583 20.9201 18.8749 19.8502 19.0969 18.3492L20.5757 8.34923C20.849 6.50117 19.367 4.9201 17.5369 4.9201H14.6077C14.6077 2.71096 12.8168 0.920105 10.6077 0.920105ZM12.6077 4.9201C12.6077 3.81553 11.7123 2.9201 10.6077 2.9201C9.50306 2.9201 8.60766 3.81553 8.60766 4.9201H12.6077ZM14.3603 10.7616C14.724 11.1772 14.6818 11.809 14.2662 12.1727L10.2662 15.6727C9.86996 16.0194 9.27286 15.9995 8.90056 15.6272L6.90055 13.6272C6.51003 13.2367 6.51003 12.6035 6.90055 12.213C7.29108 11.8225 7.92424 11.8225 8.31477 12.213L9.65326 13.5515L12.9492 10.6675C13.3648 10.3038 13.9966 10.346 14.3603 10.7616Z"
+                      fill="white" />
+                  </svg>
+                  Order Now
+                </a>
               </div>
             </div>
-          </ul>
+          </div>
         </div>
       </div>
     </div>
